@@ -1,18 +1,27 @@
 <style>
-  .pkf-specs-section {
+  .pkf-passport-section {
     background: #F7F8F5;
-    padding: 74px 0 82px;
+    padding: 56px 0 64px;
     color: #111517;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "TildaSans", Arial, sans-serif;
   }
 
-  .pkf-specs-container {
+  .pkf-passport-card {
     width: 1120px;
     max-width: calc(100% - 64px);
     margin: 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    gap: 46px;
+    padding: 42px 44px;
+    background: #FFFFFF;
+    border: 1px solid #E3E7EA;
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(17, 21, 23, 0.06);
   }
 
-  .pkf-specs-label {
+  .pkf-passport-label {
     margin: 0 0 14px;
     color: #B88900;
     font-size: 12px;
@@ -22,200 +31,186 @@
     text-transform: uppercase;
   }
 
-  .pkf-specs-title {
-    margin: 0 0 34px;
+  .pkf-passport-title {
+    margin: 0 0 14px;
     color: #111517;
-    font-size: 40px;
+    font-size: 34px;
     font-weight: 900;
     line-height: 1.08;
   }
 
-  .pkf-specs-table {
-    width: 760px;
-    max-width: 100%;
-    border-top: 2px solid #111517;
+  .pkf-passport-description {
+    max-width: 230px;
+    margin: 0;
+    color: #5F6B73;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
   }
 
-  .pkf-specs-head,
-  .pkf-specs-row {
-    display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
-    column-gap: 38px;
-    align-items: start;
+  .pkf-passport-content {
+    min-width: 0;
   }
 
-  .pkf-specs-head {
-    padding: 14px 0 12px;
-    border-bottom: 1px solid rgba(17, 21, 23, 0.35);
+  .pkf-passport-specs {
+    width: 100%;
+    border-top: 1px solid #E3E7EA;
+  }
+
+  .pkf-passport-group {
+    margin-top: 18px;
     color: #B88900;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 900;
     letter-spacing: 1.4px;
-    line-height: 1.3;
+    line-height: 1.25;
     text-transform: uppercase;
   }
 
-  .pkf-specs-row {
-    padding: 18px 0;
-    border-bottom: 1px dashed rgba(17, 21, 23, 0.32);
+  .pkf-passport-group:first-child {
+    margin-top: 0;
+    padding-top: 0;
   }
 
-  .pkf-specs-name {
+  .pkf-passport-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(210px, 0.58fr);
+    gap: 28px;
+    min-height: 44px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #E3E7EA;
+  }
+
+  .pkf-passport-name {
     color: #111517;
     font-size: 15px;
     font-weight: 800;
-    line-height: 1.45;
+    line-height: 1.35;
   }
 
-  .pkf-specs-value {
+  .pkf-passport-value {
+    color: #7A858C;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .pkf-passport-empty {
+    padding: 14px 0 0;
     color: #7A858C;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.45;
   }
 
-  .pkf-specs-empty {
-    width: 760px;
-    max-width: 100%;
-    padding: 22px 0;
-    border-top: 2px solid #111517;
-    border-bottom: 1px dashed rgba(17, 21, 23, 0.32);
-    color: #7A858C;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1.45;
-  }
-
-  .pkf-specs-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 28px;
-  }
-
-  .pkf-specs-btn {
+  .pkf-passport-toggle {
     display: inline-flex;
-    min-height: 48px;
-    align-items: center;
-    justify-content: center;
-    padding: 0 24px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 900;
-    line-height: 1;
-    text-decoration: none;
-    transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
-  }
-
-  .pkf-specs-btn-primary {
-    background: #111517;
-    color: #fff;
-  }
-
-  .pkf-specs-btn-primary:hover {
-    background: #B88900;
-    color: #fff;
-  }
-
-  .pkf-specs-btn-secondary {
+    margin-top: 18px;
+    margin-left: auto;
     background: transparent;
-    border-color: rgba(17, 21, 23, 0.35);
+    border: none;
+    padding: 0;
     color: #111517;
+    font-family: "TildaSans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.35;
+    text-decoration: none;
+    cursor: pointer;
   }
 
-  .pkf-specs-btn-secondary:hover {
-    border-color: #B88900;
+  .pkf-passport-toggle:hover {
     color: #B88900;
   }
 
   @media (max-width: 1199px) {
-    .pkf-specs-container {
+    .pkf-passport-card {
       width: 880px;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 36px;
     }
   }
 
   @media (max-width: 959px) {
-    .pkf-specs-container {
+    .pkf-passport-card {
       width: 576px;
+      display: block;
     }
 
-    .pkf-specs-title {
-      font-size: 34px;
+    .pkf-passport-intro {
+      margin-bottom: 30px;
+    }
+
+    .pkf-passport-description {
+      max-width: none;
     }
   }
 
   @media (max-width: 639px) {
-    .pkf-specs-section {
-      padding: 56px 0 64px;
-    }
-
-    .pkf-specs-container {
+    .pkf-passport-card {
       width: calc(100% - 48px);
       max-width: none;
+      padding: 30px 28px;
     }
 
-    .pkf-specs-head,
-    .pkf-specs-row {
-      grid-template-columns: minmax(0, 1fr) minmax(170px, 0.75fr);
-      column-gap: 24px;
+    .pkf-passport-title {
+      font-size: 30px;
+    }
+
+    .pkf-passport-row {
+      grid-template-columns: minmax(0, 1fr) minmax(150px, 0.7fr);
+      gap: 20px;
     }
   }
 
   @media (max-width: 479px) {
-    .pkf-specs-container {
+    .pkf-passport-card {
       width: calc(100% - 32px);
+      padding: 26px 22px;
+      border-radius: 18px;
     }
 
-    .pkf-specs-title {
-      margin-bottom: 26px;
-      font-size: 28px;
+    .pkf-passport-title {
+      font-size: 27px;
     }
 
-    .pkf-specs-head {
-      display: none;
-    }
-
-    .pkf-specs-row {
+    .pkf-passport-row {
       display: block;
-      padding: 16px 0;
+      min-height: 0;
+      padding: 12px 0;
     }
 
-    .pkf-specs-value {
-      margin-top: 7px;
-    }
-
-    .pkf-specs-actions {
-      flex-direction: column;
-      align-items: stretch;
-    }
-
-    .pkf-specs-btn {
-      width: 100%;
-      box-sizing: border-box;
+    .pkf-passport-value {
+      margin-top: 6px;
     }
   }
 </style>
 
-<section class="pkf-specs-section">
-  <div class="pkf-specs-container">
-    <div class="pkf-specs-label">ТЕХНИЧЕСКИЕ ДАННЫЕ</div>
-    <h2 class="pkf-specs-title">Технические характеристики</h2>
-
-    <div class="pkf-specs-table" id="productSpecsTable">
-      <div class="pkf-specs-empty">Характеристики уточняются по запросу.</div>
+<section class="pkf-passport-section">
+  <div class="pkf-passport-card">
+    <div class="pkf-passport-intro">
+      <div class="pkf-passport-label">ТЕХНИЧЕСКИЕ ДАННЫЕ</div>
+      <h2 class="pkf-passport-title">Технический паспорт</h2>
+      <p class="pkf-passport-description">Основные параметры выбранного изделия.</p>
     </div>
 
-    <div class="pkf-specs-actions">
-      <a class="pkf-specs-btn pkf-specs-btn-primary" href="#form">Заказать</a>
-      <a class="pkf-specs-btn pkf-specs-btn-secondary" href="#form">Проконсультироваться</a>
+    <div class="pkf-passport-content">
+      <div id="productPassportSpecs" class="pkf-passport-specs"></div>
+      <button id="productPassportToggle" class="pkf-passport-toggle" type="button" style="display:none;">
+        Показать все характеристики ↓
+      </button>
     </div>
   </div>
 </section>
 
 <script>
   (function () {
-    var table = document.getElementById('productSpecsTable');
+    var specsEl = document.getElementById('productPassportSpecs');
+    var toggleEl = document.getElementById('productPassportToggle');
+    var allRows = [];
+    var expanded = false;
+    var visibleLimit = 10;
 
     function escapeHtml(value) {
       return String(value == null ? '' : value)
@@ -231,17 +226,75 @@
       return Number.isFinite(sort) ? sort : 0;
     }
 
-    function renderSpecs(event) {
-      var detail = event && event.detail ? event.detail : {};
-      var product = detail.product || {};
-      var data = detail.data || {};
-      var characteristics = Array.isArray(data.characteristics) ? data.characteristics : [];
+    function getGroupName(item) {
+      var group = item && typeof item.group === 'string' ? item.group.trim() : '';
+      return group || 'Характеристики';
+    }
 
-      if (!table || !product.slug) {
+    function renderRows() {
+      if (!specsEl) {
         return;
       }
 
-      var rows = characteristics
+      if (allRows.length === 0) {
+        specsEl.className = 'pkf-passport-empty';
+        specsEl.innerHTML = 'Характеристики уточняются по запросу.';
+        if (toggleEl) {
+          toggleEl.style.display = 'none';
+        }
+        return;
+      }
+
+      var rowsToShow = expanded || allRows.length <= visibleLimit ? allRows : allRows.slice(0, visibleLimit);
+      var html = [];
+      var currentGroup = null;
+
+      specsEl.className = 'pkf-passport-specs';
+
+      rowsToShow.forEach(function (item) {
+        var group = getGroupName(item);
+        var value = item.value || '';
+        var unit = item.unit ? ' ' + item.unit : '';
+
+        if (group !== currentGroup) {
+          html.push('<div class="pkf-passport-group">' + escapeHtml(group) + '</div>');
+          currentGroup = group;
+        }
+
+        html.push([
+          '<div class="pkf-passport-row">',
+          '<div class="pkf-passport-name">',
+          escapeHtml(item.name),
+          '</div>',
+          '<div class="pkf-passport-value">',
+          escapeHtml(value + unit),
+          '</div>',
+          '</div>'
+        ].join(''));
+      });
+
+      specsEl.innerHTML = html.join('');
+
+      if (toggleEl) {
+        if (allRows.length > visibleLimit) {
+          toggleEl.style.display = 'inline-flex';
+          toggleEl.textContent = expanded ? 'Скрыть характеристики ↑' : 'Показать все характеристики ↓';
+        } else {
+          toggleEl.style.display = 'none';
+        }
+      }
+    }
+
+    function renderPassport(context) {
+      var product = context && context.product ? context.product : {};
+      var data = context && context.data ? context.data : {};
+      var characteristics = Array.isArray(data.characteristics) ? data.characteristics : [];
+
+      if (!product.slug) {
+        return;
+      }
+
+      allRows = characteristics
         .filter(function (item) {
           return item && item.product_slug === product.slug;
         })
@@ -249,36 +302,23 @@
           return getSortValue(a) - getSortValue(b);
         });
 
-      if (rows.length === 0) {
-        table.className = 'pkf-specs-empty';
-        table.innerHTML = 'Характеристики уточняются по запросу.';
-        return;
-      }
-
-      table.className = 'pkf-specs-table';
-      table.innerHTML = [
-        '<div class="pkf-specs-head">',
-        '<div>Параметр</div>',
-        '<div>Значение</div>',
-        '</div>',
-        rows.map(function (item) {
-          var value = item.value || '';
-          var unit = item.unit ? ' ' + item.unit : '';
-
-          return [
-            '<div class="pkf-specs-row">',
-            '<div class="pkf-specs-name">',
-            escapeHtml(item.name),
-            '</div>',
-            '<div class="pkf-specs-value">',
-            escapeHtml(value + unit),
-            '</div>',
-            '</div>'
-          ].join('');
-        }).join('')
-      ].join('');
+      expanded = false;
+      renderRows();
     }
 
-    document.addEventListener('pkfProductLoaded', renderSpecs);
+    if (toggleEl) {
+      toggleEl.addEventListener('click', function () {
+        expanded = !expanded;
+        renderRows();
+      });
+    }
+
+    document.addEventListener('pkfProductLoaded', function (event) {
+      renderPassport(event.detail);
+    });
+
+    if (window.pkfProductContext) {
+      renderPassport(window.pkfProductContext);
+    }
   })();
 </script>
