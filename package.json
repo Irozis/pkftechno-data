@@ -1,0 +1,14 @@
+{
+  "name": "pkftechno-data",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Статические данные каталога продукции ПКФ Технология для GitHub Pages и Tilda.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-data.mjs",
+    "convert": "node scripts/convert-xlsx-to-json.mjs ./source/products.xlsx"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
