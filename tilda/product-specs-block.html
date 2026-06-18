@@ -1,0 +1,284 @@
+<style>
+  .pkf-specs-section {
+    background: #F7F8F5;
+    padding: 74px 0 82px;
+    color: #111517;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pkf-specs-container {
+    width: 1120px;
+    max-width: calc(100% - 64px);
+    margin: 0 auto;
+  }
+
+  .pkf-specs-label {
+    margin: 0 0 14px;
+    color: #B88900;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2.4px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .pkf-specs-title {
+    margin: 0 0 34px;
+    color: #111517;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.08;
+  }
+
+  .pkf-specs-table {
+    width: 760px;
+    max-width: 100%;
+    border-top: 2px solid #111517;
+  }
+
+  .pkf-specs-head,
+  .pkf-specs-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+    column-gap: 38px;
+    align-items: start;
+  }
+
+  .pkf-specs-head {
+    padding: 14px 0 12px;
+    border-bottom: 1px solid rgba(17, 21, 23, 0.35);
+    color: #B88900;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1.4px;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  .pkf-specs-row {
+    padding: 18px 0;
+    border-bottom: 1px dashed rgba(17, 21, 23, 0.32);
+  }
+
+  .pkf-specs-name {
+    color: #111517;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.45;
+  }
+
+  .pkf-specs-value {
+    color: #7A858C;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  .pkf-specs-empty {
+    width: 760px;
+    max-width: 100%;
+    padding: 22px 0;
+    border-top: 2px solid #111517;
+    border-bottom: 1px dashed rgba(17, 21, 23, 0.32);
+    color: #7A858C;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  .pkf-specs-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .pkf-specs-btn {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1;
+    text-decoration: none;
+    transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+  }
+
+  .pkf-specs-btn-primary {
+    background: #111517;
+    color: #fff;
+  }
+
+  .pkf-specs-btn-primary:hover {
+    background: #B88900;
+    color: #fff;
+  }
+
+  .pkf-specs-btn-secondary {
+    background: transparent;
+    border-color: rgba(17, 21, 23, 0.35);
+    color: #111517;
+  }
+
+  .pkf-specs-btn-secondary:hover {
+    border-color: #B88900;
+    color: #B88900;
+  }
+
+  @media (max-width: 1199px) {
+    .pkf-specs-container {
+      width: 880px;
+    }
+  }
+
+  @media (max-width: 959px) {
+    .pkf-specs-container {
+      width: 576px;
+    }
+
+    .pkf-specs-title {
+      font-size: 34px;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .pkf-specs-section {
+      padding: 56px 0 64px;
+    }
+
+    .pkf-specs-container {
+      width: calc(100% - 48px);
+      max-width: none;
+    }
+
+    .pkf-specs-head,
+    .pkf-specs-row {
+      grid-template-columns: minmax(0, 1fr) minmax(170px, 0.75fr);
+      column-gap: 24px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .pkf-specs-container {
+      width: calc(100% - 32px);
+    }
+
+    .pkf-specs-title {
+      margin-bottom: 26px;
+      font-size: 28px;
+    }
+
+    .pkf-specs-head {
+      display: none;
+    }
+
+    .pkf-specs-row {
+      display: block;
+      padding: 16px 0;
+    }
+
+    .pkf-specs-value {
+      margin-top: 7px;
+    }
+
+    .pkf-specs-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .pkf-specs-btn {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+</style>
+
+<section class="pkf-specs-section">
+  <div class="pkf-specs-container">
+    <div class="pkf-specs-label">ТЕХНИЧЕСКИЕ ДАННЫЕ</div>
+    <h2 class="pkf-specs-title">Технические характеристики</h2>
+
+    <div class="pkf-specs-table" id="productSpecsTable">
+      <div class="pkf-specs-empty">Характеристики уточняются по запросу.</div>
+    </div>
+
+    <div class="pkf-specs-actions">
+      <a class="pkf-specs-btn pkf-specs-btn-primary" href="#form">Заказать</a>
+      <a class="pkf-specs-btn pkf-specs-btn-secondary" href="#form">Проконсультироваться</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var table = document.getElementById('productSpecsTable');
+
+    function escapeHtml(value) {
+      return String(value == null ? '' : value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function getSortValue(item) {
+      var sort = Number(item && item.sort);
+      return Number.isFinite(sort) ? sort : 0;
+    }
+
+    function renderSpecs(event) {
+      var detail = event && event.detail ? event.detail : {};
+      var product = detail.product || {};
+      var data = detail.data || {};
+      var characteristics = Array.isArray(data.characteristics) ? data.characteristics : [];
+
+      if (!table || !product.slug) {
+        return;
+      }
+
+      var rows = characteristics
+        .filter(function (item) {
+          return item && item.product_slug === product.slug;
+        })
+        .sort(function (a, b) {
+          return getSortValue(a) - getSortValue(b);
+        });
+
+      if (rows.length === 0) {
+        table.className = 'pkf-specs-empty';
+        table.innerHTML = 'Характеристики уточняются по запросу.';
+        return;
+      }
+
+      table.className = 'pkf-specs-table';
+      table.innerHTML = [
+        '<div class="pkf-specs-head">',
+        '<div>Параметр</div>',
+        '<div>Значение</div>',
+        '</div>',
+        rows.map(function (item) {
+          var value = item.value || '';
+          var unit = item.unit ? ' ' + item.unit : '';
+
+          return [
+            '<div class="pkf-specs-row">',
+            '<div class="pkf-specs-name">',
+            escapeHtml(item.name),
+            '</div>',
+            '<div class="pkf-specs-value">',
+            escapeHtml(value + unit),
+            '</div>',
+            '</div>'
+          ].join('');
+        }).join('')
+      ].join('');
+    }
+
+    document.addEventListener('pkfProductLoaded', renderSpecs);
+  })();
+</script>

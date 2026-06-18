@@ -62,6 +62,16 @@ images/products/
 
 Tilda-скрипт может преобразовать такой путь в абсолютный относительно `DATA_URL`.
 
+## Tilda: блок технических характеристик
+
+Готовый HTML-блок лежит в файле:
+
+```text
+tilda/product-specs-block.html
+```
+
+Код из этого файла нужно вставлять в Tilda через блок T123 после блока Product Loader. Product Loader должен быть выше блока характеристик, потому что таблица использует событие `pkfProductLoaded` и данные из `event.detail.product` / `event.detail.data.characteristics`.
+
 ## Обновление products.json
 
 Данные можно обновлять вручную в `data/products.json` или конвертировать из Excel.
