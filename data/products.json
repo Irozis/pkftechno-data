@@ -196,6 +196,21 @@
       "cta_text": "Получить консультацию",
       "sort": 140,
       "status": "published"
+    },
+    {
+      "slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "title": "Распределительное устройство ЭКРУ-6",
+      "section": "Экскаваторное оборудование",
+      "series": "ЭКРУ-6",
+      "type": "Распределительное устройство",
+      "short_description": "Экскаваторное распределительное устройство для приема и распределения электроэнергии.",
+      "hero_description": "Экскаваторное комплексное распределительное устройство для приема и распределения электроэнергии трехфазного переменного тока.",
+      "description": "Экскаваторное комплексное распределительное устройство для приема и распределения электроэнергии трехфазного переменного тока.",
+      "purpose": "Прием и распределение электроэнергии трехфазного переменного тока в составе экскаваторного оборудования.",
+      "catalog_url": "/products/raspredelitelnoe-ustrojstvo-ekru-6/",
+      "cta_text": "Оставить заявку",
+      "sort": 150,
+      "status": "published"
     }
   ],
   "characteristics": [
@@ -270,7 +285,30 @@
     { "product_slug": "shtm-pk-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
     { "product_slug": "shtm-pk-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
     { "product_slug": "shtm-pk-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shtm-pk-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 }
+    { "product_slug": "shtm-pk-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Номинальное напряжение для исполнений ЮР 7035, ЮР 7035-01, ЮР 7035-02, ЮР 7035-03", "value": "6 кВ, 50 Гц", "unit": "", "sort": 10 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Номинальный ток главных цепей", "value": "630 А", "unit": "", "sort": 20 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Тип высоковольтного выключателя", "value": "BB/TEL-10-20/1000 У2", "unit": "", "sort": 30 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Линейные высоковольтные присоединения", "value": "кабельные", "unit": "", "sort": 40 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Режим управления выключателем", "value": "местный, дистанционный", "unit": "", "sort": 50 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Защита от короткого замыкания в цепях трансформатора собственных нужд экскаватора", "value": "плавкие предохранители", "unit": "", "sort": 60 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Защита и эксплуатация", "name": "Условия обслуживания", "value": "четырехстороннее", "unit": "", "sort": 70 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Защита и эксплуатация", "name": "Степень защиты от воздействия окружающей среды", "value": "IP23 по ГОСТ 14254-80", "unit": "", "sort": 80 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Защита и эксплуатация", "name": "Условия эксплуатации изделия", "value": "М31 по ГОСТ 17516.1-90", "unit": "", "sort": 90 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Климатическое исполнение", "name": "Климатическое исполнение и категория размещения", "value": "У2 по ГОСТ 15150-69", "unit": "", "sort": 100 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Климатическое исполнение", "name": "Предельные рабочие значения температур", "value": "от -40 до +55 °C", "unit": "", "sort": 110 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Климатическое исполнение", "name": "Верхнее рабочее значение относительной влажности при 25 °C", "value": "80 %", "unit": "", "sort": 120 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Габариты и монтаж", "name": "Габаритные размеры шкафа, Ш×Г×В", "value": "840×1230×2010 мм", "unit": "", "sort": 130 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Габариты и монтаж", "name": "Масса, не более", "value": "560 кг", "unit": "", "sort": 140 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Номинальный ток отключения высоковольтного выключателя", "value": "20 кА", "unit": "", "sort": 150 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Ток термической стойкости в течение 3 с", "value": "20 кА", "unit": "", "sort": 160 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Номинальный ток электродинамической стойкости", "value": "20 кА", "unit": "", "sort": 170 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Ресурс по коммутационной стойкости при номинальном токе отключения, ВО", "value": "100 циклов", "unit": "", "sort": 180 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Ресурс по коммутационной стойкости при номинальном токе, ВО", "value": "500 циклов", "unit": "", "sort": 190 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Механический ресурс, ВО", "value": "500 циклов", "unit": "", "sort": 200 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Полное время отключения", "value": "0,055 с", "unit": "", "sort": 210 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Виды защит, действующих на отключение высоковольтного выключателя", "value": "токовая отсечка; максимальная токовая защита с выдержкой времени; защита минимального напряжения, обрыва или неправильного чередования фаз", "unit": "", "sort": 220 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Световая сигнализация и контрольно-измерительные приборы", "value": "состояние выключателя; вид сработавшей защиты; наличие напряжения; готовность цепей управления; вольтметр; амперметр; счетчик электроэнергии", "unit": "", "sort": 230 }
   ],
   "images": [
     { "product_slug": "shs1-mg-pss-2p", "image_url": "/images/products/shs1-mg-pss-2p-1.jpg", "alt": "ШС1 МГ ПСС-2П", "sort": 10 },
@@ -286,7 +324,8 @@
     { "product_slug": "shk-pp3-pss-2p", "image_url": "/images/products/shk-pp3-pss-2p-1.jpg", "alt": "ШК ПП-3 ПСС-2П", "sort": 10 },
     { "product_slug": "pu-mg-pss-2p", "image_url": "/images/products/pu-mg-pss-2p-1.jpg", "alt": "ПУ МГ ПСС-2П", "sort": 10 },
     { "product_slug": "pu-pk-pss-2p", "image_url": "/images/products/pu-pk-pss-2p-1.jpg", "alt": "ПУ ПК ПСС-2П", "sort": 10 },
-    { "product_slug": "shtm-pk-pss-2p", "image_url": "/images/products/shtm-pk-pss-2p-1.jpg", "alt": "ШТМ ПК ПСС-2П", "sort": 10 }
+    { "product_slug": "shtm-pk-pss-2p", "image_url": "/images/products/shtm-pk-pss-2p-1.jpg", "alt": "ШТМ ПК ПСС-2П", "sort": 10 },
+    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "image_url": "https://static.tildacdn.com/stor3332-3639-4934-a631-663738313437/50870561.jpg", "alt": "Распределительное устройство ЭКРУ-6", "sort": 10 }
   ],
   "related_products": [
     { "product_slug": "shs1-mg-pss-2p", "related_slug": "shs2-mg-pss-2p", "sort": 10 },
@@ -338,13 +377,16 @@
       "Шкаф управления",
       "Шкаф коммутации",
       "Пульт управления",
-      "Шкаф тиристорных модулей"
+      "Шкаф тиристорных модулей",
+      "Распределительное устройство"
     ],
     "series": [
-      "ПСС-2П"
+      "ПСС-2П",
+      "ЭКРУ-6"
     ],
     "sections": [
-      "НКУ для железнодорожной техники"
+      "НКУ для железнодорожной техники",
+      "Экскаваторное оборудование"
     ]
   }
 }
