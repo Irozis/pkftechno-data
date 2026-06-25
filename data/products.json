@@ -13,7 +13,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 10,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild6233-3062-4466-a135-333733316433/1__-2_.png"
     },
     {
       "slug": "shs2-mg-pss-2p",
@@ -27,7 +28,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 20,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild3562-3534-4065-a139-386261393533/2__-2_2.png"
     },
     {
       "slug": "shs3-mg-pss-2p",
@@ -41,7 +43,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 30,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild3539-3664-4263-b335-643633303461/3__-2_1.png"
     },
     {
       "slug": "shs-pk-pss-2p",
@@ -55,7 +58,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 40,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild6538-3035-4661-b665-313834656332/__.png"
     },
     {
       "slug": "shu-mg-pss-2p",
@@ -69,7 +73,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 50,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild3432-6636-4433-b065-386630663736/__-2.png"
     },
     {
       "slug": "shu-pk-pss-2p",
@@ -83,7 +88,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 60,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild3738-6434-4865-b735-306130623531/__-2.png"
     },
     {
       "slug": "shk1-pk-pss-2p",
@@ -97,7 +103,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 70,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild3062-3538-4631-a461-643064313564/1__.png"
     },
     {
       "slug": "shk2-pk-pss-2p",
@@ -111,7 +118,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 80,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild3834-3130-4838-a563-303230633233/22.png"
     },
     {
       "slug": "shk-pp1-pss-2p",
@@ -125,7 +133,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 90,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild3438-6263-4534-b232-663832366162/shk-pp-1-pss-2p-1-80.png"
     },
     {
       "slug": "shk-pp2-pss-2p",
@@ -139,7 +148,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 100,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild3538-3463-4031-a536-653337373364/shk-pp-2-pss-2p-1-80.png"
     },
     {
       "slug": "shk-pp3-pss-2p",
@@ -153,7 +163,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 110,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild6564-3732-4433-a539-366237383539/shk-pp-3-pss-2p-1-80.png"
     },
     {
       "slug": "pu-mg-pss-2p",
@@ -167,7 +178,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 120,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild6234-3836-4730-a236-346335313335/__-2_1.png"
     },
     {
       "slug": "pu-pk-pss-2p",
@@ -181,7 +193,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 130,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild3262-3438-4533-b731-396136386338/__-2_1.png"
     },
     {
       "slug": "shtm-pk-pss-2p",
@@ -195,7 +208,8 @@
       "catalog_url": "/pss-2p",
       "cta_text": "Получить консультацию",
       "sort": 140,
-      "status": "published"
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/tild6336-6537-4130-a539-363436633931/photo.png"
     },
     {
       "slug": "raspredelitelnoe-ustrojstvo-ekru-6",
@@ -214,162 +228,1070 @@
     }
   ],
   "characteristics": [
-    { "product_slug": "shs1-mg-pss-2p", "group": "Электрические параметры", "name": "Номинальное напряжение, постоянный ток", "value": "19...29 В", "unit": "", "sort": 10 },
-    { "product_slug": "shs1-mg-pss-2p", "group": "Электрические параметры", "name": "Номинальное напряжение, переменный ток", "value": "345...418 В", "unit": "", "sort": 20 },
-    { "product_slug": "shs1-mg-pss-2p", "group": "Основные параметры", "name": "Режим работы", "value": "Продолжительный", "unit": "", "sort": 30 },
-    { "product_slug": "shs1-mg-pss-2p", "group": "Климатическое исполнение", "name": "Климатическое исполнение", "value": "У3 по ГОСТ 15150-69", "unit": "", "sort": 40 },
-    { "product_slug": "shs1-mg-pss-2p", "group": "Климатическое исполнение", "name": "Диапазон рабочих температур", "value": "от -45 °C до +40 °C", "unit": "", "sort": 50 },
-    { "product_slug": "shs1-mg-pss-2p", "group": "Защита и эксплуатация", "name": "Степень защиты", "value": "IP52 по ГОСТ 14254-96", "unit": "", "sort": 60 },
-    { "product_slug": "shs1-mg-pss-2p", "group": "Защита и эксплуатация", "name": "Условия эксплуатации", "value": "В части воздействия механических факторов должны соответствовать группе М25 по ГОСТ 30631-99", "unit": "", "sort": 70 },
-    { "product_slug": "shs2-mg-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Силовой шкаф", "unit": "", "sort": 10 },
-    { "product_slug": "shs2-mg-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "shs2-mg-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "shs2-mg-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shs2-mg-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "shs3-mg-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Силовой шкаф", "unit": "", "sort": 10 },
-    { "product_slug": "shs3-mg-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "shs3-mg-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "shs3-mg-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shs3-mg-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "shs-pk-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Силовой шкаф", "unit": "", "sort": 10 },
-    { "product_slug": "shs-pk-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "shs-pk-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "shs-pk-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shs-pk-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "shu-mg-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Шкаф управления", "unit": "", "sort": 10 },
-    { "product_slug": "shu-mg-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "shu-mg-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "shu-mg-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shu-mg-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "shu-pk-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Шкаф управления", "unit": "", "sort": 10 },
-    { "product_slug": "shu-pk-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "shu-pk-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "shu-pk-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shu-pk-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "shk1-pk-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Шкаф коммутации", "unit": "", "sort": 10 },
-    { "product_slug": "shk1-pk-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "shk1-pk-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "shk1-pk-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shk1-pk-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "shk2-pk-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Шкаф коммутации", "unit": "", "sort": 10 },
-    { "product_slug": "shk2-pk-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "shk2-pk-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "shk2-pk-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shk2-pk-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "shk-pp1-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Шкаф коммутации", "unit": "", "sort": 10 },
-    { "product_slug": "shk-pp1-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "shk-pp1-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "shk-pp1-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shk-pp1-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "shk-pp2-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Шкаф коммутации", "unit": "", "sort": 10 },
-    { "product_slug": "shk-pp2-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "shk-pp2-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "shk-pp2-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shk-pp2-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "shk-pp3-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Шкаф коммутации", "unit": "", "sort": 10 },
-    { "product_slug": "shk-pp3-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "shk-pp3-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "shk-pp3-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shk-pp3-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "pu-mg-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Пульт управления", "unit": "", "sort": 10 },
-    { "product_slug": "pu-mg-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "pu-mg-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "pu-mg-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "pu-mg-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "pu-pk-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Пульт управления", "unit": "", "sort": 10 },
-    { "product_slug": "pu-pk-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "pu-pk-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "pu-pk-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "pu-pk-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "shtm-pk-pss-2p", "group": "Основные", "name": "Тип изделия", "value": "Шкаф тиристорных модулей", "unit": "", "sort": 10 },
-    { "product_slug": "shtm-pk-pss-2p", "group": "Основные", "name": "Серия", "value": "ПСС-2П", "unit": "", "sort": 20 },
-    { "product_slug": "shtm-pk-pss-2p", "group": "Основные", "name": "Раздел", "value": "НКУ для железнодорожной техники", "unit": "", "sort": 30 },
-    { "product_slug": "shtm-pk-pss-2p", "group": "Основные", "name": "Область применения", "value": "Путевая машина ПСС-2П", "unit": "", "sort": 40 },
-    { "product_slug": "shtm-pk-pss-2p", "group": "Основные", "name": "Исполнение", "value": "По техническому заданию", "unit": "", "sort": 50 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Номинальное напряжение для исполнений ЮР 7035, ЮР 7035-01, ЮР 7035-02, ЮР 7035-03", "value": "6 кВ, 50 Гц", "unit": "", "sort": 10 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Номинальный ток главных цепей", "value": "630 А", "unit": "", "sort": 20 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Тип высоковольтного выключателя", "value": "BB/TEL-10-20/1000 У2", "unit": "", "sort": 30 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Линейные высоковольтные присоединения", "value": "кабельные", "unit": "", "sort": 40 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Режим управления выключателем", "value": "местный, дистанционный", "unit": "", "sort": 50 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Защита от короткого замыкания в цепях трансформатора собственных нужд экскаватора", "value": "плавкие предохранители", "unit": "", "sort": 60 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Защита и эксплуатация", "name": "Условия обслуживания", "value": "четырехстороннее", "unit": "", "sort": 70 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Защита и эксплуатация", "name": "Степень защиты от воздействия окружающей среды", "value": "IP23 по ГОСТ 14254-80", "unit": "", "sort": 80 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Защита и эксплуатация", "name": "Условия эксплуатации изделия", "value": "М31 по ГОСТ 17516.1-90", "unit": "", "sort": 90 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Климатическое исполнение", "name": "Климатическое исполнение и категория размещения", "value": "У2 по ГОСТ 15150-69", "unit": "", "sort": 100 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Климатическое исполнение", "name": "Предельные рабочие значения температур", "value": "от -40 до +55 °C", "unit": "", "sort": 110 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Климатическое исполнение", "name": "Верхнее рабочее значение относительной влажности при 25 °C", "value": "80 %", "unit": "", "sort": 120 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Габариты и монтаж", "name": "Габаритные размеры шкафа, Ш×Г×В", "value": "840×1230×2010 мм", "unit": "", "sort": 130 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Габариты и монтаж", "name": "Масса, не более", "value": "560 кг", "unit": "", "sort": 140 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Номинальный ток отключения высоковольтного выключателя", "value": "20 кА", "unit": "", "sort": 150 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Ток термической стойкости в течение 3 с", "value": "20 кА", "unit": "", "sort": 160 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Номинальный ток электродинамической стойкости", "value": "20 кА", "unit": "", "sort": 170 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Ресурс по коммутационной стойкости при номинальном токе отключения, ВО", "value": "100 циклов", "unit": "", "sort": 180 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Ресурс по коммутационной стойкости при номинальном токе, ВО", "value": "500 циклов", "unit": "", "sort": 190 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Механический ресурс, ВО", "value": "500 циклов", "unit": "", "sort": 200 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Полное время отключения", "value": "0,055 с", "unit": "", "sort": 210 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Виды защит, действующих на отключение высоковольтного выключателя", "value": "токовая отсечка; максимальная токовая защита с выдержкой времени; защита минимального напряжения, обрыва или неправильного чередования фаз", "unit": "", "sort": 220 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "group": "Электрические параметры", "name": "Световая сигнализация и контрольно-измерительные приборы", "value": "состояние выключателя; вид сработавшей защиты; наличие напряжения; готовность цепей управления; вольтметр; амперметр; счетчик электроэнергии", "unit": "", "sort": 230 }
+    {
+      "product_slug": "shs1-mg-pss-2p",
+      "group": "Электрические параметры",
+      "name": "Номинальное напряжение, постоянный ток",
+      "value": "19...29 В",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs1-mg-pss-2p",
+      "group": "Электрические параметры",
+      "name": "Номинальное напряжение, переменный ток",
+      "value": "345...418 В",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shs1-mg-pss-2p",
+      "group": "Основные параметры",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shs1-mg-pss-2p",
+      "group": "Климатическое исполнение",
+      "name": "Климатическое исполнение",
+      "value": "У3 по ГОСТ 15150-69",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shs1-mg-pss-2p",
+      "group": "Климатическое исполнение",
+      "name": "Диапазон рабочих температур",
+      "value": "от -45 °C до +40 °C",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shs1-mg-pss-2p",
+      "group": "Защита и эксплуатация",
+      "name": "Степень защиты",
+      "value": "IP52 по ГОСТ 14254-96",
+      "unit": "",
+      "sort": 60
+    },
+    {
+      "product_slug": "shs1-mg-pss-2p",
+      "group": "Защита и эксплуатация",
+      "name": "Условия эксплуатации",
+      "value": "В части воздействия механических факторов должны соответствовать группе М25 по ГОСТ 30631-99",
+      "unit": "",
+      "sort": 70
+    },
+    {
+      "product_slug": "shs2-mg-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Силовой шкаф",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs2-mg-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shs2-mg-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shs2-mg-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shs2-mg-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Силовой шкаф",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shs-pk-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Силовой шкаф",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs-pk-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shs-pk-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shs-pk-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shs-pk-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Шкаф управления",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Шкаф управления",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shk1-pk-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Шкаф коммутации",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk1-pk-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shk1-pk-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shk1-pk-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shk1-pk-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shk2-pk-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Шкаф коммутации",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk2-pk-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shk2-pk-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shk2-pk-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shk2-pk-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shk-pp1-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Шкаф коммутации",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk-pp1-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shk-pp1-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shk-pp1-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shk-pp1-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shk-pp2-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Шкаф коммутации",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk-pp2-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shk-pp2-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shk-pp2-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shk-pp2-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shk-pp3-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Шкаф коммутации",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk-pp3-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shk-pp3-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shk-pp3-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shk-pp3-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Пульт управления",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "pu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Пульт управления",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "pu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "pu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "pu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "pu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shtm-pk-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Шкаф тиристорных модулей",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shtm-pk-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shtm-pk-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shtm-pk-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shtm-pk-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Номинальное напряжение для исполнений ЮР 7035, ЮР 7035-01, ЮР 7035-02, ЮР 7035-03",
+      "value": "6 кВ, 50 Гц",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Номинальный ток главных цепей",
+      "value": "630 А",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Тип высоковольтного выключателя",
+      "value": "BB/TEL-10-20/1000 У2",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Линейные высоковольтные присоединения",
+      "value": "кабельные",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Режим управления выключателем",
+      "value": "местный, дистанционный",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Защита от короткого замыкания в цепях трансформатора собственных нужд экскаватора",
+      "value": "плавкие предохранители",
+      "unit": "",
+      "sort": 60
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Защита и эксплуатация",
+      "name": "Условия обслуживания",
+      "value": "четырехстороннее",
+      "unit": "",
+      "sort": 70
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Защита и эксплуатация",
+      "name": "Степень защиты от воздействия окружающей среды",
+      "value": "IP23 по ГОСТ 14254-80",
+      "unit": "",
+      "sort": 80
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Защита и эксплуатация",
+      "name": "Условия эксплуатации изделия",
+      "value": "М31 по ГОСТ 17516.1-90",
+      "unit": "",
+      "sort": 90
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Климатическое исполнение",
+      "name": "Климатическое исполнение и категория размещения",
+      "value": "У2 по ГОСТ 15150-69",
+      "unit": "",
+      "sort": 100
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Климатическое исполнение",
+      "name": "Предельные рабочие значения температур",
+      "value": "от -40 до +55 °C",
+      "unit": "",
+      "sort": 110
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Климатическое исполнение",
+      "name": "Верхнее рабочее значение относительной влажности при 25 °C",
+      "value": "80 %",
+      "unit": "",
+      "sort": 120
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Габариты и монтаж",
+      "name": "Габаритные размеры шкафа, Ш×Г×В",
+      "value": "840×1230×2010 мм",
+      "unit": "",
+      "sort": 130
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Габариты и монтаж",
+      "name": "Масса, не более",
+      "value": "560 кг",
+      "unit": "",
+      "sort": 140
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Номинальный ток отключения высоковольтного выключателя",
+      "value": "20 кА",
+      "unit": "",
+      "sort": 150
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Ток термической стойкости в течение 3 с",
+      "value": "20 кА",
+      "unit": "",
+      "sort": 160
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Номинальный ток электродинамической стойкости",
+      "value": "20 кА",
+      "unit": "",
+      "sort": 170
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Ресурс по коммутационной стойкости при номинальном токе отключения, ВО",
+      "value": "100 циклов",
+      "unit": "",
+      "sort": 180
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Ресурс по коммутационной стойкости при номинальном токе, ВО",
+      "value": "500 циклов",
+      "unit": "",
+      "sort": 190
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Механический ресурс, ВО",
+      "value": "500 циклов",
+      "unit": "",
+      "sort": 200
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Полное время отключения",
+      "value": "0,055 с",
+      "unit": "",
+      "sort": 210
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Виды защит, действующих на отключение высоковольтного выключателя",
+      "value": "токовая отсечка; максимальная токовая защита с выдержкой времени; защита минимального напряжения, обрыва или неправильного чередования фаз",
+      "unit": "",
+      "sort": 220
+    },
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "group": "Электрические параметры",
+      "name": "Световая сигнализация и контрольно-измерительные приборы",
+      "value": "состояние выключателя; вид сработавшей защиты; наличие напряжения; готовность цепей управления; вольтметр; амперметр; счетчик электроэнергии",
+      "unit": "",
+      "sort": 230
+    }
   ],
   "images": [
-    { "product_slug": "shs1-mg-pss-2p", "image_url": "/images/products/shs1-mg-pss-2p-1.jpg", "alt": "ШС1 МГ ПСС-2П", "sort": 10 },
-    { "product_slug": "shs2-mg-pss-2p", "image_url": "/images/products/shs2-mg-pss-2p-1.jpg", "alt": "ШС2 МГ ПСС-2П", "sort": 10 },
-    { "product_slug": "shs3-mg-pss-2p", "image_url": "/images/products/shs3-mg-pss-2p-1.jpg", "alt": "ШС3 МГ ПСС-2П", "sort": 10 },
-    { "product_slug": "shs-pk-pss-2p", "image_url": "/images/products/shs-pk-pss-2p-1.jpg", "alt": "ШС ПК ПСС-2П", "sort": 10 },
-    { "product_slug": "shu-mg-pss-2p", "image_url": "/images/products/shu-mg-pss-2p-1.jpg", "alt": "ШУ МГ ПСС-2П", "sort": 10 },
-    { "product_slug": "shu-pk-pss-2p", "image_url": "/images/products/shu-pk-pss-2p-1.jpg", "alt": "ШУ ПК ПСС-2П", "sort": 10 },
-    { "product_slug": "shk1-pk-pss-2p", "image_url": "/images/products/shk1-pk-pss-2p-1.jpg", "alt": "ШК1 ПК ПСС-2П", "sort": 10 },
-    { "product_slug": "shk2-pk-pss-2p", "image_url": "/images/products/shk2-pk-pss-2p-1.jpg", "alt": "ШК2 ПК ПСС-2П", "sort": 10 },
-    { "product_slug": "shk-pp1-pss-2p", "image_url": "/images/products/shk-pp1-pss-2p-1.jpg", "alt": "ШК ПП-1 ПСС-2П", "sort": 10 },
-    { "product_slug": "shk-pp2-pss-2p", "image_url": "/images/products/shk-pp2-pss-2p-1.jpg", "alt": "ШК ПП-2 ПСС-2П", "sort": 10 },
-    { "product_slug": "shk-pp3-pss-2p", "image_url": "/images/products/shk-pp3-pss-2p-1.jpg", "alt": "ШК ПП-3 ПСС-2П", "sort": 10 },
-    { "product_slug": "pu-mg-pss-2p", "image_url": "/images/products/pu-mg-pss-2p-1.jpg", "alt": "ПУ МГ ПСС-2П", "sort": 10 },
-    { "product_slug": "pu-pk-pss-2p", "image_url": "/images/products/pu-pk-pss-2p-1.jpg", "alt": "ПУ ПК ПСС-2П", "sort": 10 },
-    { "product_slug": "shtm-pk-pss-2p", "image_url": "/images/products/shtm-pk-pss-2p-1.jpg", "alt": "ШТМ ПК ПСС-2П", "sort": 10 },
-    { "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6", "image_url": "https://static.tildacdn.com/stor3332-3639-4934-a631-663738313437/50870561.jpg", "alt": "Распределительное устройство ЭКРУ-6", "sort": 10 }
+    {
+      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
+      "image_url": "https://static.tildacdn.com/stor3332-3639-4934-a631-663738313437/50870561.jpg",
+      "alt": "Распределительное устройство ЭКРУ-6",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs1-mg-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild6233-3062-4466-a135-333733316433/1__-2_.png",
+      "alt": "Шкаф силовой 1 МГ",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs2-mg-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild3562-3534-4065-a139-386261393533/2__-2_2.png",
+      "alt": "Шкаф силовой 2 МГ",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild3539-3664-4263-b335-643633303461/3__-2_1.png",
+      "alt": "Шкаф силовой 3 МГ",
+      "sort": 10
+    },
+    {
+      "product_slug": "shu-mg-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild3432-6636-4433-b065-386630663736/__-2.png",
+      "alt": "Шкаф управления МГ",
+      "sort": 10
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild6234-3836-4730-a236-346335313335/__-2_1.png",
+      "alt": "Пульт управления МГ",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk-pp1-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild3438-6263-4534-b232-663832366162/shk-pp-1-pss-2p-1-80.png",
+      "alt": "Шкаф коммутации ПП-1",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk-pp2-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild3538-3463-4031-a536-653337373364/shk-pp-2-pss-2p-1-80.png",
+      "alt": "Шкаф коммутации ПП-2",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk-pp3-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild6564-3732-4433-a539-366237383539/shk-pp-3-pss-2p-1-80.png",
+      "alt": "Шкаф коммутации ПП-3",
+      "sort": 10
+    },
+    {
+      "product_slug": "pu-pk-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild3262-3438-4533-b731-396136386338/__-2_1.png",
+      "alt": "Пульт управления ПК",
+      "sort": 10
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild3738-6434-4865-b735-306130623531/__-2.png",
+      "alt": "Шкаф управления ПК",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk1-pk-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild3062-3538-4631-a461-643064313564/1__.png",
+      "alt": "Шкаф коммутации 1 ПК",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk2-pk-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild3834-3130-4838-a563-303230633233/22.png",
+      "alt": "Шкаф коммутации 2 ПК",
+      "sort": 10
+    },
+    {
+      "product_slug": "shtm-pk-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild6336-6537-4130-a539-363436633931/photo.png",
+      "alt": "Шкаф тиристорных модулей ПК",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs-pk-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild6538-3035-4661-b665-313834656332/__.png",
+      "alt": "Шкаф силовой ПК",
+      "sort": 10
+    }
   ],
   "related_products": [
-    { "product_slug": "shs1-mg-pss-2p", "related_slug": "shs2-mg-pss-2p", "sort": 10 },
-    { "product_slug": "shs1-mg-pss-2p", "related_slug": "shs3-mg-pss-2p", "sort": 20 },
-    { "product_slug": "shs1-mg-pss-2p", "related_slug": "shs-pk-pss-2p", "sort": 30 },
-    { "product_slug": "shs2-mg-pss-2p", "related_slug": "shs1-mg-pss-2p", "sort": 10 },
-    { "product_slug": "shs2-mg-pss-2p", "related_slug": "shs3-mg-pss-2p", "sort": 20 },
-    { "product_slug": "shs2-mg-pss-2p", "related_slug": "shs-pk-pss-2p", "sort": 30 },
-    { "product_slug": "shs3-mg-pss-2p", "related_slug": "shs1-mg-pss-2p", "sort": 10 },
-    { "product_slug": "shs3-mg-pss-2p", "related_slug": "shs2-mg-pss-2p", "sort": 20 },
-    { "product_slug": "shs3-mg-pss-2p", "related_slug": "shs-pk-pss-2p", "sort": 30 },
-    { "product_slug": "shs-pk-pss-2p", "related_slug": "shs1-mg-pss-2p", "sort": 10 },
-    { "product_slug": "shs-pk-pss-2p", "related_slug": "shs2-mg-pss-2p", "sort": 20 },
-    { "product_slug": "shs-pk-pss-2p", "related_slug": "shs3-mg-pss-2p", "sort": 30 },
-    { "product_slug": "shu-mg-pss-2p", "related_slug": "shu-pk-pss-2p", "sort": 10 },
-    { "product_slug": "shu-mg-pss-2p", "related_slug": "pu-mg-pss-2p", "sort": 20 },
-    { "product_slug": "shu-mg-pss-2p", "related_slug": "shk1-pk-pss-2p", "sort": 30 },
-    { "product_slug": "shu-pk-pss-2p", "related_slug": "shu-mg-pss-2p", "sort": 10 },
-    { "product_slug": "shu-pk-pss-2p", "related_slug": "pu-pk-pss-2p", "sort": 20 },
-    { "product_slug": "shu-pk-pss-2p", "related_slug": "shk2-pk-pss-2p", "sort": 30 },
-    { "product_slug": "shk1-pk-pss-2p", "related_slug": "shk2-pk-pss-2p", "sort": 10 },
-    { "product_slug": "shk1-pk-pss-2p", "related_slug": "shu-mg-pss-2p", "sort": 20 },
-    { "product_slug": "shk1-pk-pss-2p", "related_slug": "shk-pp1-pss-2p", "sort": 30 },
-    { "product_slug": "shk2-pk-pss-2p", "related_slug": "shk1-pk-pss-2p", "sort": 10 },
-    { "product_slug": "shk2-pk-pss-2p", "related_slug": "shu-pk-pss-2p", "sort": 20 },
-    { "product_slug": "shk2-pk-pss-2p", "related_slug": "shk-pp2-pss-2p", "sort": 30 },
-    { "product_slug": "shk-pp1-pss-2p", "related_slug": "shk-pp2-pss-2p", "sort": 10 },
-    { "product_slug": "shk-pp1-pss-2p", "related_slug": "shk-pp3-pss-2p", "sort": 20 },
-    { "product_slug": "shk-pp1-pss-2p", "related_slug": "shk1-pk-pss-2p", "sort": 30 },
-    { "product_slug": "shk-pp2-pss-2p", "related_slug": "shk-pp1-pss-2p", "sort": 10 },
-    { "product_slug": "shk-pp2-pss-2p", "related_slug": "shk-pp3-pss-2p", "sort": 20 },
-    { "product_slug": "shk-pp2-pss-2p", "related_slug": "shk2-pk-pss-2p", "sort": 30 },
-    { "product_slug": "shk-pp3-pss-2p", "related_slug": "shk-pp1-pss-2p", "sort": 10 },
-    { "product_slug": "shk-pp3-pss-2p", "related_slug": "shk-pp2-pss-2p", "sort": 20 },
-    { "product_slug": "shk-pp3-pss-2p", "related_slug": "shtm-pk-pss-2p", "sort": 30 },
-    { "product_slug": "pu-mg-pss-2p", "related_slug": "pu-pk-pss-2p", "sort": 10 },
-    { "product_slug": "pu-mg-pss-2p", "related_slug": "shu-mg-pss-2p", "sort": 20 },
-    { "product_slug": "pu-mg-pss-2p", "related_slug": "shu-pk-pss-2p", "sort": 30 },
-    { "product_slug": "pu-pk-pss-2p", "related_slug": "pu-mg-pss-2p", "sort": 10 },
-    { "product_slug": "pu-pk-pss-2p", "related_slug": "shu-pk-pss-2p", "sort": 20 },
-    { "product_slug": "pu-pk-pss-2p", "related_slug": "shu-mg-pss-2p", "sort": 30 },
-    { "product_slug": "shtm-pk-pss-2p", "related_slug": "shs-pk-pss-2p", "sort": 10 },
-    { "product_slug": "shtm-pk-pss-2p", "related_slug": "shk-pp3-pss-2p", "sort": 20 },
-    { "product_slug": "shtm-pk-pss-2p", "related_slug": "pu-pk-pss-2p", "sort": 30 }
+    {
+      "product_slug": "shs1-mg-pss-2p",
+      "related_slug": "shs2-mg-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs1-mg-pss-2p",
+      "related_slug": "shs3-mg-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shs1-mg-pss-2p",
+      "related_slug": "shs-pk-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "shs2-mg-pss-2p",
+      "related_slug": "shs1-mg-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs2-mg-pss-2p",
+      "related_slug": "shs3-mg-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shs2-mg-pss-2p",
+      "related_slug": "shs-pk-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "related_slug": "shs1-mg-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "related_slug": "shs2-mg-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "related_slug": "shs-pk-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "shs-pk-pss-2p",
+      "related_slug": "shs1-mg-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs-pk-pss-2p",
+      "related_slug": "shs2-mg-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shs-pk-pss-2p",
+      "related_slug": "shs3-mg-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "shu-mg-pss-2p",
+      "related_slug": "shu-pk-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shu-mg-pss-2p",
+      "related_slug": "pu-mg-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shu-mg-pss-2p",
+      "related_slug": "shk1-pk-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "related_slug": "shu-mg-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "related_slug": "pu-pk-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "related_slug": "shk2-pk-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "shk1-pk-pss-2p",
+      "related_slug": "shk2-pk-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk1-pk-pss-2p",
+      "related_slug": "shu-mg-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shk1-pk-pss-2p",
+      "related_slug": "shk-pp1-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "shk2-pk-pss-2p",
+      "related_slug": "shk1-pk-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk2-pk-pss-2p",
+      "related_slug": "shu-pk-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shk2-pk-pss-2p",
+      "related_slug": "shk-pp2-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "shk-pp1-pss-2p",
+      "related_slug": "shk-pp2-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk-pp1-pss-2p",
+      "related_slug": "shk-pp3-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shk-pp1-pss-2p",
+      "related_slug": "shk1-pk-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "shk-pp2-pss-2p",
+      "related_slug": "shk-pp1-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk-pp2-pss-2p",
+      "related_slug": "shk-pp3-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shk-pp2-pss-2p",
+      "related_slug": "shk2-pk-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "shk-pp3-pss-2p",
+      "related_slug": "shk-pp1-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shk-pp3-pss-2p",
+      "related_slug": "shk-pp2-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shk-pp3-pss-2p",
+      "related_slug": "shtm-pk-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "related_slug": "pu-pk-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "related_slug": "shu-mg-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "related_slug": "shu-pk-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "pu-pk-pss-2p",
+      "related_slug": "pu-mg-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "pu-pk-pss-2p",
+      "related_slug": "shu-pk-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "pu-pk-pss-2p",
+      "related_slug": "shu-mg-pss-2p",
+      "sort": 30
+    },
+    {
+      "product_slug": "shtm-pk-pss-2p",
+      "related_slug": "shs-pk-pss-2p",
+      "sort": 10
+    },
+    {
+      "product_slug": "shtm-pk-pss-2p",
+      "related_slug": "shk-pp3-pss-2p",
+      "sort": 20
+    },
+    {
+      "product_slug": "shtm-pk-pss-2p",
+      "related_slug": "pu-pk-pss-2p",
+      "sort": 30
+    }
   ],
   "dictionaries": {
     "types": [

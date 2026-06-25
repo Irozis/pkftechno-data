@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "validate": "node scripts/validate-data.mjs",
-    "convert": "node scripts/convert-xlsx-to-json.mjs ./source/products.xlsx"
+    "convert": "node scripts/convert-xlsx-to-json.mjs ./source/products.xlsx",
+    "sync:pss2p-images": "node scripts/sync-pss2p-images-from-tilda.mjs"
   },
   "dependencies": {
     "xlsx": "^0.18.5"
