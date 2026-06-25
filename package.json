@@ -8,7 +8,8 @@
     "validate": "node scripts/validate-data.mjs",
     "convert": "node scripts/convert-xlsx-to-json.mjs ./source/products.xlsx",
     "sync:pss2p-images": "node scripts/sync-pss2p-images-from-tilda.mjs",
-    "build:pages": "node scripts/build-product-pages.mjs"
+    "build:pages": "node scripts/build-product-pages.mjs",
+    "check:pss2p-images": "node scripts/check-pss2p-images.mjs"
   },
   "dependencies": {
     "xlsx": "^0.18.5"
