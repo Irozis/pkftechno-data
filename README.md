@@ -34,6 +34,26 @@ https://<username>.github.io/pkftechno-data/data/products.json
 4. В `Branch` выберите `main`, папку `/root`.
 5. Сохраните настройки и дождитесь публикации Pages.
 
+## How Tilda uses this repository
+
+Основной публичный сайт остаётся на Tilda:
+
+```text
+https://pkftechno.ru
+```
+
+Этот репозиторий используется как источник данных и вспомогательных файлов:
+
+- `data/products.json` — источник данных для Tilda;
+- T123-сниппеты для универсальной страницы товара лежат в папке `tilda/`;
+- страница Tilda `/product?slug=<slug>` загружает JSON и подставляет данные товара;
+- карточки каталога должны вести на Tilda URL `/product?slug=<slug>`;
+- GitHub Pages product pages are technical previews only;
+- The public website remains on Tilda;
+- Production product links should use Tilda URL format: `/product?slug=<slug>`.
+
+Не используйте ссылки вида `https://irozis.github.io/pkftechno-data/products/<slug>/` как публичные ссылки карточек товара. Эти страницы можно оставить только для технического предпросмотра данных.
+
 ## Ссылка для Tilda
 
 В Tilda-скрипте используйте:

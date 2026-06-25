@@ -1,0 +1,221 @@
+<style>
+  .pkf-product-loader-message {
+    max-width: 1120px;
+    margin: 24px auto;
+    padding: 18px 22px;
+    box-sizing: border-box;
+    border: 1px solid #E3E7EA;
+    border-radius: 8px;
+    background: #F7F8F5;
+    color: #111517;
+    font-family: Manrope, "TildaSans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.45;
+  }
+
+  .pkf-product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pkf-product-gallery img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    border: 1px solid #E3E7EA;
+    border-radius: 8px;
+    background: #FFFFFF;
+  }
+</style>
+
+<script>
+  (function () {
+    var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json';
+    var PLACEHOLDER = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">' +
+      '<rect width="960" height="640" fill="#F7F8F5"/>' +
+      '<rect x="220" y="140" width="520" height="360" rx="8" fill="#FFFFFF" stroke="#D9DEE2" stroke-width="2"/>' +
+      '<path d="M335 408h290M365 242h230M365 292h230M365 342h230" stroke="#B7C0C7" stroke-width="18" stroke-linecap="round"/>' +
+      '<circle cx="650" cy="232" r="34" fill="#FFC400"/>' +
+      '<text x="480" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#5F6B73">Изображение уточняется</text>' +
+      '</svg>'
+    );
+
+    function getSlug() {
+      return new URLSearchParams(window.location.search).get('slug');
+    }
+
+    function escapeHtml(value) {
+      return String(value == null ? '' : value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function getSortValue(item) {
+      var sort = Number(item && item.sort);
+      return Number.isFinite(sort) ? sort : 0;
+    }
+
+    function findAtom(element) {
+      return element && element.querySelector ? element.querySelector('.tn-atom') || element : element;
+    }
+
+    function setText(selector, value) {
+      document.querySelectorAll('.' + selector).forEach(function (element) {
+        findAtom(element).textContent = value || '';
+      });
+    }
+
+    function setLink(selector, href) {
+      document.querySelectorAll('.' + selector).forEach(function (element) {
+        var link = element.matches && element.matches('a') ? element : element.querySelector('a');
+        if (link) {
+          link.setAttribute('href', href);
+        }
+      });
+    }
+
+    function setImage(selector, imageUrl, alt) {
+      document.querySelectorAll('.' + selector).forEach(function (element) {
+        var target = element.matches && element.matches('img') ? element : element.querySelector('img');
+        if (target) {
+          target.setAttribute('src', imageUrl);
+          target.setAttribute('data-original', imageUrl);
+          target.setAttribute('alt', alt || '');
+          return;
+        }
+
+        var atom = findAtom(element);
+        if (atom && atom.style) {
+          atom.style.backgroundImage = 'url("' + imageUrl.replace(/"/g, '%22') + '")';
+          atom.style.backgroundSize = 'contain';
+          atom.style.backgroundRepeat = 'no-repeat';
+          atom.style.backgroundPosition = 'center center';
+          atom.setAttribute('role', 'img');
+          atom.setAttribute('aria-label', alt || '');
+        }
+      });
+    }
+
+    function resolveImages(product, data) {
+      var rows = Array.isArray(data.images) ? data.images : [];
+      var images = rows
+        .filter(function (item) {
+          return item && item.product_slug === product.slug && item.image_url;
+        })
+        .sort(function (a, b) {
+          return getSortValue(a) - getSortValue(b);
+        });
+
+      if (images.length === 0 && product.image_url) {
+        images = [{
+          product_slug: product.slug,
+          image_url: product.image_url,
+          alt: product.title,
+          sort: 10
+        }];
+      }
+
+      if (images.length === 0) {
+        images = [{
+          product_slug: product.slug,
+          image_url: PLACEHOLDER,
+          alt: product.title || 'Изображение товара',
+          sort: 10
+        }];
+      }
+
+      return images;
+    }
+
+    function renderGallery(images) {
+      document.querySelectorAll('.js-product-gallery').forEach(function (element) {
+        element.classList.add('pkf-product-gallery');
+        element.innerHTML = images.map(function (image) {
+          return '<img src="' + escapeHtml(image.image_url) + '" alt="' + escapeHtml(image.alt || '') + '" loading="lazy">';
+        }).join('');
+      });
+    }
+
+    function showMessage(message) {
+      var node = document.createElement('div');
+      node.className = 'pkf-product-loader-message';
+      node.textContent = message;
+      document.body.insertBefore(node, document.body.firstChild);
+      setText('js-product-title', message);
+    }
+
+    function renderProduct(product, data) {
+      var images = resolveImages(product, data);
+      var mainImage = images[0];
+      var characteristics = Array.isArray(data.characteristics) ? data.characteristics : [];
+      var relatedProducts = Array.isArray(data.related_products) ? data.related_products : [];
+      var shortText = product.hero_description || product.short_description || product.description || '';
+      var backLink = product.series ? '/product-category?series=' + encodeURIComponent(product.series) : '/pss2ptest';
+
+      setText('js-product-section', [product.section, product.series].filter(Boolean).join(' / '));
+      setText('js-product-title', product.title || '');
+      setText('js-product-short', shortText);
+      setText('js-product-meta-series', product.series || '');
+      setText('js-product-meta-type', product.type || '');
+      setLink('js-product-back-link', backLink);
+      setImage('js-product-image', mainImage.image_url, mainImage.alt || product.title || '');
+      renderGallery(images);
+
+      window.pkfProductContext = {
+        product: product,
+        data: data,
+        images: images,
+        characteristics: characteristics,
+        relatedProducts: relatedProducts
+      };
+
+      document.dispatchEvent(new CustomEvent('pkfProductLoaded', {
+        detail: window.pkfProductContext
+      }));
+    }
+
+    async function init() {
+      var slug = getSlug();
+
+      if (!slug) {
+        showMessage('Товар не найден');
+        return;
+      }
+
+      try {
+        var response = await fetch(DATA_URL, { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error('HTTP ' + response.status);
+        }
+
+        var data = await response.json();
+        var products = Array.isArray(data.products) ? data.products : [];
+        var product = products.find(function (item) {
+          return item && item.slug === slug;
+        });
+
+        if (!product) {
+          showMessage('Товар не найден');
+          return;
+        }
+
+        renderProduct(product, data);
+      } catch (error) {
+        console.error('PKF product loader error:', error);
+        showMessage('Товар не найден');
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>

@@ -1,0 +1,242 @@
+<style>
+  .pkf-related-section {
+    display: none;
+    background: #FFFFFF;
+    padding: 56px 0 64px;
+    color: #111517;
+    font-family: Manrope, "TildaSans", Arial, sans-serif;
+  }
+
+  .pkf-related-section.is-visible {
+    display: block;
+  }
+
+  .pkf-related-inner {
+    width: 1120px;
+    max-width: calc(100% - 64px);
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .pkf-related-label {
+    margin: 0 0 14px;
+    color: #B88900;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2.4px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .pkf-related-title {
+    margin: 0;
+    color: #111517;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  .pkf-related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .pkf-related-card {
+    overflow: hidden;
+    border: 1px solid #E3E7EA;
+    border-radius: 8px;
+    background: #FFFFFF;
+  }
+
+  .pkf-related-image {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 4 / 3;
+    background: #F7F8F5;
+  }
+
+  .pkf-related-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .pkf-related-content {
+    padding: 20px;
+  }
+
+  .pkf-related-name {
+    margin: 0 0 10px;
+    color: #111517;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.25;
+  }
+
+  .pkf-related-description {
+    margin: 0 0 16px;
+    color: #5F6B73;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .pkf-related-link {
+    color: #B88900;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.35;
+    text-decoration: none;
+  }
+
+  .pkf-related-link:hover {
+    color: #111517;
+  }
+
+  @media (max-width: 959px) {
+    .pkf-related-inner {
+      width: 576px;
+    }
+
+    .pkf-related-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 639px) {
+    .pkf-related-inner {
+      width: calc(100% - 48px);
+      max-width: none;
+    }
+
+    .pkf-related-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pkf-related-title {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .pkf-related-inner {
+      width: calc(100% - 32px);
+    }
+  }
+</style>
+
+<section id="productRelatedSection" class="pkf-related-section">
+  <div class="pkf-related-inner">
+    <div class="pkf-related-label">Каталог</div>
+    <h2 class="pkf-related-title">Похожие изделия</h2>
+    <div id="productRelatedGrid" class="pkf-related-grid"></div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var sectionEl = document.getElementById('productRelatedSection');
+    var gridEl = document.getElementById('productRelatedGrid');
+    var PLACEHOLDER = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">' +
+      '<rect width="640" height="480" fill="#F7F8F5"/>' +
+      '<rect x="150" y="100" width="340" height="240" rx="8" fill="#FFFFFF" stroke="#D9DEE2" stroke-width="2"/>' +
+      '<path d="M230 285h180M250 175h140M250 220h140" stroke="#B7C0C7" stroke-width="14" stroke-linecap="round"/>' +
+      '<circle cx="430" cy="170" r="24" fill="#FFC400"/>' +
+      '</svg>'
+    );
+
+    function escapeHtml(value) {
+      return String(value == null ? '' : value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function getSortValue(item) {
+      var sort = Number(item && item.sort);
+      return Number.isFinite(sort) ? sort : 0;
+    }
+
+    function getProductImage(product, data) {
+      var image = (Array.isArray(data.images) ? data.images : [])
+        .filter(function (item) {
+          return item && item.product_slug === product.slug && item.image_url;
+        })
+        .sort(function (a, b) {
+          return getSortValue(a) - getSortValue(b);
+        })[0];
+
+      return (image && image.image_url) || product.image_url || PLACEHOLDER;
+    }
+
+    function renderRelated(context) {
+      var product = context && context.product ? context.product : {};
+      var data = context && context.data ? context.data : {};
+      var links = Array.isArray(data.related_products) ? data.related_products : [];
+      var products = Array.isArray(data.products) ? data.products : [];
+      var productsBySlug = {};
+
+      products.forEach(function (item) {
+        if (item && item.slug) {
+          productsBySlug[item.slug] = item;
+        }
+      });
+
+      var related = links
+        .filter(function (item) {
+          return item && item.product_slug === product.slug;
+        })
+        .sort(function (a, b) {
+          return getSortValue(a) - getSortValue(b);
+        })
+        .map(function (item) {
+          return productsBySlug[item.related_slug];
+        })
+        .filter(Boolean);
+
+      if (!sectionEl || !gridEl) {
+        return;
+      }
+
+      if (related.length === 0) {
+        sectionEl.classList.remove('is-visible');
+        gridEl.innerHTML = '';
+        return;
+      }
+
+      gridEl.innerHTML = related.map(function (item) {
+        var href = '/product?slug=' + encodeURIComponent(item.slug);
+        var image = getProductImage(item, data);
+        var text = item.short_description || item.hero_description || item.description || '';
+
+        return [
+          '<article class="pkf-related-card">',
+          '<a class="pkf-related-image" href="' + href + '">',
+          '<img src="' + escapeHtml(image) + '" alt="' + escapeHtml(item.title || '') + '" loading="lazy">',
+          '</a>',
+          '<div class="pkf-related-content">',
+          '<h3 class="pkf-related-name"><a href="' + href + '">' + escapeHtml(item.title || '') + '</a></h3>',
+          '<p class="pkf-related-description">' + escapeHtml(text) + '</p>',
+          '<a class="pkf-related-link" href="' + href + '">Подробнее →</a>',
+          '</div>',
+          '</article>'
+        ].join('');
+      }).join('');
+
+      sectionEl.classList.add('is-visible');
+    }
+
+    document.addEventListener('pkfProductLoaded', function (event) {
+      renderRelated(event.detail);
+    });
+
+    if (window.pkfProductContext) {
+      renderRelated(window.pkfProductContext);
+    }
+  })();
+</script>

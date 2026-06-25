@@ -1,0 +1,109 @@
+<style>
+  .pkf-description-section {
+    background: #FFFFFF;
+    padding: 56px 0;
+    color: #111517;
+    font-family: Manrope, "TildaSans", Arial, sans-serif;
+  }
+
+  .pkf-description-inner {
+    width: 1120px;
+    max-width: calc(100% - 64px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    gap: 46px;
+    box-sizing: border-box;
+  }
+
+  .pkf-description-label {
+    margin: 0 0 14px;
+    color: #B88900;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2.4px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .pkf-description-title {
+    margin: 0;
+    color: #111517;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  .pkf-description-text {
+    margin: 0;
+    color: #5F6B73;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.65;
+  }
+
+  @media (max-width: 959px) {
+    .pkf-description-inner {
+      width: 576px;
+      display: block;
+    }
+
+    .pkf-description-head {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .pkf-description-inner {
+      width: calc(100% - 48px);
+      max-width: none;
+    }
+
+    .pkf-description-title {
+      font-size: 30px;
+    }
+
+    .pkf-description-text {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .pkf-description-inner {
+      width: calc(100% - 32px);
+    }
+  }
+</style>
+
+<section class="pkf-description-section">
+  <div class="pkf-description-inner">
+    <div class="pkf-description-head">
+      <div class="pkf-description-label">Описание</div>
+      <h2 class="pkf-description-title">Описание и назначение</h2>
+    </div>
+    <p id="productDescriptionText" class="pkf-description-text">Описание изделия уточняется.</p>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var textEl = document.getElementById('productDescriptionText');
+
+    function renderDescription(context) {
+      var product = context && context.product ? context.product : {};
+      var description = product.description || 'Описание изделия уточняется.';
+
+      if (textEl) {
+        textEl.textContent = description;
+      }
+    }
+
+    document.addEventListener('pkfProductLoaded', function (event) {
+      renderDescription(event.detail);
+    });
+
+    if (window.pkfProductContext) {
+      renderDescription(window.pkfProductContext);
+    }
+  })();
+</script>
