@@ -14,19 +14,112 @@
     line-height: 1.45;
   }
 
-  .pkf-product-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  .pkf-product-slider {
+    width: 100%;
+    font-family: Manrope, "TildaSans", Arial, sans-serif;
   }
 
-  .pkf-product-gallery img {
-    width: 72px;
-    height: 72px;
+  .pkf-product-slider__viewport {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border: 1px solid rgba(17, 21, 23, 0.08);
+    border-radius: 22px;
+    background: #F1F3F4;
+  }
+
+  .pkf-product-slider__image {
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    border: 1px solid #E3E7EA;
-    border-radius: 8px;
-    background: #FFFFFF;
+    object-position: center;
+  }
+
+  .pkf-product-slider__arrow {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(17, 21, 23, 0.16);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #111517;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  .pkf-product-slider__arrow:hover {
+    border-color: #FFC400;
+    background: #FFC400;
+  }
+
+  .pkf-product-slider__arrow--prev {
+    left: 14px;
+  }
+
+  .pkf-product-slider__arrow--next {
+    right: 14px;
+  }
+
+  .pkf-product-slider__footer {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+
+  .pkf-product-slider__dots {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .pkf-product-slider__dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 999px;
+    background: rgba(17, 21, 23, 0.24);
+    cursor: pointer;
+  }
+
+  .pkf-product-slider__dot.is-active {
+    width: 22px;
+    background: #FFC400;
+  }
+
+  .pkf-product-slider__counter {
+    color: #5F6B73;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .pkf-product-slider.is-single .pkf-product-slider__arrow,
+  .pkf-product-slider.is-single .pkf-product-slider__footer {
+    display: none;
+  }
+
+  @media (max-width: 639px) {
+    .pkf-product-slider__viewport {
+      aspect-ratio: 1 / 1;
+      border-radius: 18px;
+    }
+
+    .pkf-product-slider__arrow {
+      width: 38px;
+      height: 38px;
+      font-size: 20px;
+    }
   }
 </style>
 
@@ -134,12 +227,93 @@
     }
 
     function renderGallery(images) {
-      document.querySelectorAll('.js-product-gallery').forEach(function (element) {
-        element.classList.add('pkf-product-gallery');
-        element.innerHTML = images.map(function (image) {
-          return '<img src="' + escapeHtml(image.image_url) + '" alt="' + escapeHtml(image.alt || '') + '" loading="lazy">';
-        }).join('');
+      var galleryElements = document.querySelectorAll('.js-product-gallery');
+
+      if (galleryElements.length === 0) {
+        return false;
+      }
+
+      galleryElements.forEach(function (element) {
+        var currentIndex = 0;
+        var hasMultipleImages = images.length > 1;
+
+        element.innerHTML = [
+          '<section class="pkf-product-slider' + (hasMultipleImages ? '' : ' is-single') + '" aria-label="Галерея товара">',
+          '<div class="pkf-product-slider__viewport">',
+          '<img class="pkf-product-slider__image" src="' + escapeHtml(images[0].image_url) + '" alt="' + escapeHtml(images[0].alt || '') + '">',
+          '<button class="pkf-product-slider__arrow pkf-product-slider__arrow--prev" type="button" aria-label="Предыдущее изображение">←</button>',
+          '<button class="pkf-product-slider__arrow pkf-product-slider__arrow--next" type="button" aria-label="Следующее изображение">→</button>',
+          '</div>',
+          '<div class="pkf-product-slider__footer">',
+          '<div class="pkf-product-slider__dots"></div>',
+          '<div class="pkf-product-slider__counter">1 / ' + images.length + '</div>',
+          '</div>',
+          '</section>'
+        ].join('');
+
+        var slider = element.querySelector('.pkf-product-slider');
+        var imageEl = element.querySelector('.pkf-product-slider__image');
+        var prevButton = element.querySelector('.pkf-product-slider__arrow--prev');
+        var nextButton = element.querySelector('.pkf-product-slider__arrow--next');
+        var dotsEl = element.querySelector('.pkf-product-slider__dots');
+        var counterEl = element.querySelector('.pkf-product-slider__counter');
+
+        function renderDots() {
+          if (!dotsEl) {
+            return;
+          }
+
+          dotsEl.innerHTML = images.map(function (_image, index) {
+            return '<button class="pkf-product-slider__dot' + (index === currentIndex ? ' is-active' : '') + '" type="button" aria-label="Показать изображение ' + (index + 1) + '"></button>';
+          }).join('');
+
+          dotsEl.querySelectorAll('.pkf-product-slider__dot').forEach(function (dot, index) {
+            dot.addEventListener('click', function () {
+              update(index);
+            });
+          });
+        }
+
+        function update(nextIndex) {
+          currentIndex = (nextIndex + images.length) % images.length;
+
+          if (imageEl) {
+            imageEl.setAttribute('src', images[currentIndex].image_url);
+            imageEl.setAttribute('alt', images[currentIndex].alt || '');
+          }
+
+          if (counterEl) {
+            counterEl.textContent = (currentIndex + 1) + ' / ' + images.length;
+          }
+
+          if (dotsEl) {
+            dotsEl.querySelectorAll('.pkf-product-slider__dot').forEach(function (dot, index) {
+              dot.classList.toggle('is-active', index === currentIndex);
+            });
+          }
+        }
+
+        renderDots();
+
+        if (!hasMultipleImages && slider) {
+          slider.classList.add('is-single');
+          return;
+        }
+
+        if (prevButton) {
+          prevButton.addEventListener('click', function () {
+            update(currentIndex - 1);
+          });
+        }
+
+        if (nextButton) {
+          nextButton.addEventListener('click', function () {
+            update(currentIndex + 1);
+          });
+        }
       });
+
+      return true;
     }
 
     function showMessage(message) {
@@ -164,8 +338,14 @@
       setText('js-product-meta-series', product.series || '');
       setText('js-product-meta-type', product.type || '');
       setLink('js-product-back-link', backLink);
-      setImage('js-product-image', mainImage.image_url, mainImage.alt || product.title || '');
-      renderGallery(images);
+
+      if (!renderGallery(images)) {
+        if (document.querySelectorAll('.js-product-image').length > 0) {
+          setImage('js-product-image', mainImage.image_url, mainImage.alt || product.title || '');
+        } else {
+          console.warn('PKF product loader: neither .js-product-gallery nor .js-product-image was found.');
+        }
+      }
 
       window.pkfProductContext = {
         product: product,
