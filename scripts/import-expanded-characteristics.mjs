@@ -5,6 +5,7 @@ import xlsx from 'xlsx';
 
 const ROOT = process.cwd();
 const PRODUCTS_JSON_PATH = path.join(ROOT, 'data', 'products.json');
+const BACKUP_JSON_PATH = path.join(ROOT, 'data', 'products.before-expanded-characteristics.json');
 
 const EXCEL_CANDIDATES = [
   path.join(ROOT, 'source', 'pkftechno_products_export_EXPANDED_2026-06-09.xlsx'),
@@ -147,6 +148,73 @@ function loadProductsJson() {
   return JSON.parse(fs.readFileSync(PRODUCTS_JSON_PATH, 'utf8'));
 }
 
+function loadBackupJson() {
+  if (!fs.existsSync(BACKUP_JSON_PATH)) {
+    return null;
+  }
+
+  return JSON.parse(fs.readFileSync(BACKUP_JSON_PATH, 'utf8'));
+}
+
+function groupCharacteristicsBySlug(characteristics) {
+  const grouped = new Map();
+
+  for (const item of characteristics) {
+    if (!TARGET_PRODUCT_SLUGS.includes(item.product_slug)) {
+      continue;
+    }
+
+    const rows = grouped.get(item.product_slug) || [];
+    rows.push(item);
+    grouped.set(item.product_slug, rows);
+  }
+
+  return grouped;
+}
+
+function cloneRowsForSlug(rows, slug) {
+  return rows.map((row) => ({
+    ...row,
+    product_slug: slug,
+  }));
+}
+
+function getProductTitle(product) {
+  return product?.title || product?.name || '';
+}
+
+function createMinimalFallback(product, slug) {
+  const description = normalizeText(product?.description)
+    || 'Характеристики уточняются по запросу.';
+
+  return [
+    {
+      product_slug: slug,
+      group: 'Основные',
+      name: 'Наименование',
+      value: getProductTitle(product),
+      unit: '',
+      sort: 10,
+    },
+    {
+      product_slug: slug,
+      group: 'Основные',
+      name: 'Серия',
+      value: 'ПСС-2П',
+      unit: '',
+      sort: 20,
+    },
+    {
+      product_slug: slug,
+      group: 'Описание',
+      name: 'Назначение',
+      value: description,
+      unit: '',
+      sort: 30,
+    },
+  ];
+}
+
 function readExcelRows(excelPath) {
   const workbook = xlsx.readFile(excelPath);
   const sheetName = workbook.SheetNames.includes('Продукция')
@@ -253,25 +321,33 @@ function main() {
   data.products = Array.isArray(data.products) ? data.products : [];
   data.characteristics = Array.isArray(data.characteristics) ? data.characteristics : [];
 
+  const backupData = loadBackupJson();
+  const backupCharacteristics = Array.isArray(backupData?.characteristics)
+    ? backupData.characteristics
+    : [];
+
   const productsBySlug = new Map(data.products.map((product) => [product.slug, product]));
-  const oldCounts = new Map();
+  const currentBySlug = groupCharacteristicsBySlug(data.characteristics);
+  const backupBySlug = groupCharacteristicsBySlug(backupCharacteristics);
+  const existingBySlug = new Map();
 
   for (const slug of TARGET_PRODUCT_SLUGS) {
-    oldCounts.set(
-      slug,
-      data.characteristics.filter((item) => item.product_slug === slug).length,
-    );
+    const currentRows = currentBySlug.get(slug) || [];
+    const backupRows = backupBySlug.get(slug) || [];
+    existingBySlug.set(slug, currentRows.length ? currentRows : backupRows);
   }
 
   const rows = readExcelRows(excelPath);
   const imports = buildImports(rows, productsBySlug);
 
-  const backupPath = path.join(ROOT, 'data', 'products.before-expanded-characteristics.json');
-  fs.copyFileSync(PRODUCTS_JSON_PATH, backupPath);
+  if (!fs.existsSync(BACKUP_JSON_PATH)) {
+    fs.copyFileSync(PRODUCTS_JSON_PATH, BACKUP_JSON_PATH);
+  }
 
-  data.characteristics = data.characteristics.filter(
+  const nonTargetCharacteristics = data.characteristics.filter(
     (item) => !TARGET_PRODUCT_SLUGS.includes(item.product_slug),
   );
+  const targetCharacteristics = [];
 
   const summary = [];
 
@@ -283,48 +359,69 @@ function main() {
       summary.push({
         title: 'ТОВАР НЕ НАЙДЕН',
         slug,
-        old_characteristics_count: oldCounts.get(slug) || 0,
-        new_characteristics_count: 0,
+        old_characteristics_count: 0,
+        imported_characteristics_count: 0,
+        final_characteristics_count: 0,
         status: 'product_not_found',
       });
       continue;
     }
 
-    if (!imported) {
-      summary.push({
-        title: product.title || product.name || imported?.title || '',
-        slug,
-        old_characteristics_count: oldCounts.get(slug) || 0,
-        new_characteristics_count: 0,
-        status: 'source_not_found',
-      });
-      continue;
+    const existingRows = cloneRowsForSlug(existingBySlug.get(slug) || [], slug);
+    const oldCount = existingRows.length;
+    let finalRows = existingRows;
+    let importedCount = imported?.rows.length || 0;
+    let status = '';
+
+    if (imported?.status === 'ok' && imported.rows.length) {
+      finalRows = imported.rows;
+      status = 'ok';
+    } else if (!imported) {
+      status = existingRows.length
+        ? 'preserved_existing_source_not_found'
+        : 'minimal_fallback_created';
+    } else if (imported.status === 'empty_characteristics') {
+      status = existingRows.length
+        ? 'preserved_existing_empty_source_characteristics'
+        : 'minimal_fallback_created';
+    } else {
+      status = imported.status;
     }
 
-    if (imported.rows.length) {
-      data.characteristics.push(...imported.rows);
+    if (status === 'minimal_fallback_created') {
+      finalRows = createMinimalFallback(product, slug);
+      importedCount = 0;
     }
+
+    targetCharacteristics.push(...finalRows);
 
     summary.push({
-      title: product.title || product.name || imported.title || '',
+      title: getProductTitle(product) || imported?.title || '',
       slug,
-      old_characteristics_count: oldCounts.get(slug) || 0,
-      new_characteristics_count: imported.rows.length,
-      status: imported.status,
+      old_characteristics_count: oldCount,
+      imported_characteristics_count: importedCount,
+      final_characteristics_count: finalRows.length,
+      status,
     });
   }
+
+  data.characteristics = [...nonTargetCharacteristics, ...targetCharacteristics];
 
   fs.writeFileSync(PRODUCTS_JSON_PATH, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
 
   console.log('\n[import-expanded-characteristics] Excel:', path.relative(ROOT, excelPath));
-  console.log('[import-expanded-characteristics] Backup:', path.relative(ROOT, backupPath));
+  console.log('[import-expanded-characteristics] Backup:', path.relative(ROOT, BACKUP_JSON_PATH));
   console.log('[import-expanded-characteristics] Updated:', path.relative(ROOT, PRODUCTS_JSON_PATH));
   console.table(summary);
 
-  const failed = summary.filter((row) => row.status !== 'ok');
+  const failed = summary.filter((row) => (
+    row.status !== 'ok'
+    && !row.status.startsWith('preserved_existing_')
+    && row.status !== 'minimal_fallback_created'
+  ));
 
   if (failed.length) {
-    console.warn('\n[import-expanded-characteristics] Есть строки не со статусом ok. Проверь source slug / Excel rows:');
+    console.warn('\n[import-expanded-characteristics] Есть строки с ошибочным статусом. Проверь source slug / Excel rows:');
     console.table(failed);
     process.exitCode = 1;
   }

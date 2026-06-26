@@ -525,6 +525,46 @@
       "sort": 70
     },
     {
+      "product_slug": "shs3-mg-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Силовой шкаф",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shs3-mg-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
+    },
+    {
       "product_slug": "shs-pk-pss-2p",
       "group": "Технические характеристики",
       "name": "Номинальное напряжение бортовой сети",
@@ -635,6 +675,46 @@
       "value": "345...418 В (перем. ток)",
       "unit": "",
       "sort": 70
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Шкаф управления",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shu-pk-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
     },
     {
       "product_slug": "shk1-pk-pss-2p",
@@ -915,6 +995,46 @@
       "value": "345...418 В (перем. ток)",
       "unit": "",
       "sort": 70
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Тип изделия",
+      "value": "Пульт управления",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Серия",
+      "value": "ПСС-2П",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Раздел",
+      "value": "НКУ для железнодорожной техники",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Область применения",
+      "value": "Путевая машина ПСС-2П",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "pu-mg-pss-2p",
+      "group": "Основные",
+      "name": "Исполнение",
+      "value": "По техническому заданию",
+      "unit": "",
+      "sort": 50
     },
     {
       "product_slug": "pu-pk-pss-2p",
