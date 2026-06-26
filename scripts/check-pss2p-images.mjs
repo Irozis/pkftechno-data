@@ -20,7 +20,7 @@ const targets = [
   { title: 'Шкаф коммутации 1 ПК', slug: 'shk1-pk-pss-2p' },
   { title: 'Шкаф коммутации 2 ПК', slug: 'shk2-pk-pss-2p' },
   { title: 'Шкаф тиристорных модулей ПК', slug: 'shtm-pk-pss-2p' },
-  { title: 'Шкаф силовой ПК', slug: 'shs-pk-pss-2p' }
+  { title: 'Шкаф силовой ПК', slug: 'shs-pk-pss-2p' },
 ];
 
 function getSortValue(item) {
@@ -29,24 +29,25 @@ function getSortValue(item) {
 }
 
 function getLoaderStatus(loaderHtml) {
-  const hasImageTarget = loaderHtml.includes('js-product-image');
+  const hasImageTarget = loaderHtml.includes('js-product-image') || loaderHtml.includes('js-product-gallery');
   const hasSlugScopedImages = loaderHtml.includes('item.product_slug === product.slug');
-  const setsImgSrc = loaderHtml.includes("setAttribute('src', imageUrl)");
-  const setsBackground = loaderHtml.includes('backgroundImage');
+  const hasSortedImages = loaderHtml.includes('getSortValue(a) - getSortValue(b)');
+  const hasGallery = loaderHtml.includes('pkf-product-slider');
+  const hasLightbox = loaderHtml.includes('pkf-product-lightbox');
 
-  return hasImageTarget && hasSlugScopedImages && setsImgSrc && setsBackground;
+  return hasImageTarget && hasSlugScopedImages && hasSortedImages && hasGallery && hasLightbox;
 }
 
 function printRows(rows) {
-  const columns = ['title', 'slug', 'image_url', 'images_count', 'status'];
+  const columns = ['title', 'slug', 'images_count', 'main_image_ok', 'duplicates', 'status'];
   const widths = Object.fromEntries(
     columns.map((column) => [
       column,
-      Math.max(column.length, ...rows.map((row) => String(row[column] || '').length))
-    ])
+      Math.max(column.length, ...rows.map((row) => String(row[column] ?? '').length)),
+    ]),
   );
 
-  const format = (row) => columns.map((column) => String(row[column] || '').padEnd(widths[column])).join(' | ');
+  const format = (row) => columns.map((column) => String(row[column] ?? '').padEnd(widths[column])).join(' | ');
   console.log(format(Object.fromEntries(columns.map((column) => [column, column]))));
   console.log(columns.map((column) => '-'.repeat(widths[column])).join('-|-'));
   rows.forEach((row) => console.log(format(row)));
@@ -56,6 +57,7 @@ const data = JSON.parse(await readFile(dataPath, 'utf8'));
 const loaderHtml = await readFile(loaderPath, 'utf8');
 const products = Array.isArray(data.products) ? data.products : [];
 const images = Array.isArray(data.images) ? data.images : [];
+const productSlugs = new Set(products.map((product) => product.slug));
 const loaderOk = getLoaderStatus(loaderHtml);
 
 const rows = targets.map((target) => {
@@ -65,36 +67,45 @@ const rows = targets.map((target) => {
     return {
       title: target.title,
       slug: target.slug,
-      image_url: '',
       images_count: 0,
-      status: 'product_not_found'
+      main_image_ok: 'no',
+      duplicates: 0,
+      status: 'product_not_found',
     };
   }
 
-  const mainImages = images
-    .filter((item) => item.product_slug === product.slug && getSortValue(item) === 10)
+  const productImages = images
+    .filter((item) => item.product_slug === product.slug)
     .sort((a, b) => getSortValue(a) - getSortValue(b));
-  const mainImage = mainImages[0];
-  const imageUrl = product.image_url || mainImage?.image_url || '';
+  const urls = productImages.map((item) => item.image_url).filter(Boolean);
+  const duplicates = urls.length - new Set(urls).size;
+  const firstImageUrl = productImages[0]?.image_url || '';
+  const mainImageOk = Boolean(product.image_url && firstImageUrl && product.image_url === firstImageUrl);
+  const invalidSlug = productImages.some((item) => !productSlugs.has(item.product_slug));
 
   let status = 'ok';
 
   if (!loaderOk) {
     status = 'loader_target_missing';
-  } else if (!product.image_url || !mainImage?.image_url) {
+  } else if (!product.image_url) {
+    status = 'product_image_missing';
+  } else if (productImages.length < 1) {
     status = 'image_not_found';
-  } else if (mainImages.length !== 1) {
+  } else if (!mainImageOk) {
+    status = 'main_image_mismatch';
+  } else if (duplicates > 0) {
     status = 'duplicate_images';
-  } else if (mainImage.product_slug !== product.slug) {
-    status = 'image_not_found';
+  } else if (invalidSlug) {
+    status = 'invalid_product_slug';
   }
 
   return {
     title: target.title,
     slug: product.slug,
-    image_url: imageUrl,
-    images_count: mainImages.length,
-    status
+    images_count: productImages.length,
+    main_image_ok: mainImageOk ? 'yes' : 'no',
+    duplicates,
+    status,
   };
 });
 
