@@ -38,37 +38,6 @@
     cursor: zoom-in;
   }
 
-  .pkf-product-slider__arrow {
-    position: absolute;
-    top: 50%;
-    display: flex;
-    width: 42px;
-    height: 42px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(17, 21, 23, 0.16);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.92);
-    color: #111517;
-    font-size: 22px;
-    line-height: 1;
-    cursor: pointer;
-    transform: translateY(-50%);
-  }
-
-  .pkf-product-slider__arrow:hover {
-    border-color: #FFC400;
-    background: #FFC400;
-  }
-
-  .pkf-product-slider__arrow--prev {
-    left: 14px;
-  }
-
-  .pkf-product-slider__arrow--next {
-    right: 14px;
-  }
-
   .pkf-product-slider__footer {
     display: flex;
     gap: 16px;
@@ -105,7 +74,6 @@
     line-height: 1;
   }
 
-  .pkf-product-slider.is-single .pkf-product-slider__arrow,
   .pkf-product-slider.is-single .pkf-product-slider__footer {
     display: none;
   }
@@ -201,12 +169,6 @@
       border-radius: 18px;
     }
 
-    .pkf-product-slider__arrow {
-      width: 38px;
-      height: 38px;
-      font-size: 20px;
-    }
-
     .pkf-product-lightbox {
       padding: 18px;
     }
@@ -235,6 +197,7 @@
 <script>
   (function () {
     var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json';
+    var AUTOPLAY_INTERVAL_MS = 10000;
     var PLACEHOLDER = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(
       '<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">' +
       '<rect width="960" height="640" fill="#F7F8F5"/>' +
@@ -342,7 +305,8 @@
       prev: null,
       next: null,
       images: [],
-      index: 0
+      index: 0,
+      resumeAutoplay: null
     };
 
     function ensureLightbox() {
@@ -413,22 +377,33 @@
       }
     }
 
-    function openLightbox(images, index) {
+    function openLightbox(images, index, pauseAutoplay, resumeAutoplay) {
+      if (typeof pauseAutoplay === 'function') {
+        pauseAutoplay();
+      }
+
       ensureLightbox();
       lightbox.images = images;
       lightbox.index = (index + images.length) % images.length;
+      lightbox.resumeAutoplay = typeof resumeAutoplay === 'function' ? resumeAutoplay : null;
       renderLightbox();
       lightbox.root.classList.add('is-open');
       document.documentElement.style.overflow = 'hidden';
     }
 
     function closeLightbox() {
-      if (!lightbox.root) {
+      if (!lightbox.root || !lightbox.root.classList.contains('is-open')) {
         return;
       }
 
       lightbox.root.classList.remove('is-open');
       document.documentElement.style.overflow = '';
+
+      var resumeAutoplay = lightbox.resumeAutoplay;
+      lightbox.resumeAutoplay = null;
+      if (typeof resumeAutoplay === 'function') {
+        resumeAutoplay();
+      }
     }
 
     function shiftLightbox(step) {
@@ -455,8 +430,6 @@
           '<section class="pkf-product-slider' + (hasMultipleImages ? '' : ' is-single') + '" aria-label="Галерея товара">',
           '<div class="pkf-product-slider__viewport">',
           '<img class="pkf-product-slider__image" src="' + escapeHtml(images[0].image_url) + '" alt="' + escapeHtml(images[0].alt || '') + '">',
-          '<button class="pkf-product-slider__arrow pkf-product-slider__arrow--prev" type="button" aria-label="Предыдущее изображение">←</button>',
-          '<button class="pkf-product-slider__arrow pkf-product-slider__arrow--next" type="button" aria-label="Следующее изображение">→</button>',
           '</div>',
           '<div class="pkf-product-slider__footer">',
           '<div class="pkf-product-slider__dots"></div>',
@@ -467,14 +440,14 @@
 
         var slider = element.querySelector('.pkf-product-slider');
         var imageEl = element.querySelector('.pkf-product-slider__image');
-        var prevButton = element.querySelector('.pkf-product-slider__arrow--prev');
-        var nextButton = element.querySelector('.pkf-product-slider__arrow--next');
         var dotsEl = element.querySelector('.pkf-product-slider__dots');
         var counterEl = element.querySelector('.pkf-product-slider__counter');
+        var autoplayTimer = null;
+        var isHovering = false;
 
         if (imageEl) {
           imageEl.addEventListener('click', function () {
-            openLightbox(images, currentIndex);
+            openLightbox(images, currentIndex, stopAutoplay, resumeAutoplayAfterLightbox);
           });
         }
 
@@ -490,6 +463,7 @@
           dotsEl.querySelectorAll('.pkf-product-slider__dot').forEach(function (dot, index) {
             dot.addEventListener('click', function () {
               update(index);
+              restartAutoplay();
             });
           });
         }
@@ -513,6 +487,37 @@
           }
         }
 
+        function stopAutoplay() {
+          if (!autoplayTimer) {
+            return;
+          }
+
+          window.clearInterval(autoplayTimer);
+          autoplayTimer = null;
+        }
+
+        function startAutoplay() {
+          stopAutoplay();
+
+          if (!hasMultipleImages || isHovering) {
+            return;
+          }
+
+          autoplayTimer = window.setInterval(function () {
+            update(currentIndex + 1);
+          }, AUTOPLAY_INTERVAL_MS);
+        }
+
+        function restartAutoplay() {
+          stopAutoplay();
+          startAutoplay();
+        }
+
+        function resumeAutoplayAfterLightbox() {
+          isHovering = false;
+          startAutoplay();
+        }
+
         renderDots();
 
         if (!hasMultipleImages && slider) {
@@ -520,17 +525,19 @@
           return;
         }
 
-        if (prevButton) {
-          prevButton.addEventListener('click', function () {
-            update(currentIndex - 1);
+        if (slider) {
+          slider.addEventListener('mouseenter', function () {
+            isHovering = true;
+            stopAutoplay();
+          });
+
+          slider.addEventListener('mouseleave', function () {
+            isHovering = false;
+            startAutoplay();
           });
         }
 
-        if (nextButton) {
-          nextButton.addEventListener('click', function () {
-            update(currentIndex + 1);
-          });
-        }
+        startAutoplay();
       });
 
       return true;

@@ -5,7 +5,8 @@ import process from 'node:process';
 const SOURCE_PAGE = 'https://pkftechno.ru/pss2ptest';
 const ROOT = process.cwd();
 const DATA_PATH = path.join(ROOT, 'data', 'products.json');
-const BACKUP_PATH = path.join(ROOT, 'data', 'products.before-card-images.json');
+const BACKUP_PATH = path.join(ROOT, 'data', 'products.before-fresh-card-images.json');
+const OLD_IMAGE_BASELINE_PATH = path.join(ROOT, 'data', 'products.before-card-images.json');
 const RAW_DIR = path.join(ROOT, 'tmp', 'pkftechno-card-images-scrape');
 
 const TARGET_SLUGS = [
@@ -146,6 +147,7 @@ function extractGalleryImages(rawValue = '') {
 function isUsefulImage(url) {
   const lower = url.toLowerCase();
   return /^https?:\/\//.test(url)
+    && /^https?:\/\/(?:static|thb|thumb|thumbs|optim|optim\.tildacdn|static\.tildacdn|thb\.tildacdn)\.com\//i.test(url)
     && !lower.includes('/resize/20x/')
     && !lower.includes('1x1')
     && !lower.endsWith('.svg')
@@ -252,18 +254,18 @@ function getCardAnchors(elements, productsBySlug) {
   return anchors;
 }
 
-function collectCardImages(anchor, imageElements) {
+function collectCardImages(anchor, imageElements, oldImageUrls) {
   const source = anchor.element;
 
   const candidates = imageElements
     .filter((element) => {
       if (!Number.isFinite(element.top) || !Number.isFinite(element.left)) return false;
 
-      const verticalDistance = source.top - element.top;
       const horizontalDistance = Math.abs(source.left - element.left);
+      const cardBottom = source.top + (Number.isFinite(source.height) ? source.height : 330);
 
-      return verticalDistance >= -30
-        && verticalDistance <= 420
+      return element.top >= source.top - 30
+        && element.top <= cardBottom
         && horizontalDistance <= 190;
     })
     .map((element) => ({
@@ -272,12 +274,34 @@ function collectCardImages(anchor, imageElements) {
     }))
     .sort((a, b) => a.score - b.score);
 
-  const images = [];
+  const freshImages = [];
+  const rejectedImages = [];
   for (const candidate of candidates) {
-    images.push(...candidate.element.images);
+    for (const url of candidate.element.images) {
+      if (oldImageUrls.has(url)) {
+        rejectedImages.push({ url, reason: 'old_global_image' });
+        continue;
+      }
+
+      if (!isUsefulImage(url)) {
+        rejectedImages.push({ url, reason: 'logo_icon' });
+        continue;
+      }
+
+      if (freshImages.includes(url)) {
+        rejectedImages.push({ url, reason: 'duplicate' });
+        continue;
+      }
+
+      freshImages.push(url);
+    }
   }
 
-  return [...new Set(images)].filter(isUsefulImage);
+  return {
+    freshImages,
+    rejectedImages,
+    cardHtmlPreview: source.html.slice(0, 2000),
+  };
 }
 
 function writeJson(filePath, payload) {
@@ -285,7 +309,7 @@ function writeJson(filePath, payload) {
 }
 
 function printRows(rows) {
-  const columns = ['title', 'slug', 'old_images_count', 'scraped_images_count', 'final_images_count', 'status'];
+  const columns = ['title', 'slug', 'old_images_count', 'fresh_images_count', 'final_images_count', 'status'];
   const widths = Object.fromEntries(
     columns.map((column) => [
       column,
@@ -303,6 +327,14 @@ async function main() {
   const data = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
   data.products = Array.isArray(data.products) ? data.products : [];
   data.images = Array.isArray(data.images) ? data.images : [];
+
+  const oldBaseline = fs.existsSync(OLD_IMAGE_BASELINE_PATH)
+    ? JSON.parse(fs.readFileSync(OLD_IMAGE_BASELINE_PATH, 'utf8'))
+    : null;
+  const oldBaselineImages = Array.isArray(oldBaseline?.images) ? oldBaseline.images : [];
+  const oldImageUrls = new Set(oldBaselineImages
+    .map((image) => normalizeUrl(image.image_url))
+    .filter(Boolean));
 
   const productsBySlug = new Map(data.products.map((product) => [product.slug, product]));
   const oldImagesBySlug = new Map(TARGET_SLUGS.map((slug) => [
@@ -340,13 +372,16 @@ async function main() {
   for (const slug of TARGET_SLUGS) {
     const product = productsBySlug.get(slug);
     const oldImages = oldImagesBySlug.get(slug) || [];
+    const preservedFreshExisting = oldImages.filter((image) => (
+      image.image_url && !oldImageUrls.has(normalizeUrl(image.image_url))
+    ));
 
     if (!product) {
       summary.push({
         title: '',
         slug,
         old_images_count: 0,
-        scraped_images_count: 0,
+        fresh_images_count: 0,
         final_images_count: 0,
         status: 'product_not_found',
       });
@@ -354,32 +389,45 @@ async function main() {
     }
 
     const anchor = anchors.get(slug);
-    let foundImages = [];
+    let freshImages = [];
+    let rejectedImages = [];
+    let cardHtmlPreview = '';
     let status = 'card_not_found';
 
     if (anchor) {
-      foundImages = collectCardImages(anchor, imageElements);
-      if (foundImages.length === 0) {
+      const collected = collectCardImages(anchor, imageElements, oldImageUrls);
+      freshImages = collected.freshImages;
+      rejectedImages = collected.rejectedImages;
+      cardHtmlPreview = collected.cardHtmlPreview;
+
+      if (freshImages.length === 0) {
         status = oldImages.length ? 'not_found_preserved_existing' : 'parse_failed_preserved_existing';
       } else {
-        status = foundImages.length === 1 ? 'single_image_only' : 'ok';
+        status = freshImages.length === 1 ? 'single_image_only' : 'ok';
       }
     }
 
-    if (foundImages.length > 0) {
-      product.image_url = foundImages[0];
+    if (freshImages.length > 0) {
+      product.image_url = freshImages[0];
       replacements.set(
         slug,
-        foundImages.map((imageUrl, index) => ({
+        freshImages.map((imageUrl, index) => ({
           product_slug: slug,
           image_url: imageUrl,
           alt: `${product.title || slug} — изображение ${index + 1}`,
           sort: (index + 1) * 10,
         })),
       );
+    } else if (preservedFreshExisting.length > 0) {
+      product.image_url = preservedFreshExisting[0].image_url;
+      replacements.set(slug, preservedFreshExisting.map((image, index) => ({
+        ...image,
+        product_slug: slug,
+        sort: (index + 1) * 10,
+      })));
     }
 
-    const finalCount = foundImages.length || oldImages.length;
+    const finalCount = freshImages.length || preservedFreshExisting.length || oldImages.length;
 
     if (finalCount > 1) {
       multiple.push({
@@ -391,10 +439,11 @@ async function main() {
 
     const rawPayload = {
       slug,
-      source_page: SOURCE_PAGE,
       card_href: anchor?.href || '',
+      card_html_preview: cardHtmlPreview,
       match: anchor?.match || '',
-      found_images: foundImages,
+      fresh_images: freshImages,
+      rejected_images: rejectedImages,
       final_images_count: finalCount,
       status,
     };
@@ -404,7 +453,7 @@ async function main() {
       title: product.title || '',
       slug,
       old_images_count: oldImages.length,
-      scraped_images_count: foundImages.length,
+      fresh_images_count: freshImages.length,
       final_images_count: finalCount,
       status,
     });

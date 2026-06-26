@@ -39,7 +39,7 @@ function getLoaderStatus(loaderHtml) {
 }
 
 function printRows(rows) {
-  const columns = ['title', 'slug', 'images_count', 'main_image_ok', 'duplicates', 'status'];
+  const columns = ['title', 'slug', 'images_count', 'main_image_ok', 'status'];
   const widths = Object.fromEntries(
     columns.map((column) => [
       column,
@@ -51,6 +51,23 @@ function printRows(rows) {
   console.log(format(Object.fromEntries(columns.map((column) => [column, column]))));
   console.log(columns.map((column) => '-'.repeat(widths[column])).join('-|-'));
   rows.forEach((row) => console.log(format(row)));
+}
+
+function printDetails(rows) {
+  console.log('\nImage URLs by product:');
+
+  for (const row of rows) {
+    console.log(`${row.slug}:`);
+
+    if (!row.image_rows.length) {
+      console.log('  none');
+      continue;
+    }
+
+    for (const image of row.image_rows) {
+      console.log(`  ${String(image.sort).padEnd(2)} ${image.image_url}`);
+    }
+  }
 }
 
 const data = JSON.parse(await readFile(dataPath, 'utf8'));
@@ -70,6 +87,7 @@ const rows = targets.map((target) => {
       images_count: 0,
       main_image_ok: 'no',
       duplicates: 0,
+      image_rows: [],
       status: 'product_not_found',
     };
   }
@@ -105,11 +123,16 @@ const rows = targets.map((target) => {
     images_count: productImages.length,
     main_image_ok: mainImageOk ? 'yes' : 'no',
     duplicates,
+    image_rows: productImages.map((item) => ({
+      sort: getSortValue(item),
+      image_url: item.image_url || '',
+    })),
     status,
   };
 });
 
 printRows(rows);
+printDetails(rows);
 
 const failed = rows.filter((row) => row.status !== 'ok');
 
