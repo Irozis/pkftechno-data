@@ -1077,12 +1077,6 @@
       "sort": 10
     },
     {
-      "product_slug": "shs-pk-pss-2p",
-      "image_url": "https://static.tildacdn.com/tild6538-3035-4661-b665-313834656332/__.png",
-      "alt": "ШС ПК ПСС-2П — изображение 1",
-      "sort": 10
-    },
-    {
       "product_slug": "shs1-mg-pss-2p",
       "image_url": "https://static.tildacdn.com/tild6233-3062-4466-a135-333733316433/1__-2_.png",
       "alt": "ШС1 МГ ПСС-2П - image 1",
@@ -1218,6 +1212,12 @@
       "product_slug": "shtm-pk-pss-2p",
       "image_url": "https://static.tildacdn.com/tild6336-6537-4130-a539-363436633931/photo.png",
       "alt": "ШТМ ПК ПСС-2П - image 1",
+      "sort": 10
+    },
+    {
+      "product_slug": "shs-pk-pss-2p",
+      "image_url": "https://static.tildacdn.com/tild6538-3035-4661-b665-313834656332/__.png",
+      "alt": "ШС ПК ПСС-2П - image 1",
       "sort": 10
     }
   ],
