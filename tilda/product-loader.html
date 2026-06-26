@@ -87,7 +87,7 @@
     justify-content: center;
     padding: 28px;
     box-sizing: border-box;
-    background: rgba(17, 21, 23, 0.86);
+    background: rgba(10, 14, 16, 0.88);
     font-family: Manrope, "TildaSans", Arial, sans-serif;
   }
 
@@ -95,11 +95,29 @@
     display: flex;
   }
 
+  .pkf-product-lightbox__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 14, 16, 0.88);
+  }
+
+  .pkf-product-lightbox__dialog {
+    position: relative;
+    z-index: 1;
+    width: min(1120px, calc(100vw - 48px));
+    height: min(780px, calc(100vh - 48px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .pkf-product-lightbox__image {
     display: block;
-    max-width: min(1120px, 92vw);
-    max-height: 84vh;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
+    border-radius: 18px;
+    background: #F1F3F4;
   }
 
   .pkf-product-lightbox__close,
@@ -173,9 +191,9 @@
       padding: 18px;
     }
 
-    .pkf-product-lightbox__image {
-      max-width: 94vw;
-      max-height: 78vh;
+    .pkf-product-lightbox__dialog {
+      width: calc(100vw - 24px);
+      height: calc(100vh - 24px);
     }
 
     .pkf-product-lightbox__arrow {
@@ -306,7 +324,8 @@
       next: null,
       images: [],
       index: 0,
-      resumeAutoplay: null
+      resumeAutoplay: null,
+      onChange: null
     };
 
     function ensureLightbox() {
@@ -319,11 +338,14 @@
       root.setAttribute('role', 'dialog');
       root.setAttribute('aria-modal', 'true');
       root.innerHTML = [
+        '<div class="pkf-product-lightbox__backdrop"></div>',
+        '<div class="pkf-product-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Product image preview">',
         '<button class="pkf-product-lightbox__close" type="button" aria-label="Р—Р°РєСЂС‹С‚СЊ">×</button>',
         '<button class="pkf-product-lightbox__arrow pkf-product-lightbox__arrow--prev" type="button" aria-label="РџСЂРµРґС‹РґСѓС‰РµРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ">←</button>',
         '<img class="pkf-product-lightbox__image" src="" alt="">',
         '<button class="pkf-product-lightbox__arrow pkf-product-lightbox__arrow--next" type="button" aria-label="РЎР»РµРґСѓСЋС‰РµРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ">→</button>',
-        '<div class="pkf-product-lightbox__counter">1 / 1</div>'
+        '<div class="pkf-product-lightbox__counter">1 / 1</div>',
+        '</div>'
       ].join('');
       document.body.appendChild(root);
 
@@ -334,11 +356,7 @@
       lightbox.next = root.querySelector('.pkf-product-lightbox__arrow--next');
 
       root.querySelector('.pkf-product-lightbox__close').addEventListener('click', closeLightbox);
-      root.addEventListener('click', function (event) {
-        if (event.target === root) {
-          closeLightbox();
-        }
-      });
+      root.querySelector('.pkf-product-lightbox__backdrop').addEventListener('click', closeLightbox);
       lightbox.prev.addEventListener('click', function () {
         shiftLightbox(-1);
       });
@@ -375,9 +393,13 @@
       if (lightbox.counter) {
         lightbox.counter.textContent = (lightbox.index + 1) + ' / ' + lightbox.images.length;
       }
+
+      if (typeof lightbox.onChange === 'function') {
+        lightbox.onChange(lightbox.index);
+      }
     }
 
-    function openLightbox(images, index, pauseAutoplay, resumeAutoplay) {
+    function openLightbox(images, index, pauseAutoplay, resumeAutoplay, onChange) {
       if (typeof pauseAutoplay === 'function') {
         pauseAutoplay();
       }
@@ -386,6 +408,7 @@
       lightbox.images = images;
       lightbox.index = (index + images.length) % images.length;
       lightbox.resumeAutoplay = typeof resumeAutoplay === 'function' ? resumeAutoplay : null;
+      lightbox.onChange = typeof onChange === 'function' ? onChange : null;
       renderLightbox();
       lightbox.root.classList.add('is-open');
       document.documentElement.style.overflow = 'hidden';
@@ -401,6 +424,7 @@
 
       var resumeAutoplay = lightbox.resumeAutoplay;
       lightbox.resumeAutoplay = null;
+      lightbox.onChange = null;
       if (typeof resumeAutoplay === 'function') {
         resumeAutoplay();
       }
@@ -447,7 +471,7 @@
 
         if (imageEl) {
           imageEl.addEventListener('click', function () {
-            openLightbox(images, currentIndex, stopAutoplay, resumeAutoplayAfterLightbox);
+            openLightbox(images, currentIndex, stopAutoplay, resumeAutoplayAfterLightbox, update);
           });
         }
 
