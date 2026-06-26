@@ -39,7 +39,7 @@ function getLoaderStatus(loaderHtml) {
 }
 
 function printRows(rows) {
-  const columns = ['title', 'slug', 'images_count', 'main_image_ok', 'status'];
+  const columns = ['title', 'slug', 'images_count', 'main_image_ok', 'duplicates', 'status'];
   const widths = Object.fromEntries(
     columns.map((column) => [
       column,
