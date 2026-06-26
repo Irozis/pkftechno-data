@@ -1,6 +1,13 @@
 node_modules/
+# Local source exports
 source/
 .env
 .env.*
 npm-debug.log*
 *.local
+
+# Temporary scraper output
+tmp/
+
+# Local backups created by import/scrape scripts
+data/products.before-*.json
