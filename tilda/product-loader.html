@@ -584,7 +584,7 @@
       var backLink = product.series ? '/product-category?series=' + encodeURIComponent(product.series) : '/pss2ptest';
 
       setText('js-product-section', [product.section, product.series].filter(Boolean).join(' / '));
-      setText('js-product-title', product.title || '');
+      setText('js-product-title', product.hero_title || product.title || '');
       setText('js-product-short', shortText);
       setText('js-product-meta-series', product.series || '');
       setText('js-product-meta-type', product.type || '');

@@ -229,6 +229,7 @@
     {
       "slug": "shchit-upravleniya-shchu-mtso-2",
       "title": "Щит управления ЩУ МТСО-2",
+      "hero_title": "ЩУ МТСО-2",
       "section": "НКУ для железнодорожной техники",
       "series": "МТСО-2",
       "type": "Щит управления",
@@ -245,6 +246,7 @@
     {
       "slug": "blok-podachi-pitaniya-bpp-mtso-2",
       "title": "Блок подачи питания БПП МТСО-2",
+      "hero_title": "БПП МТСО-2",
       "section": "НКУ для железнодорожной техники",
       "series": "МТСО-2",
       "type": "Блок питания",
@@ -261,6 +263,7 @@
     {
       "slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
       "title": "Блок управления кондиционером БУК 1 МТСО-2",
+      "hero_title": "БУК 1 МТСО-2",
       "section": "НКУ для железнодорожной техники",
       "series": "МТСО-2",
       "type": "Блок управления",
@@ -277,6 +280,7 @@
     {
       "slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
       "title": "Блок управления кондиционером БУК 2 МТСО-2",
+      "hero_title": "БУК 2 МТСО-2",
       "section": "НКУ для железнодорожной техники",
       "series": "МТСО-2",
       "type": "Блок управления",
@@ -293,6 +297,7 @@
     {
       "slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
       "title": "Блок выключателя массы БВМ МТСО-2",
+      "hero_title": "БВМ МТСО-2",
       "section": "НКУ для железнодорожной техники",
       "series": "МТСО-2",
       "type": "Блок выключателя массы",
