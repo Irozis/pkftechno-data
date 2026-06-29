@@ -201,6 +201,243 @@
     transform: translateX(-50%);
   }
 
+  .pkf-product-request-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 999998;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+    font-family: Manrope, "TildaSans", Arial, sans-serif;
+  }
+
+  .pkf-product-request-modal.is-open {
+    display: flex;
+  }
+
+  .pkf-product-request-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 14, 16, 0.72);
+  }
+
+  .pkf-product-request-modal__dialog {
+    position: relative;
+    z-index: 1;
+    width: min(720px, calc(100vw - 32px));
+    max-height: calc(100vh - 32px);
+    overflow: auto;
+    box-sizing: border-box;
+    border-radius: 18px;
+    background: #FFFFFF;
+    color: #111517;
+    box-shadow: 0 28px 80px rgba(10, 14, 16, 0.28);
+  }
+
+  .pkf-product-request-modal__close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(17, 21, 23, 0.12);
+    border-radius: 999px;
+    background: #FFFFFF;
+    color: #111517;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .pkf-product-request-modal__close:hover {
+    border-color: #FFC400;
+    background: #FFC400;
+  }
+
+  .pkf-product-request-modal__content {
+    padding: 38px;
+  }
+
+  .pkf-product-request-modal__eyebrow {
+    margin: 0 0 10px;
+    color: #8A6A00;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .pkf-product-request-modal h2 {
+    margin: 0;
+    max-width: 560px;
+    color: #111517;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  .pkf-product-request-modal__intro {
+    margin: 14px 0 0;
+    max-width: 580px;
+    color: #5F6B73;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.55;
+  }
+
+  .pkf-product-request-modal__product {
+    margin: 24px 0;
+    padding: 18px;
+    border: 1px solid #E3E7EA;
+    border-radius: 12px;
+    background: #F7F8F5;
+  }
+
+  .pkf-product-request-modal__product-title {
+    margin: 0;
+    color: #111517;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  .pkf-product-request-modal__product-description {
+    margin: 8px 0 0;
+    color: #5F6B73;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  .pkf-product-request-modal__product-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .pkf-product-request-modal__product-meta span {
+    display: inline-flex;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #FFFFFF;
+    color: #111517;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .pkf-product-request-form {
+    display: grid;
+    gap: 14px;
+  }
+
+  .pkf-product-request-form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .pkf-product-request-form label {
+    display: grid;
+    gap: 7px;
+    color: #111517;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.25;
+  }
+
+  .pkf-product-request-form input,
+  .pkf-product-request-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #D9DEE2;
+    border-radius: 10px;
+    background: #FFFFFF;
+    color: #111517;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .pkf-product-request-form input {
+    min-height: 48px;
+    padding: 0 14px;
+  }
+
+  .pkf-product-request-form textarea {
+    min-height: 104px;
+    padding: 12px 14px;
+    resize: vertical;
+  }
+
+  .pkf-product-request-form input:focus,
+  .pkf-product-request-form textarea:focus {
+    border-color: #FFC400;
+    outline: 2px solid rgba(255, 196, 0, 0.28);
+    outline-offset: 0;
+  }
+
+  .pkf-product-request-form__agreement {
+    display: flex !important;
+    grid-template-columns: none !important;
+    gap: 10px !important;
+    align-items: flex-start;
+    margin-top: 2px;
+    color: #5F6B73 !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+  }
+
+  .pkf-product-request-form__agreement input {
+    flex: 0 0 auto;
+    width: 18px;
+    min-height: 18px;
+    height: 18px;
+    margin-top: 1px;
+    padding: 0;
+  }
+
+  .pkf-product-request-form__submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 999px;
+    background: #FFC400;
+    color: #111517;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.2;
+    cursor: pointer;
+  }
+
+  .pkf-product-request-form__submit:hover {
+    background: #E5AF00;
+  }
+
+  .pkf-product-request-form__success {
+    display: none;
+    margin-top: 14px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: #EEF7EA;
+    color: #255B20;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+
+  .pkf-product-request-form__success.is-visible {
+    display: block;
+  }
+
   @media (max-width: 639px) {
     .pkf-product-slider__viewport {
       aspect-ratio: 1 / 1;
@@ -229,6 +466,28 @@
     .pkf-product-lightbox__arrow--next {
       right: 12px;
     }
+
+    .pkf-product-request-modal {
+      padding: 12px;
+    }
+
+    .pkf-product-request-modal__dialog {
+      width: calc(100vw - 24px);
+      max-height: calc(100vh - 24px);
+      border-radius: 14px;
+    }
+
+    .pkf-product-request-modal__content {
+      padding: 28px 18px 22px;
+    }
+
+    .pkf-product-request-modal h2 {
+      font-size: 28px;
+    }
+
+    .pkf-product-request-form__row {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
@@ -236,6 +495,7 @@
   (function () {
     var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json';
     var AUTOPLAY_INTERVAL_MS = 10000;
+    var REQUEST_CTA_TEXT = 'Оставить заявку';
     var PLACEHOLDER = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(
       '<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">' +
       '<rect width="960" height="640" fill="#F7F8F5"/>' +
@@ -334,6 +594,18 @@
       }
 
       return images;
+    }
+
+    function getProductDescription(product) {
+      if (!product) {
+        return '';
+      }
+
+      return product.short_description || product.hero_description || product.description || '';
+    }
+
+    function getContext() {
+      return window.pkfProductContext || null;
     }
 
     var lightbox = {
@@ -457,6 +729,214 @@
 
       lightbox.index = (lightbox.index + step + lightbox.images.length) % lightbox.images.length;
       renderLightbox();
+    }
+
+    var requestModal = {
+      root: null,
+      form: null,
+      title: null,
+      description: null,
+      meta: null,
+      success: null,
+      lastFocus: null,
+      context: null
+    };
+
+    function ensureRequestModal() {
+      if (requestModal.root) {
+        return requestModal.root;
+      }
+
+      var root = document.createElement('div');
+      root.className = 'pkf-product-request-modal';
+      root.setAttribute('role', 'dialog');
+      root.setAttribute('aria-modal', 'true');
+      root.setAttribute('aria-labelledby', 'pkf-product-request-title');
+      root.innerHTML = [
+        '<div class="pkf-product-request-modal__backdrop"></div>',
+        '<div class="pkf-product-request-modal__dialog">',
+        '<button class="pkf-product-request-modal__close" type="button" aria-label="Закрыть">×</button>',
+        '<div class="pkf-product-request-modal__content">',
+        '<p class="pkf-product-request-modal__eyebrow">Заявка</p>',
+        '<h2 id="pkf-product-request-title">Заявка на приобретение</h2>',
+        '<p class="pkf-product-request-modal__intro">Заполните форму — специалист уточнит исполнение, комплектацию и условия эксплуатации изделия.</p>',
+        '<div class="pkf-product-request-modal__product">',
+        '<p class="pkf-product-request-modal__product-title"></p>',
+        '<p class="pkf-product-request-modal__product-description"></p>',
+        '<div class="pkf-product-request-modal__product-meta"></div>',
+        '</div>',
+        '<form class="pkf-product-request-form t-form js-form-proccess" action="https://forms.tildacdn.com/procces/" method="POST" data-formactiontype="2" data-success-callback="pkfProductRequestSuccess">',
+        '<div class="pkf-product-request-form__row">',
+        '<label>Имя*<input class="t-input" type="text" name="Name" autocomplete="name" required></label>',
+        '<label>Название компании<input class="t-input" type="text" name="Company" autocomplete="organization"></label>',
+        '</div>',
+        '<div class="pkf-product-request-form__row">',
+        '<label>Телефон<input class="t-input" type="tel" name="Phone" autocomplete="tel"></label>',
+        '<label>Почта*<input class="t-input" type="email" name="Email" autocomplete="email" required></label>',
+        '</div>',
+        '<label>Комментарий<textarea class="t-input" name="Comment" rows="4"></textarea></label>',
+        '<label class="pkf-product-request-form__agreement"><input type="checkbox" name="personal_data_agreement" value="yes" required><span>Я согласен на обработку персональных данных</span></label>',
+        '<input type="hidden" name="product_title">',
+        '<input type="hidden" name="product_slug">',
+        '<input type="hidden" name="product_url">',
+        '<input type="hidden" name="product_description">',
+        '<button class="pkf-product-request-form__submit t-submit" type="submit">Отправить заявку</button>',
+        '<div class="pkf-product-request-form__success">Спасибо! Заявка отправлена.</div>',
+        '</form>',
+        '</div>',
+        '</div>'
+      ].join('');
+      document.body.appendChild(root);
+
+      requestModal.root = root;
+      requestModal.form = root.querySelector('.pkf-product-request-form');
+      requestModal.title = root.querySelector('.pkf-product-request-modal__product-title');
+      requestModal.description = root.querySelector('.pkf-product-request-modal__product-description');
+      requestModal.meta = root.querySelector('.pkf-product-request-modal__product-meta');
+      requestModal.success = root.querySelector('.pkf-product-request-form__success');
+
+      root.querySelector('.pkf-product-request-modal__close').addEventListener('click', closeRequestModal);
+      root.querySelector('.pkf-product-request-modal__backdrop').addEventListener('click', closeRequestModal);
+      requestModal.form.addEventListener('submit', function () {
+        updateRequestForm(requestModal.context || getContext());
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (!requestModal.root || !requestModal.root.classList.contains('is-open')) {
+          return;
+        }
+
+        if (event.key === 'Escape') {
+          closeRequestModal();
+        }
+      });
+
+      window.pkfProductRequestSuccess = function () {
+        if (requestModal.success) {
+          requestModal.success.classList.add('is-visible');
+        }
+      };
+
+      return root;
+    }
+
+    function updateRequestForm(context) {
+      ensureRequestModal();
+
+      if (!context || !context.product) {
+        return false;
+      }
+
+      var product = context.product;
+      var description = getProductDescription(product);
+      var meta = [product.series, product.type].filter(Boolean);
+
+      requestModal.context = context;
+      requestModal.title.textContent = product.title || '';
+      requestModal.description.textContent = description || '';
+      requestModal.description.style.display = description ? '' : 'none';
+      requestModal.meta.innerHTML = meta.map(function (item) {
+        return '<span>' + escapeHtml(item) + '</span>';
+      }).join('');
+      requestModal.meta.style.display = meta.length > 0 ? '' : 'none';
+
+      setRequestField('product_title', product.title || '');
+      setRequestField('product_slug', product.slug || '');
+      setRequestField('product_url', window.location.href);
+      setRequestField('product_description', description || '');
+      return true;
+    }
+
+    function setRequestField(name, value) {
+      if (!requestModal.form) {
+        return;
+      }
+
+      var field = requestModal.form.querySelector('[name="' + name + '"]');
+      if (field) {
+        field.value = value || '';
+      }
+    }
+
+    function openRequestModal(context) {
+      ensureRequestModal();
+      requestModal.lastFocus = document.activeElement;
+      updateRequestForm(context || getContext());
+
+      if (requestModal.success) {
+        requestModal.success.classList.remove('is-visible');
+      }
+
+      requestModal.root.classList.add('is-open');
+      document.documentElement.style.overflow = 'hidden';
+
+      var firstField = requestModal.form && requestModal.form.querySelector('input:not([type="hidden"]), textarea, button');
+      if (firstField) {
+        firstField.focus();
+      }
+    }
+
+    function closeRequestModal() {
+      if (!requestModal.root || !requestModal.root.classList.contains('is-open')) {
+        return;
+      }
+
+      requestModal.root.classList.remove('is-open');
+      document.documentElement.style.overflow = '';
+
+      if (requestModal.lastFocus && typeof requestModal.lastFocus.focus === 'function') {
+        requestModal.lastFocus.focus();
+      }
+      requestModal.lastFocus = null;
+    }
+
+    function isRequestCta(element) {
+      if (!element || !element.closest) {
+        return false;
+      }
+
+      var candidate = element.closest('a, button, [role="button"]');
+      if (!candidate) {
+        return false;
+      }
+
+      var href = candidate.getAttribute && candidate.getAttribute('href');
+      var text = (candidate.textContent || '').replace(/\s+/g, ' ').trim();
+      return href === '#request' || text === REQUEST_CTA_TEXT;
+    }
+
+    function initRequestModal() {
+      document.addEventListener('click', function (event) {
+        if (!isRequestCta(event.target)) {
+          return;
+        }
+
+        var submitButton = event.target.closest && event.target.closest('.pkf-product-request-form__submit');
+        if (submitButton) {
+          return;
+        }
+
+        event.preventDefault();
+        var context = getContext();
+        if (context && context.product) {
+          openRequestModal(context);
+          return;
+        }
+
+        ensureRequestModal();
+        document.addEventListener('pkfProductLoaded', function onProductLoaded(loadedEvent) {
+          document.removeEventListener('pkfProductLoaded', onProductLoaded);
+          openRequestModal(loadedEvent.detail);
+        });
+      });
+
+      document.addEventListener('pkfProductLoaded', function (event) {
+        updateRequestForm(event.detail);
+      });
+
+      if (getContext()) {
+        updateRequestForm(getContext());
+      }
     }
 
     function renderGallery(images) {
@@ -662,6 +1142,8 @@
         showMessage('Товар не найден');
       }
     }
+
+    initRequestModal();
 
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', init);
