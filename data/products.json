@@ -1468,8 +1468,14 @@
     {
       "product_slug": "shchit-upravleniya-shchu-mtso-2",
       "image_url": "https://static.tildacdn.com/stor3765-6561-4463-b632-666132313765/51666339.jpg",
-      "alt": "Щит управления ЩУ",
+      "alt": "Щит управления",
       "sort": 10
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "image_url": "https://static.tildacdn.com/stor3064-3537-4266-b362-353337623464/90109158.jpg",
+      "alt": "Щит управления",
+      "sort": 20
     },
     {
       "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
@@ -1478,10 +1484,22 @@
       "sort": 10
     },
     {
+      "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "image_url": "https://static.tildacdn.com/stor3263-3435-4230-a632-663933313439/59117753.jpg",
+      "alt": "Блок подачи питания",
+      "sort": 20
+    },
+    {
       "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
       "image_url": "https://static.tildacdn.com/stor3661-3031-4861-b938-313232653331/79609894.jpg",
       "alt": "Блок управления кондиционером 1",
       "sort": 10
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "image_url": "https://static.tildacdn.com/stor3862-3962-4962-a663-663935396135/59771555.jpg",
+      "alt": "Блок управления кондиционером 1",
+      "sort": 20
     },
     {
       "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
@@ -1490,10 +1508,22 @@
       "sort": 10
     },
     {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "image_url": "https://static.tildacdn.com/stor3862-3962-4962-a663-663935396135/59771555.jpg",
+      "alt": "Блок управления кондиционером 2",
+      "sort": 20
+    },
+    {
       "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
       "image_url": "https://static.tildacdn.com/stor6462-3933-4832-b762-623133313061/53916404.jpg",
       "alt": "Блок выключателя массы",
       "sort": 10
+    },
+    {
+      "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "image_url": "https://static.tildacdn.com/stor3134-3866-4164-b264-396131366663/69626617.jpg",
+      "alt": "Блок выключателя массы",
+      "sort": 20
     }
   ],
   "related_products": [
