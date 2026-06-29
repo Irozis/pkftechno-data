@@ -500,6 +500,7 @@
 <script>
   (function () {
     var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json';
+    var ASSET_BASE_URL = DATA_URL.replace(/\/data\/products\.json(?:[?#].*)?$/, '');
     var AUTOPLAY_INTERVAL_MS = 10000;
     var REQUEST_CTA_TEXT = 'Оставить заявку';
     var PLACEHOLDER = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(
@@ -528,6 +529,42 @@
     function getSortValue(item) {
       var sort = Number(item && item.sort);
       return Number.isFinite(sort) ? sort : 0;
+    }
+
+    function resolveAssetUrl(value) {
+      if (!value || value === PLACEHOLDER || /^(?:https?:)?\/\//i.test(value) || value.indexOf('data:') === 0) {
+        return value || '';
+      }
+
+      if (value.charAt(0) === '/') {
+        return ASSET_BASE_URL + value;
+      }
+
+      return ASSET_BASE_URL + '/' + value.replace(/^\.?\//, '');
+    }
+
+    function normalizeProductImageUrls(data) {
+      if (!data || typeof data !== 'object') {
+        return data;
+      }
+
+      if (Array.isArray(data.products)) {
+        data.products.forEach(function (product) {
+          if (product && product.image_url) {
+            product.image_url = resolveAssetUrl(product.image_url);
+          }
+        });
+      }
+
+      if (Array.isArray(data.images)) {
+        data.images.forEach(function (image) {
+          if (image && image.image_url) {
+            image.image_url = resolveAssetUrl(image.image_url);
+          }
+        });
+      }
+
+      return data;
     }
 
     function findAtom(element) {
@@ -1178,7 +1215,7 @@
           throw new Error('HTTP ' + response.status);
         }
 
-        var data = await response.json();
+        var data = normalizeProductImageUrls(await response.json());
         var products = Array.isArray(data.products) ? data.products : [];
         var product = products.find(function (item) {
           return item && item.slug === slug;
