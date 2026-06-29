@@ -241,7 +241,7 @@
       "cta_text": "Получить консультацию",
       "sort": 160,
       "status": "published",
-      "image_url": "/images/products/mtso-2/shchit-upravleniya-1.png"
+      "image_url": "/assets/products/mtso-2/mtso2-control-panel-closed.png"
     },
     {
       "slug": "blok-podachi-pitaniya-bpp-mtso-2",
@@ -258,7 +258,7 @@
       "cta_text": "Получить консультацию",
       "sort": 170,
       "status": "published",
-      "image_url": "/images/products/mtso-2/blok-podachi-pitaniya-1.png"
+      "image_url": "/assets/products/mtso-2/mtso2-bpp-closed.png"
     },
     {
       "slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
@@ -275,7 +275,7 @@
       "cta_text": "Получить консультацию",
       "sort": 180,
       "status": "published",
-      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-1-1.png"
+      "image_url": "/assets/products/mtso-2/mtso2-buk1-closed.png"
     },
     {
       "slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
@@ -292,7 +292,7 @@
       "cta_text": "Получить консультацию",
       "sort": 190,
       "status": "published",
-      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-2-1.png"
+      "image_url": "/assets/products/mtso-2/mtso2-buk2-closed.png"
     },
     {
       "slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
@@ -309,7 +309,7 @@
       "cta_text": "Получить консультацию",
       "sort": 200,
       "status": "published",
-      "image_url": "/images/products/mtso-2/blok-vyklyuchatelya-massy-1.png"
+      "image_url": "/assets/products/mtso-2/mtso2-bvm-closed.png"
     }
   ],
   "characteristics": [
@@ -1467,61 +1467,61 @@
     },
     {
       "product_slug": "shchit-upravleniya-shchu-mtso-2",
-      "image_url": "/images/products/mtso-2/shchit-upravleniya-1.png",
+      "image_url": "/assets/products/mtso-2/mtso2-control-panel-closed.png",
       "alt": "Щит управления - изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shchit-upravleniya-shchu-mtso-2",
-      "image_url": "/images/products/mtso-2/shchit-upravleniya-2.png",
+      "image_url": "/assets/products/mtso-2/mtso2-control-panel-open.png",
       "alt": "Щит управления - изображение 2",
       "sort": 20
     },
     {
       "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
-      "image_url": "/images/products/mtso-2/blok-podachi-pitaniya-1.png",
+      "image_url": "/assets/products/mtso-2/mtso2-bpp-closed.png",
       "alt": "Блок подачи питания - изображение 1",
       "sort": 10
     },
     {
       "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
-      "image_url": "/images/products/mtso-2/blok-podachi-pitaniya-2.png",
+      "image_url": "/assets/products/mtso-2/mtso2-bpp-open.png",
       "alt": "Блок подачи питания - изображение 2",
       "sort": 20
     },
     {
       "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
-      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-1-1.png",
+      "image_url": "/assets/products/mtso-2/mtso2-buk1-closed.png",
       "alt": "Блок управления кондиционером 1 - изображение 1",
       "sort": 10
     },
     {
       "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
-      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-1-2.png",
+      "image_url": "/assets/products/mtso-2/mtso2-buk1-open.png",
       "alt": "Блок управления кондиционером 1 - изображение 2",
       "sort": 20
     },
     {
       "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
-      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-2-1.png",
+      "image_url": "/assets/products/mtso-2/mtso2-buk2-closed.png",
       "alt": "Блок управления кондиционером 2 - изображение 1",
       "sort": 10
     },
     {
       "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
-      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-2-2.png",
+      "image_url": "/assets/products/mtso-2/mtso2-buk2-open.png",
       "alt": "Блок управления кондиционером 2 - изображение 2",
       "sort": 20
     },
     {
       "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
-      "image_url": "/images/products/mtso-2/blok-vyklyuchatelya-massy-1.png",
+      "image_url": "/assets/products/mtso-2/mtso2-bvm-closed.png",
       "alt": "Блок выключателя массы - изображение 1",
       "sort": 10
     },
     {
       "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
-      "image_url": "/images/products/mtso-2/blok-vyklyuchatelya-massy-2.png",
+      "image_url": "/assets/products/mtso-2/mtso2-bvm-open.png",
       "alt": "Блок выключателя массы - изображение 2",
       "sort": 20
     }
