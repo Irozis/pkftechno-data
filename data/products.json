@@ -228,8 +228,8 @@
     },
     {
       "slug": "shchit-upravleniya-shchu-mtso-2",
-      "title": "Щит управления ЩУ МТСО-2",
-      "hero_title": "ЩУ МТСО-2",
+      "title": "Щит управления",
+      "hero_title": "Щит управления",
       "section": "НКУ для железнодорожной техники",
       "series": "МТСО-2",
       "type": "Щит управления",
@@ -241,12 +241,12 @@
       "cta_text": "Получить консультацию",
       "sort": 160,
       "status": "published",
-      "image_url": "https://static.tildacdn.com/tild6266-3436-4231-a334-333563353263/2____-2-min.jpg"
+      "image_url": "/images/products/mtso-2/shchit-upravleniya-1.png"
     },
     {
       "slug": "blok-podachi-pitaniya-bpp-mtso-2",
-      "title": "Блок подачи питания БПП МТСО-2",
-      "hero_title": "БПП МТСО-2",
+      "title": "Блок подачи питания",
+      "hero_title": "Блок подачи питания",
       "section": "НКУ для железнодорожной техники",
       "series": "МТСО-2",
       "type": "Блок питания",
@@ -258,12 +258,12 @@
       "cta_text": "Получить консультацию",
       "sort": 170,
       "status": "published",
-      "image_url": "https://static.tildacdn.com/tild3833-3263-4135-b461-313935303035/6____-2-min.jpg"
+      "image_url": "/images/products/mtso-2/blok-podachi-pitaniya-1.png"
     },
     {
       "slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
-      "title": "Блок управления кондиционером БУК 1 МТСО-2",
-      "hero_title": "БУК 1 МТСО-2",
+      "title": "Блок управления кондиционером 1",
+      "hero_title": "Блок управления кондиционером 1",
       "section": "НКУ для железнодорожной техники",
       "series": "МТСО-2",
       "type": "Блок управления",
@@ -275,12 +275,12 @@
       "cta_text": "Получить консультацию",
       "sort": 180,
       "status": "published",
-      "image_url": "https://static.tildacdn.com/tild3731-3564-4361-a662-383664376138/5____-2_1-min.jpg"
+      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-1-1.png"
     },
     {
       "slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
-      "title": "Блок управления кондиционером БУК 2 МТСО-2",
-      "hero_title": "БУК 2 МТСО-2",
+      "title": "Блок управления кондиционером 2",
+      "hero_title": "Блок управления кондиционером 2",
       "section": "НКУ для железнодорожной техники",
       "series": "МТСО-2",
       "type": "Блок управления",
@@ -292,12 +292,12 @@
       "cta_text": "Получить консультацию",
       "sort": 190,
       "status": "published",
-      "image_url": "https://static.tildacdn.com/tild3565-3137-4761-a565-636661366134/4____-2-min.jpg"
+      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-2-1.png"
     },
     {
       "slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
-      "title": "Блок выключателя массы БВМ МТСО-2",
-      "hero_title": "БВМ МТСО-2",
+      "title": "Блок выключателя массы",
+      "hero_title": "Блок выключателя массы",
       "section": "НКУ для железнодорожной техники",
       "series": "МТСО-2",
       "type": "Блок выключателя массы",
@@ -309,7 +309,7 @@
       "cta_text": "Получить консультацию",
       "sort": 200,
       "status": "published",
-      "image_url": "https://static.tildacdn.com/tild6533-6362-4430-b136-363938303564/3____-2_-min.jpg"
+      "image_url": "/images/products/mtso-2/blok-vyklyuchatelya-massy-1.png"
     }
   ],
   "characteristics": [
@@ -1467,81 +1467,63 @@
     },
     {
       "product_slug": "shchit-upravleniya-shchu-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild6266-3436-4231-a334-333563353263/2____-2-min.jpg",
-      "alt": "Щит управления ЩУ МТСО-2 - image 1",
+      "image_url": "/images/products/mtso-2/shchit-upravleniya-1.png",
+      "alt": "Щит управления - изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shchit-upravleniya-shchu-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild3631-6662-4134-b962-356265613863/2____-2_1-min.jpg",
-      "alt": "Щит управления ЩУ МТСО-2 - image 2",
+      "image_url": "/images/products/mtso-2/shchit-upravleniya-2.png",
+      "alt": "Щит управления - изображение 2",
       "sort": 20
     },
     {
       "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild3833-3263-4135-b461-313935303035/6____-2-min.jpg",
-      "alt": "Блок подачи питания БПП МТСО-2 - image 1",
+      "image_url": "/images/products/mtso-2/blok-podachi-pitaniya-1.png",
+      "alt": "Блок подачи питания - изображение 1",
       "sort": 10
     },
     {
       "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild6239-6233-4935-b535-626333323831/6____-2-min_1.jpg",
-      "alt": "Блок подачи питания БПП МТСО-2 - image 2",
+      "image_url": "/images/products/mtso-2/blok-podachi-pitaniya-2.png",
+      "alt": "Блок подачи питания - изображение 2",
       "sort": 20
     },
     {
-      "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild6634-6333-4461-a365-646435383862/6____-2-min.jpg",
-      "alt": "Блок подачи питания БПП МТСО-2 - image 3",
-      "sort": 30
-    },
-    {
       "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild3731-3564-4361-a662-383664376138/5____-2_1-min.jpg",
-      "alt": "Блок управления кондиционером БУК 1 МТСО-2 - image 1",
+      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-1-1.png",
+      "alt": "Блок управления кондиционером 1 - изображение 1",
       "sort": 10
     },
     {
       "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild3938-3036-4766-b936-393437653764/5____-2_1-min.jpg",
-      "alt": "Блок управления кондиционером БУК 1 МТСО-2 - image 2",
+      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-1-2.png",
+      "alt": "Блок управления кондиционером 1 - изображение 2",
       "sort": 20
     },
     {
       "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild3565-3137-4761-a565-636661366134/4____-2-min.jpg",
-      "alt": "Блок управления кондиционером БУК 2 МТСО-2 - image 1",
+      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-2-1.png",
+      "alt": "Блок управления кондиционером 2 - изображение 1",
       "sort": 10
     },
     {
       "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild3733-3262-4635-b838-363337333166/4____-2_1-min.png",
-      "alt": "Блок управления кондиционером БУК 2 МТСО-2 - image 2",
+      "image_url": "/images/products/mtso-2/blok-upravleniya-kondicionerom-2-2.png",
+      "alt": "Блок управления кондиционером 2 - изображение 2",
       "sort": 20
     },
     {
-      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild3732-3864-4332-a234-623563643738/4____-2-min.jpg",
-      "alt": "Блок управления кондиционером БУК 2 МТСО-2 - image 3",
-      "sort": 30
-    },
-    {
       "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild6533-6362-4430-b136-363938303564/3____-2_-min.jpg",
-      "alt": "Блок выключателя массы БВМ МТСО-2 - image 1",
+      "image_url": "/images/products/mtso-2/blok-vyklyuchatelya-massy-1.png",
+      "alt": "Блок выключателя массы - изображение 1",
       "sort": 10
     },
     {
       "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild6666-3364-4466-b335-643232653034/3____-2_1.png",
-      "alt": "Блок выключателя массы БВМ МТСО-2 - image 2",
+      "image_url": "/images/products/mtso-2/blok-vyklyuchatelya-massy-2.png",
+      "alt": "Блок выключателя массы - изображение 2",
       "sort": 20
-    },
-    {
-      "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
-      "image_url": "https://static.tildacdn.com/tild6465-3465-4131-b666-666537303131/3____-2_-min.jpg",
-      "alt": "Блок выключателя массы БВМ МТСО-2 - image 3",
-      "sort": 30
     }
   ],
   "related_products": [
