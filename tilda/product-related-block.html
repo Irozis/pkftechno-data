@@ -162,15 +162,23 @@
       return Number.isFinite(sort) ? sort : 0;
     }
 
-    function getProductImage(product, data) {
-      var image = (Array.isArray(data.images) ? data.images : [])
+    function getProductImages(product, data) {
+      if (!product || !product.slug) {
+        return [];
+      }
+
+      return (Array.isArray(data.images) ? data.images : [])
         .filter(function (item) {
           return item && item.product_slug === product.slug && item.image_url;
         })
         .sort(function (a, b) {
           return getSortValue(a) - getSortValue(b);
-        })[0];
+        });
+    }
 
+    function getProductImage(product, data) {
+      var images = getProductImages(product, data);
+      var image = images[0];
       return (image && image.image_url) || product.image_url || PLACEHOLDER;
     }
 

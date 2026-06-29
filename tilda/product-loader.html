@@ -58,6 +58,12 @@
     cursor: zoom-in;
   }
 
+  .js-product-image,
+  .js-product-image .tn-atom,
+  .js-product-image img {
+    cursor: zoom-in;
+  }
+
   .pkf-product-slider__footer {
     display: flex;
     gap: 16px;
@@ -565,6 +571,46 @@
       });
     }
 
+    function bindImageLightbox(selector, images, startIndex) {
+      document.querySelectorAll('.' + selector).forEach(function (element) {
+        var target = element.matches && element.matches('img') ? element : element.querySelector('img');
+        var clickable = target || findAtom(element);
+
+        if (!clickable || !clickable.setAttribute) {
+          return;
+        }
+
+        clickable.pkfLightboxImages = images;
+        clickable.pkfLightboxIndex = startIndex || 0;
+        clickable.style.cursor = 'zoom-in';
+
+        if (!clickable.hasAttribute('tabindex')) {
+          clickable.setAttribute('tabindex', '0');
+        }
+
+        if (!clickable.hasAttribute('aria-label')) {
+          clickable.setAttribute('aria-label', 'Open product image');
+        }
+
+        if (clickable.dataset.pkfLightboxBound === 'true') {
+          return;
+        }
+
+        clickable.dataset.pkfLightboxBound = 'true';
+        clickable.addEventListener('click', function () {
+          openLightbox(clickable.pkfLightboxImages || [], clickable.pkfLightboxIndex || 0);
+        });
+        clickable.addEventListener('keydown', function (event) {
+          if (event.key !== 'Enter' && event.key !== ' ') {
+            return;
+          }
+
+          event.preventDefault();
+          openLightbox(clickable.pkfLightboxImages || [], clickable.pkfLightboxIndex || 0);
+        });
+      });
+    }
+
     function resolveImages(product, data) {
       var rows = Array.isArray(data.images) ? data.images : [];
       var images = rows
@@ -692,6 +738,10 @@
     }
 
     function openLightbox(images, index, pauseAutoplay, resumeAutoplay, onChange) {
+      if (!Array.isArray(images) || images.length === 0) {
+        return;
+      }
+
       if (typeof pauseAutoplay === 'function') {
         pauseAutoplay();
       }
@@ -704,6 +754,7 @@
       renderLightbox();
       lightbox.root.classList.add('is-open');
       document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
     }
 
     function closeLightbox() {
@@ -713,6 +764,7 @@
 
       lightbox.root.classList.remove('is-open');
       document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
 
       var resumeAutoplay = lightbox.resumeAutoplay;
       lightbox.resumeAutoplay = null;
@@ -1093,6 +1145,7 @@
       if (!renderGallery(images)) {
         if (document.querySelectorAll('.js-product-image').length > 0) {
           setImage('js-product-image', mainImage.image_url, mainImage.alt || product.title || '');
+          bindImageLightbox('js-product-image', images, 0);
         } else {
           console.warn('PKF product loader: neither .js-product-gallery nor .js-product-image was found.');
         }
