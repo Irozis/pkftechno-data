@@ -225,6 +225,86 @@
       "cta_text": "Оставить заявку",
       "sort": 150,
       "status": "published"
+    },
+    {
+      "slug": "shchit-upravleniya-shchu-mtso-2",
+      "title": "Щит управления ЩУ МТСО-2",
+      "section": "НКУ для железнодорожной техники",
+      "series": "МТСО-2",
+      "type": "Щит управления",
+      "short_description": "Щит управления электрооборудованием модуля технического сопровождения путевых машин.",
+      "hero_description": "Щит управления электрооборудованием модуля технического сопровождения путевых машин.",
+      "description": "ЩУ МТСО-2 является комплектующим изделием модуля технического сопровождения и обслуживания путевых машин МТСО-2.",
+      "purpose": "Управление электрооборудованием модуля технического сопровождения путевых машин МТСО-2.",
+      "catalog_url": "/mtso-2",
+      "cta_text": "Получить консультацию",
+      "sort": 160,
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/stor3765-6561-4463-b632-666132313765/51666339.jpg"
+    },
+    {
+      "slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "title": "Блок подачи питания БПП МТСО-2",
+      "section": "НКУ для железнодорожной техники",
+      "series": "МТСО-2",
+      "type": "Блок питания",
+      "short_description": "Блок подачи питания для работы в составе оборудования МТСО-2.",
+      "hero_description": "Блок подачи питания для работы в составе оборудования МТСО-2.",
+      "description": "БПП МТСО-2 предназначен для обеспечения питания систем, устройств и оборудования модуля технического сопровождения путевых машин.",
+      "purpose": "Подача питания и работа в составе электрооборудования модуля МТСО-2.",
+      "catalog_url": "/mtso-2",
+      "cta_text": "Получить консультацию",
+      "sort": 170,
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/stor6433-6665-4335-b033-303730633265/38727052.jpg"
+    },
+    {
+      "slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "title": "Блок управления кондиционером БУК 1 МТСО-2",
+      "section": "НКУ для железнодорожной техники",
+      "series": "МТСО-2",
+      "type": "Блок управления",
+      "short_description": "Блок управления системой кондиционирования модуля МТСО-2.",
+      "hero_description": "Блок управления системой кондиционирования модуля МТСО-2.",
+      "description": "БУК 1 МТСО-2 предназначен для управления электрооборудованием модуля кондиционера.",
+      "purpose": "Управление электрооборудованием модуля кондиционера в составе МТСО-2.",
+      "catalog_url": "/mtso-2",
+      "cta_text": "Получить консультацию",
+      "sort": 180,
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/stor3661-3031-4861-b938-313232653331/79609894.jpg"
+    },
+    {
+      "slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "title": "Блок управления кондиционером БУК 2 МТСО-2",
+      "section": "НКУ для железнодорожной техники",
+      "series": "МТСО-2",
+      "type": "Блок управления",
+      "short_description": "Блок управления кондиционером для электрооборудования модуля МТСО-2.",
+      "hero_description": "Блок управления кондиционером для электрооборудования модуля МТСО-2.",
+      "description": "БУК 2 МТСО-2 предназначен для управления электрооборудованием модуля кондиционера.",
+      "purpose": "Управление электрооборудованием модуля кондиционера в составе МТСО-2.",
+      "catalog_url": "/mtso-2",
+      "cta_text": "Получить консультацию",
+      "sort": 190,
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/stor3165-3035-4363-a137-323462363465/83283490.png"
+    },
+    {
+      "slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "title": "Блок выключателя массы БВМ МТСО-2",
+      "section": "НКУ для железнодорожной техники",
+      "series": "МТСО-2",
+      "type": "Блок выключателя массы",
+      "short_description": "Блок выключателя массы для управления электрооборудованием модуля МТСО-2.",
+      "hero_description": "Блок выключателя массы для управления электрооборудованием модуля МТСО-2.",
+      "description": "БВМ МТСО-2 является элементом модуля технического сопровождения и обслуживания путевых машин.",
+      "purpose": "Управление электрооборудованием модуля МТСО-2.",
+      "catalog_url": "/mtso-2",
+      "cta_text": "Получить консультацию",
+      "sort": 200,
+      "status": "published",
+      "image_url": "https://static.tildacdn.com/stor6462-3933-4832-b762-623133313061/53916404.jpg"
     }
   ],
   "characteristics": [
@@ -1067,6 +1147,166 @@
       "value": "345...418 В (перем. ток)",
       "unit": "",
       "sort": 60
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "group": "Электрические параметры",
+      "name": "Номинальное напряжение бортовой сети",
+      "value": "19-29 В",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "group": "Основные параметры",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "group": "Климатическое исполнение",
+      "name": "Климатическое исполнение",
+      "value": "У3 по ГОСТ 15150-69",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "group": "Климатическое исполнение",
+      "name": "Диапазон рабочих температур",
+      "value": "от -10 °C до +40 °C",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "group": "Защита и эксплуатация",
+      "name": "Степень защиты",
+      "value": "IP 20 по ГОСТ 14254-80",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "group": "Защита и эксплуатация",
+      "name": "Условия эксплуатации",
+      "value": "В части воздействия механических факторов должны соответствовать группе М25 по ГОСТ 17516.1-90",
+      "unit": "",
+      "sort": 60
+    },
+    {
+      "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "group": "Функциональные характеристики",
+      "name": "Функциональное описание",
+      "value": "Комплектующее изделие модуля технического сопровождения путевых машин МТСО-2; обеспечивает управление электрооборудованием модуля",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "group": "Электрические параметры",
+      "name": "Номинальное напряжение бортовой сети",
+      "value": "-",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "group": "Основные параметры",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "group": "Климатическое исполнение",
+      "name": "Климатическое исполнение",
+      "value": "У3 по ГОСТ 15150-69",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "group": "Климатическое исполнение",
+      "name": "Диапазон рабочих температур",
+      "value": "от -40 °C до +40 °C",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "group": "Защита и эксплуатация",
+      "name": "Степень защиты",
+      "value": "IP21 по ГОСТ 14254-80",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "group": "Защита и эксплуатация",
+      "name": "Условия эксплуатации",
+      "value": "М25 по ГОСТ 30631-99",
+      "unit": "",
+      "sort": 60
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "group": "Электрические параметры",
+      "name": "Номинальное напряжение бортовой сети",
+      "value": "-",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "group": "Основные параметры",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "group": "Климатическое исполнение",
+      "name": "Климатическое исполнение",
+      "value": "У3 по ГОСТ 15150-69",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "group": "Климатическое исполнение",
+      "name": "Диапазон рабочих температур",
+      "value": "от -40 °C до +40 °C",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "group": "Защита и эксплуатация",
+      "name": "Степень защиты",
+      "value": "IP 21 по ГОСТ 14254-80",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "group": "Защита и эксплуатация",
+      "name": "Условия эксплуатации",
+      "value": "В части воздействия механических факторов должны соответствовать группе М25 по ГОСТ 30631-99",
+      "unit": "",
+      "sort": 60
+    },
+    {
+      "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "group": "Функциональные характеристики",
+      "name": "Функциональное описание",
+      "value": "Элемент модуля технического сопровождения и обслуживания путевых машин; предназначен для управления электрооборудованием модуля",
+      "unit": "",
+      "sort": 10
     }
   ],
   "images": [
@@ -1218,6 +1458,36 @@
       "product_slug": "shs-pk-pss-2p",
       "image_url": "https://static.tildacdn.com/tild6538-3035-4661-b665-313834656332/__.png",
       "alt": "ШС ПК ПСС-2П - image 1",
+      "sort": 10
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "image_url": "https://static.tildacdn.com/stor3765-6561-4463-b632-666132313765/51666339.jpg",
+      "alt": "Щит управления ЩУ МТСО-2",
+      "sort": 10
+    },
+    {
+      "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "image_url": "https://static.tildacdn.com/stor6433-6665-4335-b033-303730633265/38727052.jpg",
+      "alt": "Блок подачи питания БПП МТСО-2",
+      "sort": 10
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "image_url": "https://static.tildacdn.com/stor3661-3031-4861-b938-313232653331/79609894.jpg",
+      "alt": "Блок управления кондиционером БУК 1 МТСО-2",
+      "sort": 10
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "image_url": "https://static.tildacdn.com/stor3165-3035-4363-a137-323462363465/83283490.png",
+      "alt": "Блок управления кондиционером БУК 2 МТСО-2",
+      "sort": 10
+    },
+    {
+      "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "image_url": "https://static.tildacdn.com/stor6462-3933-4832-b762-623133313061/53916404.jpg",
+      "alt": "Блок выключателя массы БВМ МТСО-2",
       "sort": 10
     }
   ],
@@ -1431,6 +1701,106 @@
       "product_slug": "shtm-pk-pss-2p",
       "related_slug": "pu-pk-pss-2p",
       "sort": 30
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "related_slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "sort": 10
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "related_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "sort": 20
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "related_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "sort": 30
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-mtso-2",
+      "related_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "sort": 40
+    },
+    {
+      "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "related_slug": "shchit-upravleniya-shchu-mtso-2",
+      "sort": 10
+    },
+    {
+      "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "related_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "sort": 20
+    },
+    {
+      "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "related_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "sort": 30
+    },
+    {
+      "product_slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "related_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "sort": 40
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "related_slug": "shchit-upravleniya-shchu-mtso-2",
+      "sort": 10
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "related_slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "sort": 20
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "related_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "sort": 30
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "related_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "sort": 40
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "related_slug": "shchit-upravleniya-shchu-mtso-2",
+      "sort": 10
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "related_slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "sort": 20
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "related_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "sort": 30
+    },
+    {
+      "product_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "related_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "sort": 40
+    },
+    {
+      "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "related_slug": "shchit-upravleniya-shchu-mtso-2",
+      "sort": 10
+    },
+    {
+      "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "related_slug": "blok-podachi-pitaniya-bpp-mtso-2",
+      "sort": 20
+    },
+    {
+      "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "related_slug": "blok-upravleniya-kondicionerom-buk-1-mtso-2",
+      "sort": 30
+    },
+    {
+      "product_slug": "blok-vyklyuchatelya-massy-bvm-mtso-2",
+      "related_slug": "blok-upravleniya-kondicionerom-buk-2-mtso-2",
+      "sort": 40
     }
   ],
   "dictionaries": {
@@ -1440,11 +1810,16 @@
       "Шкаф коммутации",
       "Пульт управления",
       "Шкаф тиристорных модулей",
-      "Распределительное устройство"
+      "Распределительное устройство",
+      "Щит управления",
+      "Блок питания",
+      "Блок управления",
+      "Блок выключателя массы"
     ],
     "series": [
       "ПСС-2П",
-      "ЭКРУ-6"
+      "ЭКРУ-6",
+      "МТСО-2"
     ],
     "sections": [
       "НКУ для железнодорожной техники",
