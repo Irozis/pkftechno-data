@@ -326,7 +326,7 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "https://static.tildacdn.com/tild6530-3437-4131-b233-633866646436/7____-_1-min.png"
+      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-pravyj-vpo-s-closed.png"
     },
     {
       "slug": "pult-upravleniya-levyj-vpo-s",
@@ -343,7 +343,7 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "https://static.tildacdn.com/tild6333-3231-4266-b863-376238353239/8____-_1-min.png"
+      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-levyj-vpo-s-closed.png"
     },
     {
       "slug": "shchit-upravleniya-shchu-vpo-s",
@@ -360,7 +360,7 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "https://static.tildacdn.com/tild3034-6131-4436-b464-356331353037/9___--min.jpg"
+      "image_url": "/assets/products/railway-nku/vpo-s/shchit-upravleniya-shchu-vpo-s-closed.png"
     },
     {
       "slug": "shkaf-nasosov-dvizheniya-shnd-vpo-s",
@@ -377,7 +377,7 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "https://static.tildacdn.com/tild3761-6235-4163-b735-326363373561/10____--min_1.jpg"
+      "image_url": "/assets/products/railway-nku/vpo-s/shkaf-nasosov-dvizheniya-shnd-vpo-s-open.png"
     },
     {
       "slug": "shkaf-a10-mpv",
@@ -3756,30 +3756,6 @@
       "sort": 20
     },
     {
-      "product_slug": "pult-upravleniya-pravyj-vpo-s",
-      "image_url": "https://static.tildacdn.com/tild6530-3437-4131-b233-633866646436/7____-_1-min.png",
-      "alt": "Пульт управления правый ВПО-С",
-      "sort": 10
-    },
-    {
-      "product_slug": "pult-upravleniya-levyj-vpo-s",
-      "image_url": "https://static.tildacdn.com/tild6333-3231-4266-b863-376238353239/8____-_1-min.png",
-      "alt": "Пульт управления левый ВПО-С",
-      "sort": 10
-    },
-    {
-      "product_slug": "shchit-upravleniya-shchu-vpo-s",
-      "image_url": "https://static.tildacdn.com/tild3034-6131-4436-b464-356331353037/9___--min.jpg",
-      "alt": "Щит управления ЩУ ВПО-С",
-      "sort": 10
-    },
-    {
-      "product_slug": "shkaf-nasosov-dvizheniya-shnd-vpo-s",
-      "image_url": "https://static.tildacdn.com/tild3761-6235-4163-b735-326363373561/10____--min_1.jpg",
-      "alt": "Шкаф насосов движения ШНД ВПО-С",
-      "sort": 10
-    },
-    {
       "product_slug": "shkaf-a10-mpv",
       "image_url": "https://static.tildacdn.com/tild3833-6430-4338-b838-623563663661/11__10_-min_1.jpg",
       "alt": "Шкаф А10 МПВ",
@@ -3909,6 +3885,48 @@
       "product_slug": "elektricheskij-shkaf-a11-ss-pom",
       "image_url": "https://static.tildacdn.com/tild6466-6130-4331-b862-386634303864/38_11_--min.jpg",
       "alt": "Электрический шкаф А11 СС-ПОМ",
+      "sort": 10
+    },
+    {
+      "product_slug": "pult-upravleniya-pravyj-vpo-s",
+      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-pravyj-vpo-s-closed.png",
+      "alt": "Пульт управления правый ВПО-С",
+      "sort": 10
+    },
+    {
+      "product_slug": "pult-upravleniya-pravyj-vpo-s",
+      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-pravyj-vpo-s-open.png",
+      "alt": "Пульт управления правый ВПО-С",
+      "sort": 20
+    },
+    {
+      "product_slug": "pult-upravleniya-levyj-vpo-s",
+      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-levyj-vpo-s-closed.png",
+      "alt": "Пульт управления левый ВПО-С",
+      "sort": 10
+    },
+    {
+      "product_slug": "pult-upravleniya-levyj-vpo-s",
+      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-levyj-vpo-s-open.png",
+      "alt": "Пульт управления левый ВПО-С",
+      "sort": 20
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-vpo-s",
+      "image_url": "/assets/products/railway-nku/vpo-s/shchit-upravleniya-shchu-vpo-s-closed.png",
+      "alt": "Щит управления ЩУ ВПО-С",
+      "sort": 10
+    },
+    {
+      "product_slug": "shchit-upravleniya-shchu-vpo-s",
+      "image_url": "/assets/products/railway-nku/vpo-s/shchit-upravleniya-shchu-vpo-s-open.png",
+      "alt": "Щит управления ЩУ ВПО-С",
+      "sort": 20
+    },
+    {
+      "product_slug": "shkaf-nasosov-dvizheniya-shnd-vpo-s",
+      "image_url": "/assets/products/railway-nku/vpo-s/shkaf-nasosov-dvizheniya-shnd-vpo-s-open.png",
+      "alt": "Шкаф насосов движения ШНД ВПО-С",
       "sort": 10
     }
   ],
