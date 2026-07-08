@@ -326,7 +326,7 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-pravyj-vpo-s-closed.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/pult-upravleniya-pravyj-vpo-s-closed.png"
     },
     {
       "slug": "pult-upravleniya-levyj-vpo-s",
@@ -343,7 +343,7 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-levyj-vpo-s-closed.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/pult-upravleniya-levyj-vpo-s-closed.png"
     },
     {
       "slug": "shchit-upravleniya-shchu-vpo-s",
@@ -360,7 +360,7 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "/assets/products/railway-nku/vpo-s/shchit-upravleniya-shchu-vpo-s-closed.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/shchit-upravleniya-shchu-vpo-s-closed.png"
     },
     {
       "slug": "shkaf-nasosov-dvizheniya-shnd-vpo-s",
@@ -377,7 +377,7 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "/assets/products/railway-nku/vpo-s/shkaf-nasosov-dvizheniya-shnd-vpo-s-open.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/shkaf-nasosov-dvizheniya-shnd-vpo-s-open.png"
     },
     {
       "slug": "shkaf-a10-mpv",
@@ -3889,43 +3889,43 @@
     },
     {
       "product_slug": "pult-upravleniya-pravyj-vpo-s",
-      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-pravyj-vpo-s-closed.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/pult-upravleniya-pravyj-vpo-s-closed.png",
       "alt": "Пульт управления правый ВПО-С",
       "sort": 10
     },
     {
       "product_slug": "pult-upravleniya-pravyj-vpo-s",
-      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-pravyj-vpo-s-open.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/pult-upravleniya-pravyj-vpo-s-open.png",
       "alt": "Пульт управления правый ВПО-С",
       "sort": 20
     },
     {
       "product_slug": "pult-upravleniya-levyj-vpo-s",
-      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-levyj-vpo-s-closed.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/pult-upravleniya-levyj-vpo-s-closed.png",
       "alt": "Пульт управления левый ВПО-С",
       "sort": 10
     },
     {
       "product_slug": "pult-upravleniya-levyj-vpo-s",
-      "image_url": "/assets/products/railway-nku/vpo-s/pult-upravleniya-levyj-vpo-s-open.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/pult-upravleniya-levyj-vpo-s-open.png",
       "alt": "Пульт управления левый ВПО-С",
       "sort": 20
     },
     {
       "product_slug": "shchit-upravleniya-shchu-vpo-s",
-      "image_url": "/assets/products/railway-nku/vpo-s/shchit-upravleniya-shchu-vpo-s-closed.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/shchit-upravleniya-shchu-vpo-s-closed.png",
       "alt": "Щит управления ЩУ ВПО-С",
       "sort": 10
     },
     {
       "product_slug": "shchit-upravleniya-shchu-vpo-s",
-      "image_url": "/assets/products/railway-nku/vpo-s/shchit-upravleniya-shchu-vpo-s-open.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/shchit-upravleniya-shchu-vpo-s-open.png",
       "alt": "Щит управления ЩУ ВПО-С",
       "sort": 20
     },
     {
       "product_slug": "shkaf-nasosov-dvizheniya-shnd-vpo-s",
-      "image_url": "/assets/products/railway-nku/vpo-s/shkaf-nasosov-dvizheniya-shnd-vpo-s-open.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/shkaf-nasosov-dvizheniya-shnd-vpo-s-open.png",
       "alt": "Шкаф насосов движения ШНД ВПО-С",
       "sort": 10
     }
