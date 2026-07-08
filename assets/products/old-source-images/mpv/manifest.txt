@@ -1,0 +1,12 @@
+slug	file	source_page	source_image
+shkaf-a10-mpv	shkaf-a10-mpv.jpg	https://pkftechno.ru/products/shkaf-a10-mpv	https://static.tildacdn.com/tild3833-6430-4338-b838-623563663661/11__10_-min_1.jpg
+shkaf-a28-mpv	shkaf-a28-mpv.jpg	https://pkftechno.ru/products/shkaf-a28-mpv	https://static.tildacdn.com/tild3833-3036-4338-b935-356666383362/12__28_-min_1.jpg
+shkaf-a29-mpv	shkaf-a29-mpv.jpg	https://pkftechno.ru/products/shkaf-a29-mpv	https://static.tildacdn.com/tild6232-3839-4338-b264-373039303166/14__29_-min_1.jpg
+shkaf-a25-mpv	shkaf-a25-mpv.jpg	https://pkftechno.ru/products/shkaf-a25-mpv	https://static.tildacdn.com/tild3035-6137-4335-b632-353033373864/15__25_-min_1.jpg
+shkaf-a26-mpv	shkaf-a26-mpv.jpg	https://pkftechno.ru/products/shkaf-a26-mpv	https://static.tildacdn.com/tild6432-6236-4739-b437-383362386331/13__26_-min_2.jpg
+shkaf-a7-mpv	shkaf-a7-mpv.jpg	https://pkftechno.ru/products/shkaf-a7-mpv	https://static.tildacdn.com/tild3530-3236-4464-b966-626231656139/16__7_-min_1.jpg
+shkaf-a6-mpv	shkaf-a6-mpv.jpg	https://pkftechno.ru/products/shkaf-a6-mpv	https://static.tildacdn.com/tild6532-3136-4664-a330-633637653638/17__6_-min_1.jpg
+shkaf-a27-mpv	shkaf-a27-mpv.jpg	https://pkftechno.ru/products/shkaf-a27-mpv	https://static.tildacdn.com/tild3339-3763-4131-b465-353032363436/18__27_-min.jpg
+shkaf-a17-mpv	shkaf-a17-mpv.jpg	https://pkftechno.ru/products/shkaf-a17-mpv	https://static.tildacdn.com/tild3936-3737-4463-b463-313339376337/19__17_-min.jpg
+shkaf-a18-mpv	shkaf-a18-mpv.jpg	https://pkftechno.ru/products/shkaf-a18-mpv	https://static.tildacdn.com/tild3532-3835-4232-b936-666362396237/20__18_-min.jpg
+shkaf-a24-mpv	NOT_FOUND	https://pkftechno.ru/products/shkaf-a24-mpv	No product image found in the old page HTML or data/products.json.
