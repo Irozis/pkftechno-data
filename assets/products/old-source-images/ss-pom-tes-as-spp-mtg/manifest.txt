@@ -1,0 +1,8 @@
+slug	file	source_page	source_image	status
+elektricheskij-shkaf-a12-ss-pom	elektricheskij-shkaf-a12-ss-pom.jpg	https://pkftechno.ru/products/elektricheskij-shkaf-a12-ss-pom	https://static.tildacdn.com/tild3166-3436-4064-a561-303134373837/37_12_--min.jpg	downloaded
+elektricheskij-shkaf-a11-ss-pom	elektricheskij-shkaf-a11-ss-pom.jpg	https://pkftechno.ru/products/elektricheskij-shkaf-a11-ss-pom	https://static.tildacdn.com/tild6466-6130-4331-b862-386634303864/38_11_--min.jpg	downloaded
+monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400	NOT_FOUND	https://pkftechno.ru/products/monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400	NOT_FOUND	Old page returns Tilda 404; no product image in data/products.json.
+as-01	NOT_FOUND	NOT_FOUND	NOT_FOUND	No AS-01 product/slug found in data/products.json.
+komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p	NOT_FOUND	https://pkftechno.ru/products/komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p	NOT_FOUND	Old page returns Tilda 404; no product image in data/products.json.
+komplekt-pultov-stabilizatora-puti-pricepnogo-spp	NOT_FOUND	https://pkftechno.ru/products/komplekt-pultov-stabilizatora-puti-pricepnogo-spp	NOT_FOUND	Old page returns Tilda 404; no product image in data/products.json.
+komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2	NOT_FOUND	https://pkftechno.ru/products/komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2	NOT_FOUND	Old page returns Tilda 404; no product image in data/products.json.

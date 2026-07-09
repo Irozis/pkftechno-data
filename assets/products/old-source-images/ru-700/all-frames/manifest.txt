@@ -1,0 +1,16 @@
+slug	file	source_page	source_image	sort
+shkaf-upravleniya-shu2-ru-700	shkaf-upravleniya-shu2-ru-700-01.jpg	https://pkftechno.ru/products/shkaf-upravleniya-shu2-ru-700	https://static.tildacdn.com/tild6434-3662-4264-b838-383039656661/48_2_-700-min_1.jpg	10
+shkaf-upravleniya-shu2-ru-700	shkaf-upravleniya-shu2-ru-700-02.jpg	https://pkftechno.ru/products/shkaf-upravleniya-shu2-ru-700	https://static.tildacdn.com/tild3939-3865-4265-b330-626261326262/48_2_-700-min.jpg	20
+shkaf-upravleniya-shu2-ru-700	shkaf-upravleniya-shu2-ru-700-03.jpg	https://pkftechno.ru/products/shkaf-upravleniya-shu2-ru-700	https://static.tildacdn.com/tild3763-3432-4238-b466-393938383838/48_2_-700-min_1.jpg	30
+shkaf-blokov-pitaniya-shbp-ru-700	shkaf-blokov-pitaniya-shbp-ru-700-01.jpg	https://pkftechno.ru/products/shkaf-blokov-pitaniya-shbp-ru-700	https://static.tildacdn.com/tild6164-3634-4237-b137-623264336634/49__-700-min_1.jpg	10
+shkaf-blokov-pitaniya-shbp-ru-700	shkaf-blokov-pitaniya-shbp-ru-700-02.jpg	https://pkftechno.ru/products/shkaf-blokov-pitaniya-shbp-ru-700	https://static.tildacdn.com/tild3039-3136-4636-b066-636164316635/49__-700-min_1.jpg	20
+shkaf-blokov-pitaniya-shbp-ru-700	shkaf-blokov-pitaniya-shbp-ru-700-03.jpg	https://pkftechno.ru/products/shkaf-blokov-pitaniya-shbp-ru-700	https://static.tildacdn.com/tild3938-3134-4864-b964-653234633537/49__-700-min.jpg	30
+shkaf-upravleniya-shu1-ru-700	shkaf-upravleniya-shu1-ru-700-01.jpg	https://pkftechno.ru/products/shkaf-upravleniya-shu1-ru-700	https://static.tildacdn.com/tild6661-3239-4136-b831-396337653133/50_1_-700-min_1.jpg	10
+shkaf-upravleniya-shu1-ru-700	shkaf-upravleniya-shu1-ru-700-02.jpg	https://pkftechno.ru/products/shkaf-upravleniya-shu1-ru-700	https://static.tildacdn.com/tild3966-6539-4837-a361-623335336238/50_1_-700-min.jpg	20
+shkaf-upravleniya-shu1-ru-700	shkaf-upravleniya-shu1-ru-700-03.jpg	https://pkftechno.ru/products/shkaf-upravleniya-shu1-ru-700	https://static.tildacdn.com/tild3461-3030-4838-b264-353330346165/50_1_-700-min_1.jpg	30
+shkaf-silovoj-shs-ru-700	shkaf-silovoj-shs-ru-700-01.jpg	https://pkftechno.ru/products/shkaf-silovoj-shs-ru-700	https://static.tildacdn.com/tild3633-6133-4032-b262-626639636539/51__-700-min_1.jpg	10
+shkaf-silovoj-shs-ru-700	shkaf-silovoj-shs-ru-700-02.jpg	https://pkftechno.ru/products/shkaf-silovoj-shs-ru-700	https://static.tildacdn.com/tild3937-3439-4135-a434-636437333430/51__-700-min_1.jpg	20
+shkaf-silovoj-shs-ru-700	shkaf-silovoj-shs-ru-700-03.jpg	https://pkftechno.ru/products/shkaf-silovoj-shs-ru-700	https://static.tildacdn.com/tild3364-3434-4862-b532-666463656635/51__-700-min_2.jpg	30
+shkaf-raspredeleniya-pitaniya-shrp-ru-700	shkaf-raspredeleniya-pitaniya-shrp-ru-700-01.jpg	https://pkftechno.ru/products/shkaf-raspredeleniya-pitaniya-shrp-ru-700	https://static.tildacdn.com/tild6261-6134-4362-b561-353530326635/52__-700-min.jpg	10
+shkaf-raspredeleniya-pitaniya-shrp-ru-700	shkaf-raspredeleniya-pitaniya-shrp-ru-700-02.jpg	https://pkftechno.ru/products/shkaf-raspredeleniya-pitaniya-shrp-ru-700	https://static.tildacdn.com/tild6435-3364-4465-a535-363062396634/52___700-min.jpg	20
+shkaf-raspredeleniya-pitaniya-shrp-ru-700	shkaf-raspredeleniya-pitaniya-shrp-ru-700-03.jpg	https://pkftechno.ru/products/shkaf-raspredeleniya-pitaniya-shrp-ru-700	https://static.tildacdn.com/tild6364-6662-4465-b738-393736363135/52__-700-min.jpg	30
