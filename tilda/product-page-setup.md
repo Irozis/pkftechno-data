@@ -17,7 +17,7 @@ https://irozis.github.io/pkftechno-data/products/<slug>/
 ## Структура страницы `/product`
 
 1. Header.
-2. Hero товара — Zero Block.
+2. Hero товара — T123 с кодом из `tilda/product-hero-block.html`.
 3. Product Loader — T123, невидимый технический блок.
 4. Описание — T123.
 5. Технический паспорт — T123.
@@ -28,9 +28,9 @@ https://irozis.github.io/pkftechno-data/products/<slug>/
 
 ## Hero товара
 
-Hero собирается вручную в Zero Block. HTML-код не вставляется внутрь hero.
+Используйте отдельный HTML-блок из `tilda/product-hero-block.html`. Он заменяет старый Zero Block и сам подстраивает высоту под заголовок и описание. Вставьте его после Header, а старый Hero Zero Block удалите или отключите.
 
-Добавьте CSS-классы к элементам Zero Block:
+Блок использует следующие CSS-классы:
 
 ```text
 js-product-section

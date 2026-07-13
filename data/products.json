@@ -1096,6 +1096,24 @@
       "status": "published",
       "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/mtg-2.png",
       "hero_title": "Комплект пультов МТГ-2"
+    },
+    {
+      "slug": "as-01",
+      "sort": 670,
+      "title": "Комплект пультов управления АС-01 с безопасным объединённым локомотивным комплексом БЛОК-М-005",
+      "section": "НКУ для железнодорожной техники",
+      "series": "АС-01",
+      "type": "Комплект пультов управления",
+      "short_description": "Комплект пультов управления автомотрисой АС-01.",
+      "hero_description": "Комплект пультов управления автомотрисой АС-01.",
+      "description": "Комплект пультов управления (ПУ1 передней кабины и ПУ2 задней кабины) с интегрированным безопасным локомотивным объединённым комплексом масштабируемым с расширенными функциями, разработки АО «НИИАС», предназначен для управления автомотрисой АС-01. Расширенный функционал позволяет выполнять автоматизированную проверку тормозного оборудования и управлять автомотрисой в режиме автоведения.",
+      "purpose": "Управление автомотрисой АС-01, автоматизированная проверка тормозного оборудования и работа в режиме автоведения.",
+      "source_url": "https://pkftechno.ru/as-01",
+      "catalog_url": "/nku-dlya-zhd-tehniki",
+      "cta_text": "Получить консультацию",
+      "status": "published",
+      "image_url": "",
+      "hero_title": "Комплект пультов АС-01"
     }
   ],
   "characteristics": [
@@ -3546,6 +3564,262 @@
       "value": "345...418 В / 362...399 В",
       "unit": "",
       "sort": 70
+    },
+    {
+      "product_slug": "as-01",
+      "group": "Функциональные характеристики",
+      "name": "Функциональное описание",
+      "value": "Комплект пультов управления автомотрисой АС-01 с интегрированным безопасным локомотивным объединённым комплексом.",
+      "unit": "",
+      "sort": 1
+    },
+    {
+      "product_slug": "as-01",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение бортовой сети",
+      "value": "27 В",
+      "unit": "",
+      "sort": 2
+    },
+    {
+      "product_slug": "as-01",
+      "group": "Технические характеристики",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 3
+    },
+    {
+      "product_slug": "as-01",
+      "group": "Технические характеристики",
+      "name": "Климатическое исполнение",
+      "value": "У3 по ГОСТ 15150-69",
+      "unit": "",
+      "sort": 4
+    },
+    {
+      "product_slug": "as-01",
+      "group": "Технические характеристики",
+      "name": "Диапазон рабочих температур",
+      "value": "от -40 °C до +50 °C",
+      "unit": "",
+      "sort": 5
+    },
+    {
+      "product_slug": "as-01",
+      "group": "Технические характеристики",
+      "name": "Степень защиты",
+      "value": "IP 20 по ГОСТ 14254-80",
+      "unit": "",
+      "sort": 6
+    },
+    {
+      "product_slug": "as-01",
+      "group": "Технические характеристики",
+      "name": "Условия эксплуатации изделия в части воздействия механических факторов",
+      "value": "Группа М25 по ГОСТ 17516.1-90",
+      "unit": "",
+      "sort": 7
+    },
+    {
+      "product_slug": "komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение бортовой сети",
+      "value": "27 В",
+      "unit": "",
+      "sort": 11
+    },
+    {
+      "product_slug": "komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p",
+      "group": "Технические характеристики",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 12
+    },
+    {
+      "product_slug": "komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p",
+      "group": "Технические характеристики",
+      "name": "Климатическое исполнение",
+      "value": "У3 по ГОСТ 15150-69",
+      "unit": "",
+      "sort": 13
+    },
+    {
+      "product_slug": "komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p",
+      "group": "Технические характеристики",
+      "name": "Диапазон рабочих температур",
+      "value": "от -40 °C до +50 °C",
+      "unit": "",
+      "sort": 14
+    },
+    {
+      "product_slug": "komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p",
+      "group": "Технические характеристики",
+      "name": "Степень защиты",
+      "value": "IP 20 по ГОСТ 14254-80",
+      "unit": "",
+      "sort": 15
+    },
+    {
+      "product_slug": "komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p",
+      "group": "Технические характеристики",
+      "name": "Условия эксплуатации изделия в части воздействия механических факторов",
+      "value": "Группа М25 по ГОСТ 17516.1-90",
+      "unit": "",
+      "sort": 16
+    },
+    {
+      "product_slug": "komplekt-pultov-stabilizatora-puti-pricepnogo-spp",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение бортовой сети",
+      "value": "27 В",
+      "unit": "",
+      "sort": 11
+    },
+    {
+      "product_slug": "komplekt-pultov-stabilizatora-puti-pricepnogo-spp",
+      "group": "Технические характеристики",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 12
+    },
+    {
+      "product_slug": "komplekt-pultov-stabilizatora-puti-pricepnogo-spp",
+      "group": "Технические характеристики",
+      "name": "Климатическое исполнение",
+      "value": "У3 по ГОСТ 15150-69",
+      "unit": "",
+      "sort": 13
+    },
+    {
+      "product_slug": "komplekt-pultov-stabilizatora-puti-pricepnogo-spp",
+      "group": "Технические характеристики",
+      "name": "Диапазон рабочих температур",
+      "value": "от -40 °C до +50 °C",
+      "unit": "",
+      "sort": 14
+    },
+    {
+      "product_slug": "komplekt-pultov-stabilizatora-puti-pricepnogo-spp",
+      "group": "Технические характеристики",
+      "name": "Степень защиты",
+      "value": "IP 20 по ГОСТ 14254-80",
+      "unit": "",
+      "sort": 15
+    },
+    {
+      "product_slug": "komplekt-pultov-stabilizatora-puti-pricepnogo-spp",
+      "group": "Технические характеристики",
+      "name": "Условия эксплуатации изделия в части воздействия механических факторов",
+      "value": "Группа М25 по ГОСТ 17516.1-90",
+      "unit": "",
+      "sort": 16
+    },
+    {
+      "product_slug": "komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение бортовой сети",
+      "value": "27 В",
+      "unit": "",
+      "sort": 11
+    },
+    {
+      "product_slug": "komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2",
+      "group": "Технические характеристики",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 12
+    },
+    {
+      "product_slug": "komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2",
+      "group": "Технические характеристики",
+      "name": "Климатическое исполнение",
+      "value": "У3 по ГОСТ 15150-69",
+      "unit": "",
+      "sort": 13
+    },
+    {
+      "product_slug": "komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2",
+      "group": "Технические характеристики",
+      "name": "Диапазон рабочих температур",
+      "value": "от -40 °C до +50 °C",
+      "unit": "",
+      "sort": 14
+    },
+    {
+      "product_slug": "komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2",
+      "group": "Технические характеристики",
+      "name": "Степень защиты",
+      "value": "IP 20 по ГОСТ 14254-80",
+      "unit": "",
+      "sort": 15
+    },
+    {
+      "product_slug": "komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2",
+      "group": "Технические характеристики",
+      "name": "Условия эксплуатации изделия в части воздействия механических факторов",
+      "value": "Группа М25 по ГОСТ 17516.1-90",
+      "unit": "",
+      "sort": 16
+    },
+    {
+      "product_slug": "monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение бортовой сети (пост. ток)",
+      "value": "19...29 В",
+      "unit": "",
+      "sort": 11
+    },
+    {
+      "product_slug": "monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400",
+      "group": "Технические характеристики",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 12
+    },
+    {
+      "product_slug": "monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400",
+      "group": "Технические характеристики",
+      "name": "Климатическое исполнение",
+      "value": "У3 по ГОСТ 15150",
+      "unit": "",
+      "sort": 13
+    },
+    {
+      "product_slug": "monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400",
+      "group": "Технические характеристики",
+      "name": "Диапазон рабочих температур",
+      "value": "от -40 °C до +60 °C",
+      "unit": "",
+      "sort": 14
+    },
+    {
+      "product_slug": "monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400",
+      "group": "Технические характеристики",
+      "name": "Степень защиты",
+      "value": "IP21 по ГОСТ 14254",
+      "unit": "",
+      "sort": 15
+    },
+    {
+      "product_slug": "monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400",
+      "group": "Технические характеристики",
+      "name": "Условия эксплуатации изделия в части воздействия механических факторов",
+      "value": "Группа М25 по ГОСТ 30631",
+      "unit": "",
+      "sort": 16
+    },
+    {
+      "product_slug": "monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение бортовой сети (1ф/3ф перем. ток)",
+      "value": "219...242 В / 362...399 В",
+      "unit": "",
+      "sort": 17
     }
   ],
   "images": [
