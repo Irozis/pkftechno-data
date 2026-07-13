@@ -19,6 +19,7 @@
     max-width: 620px;
     height: auto !important;
     min-height: 0 !important;
+    font-size: clamp(34px, 3.6vw, 48px) !important;
     line-height: 1.1 !important;
     white-space: normal !important;
     overflow: visible !important;
@@ -30,6 +31,7 @@
     height: auto !important;
     min-height: 0 !important;
     margin-top: 18px;
+    line-height: 1.45 !important;
     white-space: normal !important;
     overflow: visible !important;
   }
@@ -62,6 +64,13 @@
   .js-product-image .tn-atom,
   .js-product-image img {
     cursor: zoom-in;
+  }
+
+  .js-product-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
   }
 
   .pkf-product-slider__footer {
@@ -445,6 +454,18 @@
   }
 
   @media (max-width: 639px) {
+    .js-product-title,
+    .js-product-title .tn-atom {
+      max-width: 100%;
+      font-size: 32px !important;
+      line-height: 1.12 !important;
+    }
+
+    .js-product-short,
+    .js-product-short .tn-atom {
+      max-width: 100%;
+    }
+
     .pkf-product-slider__viewport {
       aspect-ratio: 1 / 1;
       border-radius: 18px;
@@ -499,7 +520,7 @@
 
 <script>
   (function () {
-    var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json?v=20260709-other-railway-images';
+    var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json?v=20260709-compact-hero-titles';
     var ASSET_BASE_URL = DATA_URL.replace(/\/data\/products\.json(?:[?#].*)?$/, '');
     var AUTOPLAY_INTERVAL_MS = 10000;
     var REQUEST_CTA_TEXT = 'Оставить заявку';

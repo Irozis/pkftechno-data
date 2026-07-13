@@ -785,7 +785,8 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/tes-1400.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/tes-1400.png",
+      "hero_title": "Моноблок ТЭС-1400"
     },
     {
       "slug": "panel-vvoda-sekciya-1-shchom-2000",
@@ -1057,7 +1058,8 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/asg-30p.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/asg-30p.png",
+      "hero_title": "Комплект пультов АСГ-30П"
     },
     {
       "slug": "komplekt-pultov-stabilizatora-puti-pricepnogo-spp",
@@ -1074,7 +1076,8 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/spp.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/spp.png",
+      "hero_title": "Комплект пультов СПП"
     },
     {
       "slug": "komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2",
@@ -1091,7 +1094,8 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/mtg-2.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/mtg-2.png",
+      "hero_title": "Комплект пультов МТГ-2"
     }
   ],
   "characteristics": [
