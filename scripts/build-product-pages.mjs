@@ -25,6 +25,12 @@ function escapeHtml(value = '') {
     .replace(/'/g, '&#039;');
 }
 
+function toProductPageAssetUrl(value) {
+  const url = String(value || '');
+  if (!url || /^(?:https?:|data:|\/)/i.test(url)) return url;
+  return `../../${url.replace(/^\.\//, '')}`;
+}
+
 function getSortValue(item) {
   const sort = Number(item?.sort);
   return Number.isFinite(sort) ? sort : 0;
@@ -73,7 +79,7 @@ function renderGallery(product, images) {
 
   const cards = gallery.map((image, index) => `
             <figure class="pkf-gallery-item">
-              <img src="${escapeHtml(image.image_url)}" alt="${escapeHtml(image.alt || `${product.title} — изображение ${index + 1}`)}" loading="lazy">
+              <img src="${escapeHtml(toProductPageAssetUrl(image.image_url))}" alt="${escapeHtml(image.alt || `${product.title} — изображение ${index + 1}`)}" loading="lazy">
             </figure>`).join('');
 
   return `
@@ -206,7 +212,7 @@ function renderRelated(product, data, images) {
     .map((item) => `
             <article class="pkf-related-card">
               <a class="pkf-related-image" href="../${encodeURIComponent(item.slug)}/">
-                <img src="${escapeHtml(getProductImage(item, images))}" alt="${escapeHtml(getImageAlt(item, images))}" loading="lazy">
+                <img src="${escapeHtml(toProductPageAssetUrl(getProductImage(item, images)))}" alt="${escapeHtml(getImageAlt(item, images))}" loading="lazy">
               </a>
               <div class="pkf-related-content">
                 <h3><a href="../${encodeURIComponent(item.slug)}/">${escapeHtml(item.title)}</a></h3>
@@ -233,7 +239,7 @@ function renderRelated(product, data, images) {
 function renderPage(product, data) {
   const images = Array.isArray(data.images) ? data.images : [];
   const characteristics = Array.isArray(data.characteristics) ? data.characteristics : [];
-  const imageUrl = getProductImage(product, images);
+  const imageUrl = toProductPageAssetUrl(getProductImage(product, images));
   const imageAlt = getImageAlt(product, images);
   const title = product.title || product.slug;
   const description = getDescription(product);
