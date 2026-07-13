@@ -250,6 +250,44 @@
       font-weight: 700;
     }
 
+    .pkf-gallery-section {
+      background: var(--pkf-bg);
+    }
+
+    .pkf-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .pkf-gallery-item {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 4 / 3;
+      margin: 0;
+      overflow: hidden;
+      background: var(--pkf-white);
+      border: 1px solid var(--pkf-line);
+      border-radius: 8px;
+    }
+
+    .pkf-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .pkf-legacy-content {
+      display: grid;
+      gap: 12px;
+    }
+
+    .pkf-legacy-content p + p {
+      padding-top: 12px;
+      border-top: 1px solid var(--pkf-line);
+    }
+
     .pkf-passport-section {
       background: var(--pkf-white);
     }
@@ -472,6 +510,7 @@
       }
 
       .pkf-meta-grid,
+      .pkf-gallery-grid,
       .pkf-related-grid,
       .pkf-index-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -521,6 +560,7 @@
       }
 
       .pkf-meta-grid,
+      .pkf-gallery-grid,
       .pkf-related-grid,
       .pkf-index-grid {
         grid-template-columns: 1fr;
@@ -593,7 +633,7 @@
     <section class="pkf-hero">
       <div class="pkf-container pkf-hero-grid">
         <div class="pkf-hero-media">
-          <img src="https://static.tildacdn.com/tild6233-3062-4466-a135-333733316433/1__-2_.png" alt="Шкаф силовой 1 МГ">
+          <img src="https://static.tildacdn.com/tild6233-3062-4466-a135-333733316433/1__-2_.png" alt="ШС1 МГ ПСС-2П - image 1">
         </div>
         <div class="pkf-hero-content">
           <div class="pkf-kicker">НКУ для железнодорожной техники / ПСС-2П</div>
@@ -631,6 +671,24 @@
       </div>
     </section>
 
+    
+    <section class="pkf-section pkf-gallery-section">
+      <div class="pkf-container">
+        <div class="pkf-section-head">
+          <span>Изображения</span>
+          <h2>Фотографии изделия</h2>
+        </div>
+        <div class="pkf-gallery-grid">
+            <figure class="pkf-gallery-item">
+              <img src="https://static.tildacdn.com/tild6233-3062-4466-a135-333733316433/1__-2_.png" alt="ШС1 МГ ПСС-2П - image 1" loading="lazy">
+            </figure>
+            <figure class="pkf-gallery-item">
+              <img src="https://static.tildacdn.com/tild6563-3966-4938-a434-616237626538/1__-2.png" alt="ШС1 МГ ПСС-2П - image 2" loading="lazy">
+            </figure></div>
+      </div>
+    </section>
+    
+
     <section id="passport" class="pkf-section pkf-passport-section">
       <div class="pkf-container pkf-passport-layout">
         <div class="pkf-section-head">
@@ -642,47 +700,31 @@
           <div class="pkf-specs" data-specs>
             
             <section class="pkf-spec-group">
-              <h3>Электрические параметры</h3>
+              <h3>Технические характеристики</h3>
               
               <div class="pkf-spec-row">
-                <div class="pkf-spec-name">Номинальное напряжение, постоянный ток</div>
-                <div class="pkf-spec-value">19...29 В</div>
+                <div class="pkf-spec-name">Номинальное напряжение бортовой сети</div>
+                <div class="pkf-spec-value">19...29 В (пост. ток)</div>
               </div>
-              <div class="pkf-spec-row">
-                <div class="pkf-spec-name">Номинальное напряжение, переменный ток</div>
-                <div class="pkf-spec-value">345...418 В</div>
-              </div>
-            </section>
-            <section class="pkf-spec-group">
-              <h3>Основные параметры</h3>
-              
               <div class="pkf-spec-row">
                 <div class="pkf-spec-name">Режим работы</div>
                 <div class="pkf-spec-value">Продолжительный</div>
               </div>
-            </section>
-            <section class="pkf-spec-group">
-              <h3>Климатическое исполнение</h3>
-              
               <div class="pkf-spec-row">
-                <div class="pkf-spec-name">Климатическое исполнение</div>
-                <div class="pkf-spec-value">У3 по ГОСТ 15150-69</div>
+                <div class="pkf-spec-name">Климатическое исполнение У3</div>
+                <div class="pkf-spec-value">по 15150-69</div>
               </div>
               <div class="pkf-spec-row">
                 <div class="pkf-spec-name">Диапазон рабочих температур</div>
                 <div class="pkf-spec-value">от -45 °C до +40 °C</div>
               </div>
-            </section>
-            <section class="pkf-spec-group">
-              <h3>Защита и эксплуатация</h3>
-              
               <div class="pkf-spec-row">
                 <div class="pkf-spec-name">Степень защиты</div>
                 <div class="pkf-spec-value">IP52 по ГОСТ 14254-96</div>
               </div>
               <div class="pkf-spec-row">
-                <div class="pkf-spec-name">Условия эксплуатации</div>
-                <div class="pkf-spec-value">В части воздействия механических факторов должны соответствовать группе М25 по ГОСТ 30631-99</div>
+                <div class="pkf-spec-name">Номинальное напряжение бортовой сети</div>
+                <div class="pkf-spec-value">345...418 В (перем. ток)</div>
               </div>
             </section>
           </div>
@@ -713,7 +755,7 @@
             
             <article class="pkf-related-card">
               <a class="pkf-related-image" href="../shs2-mg-pss-2p/">
-                <img src="https://static.tildacdn.com/tild3562-3534-4065-a139-386261393533/2__-2_2.png" alt="Шкаф силовой 2 МГ" loading="lazy">
+                <img src="https://static.tildacdn.com/tild3562-3534-4065-a139-386261393533/2__-2_2.png" alt="ШС2 МГ ПСС-2П - image 1" loading="lazy">
               </a>
               <div class="pkf-related-content">
                 <h3><a href="../shs2-mg-pss-2p/">ШС2 МГ ПСС-2П</a></h3>
@@ -723,7 +765,7 @@
             </article>
             <article class="pkf-related-card">
               <a class="pkf-related-image" href="../shs3-mg-pss-2p/">
-                <img src="https://static.tildacdn.com/tild3539-3664-4263-b335-643633303461/3__-2_1.png" alt="Шкаф силовой 3 МГ" loading="lazy">
+                <img src="https://static.tildacdn.com/tild3539-3664-4263-b335-643633303461/3__-2_1.png" alt="ШС3 МГ ПСС-2П - image 1" loading="lazy">
               </a>
               <div class="pkf-related-content">
                 <h3><a href="../shs3-mg-pss-2p/">ШС3 МГ ПСС-2П</a></h3>
@@ -733,7 +775,7 @@
             </article>
             <article class="pkf-related-card">
               <a class="pkf-related-image" href="../shs-pk-pss-2p/">
-                <img src="https://static.tildacdn.com/tild6538-3035-4661-b665-313834656332/__.png" alt="Шкаф силовой ПК" loading="lazy">
+                <img src="https://static.tildacdn.com/tild6538-3035-4661-b665-313834656332/__.png" alt="ШС ПК ПСС-2П - image 1" loading="lazy">
               </a>
               <div class="pkf-related-content">
                 <h3><a href="../shs-pk-pss-2p/">ШС ПК ПСС-2П</a></h3>

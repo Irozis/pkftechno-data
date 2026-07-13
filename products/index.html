@@ -249,6 +249,44 @@
       font-weight: 700;
     }
 
+    .pkf-gallery-section {
+      background: var(--pkf-bg);
+    }
+
+    .pkf-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .pkf-gallery-item {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 4 / 3;
+      margin: 0;
+      overflow: hidden;
+      background: var(--pkf-white);
+      border: 1px solid var(--pkf-line);
+      border-radius: 8px;
+    }
+
+    .pkf-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .pkf-legacy-content {
+      display: grid;
+      gap: 12px;
+    }
+
+    .pkf-legacy-content p + p {
+      padding-top: 12px;
+      border-top: 1px solid var(--pkf-line);
+    }
+
     .pkf-passport-section {
       background: var(--pkf-white);
     }
@@ -471,6 +509,7 @@
       }
 
       .pkf-meta-grid,
+      .pkf-gallery-grid,
       .pkf-related-grid,
       .pkf-index-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -520,6 +559,7 @@
       }
 
       .pkf-meta-grid,
+      .pkf-gallery-grid,
       .pkf-related-grid,
       .pkf-index-grid {
         grid-template-columns: 1fr;
@@ -598,7 +638,7 @@
         
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shs1-mg-pss-2p/">
-            <img src="https://static.tildacdn.com/tild6233-3062-4466-a135-333733316433/1__-2_.png" alt="Шкаф силовой 1 МГ" loading="lazy">
+            <img src="https://static.tildacdn.com/tild6233-3062-4466-a135-333733316433/1__-2_.png" alt="ШС1 МГ ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Силовой шкаф</p>
@@ -608,7 +648,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shs2-mg-pss-2p/">
-            <img src="https://static.tildacdn.com/tild3562-3534-4065-a139-386261393533/2__-2_2.png" alt="Шкаф силовой 2 МГ" loading="lazy">
+            <img src="https://static.tildacdn.com/tild3562-3534-4065-a139-386261393533/2__-2_2.png" alt="ШС2 МГ ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Силовой шкаф</p>
@@ -618,7 +658,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shs3-mg-pss-2p/">
-            <img src="https://static.tildacdn.com/tild3539-3664-4263-b335-643633303461/3__-2_1.png" alt="Шкаф силовой 3 МГ" loading="lazy">
+            <img src="https://static.tildacdn.com/tild3539-3664-4263-b335-643633303461/3__-2_1.png" alt="ШС3 МГ ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Силовой шкаф</p>
@@ -628,7 +668,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shs-pk-pss-2p/">
-            <img src="https://static.tildacdn.com/tild6538-3035-4661-b665-313834656332/__.png" alt="Шкаф силовой ПК" loading="lazy">
+            <img src="https://static.tildacdn.com/tild6538-3035-4661-b665-313834656332/__.png" alt="ШС ПК ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Силовой шкаф</p>
@@ -638,7 +678,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shu-mg-pss-2p/">
-            <img src="https://static.tildacdn.com/tild3432-6636-4433-b065-386630663736/__-2.png" alt="Шкаф управления МГ" loading="lazy">
+            <img src="https://static.tildacdn.com/tild3432-6636-4433-b065-386630663736/__-2.png" alt="ШУ МГ ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Шкаф управления</p>
@@ -648,7 +688,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shu-pk-pss-2p/">
-            <img src="https://static.tildacdn.com/tild3738-6434-4865-b735-306130623531/__-2.png" alt="Шкаф управления ПК" loading="lazy">
+            <img src="https://static.tildacdn.com/tild3738-6434-4865-b735-306130623531/__-2.png" alt="ШУ ПК ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Шкаф управления</p>
@@ -658,7 +698,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shk1-pk-pss-2p/">
-            <img src="https://static.tildacdn.com/tild3062-3538-4631-a461-643064313564/1__.png" alt="Шкаф коммутации 1 ПК" loading="lazy">
+            <img src="https://static.tildacdn.com/tild3062-3538-4631-a461-643064313564/1__.png" alt="ШК1 ПК ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Шкаф коммутации</p>
@@ -668,7 +708,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shk2-pk-pss-2p/">
-            <img src="https://static.tildacdn.com/tild3834-3130-4838-a563-303230633233/22.png" alt="Шкаф коммутации 2 ПК" loading="lazy">
+            <img src="https://static.tildacdn.com/tild3834-3130-4838-a563-303230633233/22.png" alt="ШК2 ПК ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Шкаф коммутации</p>
@@ -678,7 +718,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shk-pp1-pss-2p/">
-            <img src="https://static.tildacdn.com/tild3438-6263-4534-b232-663832366162/shk-pp-1-pss-2p-1-80.png" alt="Шкаф коммутации ПП-1" loading="lazy">
+            <img src="https://static.tildacdn.com/tild3438-6263-4534-b232-663832366162/shk-pp-1-pss-2p-1-80.png" alt="ШК ПП-1 ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Шкаф коммутации</p>
@@ -688,7 +728,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shk-pp2-pss-2p/">
-            <img src="https://static.tildacdn.com/tild3538-3463-4031-a536-653337373364/shk-pp-2-pss-2p-1-80.png" alt="Шкаф коммутации ПП-2" loading="lazy">
+            <img src="https://static.tildacdn.com/tild3538-3463-4031-a536-653337373364/shk-pp-2-pss-2p-1-80.png" alt="ШК ПП-2 ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Шкаф коммутации</p>
@@ -698,7 +738,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shk-pp3-pss-2p/">
-            <img src="https://static.tildacdn.com/tild6564-3732-4433-a539-366237383539/shk-pp-3-pss-2p-1-80.png" alt="Шкаф коммутации ПП-3" loading="lazy">
+            <img src="https://static.tildacdn.com/tild6564-3732-4433-a539-366237383539/shk-pp-3-pss-2p-1-80.png" alt="ШК ПП-3 ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Шкаф коммутации</p>
@@ -708,7 +748,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./pu-mg-pss-2p/">
-            <img src="https://static.tildacdn.com/tild6234-3836-4730-a236-346335313335/__-2_1.png" alt="Пульт управления МГ" loading="lazy">
+            <img src="https://static.tildacdn.com/tild6234-3836-4730-a236-346335313335/__-2_1.png" alt="ПУ МГ ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Пульт управления</p>
@@ -718,7 +758,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./pu-pk-pss-2p/">
-            <img src="https://static.tildacdn.com/tild3262-3438-4533-b731-396136386338/__-2_1.png" alt="Пульт управления ПК" loading="lazy">
+            <img src="https://static.tildacdn.com/tild3262-3438-4533-b731-396136386338/__-2_1.png" alt="ПУ ПК ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Пульт управления</p>
@@ -728,7 +768,7 @@
         </article>
         <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shtm-pk-pss-2p/">
-            <img src="https://static.tildacdn.com/tild6336-6537-4130-a539-363436633931/photo.png" alt="Шкаф тиристорных модулей ПК" loading="lazy">
+            <img src="https://static.tildacdn.com/tild6336-6537-4130-a539-363436633931/photo.png" alt="ШТМ ПК ПСС-2П - image 1" loading="lazy">
           </a>
           <div>
             <p>ПСС-2П / Шкаф тиристорных модулей</p>
@@ -746,13 +786,533 @@
             <a class="pkf-link" href="./raspredelitelnoe-ustrojstvo-ekru-6/">Открыть страницу →</a>
           </div>
         </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shchit-upravleniya-shchu-mtso-2/">
+            <img src="https://static.tildacdn.com/tild3534-3662-4665-a230-386433363030/_2.png" alt="Щит управления" loading="lazy">
+          </a>
+          <div>
+            <p>МТСО-2 / Щит управления</p>
+            <h2><a href="./shchit-upravleniya-shchu-mtso-2/">Щит управления</a></h2>
+            <a class="pkf-link" href="./shchit-upravleniya-shchu-mtso-2/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./blok-podachi-pitaniya-bpp-mtso-2/">
+            <img src="https://static.tildacdn.com/tild3735-3835-4362-b261-376139323666/1.png" alt="Блок подачи питания" loading="lazy">
+          </a>
+          <div>
+            <p>МТСО-2 / Блок питания</p>
+            <h2><a href="./blok-podachi-pitaniya-bpp-mtso-2/">Блок подачи питания</a></h2>
+            <a class="pkf-link" href="./blok-podachi-pitaniya-bpp-mtso-2/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./blok-upravleniya-kondicionerom-buk-1-mtso-2/">
+            <img src="https://static.tildacdn.com/tild6532-3565-4132-b362-643431626539/1.png" alt="Блок управления кондиционером 1" loading="lazy">
+          </a>
+          <div>
+            <p>МТСО-2 / Блок управления</p>
+            <h2><a href="./blok-upravleniya-kondicionerom-buk-1-mtso-2/">Блок управления кондиционером 1</a></h2>
+            <a class="pkf-link" href="./blok-upravleniya-kondicionerom-buk-1-mtso-2/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./blok-upravleniya-kondicionerom-buk-2-mtso-2/">
+            <img src="https://static.tildacdn.com/tild3734-3330-4365-b364-356162373664/2.png" alt="Блок управления кондиционером 2" loading="lazy">
+          </a>
+          <div>
+            <p>МТСО-2 / Блок управления</p>
+            <h2><a href="./blok-upravleniya-kondicionerom-buk-2-mtso-2/">Блок управления кондиционером 2</a></h2>
+            <a class="pkf-link" href="./blok-upravleniya-kondicionerom-buk-2-mtso-2/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./blok-vyklyuchatelya-massy-bvm-mtso-2/">
+            <img src="https://static.tildacdn.com/tild3063-3236-4232-a335-633538333465/1.png" alt="Блок выключателя массы" loading="lazy">
+          </a>
+          <div>
+            <p>МТСО-2 / Блок выключателя массы</p>
+            <h2><a href="./blok-vyklyuchatelya-massy-bvm-mtso-2/">Блок выключателя массы</a></h2>
+            <a class="pkf-link" href="./blok-vyklyuchatelya-massy-bvm-mtso-2/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./pult-upravleniya-pravyj-vpo-s/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/pult-upravleniya-pravyj-vpo-s-closed.png" alt="Пульт управления правый ВПО-С" loading="lazy">
+          </a>
+          <div>
+            <p>ВПО-С / Пульт управления</p>
+            <h2><a href="./pult-upravleniya-pravyj-vpo-s/">Пульт управления правый ВПО-С</a></h2>
+            <a class="pkf-link" href="./pult-upravleniya-pravyj-vpo-s/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./pult-upravleniya-levyj-vpo-s/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/pult-upravleniya-levyj-vpo-s-closed.png" alt="Пульт управления левый ВПО-С" loading="lazy">
+          </a>
+          <div>
+            <p>ВПО-С / Пульт управления</p>
+            <h2><a href="./pult-upravleniya-levyj-vpo-s/">Пульт управления левый ВПО-С</a></h2>
+            <a class="pkf-link" href="./pult-upravleniya-levyj-vpo-s/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shchit-upravleniya-shchu-vpo-s/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/shchit-upravleniya-shchu-vpo-s-closed.png" alt="Щит управления ЩУ ВПО-С" loading="lazy">
+          </a>
+          <div>
+            <p>ВПО-С / Щит управления</p>
+            <h2><a href="./shchit-upravleniya-shchu-vpo-s/">Щит управления ЩУ ВПО-С</a></h2>
+            <a class="pkf-link" href="./shchit-upravleniya-shchu-vpo-s/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-nasosov-dvizheniya-shnd-vpo-s/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/shkaf-nasosov-dvizheniya-shnd-vpo-s-open.png" alt="Шкаф насосов движения ШНД ВПО-С" loading="lazy">
+          </a>
+          <div>
+            <p>ВПО-С / Шкаф управления</p>
+            <h2><a href="./shkaf-nasosov-dvizheniya-shnd-vpo-s/">Шкаф насосов движения ШНД ВПО-С</a></h2>
+            <a class="pkf-link" href="./shkaf-nasosov-dvizheniya-shnd-vpo-s/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-a10-mpv/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a10-mpv.png" alt="Шкаф А10 МПВ" loading="lazy">
+          </a>
+          <div>
+            <p>МПВ / Шкаф</p>
+            <h2><a href="./shkaf-a10-mpv/">Шкаф А10 МПВ</a></h2>
+            <a class="pkf-link" href="./shkaf-a10-mpv/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-a28-mpv/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a28-mpv.png" alt="Шкаф А28 МПВ" loading="lazy">
+          </a>
+          <div>
+            <p>МПВ / Шкаф</p>
+            <h2><a href="./shkaf-a28-mpv/">Шкаф А28 МПВ</a></h2>
+            <a class="pkf-link" href="./shkaf-a28-mpv/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-a29-mpv/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a29-mpv.png" alt="Шкаф А29 МПВ" loading="lazy">
+          </a>
+          <div>
+            <p>МПВ / Шкаф</p>
+            <h2><a href="./shkaf-a29-mpv/">Шкаф А29 МПВ</a></h2>
+            <a class="pkf-link" href="./shkaf-a29-mpv/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-a25-mpv/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a25-mpv.png" alt="Шкаф А25 МПВ" loading="lazy">
+          </a>
+          <div>
+            <p>МПВ / Шкаф</p>
+            <h2><a href="./shkaf-a25-mpv/">Шкаф А25 МПВ</a></h2>
+            <a class="pkf-link" href="./shkaf-a25-mpv/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-a26-mpv/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a26-mpv.png" alt="Шкаф А26 МПВ" loading="lazy">
+          </a>
+          <div>
+            <p>МПВ / Шкаф</p>
+            <h2><a href="./shkaf-a26-mpv/">Шкаф А26 МПВ</a></h2>
+            <a class="pkf-link" href="./shkaf-a26-mpv/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-a7-mpv/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a7-mpv.png" alt="Шкаф А7 МПВ" loading="lazy">
+          </a>
+          <div>
+            <p>МПВ / Шкаф</p>
+            <h2><a href="./shkaf-a7-mpv/">Шкаф А7 МПВ</a></h2>
+            <a class="pkf-link" href="./shkaf-a7-mpv/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-a6-mpv/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a6-mpv.png" alt="Шкаф А6 МПВ" loading="lazy">
+          </a>
+          <div>
+            <p>МПВ / Шкаф</p>
+            <h2><a href="./shkaf-a6-mpv/">Шкаф А6 МПВ</a></h2>
+            <a class="pkf-link" href="./shkaf-a6-mpv/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-a27-mpv/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a27-mpv.png" alt="Шкаф А27 МПВ" loading="lazy">
+          </a>
+          <div>
+            <p>МПВ / Шкаф</p>
+            <h2><a href="./shkaf-a27-mpv/">Шкаф А27 МПВ</a></h2>
+            <a class="pkf-link" href="./shkaf-a27-mpv/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-a17-mpv/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a17-mpv.png" alt="Шкаф А17 МПВ" loading="lazy">
+          </a>
+          <div>
+            <p>МПВ / Шкаф</p>
+            <h2><a href="./shkaf-a17-mpv/">Шкаф А17 МПВ</a></h2>
+            <a class="pkf-link" href="./shkaf-a17-mpv/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-a18-mpv/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a18-mpv.png" alt="Шкаф А18 МПВ" loading="lazy">
+          </a>
+          <div>
+            <p>МПВ / Шкаф</p>
+            <h2><a href="./shkaf-a18-mpv/">Шкаф А18 МПВ</a></h2>
+            <a class="pkf-link" href="./shkaf-a18-mpv/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-a24-mpv/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a24-mpv-closed.png" alt="Шкаф А24 МПВ" loading="lazy">
+          </a>
+          <div>
+            <p>МПВ / Шкаф</p>
+            <h2><a href="./shkaf-a24-mpv/">Шкаф А24 МПВ</a></h2>
+            <a class="pkf-link" href="./shkaf-a24-mpv/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./pult-upravleniya-pu-pk-ms-700t/">
+            <img src="https://static.tildacdn.com/tild3063-6639-4633-a433-636133666265/43___-700-min.jpg" alt="Пульт управления ПУ ПК МС-700Т" loading="lazy">
+          </a>
+          <div>
+            <p>МС-700Т / Пульт управления</p>
+            <h2><a href="./pult-upravleniya-pu-pk-ms-700t/">Пульт управления ПУ ПК МС-700Т</a></h2>
+            <a class="pkf-link" href="./pult-upravleniya-pu-pk-ms-700t/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./pult-upravleniya-pu-zk-ms-700t/">
+            <img src="https://static.tildacdn.com/tild3831-3435-4963-a134-306263613261/44___-700_-min_1.jpg" alt="Пульт управления ПУ ЗК МС-700Т" loading="lazy">
+          </a>
+          <div>
+            <p>МС-700Т / Пульт управления</p>
+            <h2><a href="./pult-upravleniya-pu-zk-ms-700t/">Пульт управления ПУ ЗК МС-700Т</a></h2>
+            <a class="pkf-link" href="./pult-upravleniya-pu-zk-ms-700t/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-raspredeleniya-pitaniya-shrp1-ms-700t/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp1-ms-700t-closed.png" alt="Шкаф распределения питания ШРП1 МС-700Т" loading="lazy">
+          </a>
+          <div>
+            <p>МС-700Т / Шкаф распределения питания</p>
+            <h2><a href="./shkaf-raspredeleniya-pitaniya-shrp1-ms-700t/">Шкаф распределения питания ШРП1 МС-700Т</a></h2>
+            <a class="pkf-link" href="./shkaf-raspredeleniya-pitaniya-shrp1-ms-700t/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-raspredeleniya-pitaniya-shrp2-ms-700t/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp2-ms-700t-closed.png" alt="Шкаф распределения питания ШРП2 МС-700Т" loading="lazy">
+          </a>
+          <div>
+            <p>МС-700Т / Шкаф распределения питания</p>
+            <h2><a href="./shkaf-raspredeleniya-pitaniya-shrp2-ms-700t/">Шкаф распределения питания ШРП2 МС-700Т</a></h2>
+            <a class="pkf-link" href="./shkaf-raspredeleniya-pitaniya-shrp2-ms-700t/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-raspredeleniya-pitaniya-shrp3-ms-700t/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp3-ms-700t-closed.png" alt="Шкаф распределения питания ШРП3 МС-700Т" loading="lazy">
+          </a>
+          <div>
+            <p>МС-700Т / Шкаф распределения питания</p>
+            <h2><a href="./shkaf-raspredeleniya-pitaniya-shrp3-ms-700t/">Шкаф распределения питания ШРП3 МС-700Т</a></h2>
+            <a class="pkf-link" href="./shkaf-raspredeleniya-pitaniya-shrp3-ms-700t/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-upravleniya-shu2-ru-700/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ru-700/shu2-ru-700-closed.png" alt="Шкаф управления ШУ2 РУ-700" loading="lazy">
+          </a>
+          <div>
+            <p>РУ-700 / Шкаф управления</p>
+            <h2><a href="./shkaf-upravleniya-shu2-ru-700/">Шкаф управления ШУ2 РУ-700</a></h2>
+            <a class="pkf-link" href="./shkaf-upravleniya-shu2-ru-700/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-blokov-pitaniya-shbp-ru-700/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ru-700/shbp-ru-700-closed.png" alt="Шкаф блоков питания ШБП РУ-700" loading="lazy">
+          </a>
+          <div>
+            <p>РУ-700 / Шкаф блоков питания</p>
+            <h2><a href="./shkaf-blokov-pitaniya-shbp-ru-700/">Шкаф блоков питания ШБП РУ-700</a></h2>
+            <a class="pkf-link" href="./shkaf-blokov-pitaniya-shbp-ru-700/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-upravleniya-shu1-ru-700/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ru-700/shu1-ru-700-closed.png" alt="Шкаф управления ШУ1 РУ-700" loading="lazy">
+          </a>
+          <div>
+            <p>РУ-700 / Шкаф управления</p>
+            <h2><a href="./shkaf-upravleniya-shu1-ru-700/">Шкаф управления ШУ1 РУ-700</a></h2>
+            <a class="pkf-link" href="./shkaf-upravleniya-shu1-ru-700/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-silovoj-shs-ru-700/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ru-700/shs-ru-700-closed.png" alt="Шкаф силовой ШС РУ-700" loading="lazy">
+          </a>
+          <div>
+            <p>РУ-700 / Силовой шкаф</p>
+            <h2><a href="./shkaf-silovoj-shs-ru-700/">Шкаф силовой ШС РУ-700</a></h2>
+            <a class="pkf-link" href="./shkaf-silovoj-shs-ru-700/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-raspredeleniya-pitaniya-shrp-ru-700/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ru-700/shrp-ru-700-closed.png" alt="Шкаф распределения питания ШРП РУ-700" loading="lazy">
+          </a>
+          <div>
+            <p>РУ-700 / Шкаф распределения питания</p>
+            <h2><a href="./shkaf-raspredeleniya-pitaniya-shrp-ru-700/">Шкаф распределения питания ШРП РУ-700</a></h2>
+            <a class="pkf-link" href="./shkaf-raspredeleniya-pitaniya-shrp-ru-700/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./elektricheskij-shkaf-a12-ss-pom/">
+            <img src="https://static.tildacdn.com/tild3166-3436-4064-a561-303134373837/37_12_--min.jpg" alt="Электрический шкаф А12 СС-ПОМ" loading="lazy">
+          </a>
+          <div>
+            <p>СС-ПОМ / Электрический шкаф</p>
+            <h2><a href="./elektricheskij-shkaf-a12-ss-pom/">Электрический шкаф А12 СС-ПОМ</a></h2>
+            <a class="pkf-link" href="./elektricheskij-shkaf-a12-ss-pom/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./elektricheskij-shkaf-a11-ss-pom/">
+            <img src="https://static.tildacdn.com/tild6466-6130-4331-b862-386634303864/38_11_--min.jpg" alt="Электрический шкаф А11 СС-ПОМ" loading="lazy">
+          </a>
+          <div>
+            <p>СС-ПОМ / Электрический шкаф</p>
+            <h2><a href="./elektricheskij-shkaf-a11-ss-pom/">Электрический шкаф А11 СС-ПОМ</a></h2>
+            <a class="pkf-link" href="./elektricheskij-shkaf-a11-ss-pom/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/tes-1400.png" alt="Моноблок вводного и распределительных АВ ТЭС-1400" loading="lazy">
+          </a>
+          <div>
+            <p>ТЭС-1400 / Моноблок</p>
+            <h2><a href="./monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400/">Моноблок вводного и распределительных АВ ТЭС-1400</a></h2>
+            <a class="pkf-link" href="./monoblok-vvodnogo-i-raspredelitelnyh-av-tes-1400/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./panel-vvoda-sekciya-1-shchom-2000/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/shom-2000/styled/panelvvoda12000--20241119_093641_1-styled.png" alt="Панель ввода секция №1 ЩОМ-2000 — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ЩОМ-2000 / Панель ввода</p>
+            <h2><a href="./panel-vvoda-sekciya-1-shchom-2000/">Панель ввода секция №1 ЩОМ-2000</a></h2>
+            <a class="pkf-link" href="./panel-vvoda-sekciya-1-shchom-2000/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./panel-upravleniya-sekciya-1-shchom-2000/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/shom-2000/styled/panelupravleniya12000--20241119_131752_1-styled.png" alt="Панель управления секция №1 ЩОМ-2000 — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ЩОМ-2000 / Панель управления</p>
+            <h2><a href="./panel-upravleniya-sekciya-1-shchom-2000/">Панель управления секция №1 ЩОМ-2000</a></h2>
+            <a class="pkf-link" href="./panel-upravleniya-sekciya-1-shchom-2000/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./panel-silovaya-sekciya-1-shchom-2000/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/shom-2000/styled/panelsilovaya12000--IMG_20241206_090534_-styled.png" alt="Панель силовая секция №1 ЩОМ-2000 — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ЩОМ-2000 / Силовая панель</p>
+            <h2><a href="./panel-silovaya-sekciya-1-shchom-2000/">Панель силовая секция №1 ЩОМ-2000</a></h2>
+            <a class="pkf-link" href="./panel-silovaya-sekciya-1-shchom-2000/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./panel-transformatorov-shchom-2000/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/shom-2000/styled/paneltransformatorov2000--IMG_20241128_160049_-styled.png" alt="Панель трансформаторов ЩОМ-2000 — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ЩОМ-2000 / Панель трансформаторов</p>
+            <h2><a href="./panel-transformatorov-shchom-2000/">Панель трансформаторов ЩОМ-2000</a></h2>
+            <a class="pkf-link" href="./panel-transformatorov-shchom-2000/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-vygrebnoj-cepi-shchom-2000/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/shom-2000/styled/shkafvigrebnoytscepi2000--IMG_20241126_161552_-styled.png" alt="Шкаф выгребной цепи ЩОМ-2000 — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ЩОМ-2000 / Шкаф</p>
+            <h2><a href="./shkaf-vygrebnoj-cepi-shchom-2000/">Шкаф выгребной цепи ЩОМ-2000</a></h2>
+            <a class="pkf-link" href="./shkaf-vygrebnoj-cepi-shchom-2000/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./panel-vygrebnoj-cepi-levaya-shchom-2000/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/shom-2000/styled/panelvigrebnoytscepilevaya2000--20241114_151920_1-styled.png" alt="Панель выгребной цепи левая ЩОМ-2000 — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ЩОМ-2000 / Панель</p>
+            <h2><a href="./panel-vygrebnoj-cepi-levaya-shchom-2000/">Панель выгребной цепи левая ЩОМ-2000</a></h2>
+            <a class="pkf-link" href="./panel-vygrebnoj-cepi-levaya-shchom-2000/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./panel-vygrebnoj-cepi-pravaya-shchom-2000/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/shom-2000/styled/panelvigrebnoytscepypravay2000--IMG_20241209_153201_-styled.png" alt="Панель выгребной цепи правая ЩОМ-2000 — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ЩОМ-2000 / Панель</p>
+            <h2><a href="./panel-vygrebnoj-cepi-pravaya-shchom-2000/">Панель выгребной цепи правая ЩОМ-2000</a></h2>
+            <a class="pkf-link" href="./panel-vygrebnoj-cepi-pravaya-shchom-2000/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./panel-vvoda-sekciya-2-shchom-2000/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/shom-2000/styled/page72213779--IMG_20241209_161539_-styled.png" alt="Панель ввода секция №2 ЩОМ-2000 — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ЩОМ-2000 / Панель ввода</p>
+            <h2><a href="./panel-vvoda-sekciya-2-shchom-2000/">Панель ввода секция №2 ЩОМ-2000</a></h2>
+            <a class="pkf-link" href="./panel-vvoda-sekciya-2-shchom-2000/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./panel-silovaya-1-sekciya-2-shchom-2000/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/shom-2000/styled/panelsilovaya122000--IMG_20241126_120205_-styled.png" alt="Панель силовая №1 секция №2 ЩОМ-2000 — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ЩОМ-2000 / Силовая панель</p>
+            <h2><a href="./panel-silovaya-1-sekciya-2-shchom-2000/">Панель силовая №1 секция №2 ЩОМ-2000</a></h2>
+            <a class="pkf-link" href="./panel-silovaya-1-sekciya-2-shchom-2000/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./panel-silovaya-2-sekciya-2-shchom-2000/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/shom-2000/styled/panelsilovaya222000--IMG_20241128_143948_-styled.png" alt="Панель силовая №2 секция №2 ЩОМ-2000 — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ЩОМ-2000 / Силовая панель</p>
+            <h2><a href="./panel-silovaya-2-sekciya-2-shchom-2000/">Панель силовая №2 секция №2 ЩОМ-2000</a></h2>
+            <a class="pkf-link" href="./panel-silovaya-2-sekciya-2-shchom-2000/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./panel-upravleniya-sekciya-2-shchom-2000/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/shom-2000/styled/panelupravlenia22000--20241121_110707_1-styled.png" alt="Панель управления секция №2 ЩОМ-2000 — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ЩОМ-2000 / Панель управления</p>
+            <h2><a href="./panel-upravleniya-sekciya-2-shchom-2000/">Панель управления секция №2 ЩОМ-2000</a></h2>
+            <a class="pkf-link" href="./panel-upravleniya-sekciya-2-shchom-2000/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2/">
+            <img src="data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22960%22%20height%3D%22640%22%20viewBox%3D%220%200%20960%20640%22%3E%0A%20%20%3Crect%20width%3D%22960%22%20height%3D%22640%22%20fill%3D%22%23F7F8F5%22%2F%3E%0A%20%20%3Crect%20x%3D%22220%22%20y%3D%22140%22%20width%3D%22520%22%20height%3D%22360%22%20rx%3D%228%22%20fill%3D%22%23FFFFFF%22%20stroke%3D%22%23D9DEE2%22%20stroke-width%3D%222%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M335%20408h290M365%20242h230M365%20292h230M365%20342h230%22%20stroke%3D%22%23B7C0C7%22%20stroke-width%3D%2218%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22650%22%20cy%3D%22232%22%20r%3D%2234%22%20fill%3D%22%23FFC400%22%2F%3E%0A%20%20%3Ctext%20x%3D%22480%22%20y%3D%22548%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%20fill%3D%22%235F6B73%22%3E%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%83%D1%82%D0%BE%D1%87%D0%BD%D1%8F%D0%B5%D1%82%D1%81%D1%8F%3C%2Ftext%3E%0A%3C%2Fsvg%3E%0A" alt="Пульт управления концевого полувагона снегоуборочной машины ПУ КП СМ-2" loading="lazy">
+          </a>
+          <div>
+            <p>СМ-2 / Пульт управления</p>
+            <h2><a href="./pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2/">Пульт управления концевого полувагона снегоуборочной машины ПУ КП СМ-2</a></h2>
+            <a class="pkf-link" href="./pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2/">
+            <img src="data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22960%22%20height%3D%22640%22%20viewBox%3D%220%200%20960%20640%22%3E%0A%20%20%3Crect%20width%3D%22960%22%20height%3D%22640%22%20fill%3D%22%23F7F8F5%22%2F%3E%0A%20%20%3Crect%20x%3D%22220%22%20y%3D%22140%22%20width%3D%22520%22%20height%3D%22360%22%20rx%3D%228%22%20fill%3D%22%23FFFFFF%22%20stroke%3D%22%23D9DEE2%22%20stroke-width%3D%222%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M335%20408h290M365%20242h230M365%20292h230M365%20342h230%22%20stroke%3D%22%23B7C0C7%22%20stroke-width%3D%2218%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22650%22%20cy%3D%22232%22%20r%3D%2234%22%20fill%3D%22%23FFC400%22%2F%3E%0A%20%20%3Ctext%20x%3D%22480%22%20y%3D%22548%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%20fill%3D%22%235F6B73%22%3E%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%83%D1%82%D0%BE%D1%87%D0%BD%D1%8F%D0%B5%D1%82%D1%81%D1%8F%3C%2Ftext%3E%0A%3C%2Fsvg%3E%0A" alt="Пульт управления головной секции снегоуборочной машины ПУ ГМ СМ-2" loading="lazy">
+          </a>
+          <div>
+            <p>СМ-2 / Пульт управления</p>
+            <h2><a href="./pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2/">Пульт управления головной секции снегоуборочной машины ПУ ГМ СМ-2</a></h2>
+            <a class="pkf-link" href="./pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2/">
+            <img src="data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22960%22%20height%3D%22640%22%20viewBox%3D%220%200%20960%20640%22%3E%0A%20%20%3Crect%20width%3D%22960%22%20height%3D%22640%22%20fill%3D%22%23F7F8F5%22%2F%3E%0A%20%20%3Crect%20x%3D%22220%22%20y%3D%22140%22%20width%3D%22520%22%20height%3D%22360%22%20rx%3D%228%22%20fill%3D%22%23FFFFFF%22%20stroke%3D%22%23D9DEE2%22%20stroke-width%3D%222%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M335%20408h290M365%20242h230M365%20292h230M365%20342h230%22%20stroke%3D%22%23B7C0C7%22%20stroke-width%3D%2218%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22650%22%20cy%3D%22232%22%20r%3D%2234%22%20fill%3D%22%23FFC400%22%2F%3E%0A%20%20%3Ctext%20x%3D%22480%22%20y%3D%22548%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%20fill%3D%22%235F6B73%22%3E%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%83%D1%82%D0%BE%D1%87%D0%BD%D1%8F%D0%B5%D1%82%D1%81%D1%8F%3C%2Ftext%3E%0A%3C%2Fsvg%3E%0A" alt="Шкаф силовой концевого полувагона снегоуборочной машины ШС КП СМ-2" loading="lazy">
+          </a>
+          <div>
+            <p>СМ-2 / Силовой шкаф</p>
+            <h2><a href="./shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2/">Шкаф силовой концевого полувагона снегоуборочной машины ШС КП СМ-2</a></h2>
+            <a class="pkf-link" href="./shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2/">
+            <img src="data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22960%22%20height%3D%22640%22%20viewBox%3D%220%200%20960%20640%22%3E%0A%20%20%3Crect%20width%3D%22960%22%20height%3D%22640%22%20fill%3D%22%23F7F8F5%22%2F%3E%0A%20%20%3Crect%20x%3D%22220%22%20y%3D%22140%22%20width%3D%22520%22%20height%3D%22360%22%20rx%3D%228%22%20fill%3D%22%23FFFFFF%22%20stroke%3D%22%23D9DEE2%22%20stroke-width%3D%222%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M335%20408h290M365%20242h230M365%20292h230M365%20342h230%22%20stroke%3D%22%23B7C0C7%22%20stroke-width%3D%2218%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22650%22%20cy%3D%22232%22%20r%3D%2234%22%20fill%3D%22%23FFC400%22%2F%3E%0A%20%20%3Ctext%20x%3D%22480%22%20y%3D%22548%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%20fill%3D%22%235F6B73%22%3E%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%83%D1%82%D0%BE%D1%87%D0%BD%D1%8F%D0%B5%D1%82%D1%81%D1%8F%3C%2Ftext%3E%0A%3C%2Fsvg%3E%0A" alt="Шкаф силовой головной секции снегоуборочной машины ШС ГМ СМ-2" loading="lazy">
+          </a>
+          <div>
+            <p>СМ-2 / Силовой шкаф</p>
+            <h2><a href="./shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2/">Шкаф силовой головной секции снегоуборочной машины ШС ГМ СМ-2</a></h2>
+            <a class="pkf-link" href="./shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/asg-30p.png" alt="Комплект пультов управления для путевой машины АСГ-30П" loading="lazy">
+          </a>
+          <div>
+            <p>АСГ-30П / Комплект пультов управления</p>
+            <h2><a href="./komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p/">Комплект пультов управления для путевой машины АСГ-30П</a></h2>
+            <a class="pkf-link" href="./komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./komplekt-pultov-stabilizatora-puti-pricepnogo-spp/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/spp.png" alt="Комплект пультов стабилизатора пути прицепного СПП" loading="lazy">
+          </a>
+          <div>
+            <p>СПП / Комплект пультов управления</p>
+            <h2><a href="./komplekt-pultov-stabilizatora-puti-pricepnogo-spp/">Комплект пультов стабилизатора пути прицепного СПП</a></h2>
+            <a class="pkf-link" href="./komplekt-pultov-stabilizatora-puti-pricepnogo-spp/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2/">
+            <img src="https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/mtg-2.png" alt="Комплект пультов мотовоза транспортного гидравлического МТГ-2" loading="lazy">
+          </a>
+          <div>
+            <p>МТГ-2 / Комплект пультов управления</p>
+            <h2><a href="./komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2/">Комплект пультов мотовоза транспортного гидравлического МТГ-2</a></h2>
+            <a class="pkf-link" href="./komplekt-pultov-motovoza-transportnogo-gidravlicheskogo-mtg-2/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./as-01/">
+            <img src="assets/products/railway-nku/other/as-01.png" alt="Комплект пультов управления АС-01 с безопасный объединенный локомотивный комплекс масштабируемый БЛОК-М-005 с расширенными функциями НДБР-170.60.01.000Е, НДБР-170.60.02.000E" loading="lazy">
+          </a>
+          <div>
+            <p>АС-01 / Комплект пультов управления</p>
+            <h2><a href="./as-01/">Комплект пультов управления АС-01 с безопасный объединенный локомотивный комплекс масштабируемый БЛОК-М-005 с расширенными функциями НДБР-170.60.01.000Е, НДБР-170.60.02.000E</a></h2>
+            <a class="pkf-link" href="./as-01/">Открыть страницу →</a>
+          </div>
+        </article>
       </div>
     </section>
   </main>
   <footer class="pkf-footer">
     <div class="pkf-container pkf-footer-inner">
       <span>ПКФ Технология</span>
-      <span>15 товаров</span>
+      <span>67 товаров</span>
     </div>
   </footer>
 </body>

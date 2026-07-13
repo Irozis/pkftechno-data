@@ -42,6 +42,15 @@ function getProductImage(product, images) {
   return image?.image_url || placeholderSvg;
 }
 
+function getProductImages(product, images) {
+  const gallery = images
+    .filter((item) => item?.product_slug === product?.slug && item.image_url)
+    .sort((a, b) => getSortValue(a) - getSortValue(b));
+
+  if (gallery.length > 0) return gallery;
+  return product?.image_url ? [{ image_url: product.image_url, alt: product.title }] : [];
+}
+
 function getImageAlt(product, images) {
   const image = images
     .filter((item) => item?.product_slug === product?.slug && item.alt)
@@ -56,6 +65,46 @@ function getDescription(product) {
 
 function getHeroDescription(product) {
   return product.hero_description || product.short_description || getDescription(product);
+}
+
+function renderGallery(product, images) {
+  const gallery = getProductImages(product, images);
+  if (gallery.length < 2) return '';
+
+  const cards = gallery.map((image, index) => `
+            <figure class="pkf-gallery-item">
+              <img src="${escapeHtml(image.image_url)}" alt="${escapeHtml(image.alt || `${product.title} — изображение ${index + 1}`)}" loading="lazy">
+            </figure>`).join('');
+
+  return `
+    <section class="pkf-section pkf-gallery-section">
+      <div class="pkf-container">
+        <div class="pkf-section-head">
+          <span>Изображения</span>
+          <h2>Фотографии изделия</h2>
+        </div>
+        <div class="pkf-gallery-grid">${cards}</div>
+      </div>
+    </section>`;
+}
+
+function renderLegacyContent(product) {
+  if (!Array.isArray(product.legacy_text) || product.legacy_text.length === 0) return '';
+  const lines = product.legacy_text
+    .map((line) => String(line).trim())
+    .filter(Boolean);
+  const content = lines.map((line) => `<p>${escapeHtml(line)}</p>`).join('');
+
+  return `
+    <section class="pkf-section pkf-legacy-section">
+      <div class="pkf-container pkf-two-column">
+        <div class="pkf-section-head">
+          <span>Архивная страница</span>
+          <h2>Информация со старого сайта</h2>
+        </div>
+        <div class="pkf-text-panel pkf-legacy-content">${content}</div>
+      </div>
+    </section>`;
 }
 
 function renderMetaItems(product) {
@@ -243,6 +292,9 @@ function renderPage(product, data) {
         </div>
       </div>
     </section>
+
+    ${renderGallery(product, images)}
+    ${renderLegacyContent(product)}
 
     <section id="passport" class="pkf-section pkf-passport-section">
       <div class="pkf-container pkf-passport-layout">
@@ -597,6 +649,44 @@ function renderStyles() {
       font-weight: 700;
     }
 
+    .pkf-gallery-section {
+      background: var(--pkf-bg);
+    }
+
+    .pkf-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .pkf-gallery-item {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 4 / 3;
+      margin: 0;
+      overflow: hidden;
+      background: var(--pkf-white);
+      border: 1px solid var(--pkf-line);
+      border-radius: 8px;
+    }
+
+    .pkf-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .pkf-legacy-content {
+      display: grid;
+      gap: 12px;
+    }
+
+    .pkf-legacy-content p + p {
+      padding-top: 12px;
+      border-top: 1px solid var(--pkf-line);
+    }
+
     .pkf-passport-section {
       background: var(--pkf-white);
     }
@@ -819,6 +909,7 @@ function renderStyles() {
       }
 
       .pkf-meta-grid,
+      .pkf-gallery-grid,
       .pkf-related-grid,
       .pkf-index-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -868,6 +959,7 @@ function renderStyles() {
       }
 
       .pkf-meta-grid,
+      .pkf-gallery-grid,
       .pkf-related-grid,
       .pkf-index-grid {
         grid-template-columns: 1fr;

@@ -250,6 +250,44 @@
       font-weight: 700;
     }
 
+    .pkf-gallery-section {
+      background: var(--pkf-bg);
+    }
+
+    .pkf-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .pkf-gallery-item {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 4 / 3;
+      margin: 0;
+      overflow: hidden;
+      background: var(--pkf-white);
+      border: 1px solid var(--pkf-line);
+      border-radius: 8px;
+    }
+
+    .pkf-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .pkf-legacy-content {
+      display: grid;
+      gap: 12px;
+    }
+
+    .pkf-legacy-content p + p {
+      padding-top: 12px;
+      border-top: 1px solid var(--pkf-line);
+    }
+
     .pkf-passport-section {
       background: var(--pkf-white);
     }
@@ -472,6 +510,7 @@
       }
 
       .pkf-meta-grid,
+      .pkf-gallery-grid,
       .pkf-related-grid,
       .pkf-index-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -521,6 +560,7 @@
       }
 
       .pkf-meta-grid,
+      .pkf-gallery-grid,
       .pkf-related-grid,
       .pkf-index-grid {
         grid-template-columns: 1fr;
@@ -593,7 +633,7 @@
     <section class="pkf-hero">
       <div class="pkf-container pkf-hero-grid">
         <div class="pkf-hero-media">
-          <img src="https://static.tildacdn.com/tild3738-6434-4865-b735-306130623531/__-2.png" alt="Шкаф управления ПК">
+          <img src="https://static.tildacdn.com/tild3738-6434-4865-b735-306130623531/__-2.png" alt="ШУ ПК ПСС-2П - image 1">
         </div>
         <div class="pkf-hero-content">
           <div class="pkf-kicker">НКУ для железнодорожной техники / ПСС-2П</div>
@@ -631,6 +671,9 @@
       </div>
     </section>
 
+    
+    
+
     <section id="passport" class="pkf-section pkf-passport-section">
       <div class="pkf-container pkf-passport-layout">
         <div class="pkf-section-head">
@@ -642,27 +685,31 @@
           <div class="pkf-specs" data-specs>
             
             <section class="pkf-spec-group">
-              <h3>Основные</h3>
+              <h3>Технические характеристики</h3>
               
               <div class="pkf-spec-row">
-                <div class="pkf-spec-name">Тип изделия</div>
-                <div class="pkf-spec-value">Шкаф управления</div>
+                <div class="pkf-spec-name">Номинальное напряжение бортовой сети</div>
+                <div class="pkf-spec-value">19...29 В (пост. ток)</div>
               </div>
               <div class="pkf-spec-row">
-                <div class="pkf-spec-name">Серия</div>
-                <div class="pkf-spec-value">ПСС-2П</div>
+                <div class="pkf-spec-name">Режим работы</div>
+                <div class="pkf-spec-value">Продолжительный</div>
               </div>
               <div class="pkf-spec-row">
-                <div class="pkf-spec-name">Раздел</div>
-                <div class="pkf-spec-value">НКУ для железнодорожной техники</div>
+                <div class="pkf-spec-name">Климатическое исполнение У3</div>
+                <div class="pkf-spec-value">по 15150-69</div>
               </div>
               <div class="pkf-spec-row">
-                <div class="pkf-spec-name">Область применения</div>
-                <div class="pkf-spec-value">Путевая машина ПСС-2П</div>
+                <div class="pkf-spec-name">Диапазон рабочих температур</div>
+                <div class="pkf-spec-value">от -45 °C до +40 °C</div>
               </div>
               <div class="pkf-spec-row">
-                <div class="pkf-spec-name">Исполнение</div>
-                <div class="pkf-spec-value">По техническому заданию</div>
+                <div class="pkf-spec-name">Степень защиты</div>
+                <div class="pkf-spec-value">IP20 по ГОСТ 14254-96</div>
+              </div>
+              <div class="pkf-spec-row">
+                <div class="pkf-spec-name">Номинальное напряжение бортовой сети</div>
+                <div class="pkf-spec-value">345...418 В (перем. ток)</div>
               </div>
             </section>
           </div>
@@ -693,7 +740,7 @@
             
             <article class="pkf-related-card">
               <a class="pkf-related-image" href="../shu-mg-pss-2p/">
-                <img src="https://static.tildacdn.com/tild3432-6636-4433-b065-386630663736/__-2.png" alt="Шкаф управления МГ" loading="lazy">
+                <img src="https://static.tildacdn.com/tild3432-6636-4433-b065-386630663736/__-2.png" alt="ШУ МГ ПСС-2П - image 1" loading="lazy">
               </a>
               <div class="pkf-related-content">
                 <h3><a href="../shu-mg-pss-2p/">ШУ МГ ПСС-2П</a></h3>
@@ -703,7 +750,7 @@
             </article>
             <article class="pkf-related-card">
               <a class="pkf-related-image" href="../pu-pk-pss-2p/">
-                <img src="https://static.tildacdn.com/tild3262-3438-4533-b731-396136386338/__-2_1.png" alt="Пульт управления ПК" loading="lazy">
+                <img src="https://static.tildacdn.com/tild3262-3438-4533-b731-396136386338/__-2_1.png" alt="ПУ ПК ПСС-2П - image 1" loading="lazy">
               </a>
               <div class="pkf-related-content">
                 <h3><a href="../pu-pk-pss-2p/">ПУ ПК ПСС-2П</a></h3>
@@ -713,7 +760,7 @@
             </article>
             <article class="pkf-related-card">
               <a class="pkf-related-image" href="../shk2-pk-pss-2p/">
-                <img src="https://static.tildacdn.com/tild3834-3130-4838-a563-303230633233/22.png" alt="Шкаф коммутации 2 ПК" loading="lazy">
+                <img src="https://static.tildacdn.com/tild3834-3130-4838-a563-303230633233/22.png" alt="ШК2 ПК ПСС-2П - image 1" loading="lazy">
               </a>
               <div class="pkf-related-content">
                 <h3><a href="../shk2-pk-pss-2p/">ШК2 ПК ПСС-2П</a></h3>
