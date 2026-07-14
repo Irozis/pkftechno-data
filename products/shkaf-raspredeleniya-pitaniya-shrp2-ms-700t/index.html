@@ -447,6 +447,103 @@
       font-size: 17px;
     }
 
+    .pkf-request-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .pkf-request-modal[hidden] {
+      display: none;
+    }
+
+    .pkf-request-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(17, 21, 23, 0.72);
+    }
+
+    .pkf-request-dialog {
+      position: relative;
+      width: min(680px, 100%);
+      max-height: min(760px, calc(100vh - 48px));
+      overflow: auto;
+      padding: 38px 42px;
+      background: var(--pkf-white);
+      border-radius: 8px;
+      box-shadow: 0 24px 80px rgba(17, 21, 23, 0.28);
+    }
+
+    .pkf-request-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      width: 36px;
+      height: 36px;
+      border: 0;
+      background: transparent;
+      color: var(--pkf-muted);
+      cursor: pointer;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .pkf-request-intro {
+      margin: 14px 0 24px;
+      color: var(--pkf-muted);
+    }
+
+    .pkf-request-form,
+    .pkf-request-form-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .pkf-request-form-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pkf-request-form label {
+      display: grid;
+      gap: 7px;
+      color: var(--pkf-dark);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .pkf-request-form input,
+    .pkf-request-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--pkf-line);
+      border-radius: 6px;
+      background: var(--pkf-bg);
+      color: var(--pkf-dark);
+      font: inherit;
+      resize: vertical;
+    }
+
+    .pkf-request-form input:focus,
+    .pkf-request-form textarea:focus {
+      outline: 2px solid var(--pkf-yellow);
+      outline-offset: 1px;
+    }
+
+    .pkf-request-form .pkf-button {
+      justify-self: start;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .pkf-request-success {
+      margin: 0;
+      color: #2D7A43;
+      font-weight: 800;
+    }
+
     .pkf-footer {
       background: var(--pkf-dark);
       color: var(--pkf-white);
@@ -571,6 +668,14 @@
       .pkf-request-card,
       .pkf-cta-card {
         padding: 26px 22px;
+      }
+
+      .pkf-request-dialog {
+        padding: 32px 22px 24px;
+      }
+
+      .pkf-request-form-grid {
+        grid-template-columns: 1fr;
       }
 
       .pkf-section-head h2,
@@ -791,15 +896,28 @@
         </div>
       </section>
 
-    <section id="request" class="pkf-section pkf-request">
-      <div class="pkf-container pkf-request-card">
+    <div id="request" class="pkf-request-modal" role="dialog" aria-modal="true" aria-labelledby="pkf-request-title" hidden>
+      <div class="pkf-request-modal-backdrop" data-request-close></div>
+      <div class="pkf-request-dialog">
+        <button class="pkf-request-close" type="button" aria-label="Закрыть" data-request-close>×</button>
         <div class="pkf-section-head">
           <span>Заявка</span>
-          <h2>Оставить заявку</h2>
+          <h2 id="pkf-request-title">Оставить заявку</h2>
         </div>
-        <p>Свяжитесь с нами для уточнения исполнения, комплектации и условий приобретения оборудования.</p>
+        <p class="pkf-request-intro">Заполните форму, и специалист свяжется с вами для уточнения деталей.</p>
+        <form class="pkf-request-form">
+          <div class="pkf-request-form-grid">
+            <label>Имя*<input name="name" type="text" autocomplete="name" required></label>
+            <label>Телефон<input name="phone" type="tel" autocomplete="tel"></label>
+            <label>Email*<input name="email" type="email" autocomplete="email" required></label>
+            <label>Наименование организации<input name="organization" type="text" autocomplete="organization"></label>
+          </div>
+          <label>Описание<textarea name="description" rows="4"></textarea></label>
+          <button class="pkf-button" type="submit">Отправить заявку</button>
+          <p class="pkf-request-success" role="status" hidden>Спасибо! Заявка отправлена.</p>
+        </form>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="pkf-footer">
@@ -820,6 +938,55 @@
         button.textContent = expanded ? 'Показать все характеристики ↓' : 'Скрыть характеристики ↑';
       });
     });
+
+    var requestModal = document.getElementById('request');
+    var requestLastFocus = null;
+
+    function openRequestModal() {
+      if (!requestModal) return;
+      requestLastFocus = document.activeElement;
+      requestModal.hidden = false;
+      document.documentElement.style.overflow = 'hidden';
+      var firstField = requestModal.querySelector('input, textarea');
+      if (firstField) firstField.focus();
+    }
+
+    function closeRequestModal() {
+      if (!requestModal) return;
+      requestModal.hidden = true;
+      document.documentElement.style.overflow = '';
+      if (requestLastFocus && typeof requestLastFocus.focus === 'function') {
+        requestLastFocus.focus();
+      }
+    }
+
+    document.addEventListener('click', function (event) {
+      var link = event.target.closest && event.target.closest('a[href="#request"]');
+      if (link) {
+        event.preventDefault();
+        openRequestModal();
+        return;
+      }
+
+      if (event.target.closest && event.target.closest('[data-request-close]')) {
+        closeRequestModal();
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && requestModal && !requestModal.hidden) {
+        closeRequestModal();
+      }
+    });
+
+    var requestForm = requestModal && requestModal.querySelector('.pkf-request-form');
+    if (requestForm) {
+      requestForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var success = requestForm.querySelector('.pkf-request-success');
+        if (success) success.hidden = false;
+      });
+    }
   </script>
 </body>
 </html>

@@ -453,6 +453,171 @@
     display: block;
   }
 
+  .pkf-native-request-form {
+    max-height: none !important;
+    overflow: visible !important;
+    padding: 28px 30px !important;
+  }
+
+  body .t-popup__container,
+  body .t-popup__container:has(.pkf-native-request-form) {
+    width: min(620px, calc(100vw - 24px)) !important;
+    height: auto !important;
+    max-height: calc(100vh - 20px) !important;
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .pkf-native-request-form .t-form__title {
+    margin-bottom: 8px !important;
+    font-size: 28px !important;
+    line-height: 1.15 !important;
+  }
+
+  .pkf-native-request-form .t-form__descr {
+    margin-bottom: 16px !important;
+    font-size: 14px !important;
+  }
+
+  .pkf-native-request-form .t-input-group {
+    margin-bottom: 12px !important;
+  }
+
+  .pkf-native-request-form .t-input {
+    min-height: 42px !important;
+  }
+
+  .pkf-native-request-form .t-input-group,
+  .pkf-native-request-form .t-input-block,
+  .pkf-native-request-form .t-input {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .pkf-native-request-form .t-input-group {
+    display: block !important;
+    float: none !important;
+    margin-right: 0 !important;
+  }
+
+  .pkf-native-request-form .t-input-block_phonemask {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    border: 1px solid #D9DEE2 !important;
+    border-radius: 10px !important;
+    background: #F7F8F5 !important;
+    box-shadow: none !important;
+  }
+
+  .pkf-native-request-form .t-input-block_phonemask * {
+    border: 0 !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+  }
+
+  .pkf-native-request-form .t-input-block_phonemask input[type="tel"],
+  .pkf-native-request-form input[type="tel"] {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  .pkf-native-request-form .t-input-block_phonemask .t-input-phonemask__select {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+  }
+
+  .pkf-native-request-form .t-input-block_phonemask .t-input-phonemask__input {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .pkf-native-request-form .t-input-block_phonemask .t-input-phonemask__select:focus,
+  .pkf-native-request-form .t-input-block_phonemask .t-input-phonemask__input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .pkf-native-request-product {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 20px;
+    align-items: center;
+    margin: 0 0 28px;
+    padding: 16px;
+    border-radius: 16px;
+    background: #F7F8F5;
+  }
+
+  .pkf-native-request-product__image {
+    width: 150px;
+    height: 112px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #FFFFFF;
+  }
+
+  .pkf-native-request-product__title {
+    margin: 0 0 8px;
+    color: #111517;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  .pkf-native-request-product__description {
+    margin: 0;
+    color: #627079;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 520px) {
+    .pkf-native-request-form {
+      padding: 22px 18px !important;
+    }
+
+    .pkf-native-request-form .t-form__title {
+      font-size: 24px !important;
+    }
+
+    .pkf-native-request-product {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding: 12px;
+    }
+
+    .pkf-native-request-product__image {
+      width: 100%;
+      height: 90px;
+    }
+
+    .pkf-native-request-form .t-input-group {
+      margin-bottom: 8px !important;
+    }
+
+    .pkf-native-request-form .t-input {
+      min-height: 38px !important;
+    }
+
+    .pkf-native-request-form textarea.t-input {
+      min-height: 72px !important;
+    }
+  }
+
   @media (max-width: 639px) {
     .js-product-title,
     .js-product-title .tn-atom {
@@ -841,212 +1006,60 @@
       renderLightbox();
     }
 
-    var requestModal = {
-      root: null,
-      form: null,
-      title: null,
-      description: null,
-      meta: null,
-      success: null,
-      lastFocus: null,
-      context: null
-    };
-
-    function ensureRequestModal() {
-      if (requestModal.root) {
-        return requestModal.root;
-      }
-
-      var root = document.createElement('div');
-      root.className = 'pkf-product-request-modal';
-      root.setAttribute('role', 'dialog');
-      root.setAttribute('aria-modal', 'true');
-      root.setAttribute('aria-labelledby', 'pkf-product-request-title');
-      root.innerHTML = [
-        '<div class="pkf-product-request-modal__backdrop"></div>',
-        '<div class="pkf-product-request-modal__dialog">',
-        '<button class="pkf-product-request-modal__close" type="button" aria-label="Закрыть">×</button>',
-        '<div class="pkf-product-request-modal__content">',
-        '<p class="pkf-product-request-modal__eyebrow">Заявка</p>',
-        '<h2 id="pkf-product-request-title">Заявка на приобретение</h2>',
-        '<p class="pkf-product-request-modal__intro">Заполните форму — специалист уточнит исполнение, комплектацию и условия эксплуатации изделия.</p>',
-        '<div class="pkf-product-request-modal__product">',
-        '<p class="pkf-product-request-modal__product-title"></p>',
-        '<p class="pkf-product-request-modal__product-description"></p>',
-        '<div class="pkf-product-request-modal__product-meta"></div>',
-        '</div>',
-        '<form class="pkf-product-request-form t-form js-form-proccess" action="https://forms.tildacdn.com/procces/" method="POST" data-formactiontype="2" data-success-callback="pkfProductRequestSuccess">',
-        '<div class="pkf-product-request-form__row">',
-        '<label>Имя*<input class="t-input" type="text" name="Name" autocomplete="name" required></label>',
-        '<label>Название компании<input class="t-input" type="text" name="Company" autocomplete="organization"></label>',
-        '</div>',
-        '<div class="pkf-product-request-form__row">',
-        '<label>Телефон<input class="t-input" type="tel" name="Phone" autocomplete="tel"></label>',
-        '<label>Почта*<input class="t-input" type="email" name="Email" autocomplete="email" required></label>',
-        '</div>',
-        '<label>Комментарий<textarea class="t-input" name="Comment" rows="4"></textarea></label>',
-        '<label class="pkf-product-request-form__agreement"><input type="checkbox" name="personal_data_agreement" value="yes" required><span>Я согласен на обработку персональных данных</span></label>',
-        '<input type="hidden" name="product_title">',
-        '<input type="hidden" name="product_slug">',
-        '<input type="hidden" name="product_url">',
-        '<input type="hidden" name="product_description">',
-        '<button class="pkf-product-request-form__submit t-submit" type="submit">Отправить заявку</button>',
-        '<div class="pkf-product-request-form__success">Спасибо! Заявка отправлена.</div>',
-        '</form>',
-        '</div>',
-        '</div>'
-      ].join('');
-      document.body.appendChild(root);
-
-      requestModal.root = root;
-      requestModal.form = root.querySelector('.pkf-product-request-form');
-      requestModal.title = root.querySelector('.pkf-product-request-modal__product-title');
-      requestModal.description = root.querySelector('.pkf-product-request-modal__product-description');
-      requestModal.meta = root.querySelector('.pkf-product-request-modal__product-meta');
-      requestModal.success = root.querySelector('.pkf-product-request-form__success');
-
-      root.querySelector('.pkf-product-request-modal__close').addEventListener('click', closeRequestModal);
-      root.querySelector('.pkf-product-request-modal__backdrop').addEventListener('click', closeRequestModal);
-      requestModal.form.addEventListener('submit', function () {
-        updateRequestForm(requestModal.context || getContext());
-      });
-
-      document.addEventListener('keydown', function (event) {
-        if (!requestModal.root || !requestModal.root.classList.contains('is-open')) {
-          return;
-        }
-
-        if (event.key === 'Escape') {
-          closeRequestModal();
-        }
-      });
-
-      window.pkfProductRequestSuccess = function () {
-        if (requestModal.success) {
-          requestModal.success.classList.add('is-visible');
-        }
-      };
-
-      return root;
-    }
-
-    function updateRequestForm(context) {
-      ensureRequestModal();
-
+    function updateProductContext(context) {
       if (!context || !context.product) {
-        return false;
-      }
-
-      var product = context.product;
-      var description = getProductDescription(product);
-      var meta = [product.series, product.type].filter(Boolean);
-
-      requestModal.context = context;
-      requestModal.title.textContent = product.title || '';
-      requestModal.description.textContent = description || '';
-      requestModal.description.style.display = description ? '' : 'none';
-      requestModal.meta.innerHTML = meta.map(function (item) {
-        return '<span>' + escapeHtml(item) + '</span>';
-      }).join('');
-      requestModal.meta.style.display = meta.length > 0 ? '' : 'none';
-
-      setRequestField('product_title', product.title || '');
-      setRequestField('product_slug', product.slug || '');
-      setRequestField('product_url', window.location.href);
-      setRequestField('product_description', description || '');
-      return true;
-    }
-
-    function setRequestField(name, value) {
-      if (!requestModal.form) {
         return;
       }
 
-      var field = requestModal.form.querySelector('[name="' + name + '"]');
-      if (field) {
-        field.value = value || '';
-      }
+      fillNativeTildaForms(context, getProductDescription(context.product));
     }
 
-    function openRequestModal(context) {
-      ensureRequestModal();
-      requestModal.lastFocus = document.activeElement;
-      updateRequestForm(context || getContext());
+    function fillNativeTildaForms(context, description) {
+      var product = context.product || {};
+      var images = Array.isArray(context.images) ? context.images : [];
+      var imageUrl = images[0] && images[0].image_url ? images[0].image_url : product.image_url || '';
 
-      if (requestModal.success) {
-        requestModal.success.classList.remove('is-visible');
-      }
-
-      requestModal.root.classList.add('is-open');
-      document.documentElement.style.overflow = 'hidden';
-
-      var firstField = requestModal.form && requestModal.form.querySelector('input:not([type="hidden"]), textarea, button');
-      if (firstField) {
-        firstField.focus();
-      }
-    }
-
-    function closeRequestModal() {
-      if (!requestModal.root || !requestModal.root.classList.contains('is-open')) {
-        return;
-      }
-
-      requestModal.root.classList.remove('is-open');
-      document.documentElement.style.overflow = '';
-
-      if (requestModal.lastFocus && typeof requestModal.lastFocus.focus === 'function') {
-        requestModal.lastFocus.focus();
-      }
-      requestModal.lastFocus = null;
-    }
-
-    function isRequestCta(element) {
-      if (!element || !element.closest) {
-        return false;
-      }
-
-      var candidate = element.closest('a, button, [role="button"]');
-      if (!candidate) {
-        return false;
-      }
-
-      var href = candidate.getAttribute && candidate.getAttribute('href');
-      var text = (candidate.textContent || '').replace(/\s+/g, ' ').trim();
-      return href === '#request' || text === REQUEST_CTA_TEXT;
-    }
-
-    function initRequestModal() {
-      document.addEventListener('click', function (event) {
-        if (!isRequestCta(event.target)) {
+      document.querySelectorAll('form').forEach(function (form) {
+        var productTitleField = form.querySelector('[name="product_title"]');
+        if (!productTitleField) {
           return;
         }
 
-        var submitButton = event.target.closest && event.target.closest('.pkf-product-request-form__submit');
-        if (submitButton) {
-          return;
+        form.classList.add('pkf-native-request-form');
+        var productCard = form.querySelector('.pkf-native-request-product');
+        if (!productCard) {
+          productCard = document.createElement('div');
+          productCard.className = 'pkf-native-request-product';
+          productCard.innerHTML = [
+            '<img class="pkf-native-request-product__image" alt="">',
+            '<div><h3 class="pkf-native-request-product__title"></h3><p class="pkf-native-request-product__description"></p></div>'
+          ].join('');
+          var fields = form.querySelector('.t-form__inputsbox') || form.firstElementChild;
+          form.insertBefore(productCard, fields || form.firstChild);
         }
 
-        event.preventDefault();
-        var context = getContext();
-        if (context && context.product) {
-          openRequestModal(context);
-          return;
-        }
+        var image = productCard.querySelector('.pkf-native-request-product__image');
+        var title = productCard.querySelector('.pkf-native-request-product__title');
+        var summary = productCard.querySelector('.pkf-native-request-product__description');
+        image.src = imageUrl;
+        image.alt = product.title || '';
+        image.style.display = imageUrl ? '' : 'none';
+        title.textContent = product.title || '';
+        summary.textContent = description || '';
+        summary.style.display = description ? '' : 'none';
 
-        ensureRequestModal();
-        document.addEventListener('pkfProductLoaded', function onProductLoaded(loadedEvent) {
-          document.removeEventListener('pkfProductLoaded', onProductLoaded);
-          openRequestModal(loadedEvent.detail);
+        [
+          ['product_title', product.title || ''],
+          ['product_description', description || ''],
+          ['product_url', window.location.href],
+          ['product_slug', product.slug || '']
+        ].forEach(function (item) {
+          var field = form.querySelector('[name="' + item[0] + '"]');
+          if (field) {
+            field.value = item[1];
+          }
         });
       });
-
-      document.addEventListener('pkfProductLoaded', function (event) {
-        updateRequestForm(event.detail);
-      });
-
-      if (getContext()) {
-        updateRequestForm(getContext());
-      }
     }
 
     function renderGallery(images) {
@@ -1254,7 +1267,13 @@
       }
     }
 
-    initRequestModal();
+    document.addEventListener('pkfProductLoaded', function (event) {
+      updateProductContext(event.detail);
+    });
+
+    if (window.pkfProductContext) {
+      updateProductContext(window.pkfProductContext);
+    }
 
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', init);

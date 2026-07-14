@@ -446,6 +446,103 @@
       font-size: 17px;
     }
 
+    .pkf-request-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .pkf-request-modal[hidden] {
+      display: none;
+    }
+
+    .pkf-request-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(17, 21, 23, 0.72);
+    }
+
+    .pkf-request-dialog {
+      position: relative;
+      width: min(680px, 100%);
+      max-height: min(760px, calc(100vh - 48px));
+      overflow: auto;
+      padding: 38px 42px;
+      background: var(--pkf-white);
+      border-radius: 8px;
+      box-shadow: 0 24px 80px rgba(17, 21, 23, 0.28);
+    }
+
+    .pkf-request-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      width: 36px;
+      height: 36px;
+      border: 0;
+      background: transparent;
+      color: var(--pkf-muted);
+      cursor: pointer;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .pkf-request-intro {
+      margin: 14px 0 24px;
+      color: var(--pkf-muted);
+    }
+
+    .pkf-request-form,
+    .pkf-request-form-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .pkf-request-form-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pkf-request-form label {
+      display: grid;
+      gap: 7px;
+      color: var(--pkf-dark);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .pkf-request-form input,
+    .pkf-request-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--pkf-line);
+      border-radius: 6px;
+      background: var(--pkf-bg);
+      color: var(--pkf-dark);
+      font: inherit;
+      resize: vertical;
+    }
+
+    .pkf-request-form input:focus,
+    .pkf-request-form textarea:focus {
+      outline: 2px solid var(--pkf-yellow);
+      outline-offset: 1px;
+    }
+
+    .pkf-request-form .pkf-button {
+      justify-self: start;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .pkf-request-success {
+      margin: 0;
+      color: #2D7A43;
+      font-weight: 800;
+    }
+
     .pkf-footer {
       background: var(--pkf-dark);
       color: var(--pkf-white);
@@ -572,6 +669,14 @@
         padding: 26px 22px;
       }
 
+      .pkf-request-dialog {
+        padding: 32px 22px 24px;
+      }
+
+      .pkf-request-form-grid {
+        grid-template-columns: 1fr;
+      }
+
       .pkf-section-head h2,
       .pkf-cta-card h2,
       .pkf-request-card h2 {
@@ -647,6 +752,16 @@
           </div>
         </article>
         <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./ibp-10-kva/">
+            <img src="assets/products/ups-old-images/ibpten/01-photo_52987606345335.jpg" alt="Источник бесперебойного питания ИБП 10 кВА — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>10 кВА / Источник бесперебойного питания</p>
+            <h2><a href="./ibp-10-kva/">Источник бесперебойного питания ИБП 10 кВА</a></h2>
+            <a class="pkf-link" href="./ibp-10-kva/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shs2-mg-pss-2p/">
             <img src="https://static.tildacdn.com/tild3562-3534-4065-a139-386261393533/2__-2_2.png" alt="ШС2 МГ ПСС-2П - image 1" loading="lazy">
           </a>
@@ -654,6 +769,16 @@
             <p>ПСС-2П / Силовой шкаф</p>
             <h2><a href="./shs2-mg-pss-2p/">ШС2 МГ ПСС-2П</a></h2>
             <a class="pkf-link" href="./shs2-mg-pss-2p/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./ibp-15-kva/">
+            <img src="assets/products/ups-old-images/ibpfifteen/01-photo_52987606345335.jpg" alt="Источник бесперебойного питания ИБП 15 кВА — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>15 кВА / Источник бесперебойного питания</p>
+            <h2><a href="./ibp-15-kva/">Источник бесперебойного питания ИБП 15 кВА</a></h2>
+            <a class="pkf-link" href="./ibp-15-kva/">Открыть страницу →</a>
           </div>
         </article>
         <article class="pkf-index-card">
@@ -667,6 +792,16 @@
           </div>
         </article>
         <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./ibp-25-kva/">
+            <img src="assets/products/ups-old-images/ibptwentyfive/01-photo_52987606345335.jpg" alt="Источник бесперебойного питания ИБП 25 кВА — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>25 кВА / Источник бесперебойного питания</p>
+            <h2><a href="./ibp-25-kva/">Источник бесперебойного питания ИБП 25 кВА</a></h2>
+            <a class="pkf-link" href="./ibp-25-kva/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shs-pk-pss-2p/">
             <img src="https://static.tildacdn.com/tild6538-3035-4661-b665-313834656332/__.png" alt="ШС ПК ПСС-2П - image 1" loading="lazy">
           </a>
@@ -674,6 +809,16 @@
             <p>ПСС-2П / Силовой шкаф</p>
             <h2><a href="./shs-pk-pss-2p/">ШС ПК ПСС-2П</a></h2>
             <a class="pkf-link" href="./shs-pk-pss-2p/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./ibp-40-kva/">
+            <img src="assets/products/ups-old-images/ibpfourty/01-photo_52987606345335.jpg" alt="Источник бесперебойного питания ИБП 40 кВА — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>40 кВА / Источник бесперебойного питания</p>
+            <h2><a href="./ibp-40-kva/">Источник бесперебойного питания ИБП 40 кВА</a></h2>
+            <a class="pkf-link" href="./ibp-40-kva/">Открыть страницу →</a>
           </div>
         </article>
         <article class="pkf-index-card">
@@ -687,6 +832,16 @@
           </div>
         </article>
         <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./ibp-100-kva/">
+            <img src="assets/products/ups-old-images/ibphundred/01-photo_52987606345335.jpg" alt="Источник бесперебойного питания ИБП 100 кВА — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>100 кВА / Источник бесперебойного питания</p>
+            <h2><a href="./ibp-100-kva/">Источник бесперебойного питания ИБП 100 кВА</a></h2>
+            <a class="pkf-link" href="./ibp-100-kva/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shu-pk-pss-2p/">
             <img src="https://static.tildacdn.com/tild3738-6434-4865-b735-306130623531/__-2.png" alt="ШУ ПК ПСС-2П - image 1" loading="lazy">
           </a>
@@ -694,6 +849,16 @@
             <p>ПСС-2П / Шкаф управления</p>
             <h2><a href="./shu-pk-pss-2p/">ШУ ПК ПСС-2П</a></h2>
             <a class="pkf-link" href="./shu-pk-pss-2p/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./ibp-200-kva/">
+            <img src="assets/products/ups-old-images/ibptwohundred/01-photo_52850889848312.jpg" alt="Источник бесперебойного питания ИБП 200 кВА — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>200 кВА / Источник бесперебойного питания</p>
+            <h2><a href="./ibp-200-kva/">Источник бесперебойного питания ИБП 200 кВА</a></h2>
+            <a class="pkf-link" href="./ibp-200-kva/">Открыть страницу →</a>
           </div>
         </article>
         <article class="pkf-index-card">
@@ -707,6 +872,16 @@
           </div>
         </article>
         <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shot-odk-umpo/">
+            <img src="assets/products/ups-old-images/shotodkumpo/01-IMG_20230110_153848.png" alt="Шкаф оперативного тока ШОТ ОДК УМПО — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ШОТ / Шкаф оперативного тока</p>
+            <h2><a href="./shot-odk-umpo/">Шкаф оперативного тока ШОТ ОДК УМПО</a></h2>
+            <a class="pkf-link" href="./shot-odk-umpo/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shk2-pk-pss-2p/">
             <img src="https://static.tildacdn.com/tild3834-3130-4838-a563-303230633233/22.png" alt="ШК2 ПК ПСС-2П - image 1" loading="lazy">
           </a>
@@ -714,6 +889,16 @@
             <p>ПСС-2П / Шкаф коммутации</p>
             <h2><a href="./shk2-pk-pss-2p/">ШК2 ПК ПСС-2П</a></h2>
             <a class="pkf-link" href="./shk2-pk-pss-2p/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shot-sahalinenergo/">
+            <img src="assets/products/ups-old-images/shotsahalinenergo/01-20240116_165832.png" alt="Шкаф оперативного тока ШОТ СахалинЭнерго — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ШОТ / Шкаф оперативного тока</p>
+            <h2><a href="./shot-sahalinenergo/">Шкаф оперативного тока ШОТ СахалинЭнерго</a></h2>
+            <a class="pkf-link" href="./shot-sahalinenergo/">Открыть страницу →</a>
           </div>
         </article>
         <article class="pkf-index-card">
@@ -727,6 +912,16 @@
           </div>
         </article>
         <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shot-nznp/">
+            <img src="assets/products/ups-old-images/shotnznp/01-20240529_114123.jpg" alt="Шкаф оперативного тока ШОТ НЗНП — изображение 1" loading="lazy">
+          </a>
+          <div>
+            <p>ШОТ / Шкаф оперативного тока</p>
+            <h2><a href="./shot-nznp/">Шкаф оперативного тока ШОТ НЗНП</a></h2>
+            <a class="pkf-link" href="./shot-nznp/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shk-pp2-pss-2p/">
             <img src="https://static.tildacdn.com/tild3538-3463-4031-a536-653337373364/shk-pp-2-pss-2p-1-80.png" alt="ШК ПП-2 ПСС-2П - image 1" loading="lazy">
           </a>
@@ -737,6 +932,16 @@
           </div>
         </article>
         <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shgp/">
+            <img src="assets/products/ups/shgp/shgp-closed.png" alt="Шкаф гарантированного питания ШГП — вид спереди" loading="lazy">
+          </a>
+          <div>
+            <p>ШГП / Шкаф гарантированного питания</p>
+            <h2><a href="./shgp/">Шкаф гарантированного питания ШГП</a></h2>
+            <a class="pkf-link" href="./shgp/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
           <a class="pkf-index-image" href="./shk-pp3-pss-2p/">
             <img src="https://static.tildacdn.com/tild6564-3732-4433-a539-366237383539/shk-pp-3-pss-2p-1-80.png" alt="ШК ПП-3 ПСС-2П - image 1" loading="lazy">
           </a>
@@ -744,6 +949,16 @@
             <p>ПСС-2П / Шкаф коммутации</p>
             <h2><a href="./shk-pp3-pss-2p/">ШК ПП-3 ПСС-2П</a></h2>
             <a class="pkf-link" href="./shk-pp3-pss-2p/">Открыть страницу →</a>
+          </div>
+        </article>
+        <article class="pkf-index-card">
+          <a class="pkf-index-image" href="./shchit-sobstvennyh-nuzhd-shsn/">
+            <img src="assets/products/ups/shsn/shsn-front.png" alt="Щит собственных нужд ЩСН — вид спереди" loading="lazy">
+          </a>
+          <div>
+            <p>ЩСН / Щит собственных нужд</p>
+            <h2><a href="./shchit-sobstvennyh-nuzhd-shsn/">Щит собственных нужд ЩСН</a></h2>
+            <a class="pkf-link" href="./shchit-sobstvennyh-nuzhd-shsn/">Открыть страницу →</a>
           </div>
         </article>
         <article class="pkf-index-card">
@@ -1312,7 +1527,7 @@
   <footer class="pkf-footer">
     <div class="pkf-container pkf-footer-inner">
       <span>ПКФ Технология</span>
-      <span>67 товаров</span>
+      <span>78 товаров</span>
     </div>
   </footer>
 </body>
