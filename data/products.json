@@ -581,7 +581,7 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "https://static.tildacdn.com/tild3063-6639-4633-a433-636133666265/43___-700-min.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/pu-pk-ms-700t.png"
     },
     {
       "slug": "pult-upravleniya-pu-zk-ms-700t",
@@ -598,7 +598,7 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "https://static.tildacdn.com/tild3831-3435-4963-a134-306263613261/44___-700_-min_1.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/pu-zk-ms-700t.png"
     },
     {
       "slug": "shkaf-raspredeleniya-pitaniya-shrp1-ms-700t",
@@ -1904,7 +1904,7 @@
       "catalog_url": "/nku-dlya-zhd-tehniki",
       "cta_text": "Получить консультацию",
       "status": "published",
-      "image_url": "assets/products/railway-nku/other/as-01.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/as-01.png",
       "hero_title": "Комплект пультов управления АС-01"
     }
   ],
@@ -4134,38 +4134,6 @@
       "sort": 10
     },
     {
-      "product_slug": "pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2",
-      "group": "Функциональные характеристики",
-      "name": "Функциональное описание",
-      "value": "Пульт управления концевого полувагона снегоуборочной машины СМ-2.",
-      "unit": "",
-      "sort": 10
-    },
-    {
-      "product_slug": "pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2",
-      "group": "Функциональные характеристики",
-      "name": "Функциональное описание",
-      "value": "Пульт управления головной секции снегоуборочной машины СМ-2.",
-      "unit": "",
-      "sort": 10
-    },
-    {
-      "product_slug": "shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2",
-      "group": "Функциональные характеристики",
-      "name": "Функциональное описание",
-      "value": "Силовой шкаф концевого полувагона снегоуборочной машины СМ-2.",
-      "unit": "",
-      "sort": 10
-    },
-    {
-      "product_slug": "shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2",
-      "group": "Функциональные характеристики",
-      "name": "Функциональное описание",
-      "value": "Силовой шкаф головной секции снегоуборочной машины СМ-2.",
-      "unit": "",
-      "sort": 10
-    },
-    {
       "product_slug": "komplekt-pultov-upravleniya-dlya-putevoj-mashiny-asg-30p",
       "group": "Функциональные характеристики",
       "name": "Функциональное описание",
@@ -4612,6 +4580,230 @@
       "value": "219...242 В / 362...399 В",
       "unit": "",
       "sort": 17
+    },
+    {
+      "product_slug": "pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение цепи постоянного и переменного тока",
+      "value": "19...29 В",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Климатическое исполнение У3",
+      "value": "по ГОСТ 15150",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Диапазон рабочих температур",
+      "value": "от -45 °C до +40 °C",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Степень защиты",
+      "value": "IP 21 по ГОСТ 14254",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Условия эксплуатации изделия в части воздействия механических факторов",
+      "value": "Группа М25 по ГОСТ 30631",
+      "unit": "",
+      "sort": 60
+    },
+    {
+      "product_slug": "pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение цепи переменного однофазного тока",
+      "value": "219...242 В",
+      "unit": "",
+      "sort": 70
+    },
+    {
+      "product_slug": "pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение цепи постоянного и переменного тока",
+      "value": "19...29 В",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Климатическое исполнение У3",
+      "value": "по ГОСТ 15150",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Диапазон рабочих температур",
+      "value": "от -45 °C до +40 °C",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Степень защиты",
+      "value": "IP 21 по ГОСТ 14254",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Условия эксплуатации изделия в части воздействия механических факторов",
+      "value": "Группа М25 по ГОСТ 30631",
+      "unit": "",
+      "sort": 60
+    },
+    {
+      "product_slug": "pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение цепи переменного однофазного тока",
+      "value": "219...242 В",
+      "unit": "",
+      "sort": 70
+    },
+    {
+      "product_slug": "shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение цепи постоянного тока",
+      "value": "19...29 В",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Климатическое исполнение У3",
+      "value": "по ГОСТ 15150",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Диапазон рабочих температур",
+      "value": "от -45 °C до +40 °C",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Степень защиты",
+      "value": "IP 52 по ГОСТ 14254",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Условия эксплуатации изделия в части воздействия механических факторов",
+      "value": "Группа М25 по ГОСТ 30631",
+      "unit": "",
+      "sort": 60
+    },
+    {
+      "product_slug": "shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение цепи переменного тока",
+      "value": "345...418 В",
+      "unit": "",
+      "sort": 70
+    },
+    {
+      "product_slug": "shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение цепи постоянного тока",
+      "value": "19...29 В",
+      "unit": "",
+      "sort": 10
+    },
+    {
+      "product_slug": "shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Режим работы",
+      "value": "Продолжительный",
+      "unit": "",
+      "sort": 20
+    },
+    {
+      "product_slug": "shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Климатическое исполнение У3",
+      "value": "по ГОСТ 15150",
+      "unit": "",
+      "sort": 30
+    },
+    {
+      "product_slug": "shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Диапазон рабочих температур",
+      "value": "от -45 °C до +40 °C",
+      "unit": "",
+      "sort": 40
+    },
+    {
+      "product_slug": "shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Степень защиты",
+      "value": "IP 32 по ГОСТ 14254",
+      "unit": "",
+      "sort": 50
+    },
+    {
+      "product_slug": "shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Условия эксплуатации изделия в части воздействия механических факторов",
+      "value": "Группа М25 по ГОСТ 30631",
+      "unit": "",
+      "sort": 60
+    },
+    {
+      "product_slug": "shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2",
+      "group": "Технические характеристики",
+      "name": "Номинальное напряжение цепи переменного тока",
+      "value": "345...418 В",
+      "unit": "",
+      "sort": 70
     }
   ],
   "images": [
@@ -4826,18 +5018,6 @@
       "sort": 20
     },
     {
-      "product_slug": "pult-upravleniya-pu-pk-ms-700t",
-      "image_url": "https://static.tildacdn.com/tild3063-6639-4633-a433-636133666265/43___-700-min.jpg",
-      "alt": "Пульт управления ПУ ПК МС-700Т",
-      "sort": 10
-    },
-    {
-      "product_slug": "pult-upravleniya-pu-zk-ms-700t",
-      "image_url": "https://static.tildacdn.com/tild3831-3435-4963-a134-306263613261/44___-700_-min_1.jpg",
-      "alt": "Пульт управления ПУ ЗК МС-700Т",
-      "sort": 10
-    },
-    {
       "product_slug": "pult-upravleniya-pravyj-vpo-s",
       "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/vpo-s/pult-upravleniya-pravyj-vpo-s-closed.png",
       "alt": "Пульт управления правый ВПО-С",
@@ -4949,42 +5129,6 @@
       "product_slug": "shkaf-a24-mpv",
       "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/mpv/shkaf-a24-mpv-open.png",
       "alt": "Шкаф А24 МПВ",
-      "sort": 20
-    },
-    {
-      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp1-ms-700t",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp1-ms-700t-closed.png",
-      "alt": "Шкаф распределения питания ШРП1 МС-700Т",
-      "sort": 10
-    },
-    {
-      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp1-ms-700t",
-      "image_url": "https://static.tildacdn.com/tild6461-3833-4766-b639-306635346431/45_1_-700-min.jpg",
-      "alt": "Шкаф распределения питания ШРП1 МС-700Т",
-      "sort": 20
-    },
-    {
-      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp2-ms-700t",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp2-ms-700t-closed.png",
-      "alt": "Шкаф распределения питания ШРП2 МС-700Т",
-      "sort": 10
-    },
-    {
-      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp2-ms-700t",
-      "image_url": "https://static.tildacdn.com/tild6534-6366-4130-a138-663439623462/46_2_-700-min.jpg",
-      "alt": "Шкаф распределения питания ШРП2 МС-700Т",
-      "sort": 20
-    },
-    {
-      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp3-ms-700t",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp3-ms-700t-closed.png",
-      "alt": "Шкаф распределения питания ШРП3 МС-700Т",
-      "sort": 10
-    },
-    {
-      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp3-ms-700t",
-      "image_url": "https://static.tildacdn.com/tild6262-3166-4363-b135-346366646236/47_3_-700-min_1.jpg",
-      "alt": "Шкаф распределения питания ШРП3 МС-700Т",
       "sort": 20
     },
     {
@@ -5168,39 +5312,93 @@
       "sort": 20
     },
     {
+      "product_slug": "as-01",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/other/as-01.png",
+      "alt": "Комплект пультов управления АС-01",
+      "sort": 10
+    },
+    {
+      "product_slug": "pult-upravleniya-pu-pk-ms-700t",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/pu-pk-ms-700t.png",
+      "alt": "Пульт управления ПУ ПК МС-700Т",
+      "sort": 10
+    },
+    {
+      "product_slug": "pult-upravleniya-pu-zk-ms-700t",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/pu-zk-ms-700t.png",
+      "alt": "Пульт управления ПУ ЗК МС-700Т",
+      "sort": 10
+    },
+    {
+      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp1-ms-700t",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp1-ms-700t-closed.png",
+      "alt": "Шкаф распределения питания ШРП1 МС-700Т",
+      "sort": 10
+    },
+    {
+      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp1-ms-700t",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp1-ms-700t-open.png",
+      "alt": "Шкаф распределения питания ШРП1 МС-700Т — открытый вид",
+      "sort": 20
+    },
+    {
+      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp2-ms-700t",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp2-ms-700t-closed.png",
+      "alt": "Шкаф распределения питания ШРП2 МС-700Т",
+      "sort": 10
+    },
+    {
+      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp2-ms-700t",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp2-ms-700t-open.png",
+      "alt": "Шкаф распределения питания ШРП2 МС-700Т — открытый вид",
+      "sort": 20
+    },
+    {
+      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp3-ms-700t",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp3-ms-700t-closed.png",
+      "alt": "Шкаф распределения питания ШРП3 МС-700Т",
+      "sort": 10
+    },
+    {
+      "product_slug": "shkaf-raspredeleniya-pitaniya-shrp3-ms-700t",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/railway-nku/ms-700t/shrp3-ms-700t-open.png",
+      "alt": "Шкаф распределения питания ШРП3 МС-700Т — открытый вид",
+      "sort": 20
+    },
+    {
       "product_slug": "pult-upravleniya-koncevogo-poluvagona-snegouborochnoj-mashiny-pu-kp-sm-2",
       "image_url": "https://irozis.github.io/pkftechno-data/assets/products/sm-2/new/pu-kp.png",
-      "alt": "Пульт управления концевого полувагона снегоуборочной машины ПУ КП СМ-2 — изображение 1",
+      "alt": "Пульт управления ПУ КП СМ-2",
       "sort": 10
     },
     {
       "product_slug": "pult-upravleniya-golovnoj-sekcii-snegouborochnoj-mashiny-pu-gm-sm-2",
       "image_url": "https://irozis.github.io/pkftechno-data/assets/products/sm-2/new/pu-gm.png",
-      "alt": "Пульт управления головной секции снегоуборочной машины ПУ ГМ СМ-2 — изображение 1",
+      "alt": "Пульт управления ПУ ГМ СМ-2",
       "sort": 10
     },
     {
       "product_slug": "shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2",
       "image_url": "https://irozis.github.io/pkftechno-data/assets/products/sm-2/new/shs-kp.png",
-      "alt": "Шкаф силовой концевого полувагона снегоуборочной машины ШС КП СМ-2 — изображение 1",
+      "alt": "Шкаф силовой ШС КП СМ-2",
       "sort": 10
     },
     {
       "product_slug": "shkaf-silovoj-koncevogo-poluvagona-snegouborochnoj-mashiny-shs-kp-sm-2",
       "image_url": "https://irozis.github.io/pkftechno-data/assets/products/sm-2/new/shs-kp-open.png",
-      "alt": "Шкаф силовой концевого полувагона снегоуборочной машины ШС КП СМ-2 — изображение 2",
+      "alt": "Шкаф силовой ШС КП СМ-2 — открытый вид",
       "sort": 20
     },
     {
       "product_slug": "shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2",
       "image_url": "https://irozis.github.io/pkftechno-data/assets/products/sm-2/new/shs-gm.png",
-      "alt": "Шкаф силовой головной секции снегоуборочной машины ШС ГМ СМ-2 — изображение 1",
+      "alt": "Шкаф силовой ШС ГС СМ-2",
       "sort": 10
     },
     {
       "product_slug": "shkaf-silovoj-golovnoj-sekcii-snegouborochnoj-mashiny-shs-gm-sm-2",
       "image_url": "https://irozis.github.io/pkftechno-data/assets/products/sm-2/new/shs-gm-open.png",
-      "alt": "Шкаф силовой головной секции снегоуборочной машины ШС ГМ СМ-2 — изображение 2",
+      "alt": "Шкаф силовой ШС ГС СМ-2 — открытый вид",
       "sort": 20
     }
   ],
