@@ -7408,74 +7408,74 @@
     },
     {
       "product_slug": "shot-odk-umpo",
-      "image_url": "assets/products/ups-old-images/shotodkumpo/01-IMG_20230110_153848.png",
-      "alt": "Шкаф оперативного тока ШОТ ОДК УМПО — изображение 1",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-odk-umpo/closed.png",
+      "alt": "Шкаф оперативного тока ШОТ ОДК УМПО — вид спереди",
       "sort": 10
     },
     {
       "product_slug": "shot-odk-umpo",
-      "image_url": "assets/products/ups-old-images/shotodkumpo/02-IMG_20230110_154103.png",
-      "alt": "Шкаф оперативного тока ШОТ ОДК УМПО — изображение 2",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-odk-umpo/open.png",
+      "alt": "Шкаф оперативного тока ШОТ ОДК УМПО — вид с открытой дверью",
       "sort": 20
     },
     {
       "product_slug": "shot-sahalinenergo",
-      "image_url": "assets/products/ups-old-images/shotsahalinenergo/01-20240116_165832.png",
-      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — изображение 1",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-sahalinenergo/closed-1.png",
+      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — секция управления",
       "sort": 10
     },
     {
       "product_slug": "shot-sahalinenergo",
-      "image_url": "assets/products/ups-old-images/shotsahalinenergo/02-IMG_20240116_135739.png",
-      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — изображение 2",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-sahalinenergo/open-1.png",
+      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — открытая секция управления",
       "sort": 20
     },
     {
       "product_slug": "shot-sahalinenergo",
-      "image_url": "assets/products/ups-old-images/shotsahalinenergo/03-IMG_20240116_135759.png",
-      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — изображение 3",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-sahalinenergo/closed-2.png",
+      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — секция Т1, Т2",
       "sort": 30
     },
     {
       "product_slug": "shot-sahalinenergo",
-      "image_url": "assets/products/ups-old-images/shotsahalinenergo/04-4c1f91ef-0a5d-4a3e-a.png",
-      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — изображение 4",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-sahalinenergo/open-2.png",
+      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — открытая секция Т1, Т2",
       "sort": 40
     },
     {
       "product_slug": "shot-sahalinenergo",
-      "image_url": "assets/products/ups-old-images/shotsahalinenergo/05-IMG_20240116_140731.png",
-      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — изображение 5",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-sahalinenergo/closed-3.png",
+      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — вид сбоку",
       "sort": 50
     },
     {
       "product_slug": "shot-sahalinenergo",
-      "image_url": "assets/products/ups-old-images/shotsahalinenergo/06-20240116_165342.png",
-      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — изображение 6",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-sahalinenergo/open-3.png",
+      "alt": "Шкаф оперативного тока ШОТ СахалинЭнерго — аккумуляторная секция",
       "sort": 60
     },
     {
       "product_slug": "shot-nznp",
-      "image_url": "assets/products/ups-old-images/shotnznp/01-20240529_114123.jpg",
-      "alt": "Шкаф оперативного тока ШОТ НЗНП — изображение 1",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-nznp/closed-1.png",
+      "alt": "Шкаф оперативного тока ШОТ НЗНП — вид спереди",
       "sort": 10
     },
     {
       "product_slug": "shot-nznp",
-      "image_url": "assets/products/ups-old-images/shotnznp/02-20240523_093606.jpg",
-      "alt": "Шкаф оперативного тока ШОТ НЗНП — изображение 2",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-nznp/open-1.png",
+      "alt": "Шкаф оперативного тока ШОТ НЗНП — открытый вид 1",
       "sort": 20
     },
     {
       "product_slug": "shot-nznp",
-      "image_url": "assets/products/ups-old-images/shotnznp/03-20240529_194832.jpg",
-      "alt": "Шкаф оперативного тока ШОТ НЗНП — изображение 3",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-nznp/closed-2.png",
+      "alt": "Шкаф оперативного тока ШОТ НЗНП — вид с двумя секциями",
       "sort": 30
     },
     {
       "product_slug": "shot-nznp",
-      "image_url": "assets/products/ups-old-images/shotnznp/04-20240529_121129_1_1.png",
-      "alt": "Шкаф оперативного тока ШОТ НЗНП — изображение 4",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shot-nznp/open-2.png",
+      "alt": "Шкаф оперативного тока ШОТ НЗНП — открытый вид 2",
       "sort": 40
     },
     {
