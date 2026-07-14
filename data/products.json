@@ -7336,74 +7336,68 @@
     },
     {
       "product_slug": "ibp-10-kva",
-      "image_url": "assets/products/ups-old-images/ibpten/01-photo_52987606345335.jpg",
-      "alt": "Источник бесперебойного питания ИБП 10 кВА — изображение 1",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-10-kva/closed.png",
+      "alt": "Источник бесперебойного питания ИБП 10 кВА — вид спереди",
       "sort": 10
     },
     {
       "product_slug": "ibp-10-kva",
-      "image_url": "assets/products/ups-old-images/ibpten/02-photo_52987606345335.jpg",
-      "alt": "Источник бесперебойного питания ИБП 10 кВА — изображение 2",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-10-kva/open.png",
+      "alt": "Источник бесперебойного питания ИБП 10 кВА — вид с открытой дверью",
       "sort": 20
     },
     {
       "product_slug": "ibp-15-kva",
-      "image_url": "assets/products/ups-old-images/ibpfifteen/01-photo_52987606345335.jpg",
-      "alt": "Источник бесперебойного питания ИБП 15 кВА — изображение 1",
-      "sort": 10
-    },
-    {
-      "product_slug": "ibp-15-kva",
-      "image_url": "assets/products/ups-old-images/ibpfifteen/02-photo_52987606345335.jpg",
-      "alt": "Источник бесперебойного питания ИБП 15 кВА — изображение 2",
-      "sort": 20
-    },
-    {
-      "product_slug": "ibp-25-kva",
-      "image_url": "assets/products/ups-old-images/ibptwentyfive/01-photo_52987606345335.jpg",
-      "alt": "Источник бесперебойного питания ИБП 25 кВА — изображение 1",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-15-kva/open.png",
+      "alt": "Источник бесперебойного питания ИБП 15 кВА — вид с открытой дверью",
       "sort": 10
     },
     {
       "product_slug": "ibp-25-kva",
-      "image_url": "assets/products/ups-old-images/ibptwentyfive/02-photo_52987606345335.jpg",
-      "alt": "Источник бесперебойного питания ИБП 25 кВА — изображение 2",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-25-kva/closed.png",
+      "alt": "Источник бесперебойного питания ИБП 25 кВА — вид спереди",
+      "sort": 10
+    },
+    {
+      "product_slug": "ibp-25-kva",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-25-kva/open.png",
+      "alt": "Источник бесперебойного питания ИБП 25 кВА — вид с открытыми дверями",
       "sort": 20
     },
     {
       "product_slug": "ibp-40-kva",
-      "image_url": "assets/products/ups-old-images/ibpfourty/01-photo_52987606345335.jpg",
-      "alt": "Источник бесперебойного питания ИБП 40 кВА — изображение 1",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-40-kva/closed.png",
+      "alt": "Источник бесперебойного питания ИБП 40 кВА — вид спереди",
       "sort": 10
     },
     {
       "product_slug": "ibp-40-kva",
-      "image_url": "assets/products/ups-old-images/ibpfourty/02-photo_53011354422105.jpg",
-      "alt": "Источник бесперебойного питания ИБП 40 кВА — изображение 2",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-40-kva/open.png",
+      "alt": "Источник бесперебойного питания ИБП 40 кВА — вид с открытыми дверями",
       "sort": 20
     },
     {
       "product_slug": "ibp-100-kva",
-      "image_url": "assets/products/ups-old-images/ibphundred/01-photo_52987606345335.jpg",
-      "alt": "Источник бесперебойного питания ИБП 100 кВА — изображение 1",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-100-kva/closed.png",
+      "alt": "Источник бесперебойного питания ИБП 100 кВА — вид спереди",
       "sort": 10
     },
     {
       "product_slug": "ibp-100-kva",
-      "image_url": "assets/products/ups-old-images/ibphundred/02-photo_52987606345335.jpg",
-      "alt": "Источник бесперебойного питания ИБП 100 кВА — изображение 2",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-100-kva/open.png",
+      "alt": "Источник бесперебойного питания ИБП 100 кВА — вид с открытыми дверями",
       "sort": 20
     },
     {
       "product_slug": "ibp-200-kva",
-      "image_url": "assets/products/ups-old-images/ibptwohundred/01-photo_52850889848312.jpg",
-      "alt": "Источник бесперебойного питания ИБП 200 кВА — изображение 1",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-200-kva/closed.png",
+      "alt": "Источник бесперебойного питания ИБП 200 кВА — вид спереди",
       "sort": 10
     },
     {
       "product_slug": "ibp-200-kva",
-      "image_url": "assets/products/ups-old-images/ibptwohundred/02-photo_52850889848312.jpg",
-      "alt": "Источник бесперебойного питания ИБП 200 кВА — изображение 2",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-200-kva/open.png",
+      "alt": "Источник бесперебойного питания ИБП 200 кВА — вид с открытыми дверями",
       "sort": 20
     },
     {
