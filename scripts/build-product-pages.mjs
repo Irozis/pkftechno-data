@@ -278,7 +278,7 @@ function renderPage(product, data) {
         <div class="pkf-hero-content">
           <div class="pkf-kicker">${escapeHtml([product.section, product.series].filter(Boolean).join(' / '))}</div>
           <h1>${escapeHtml(title)}</h1>
-          <p>${escapeHtml(heroDescription)}</p>
+          <p class="pkf-hero-description">${escapeHtml(heroDescription)}</p>
           <div class="pkf-meta-grid">
             ${renderMetaItems(product)}
           </div>
@@ -517,7 +517,8 @@ function renderStyles() {
     }
 
     .pkf-hero-media {
-      min-height: 420px;
+      height: 420px;
+      min-height: 0;
       display: grid;
       place-items: center;
       overflow: hidden;
@@ -526,9 +527,11 @@ function renderStyles() {
     }
 
     .pkf-hero-media img {
+      display: block;
       width: 100%;
       height: 100%;
-      max-height: 520px;
+      max-width: 100%;
+      max-height: 100%;
       object-fit: contain;
     }
 
@@ -562,6 +565,13 @@ function renderStyles() {
       color: #D2D9DD;
       font-size: 18px;
       font-weight: 700;
+    }
+
+    .pkf-hero-description {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
     }
 
     .pkf-meta-grid {
@@ -1062,7 +1072,7 @@ function renderStyles() {
       }
 
       .pkf-hero-media {
-        min-height: 280px;
+        height: 280px;
       }
 
       .pkf-hero h1,

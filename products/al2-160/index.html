@@ -99,7 +99,8 @@
     }
 
     .pkf-hero-media {
-      min-height: 420px;
+      height: 420px;
+      min-height: 0;
       display: grid;
       place-items: center;
       overflow: hidden;
@@ -108,9 +109,11 @@
     }
 
     .pkf-hero-media img {
+      display: block;
       width: 100%;
       height: 100%;
-      max-height: 520px;
+      max-width: 100%;
+      max-height: 100%;
       object-fit: contain;
     }
 
@@ -144,6 +147,13 @@
       color: #D2D9DD;
       font-size: 18px;
       font-weight: 700;
+    }
+
+    .pkf-hero-description {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
     }
 
     .pkf-meta-grid {
@@ -644,7 +654,7 @@
       }
 
       .pkf-hero-media {
-        min-height: 280px;
+        height: 280px;
       }
 
       .pkf-hero h1,
@@ -738,12 +748,12 @@
     <section class="pkf-hero">
       <div class="pkf-container pkf-hero-grid">
         <div class="pkf-hero-media">
-          <img src="../../assets/products/radio-equipment/al2-160.png" alt="Антенна локомотивная АЛ2/160">
+          <img src="https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-160.png" alt="Антенна локомотивная АЛ2/160">
         </div>
         <div class="pkf-hero-content">
           <div class="pkf-kicker">Оборудование радиосвязи / АЛ2/160</div>
           <h1>Антенна локомотивная АЛ2/160</h1>
-          <p>Антенна локомотивная АЛ2/ 160 предназначена для работы с локомотивными радиостанциями в сетях поездной, ремонтно-оперативной и станционной радиосвязи на железнодорожном транспорте в метровом диапазоне волн. Антенна является низкопрофильной и представляет собой несимметричный петлевой вибратор, помещенный в защитный стеклопластиковый радиопрозрачный кожух. По степени защиты оболочки антенна соответствует требованиям кода IP66. Антенна оборудована фланцевым разъёмом N-типа (розетка).</p>
+          <p class="pkf-hero-description">Антенна локомотивная АЛ2/ 160 предназначена для работы с локомотивными радиостанциями в сетях поездной, ремонтно-оперативной и станционной радиосвязи на железнодорожном транспорте в метровом диапазоне волн. Антенна является низкопрофильной и представляет собой несимметричный петлевой вибратор, помещенный в защитный стеклопластиковый радиопрозрачный кожух. По степени защиты оболочки антенна соответствует требованиям кода IP66. Антенна оборудована фланцевым разъёмом N-типа (розетка).</p>
           <div class="pkf-meta-grid">
             
               <div class="pkf-meta-item">

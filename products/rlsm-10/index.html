@@ -99,7 +99,8 @@
     }
 
     .pkf-hero-media {
-      min-height: 420px;
+      height: 420px;
+      min-height: 0;
       display: grid;
       place-items: center;
       overflow: hidden;
@@ -108,9 +109,11 @@
     }
 
     .pkf-hero-media img {
+      display: block;
       width: 100%;
       height: 100%;
-      max-height: 520px;
+      max-width: 100%;
+      max-height: 100%;
       object-fit: contain;
     }
 
@@ -144,6 +147,13 @@
       color: #D2D9DD;
       font-size: 18px;
       font-weight: 700;
+    }
+
+    .pkf-hero-description {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
     }
 
     .pkf-meta-grid {
@@ -644,7 +654,7 @@
       }
 
       .pkf-hero-media {
-        min-height: 280px;
+        height: 280px;
       }
 
       .pkf-hero h1,
@@ -738,12 +748,12 @@
     <section class="pkf-hero">
       <div class="pkf-container pkf-hero-grid">
         <div class="pkf-hero-media">
-          <img src="../../assets/products/radio-equipment/rlsm-10.png" alt="Радиостанция РЛСМ-10">
+          <img src="https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/rlsm-10.png" alt="Радиостанция РЛСМ-10">
         </div>
         <div class="pkf-hero-content">
           <div class="pkf-kicker">Оборудование радиосвязи / РЛСМ-10</div>
           <h1>Радиостанция РЛСМ-10</h1>
-          <p>Радиостанции РЛСМ-10 предназначены для передачи речи и данных в цифровых сетях технологической радиосвязи по стандартам DMR, GSM, GSM-R, LTE, а также в сетях спутниковой связи Thuraya, Iridium. Радиостанции устанавливаются на железнодорожном транспорте и автотранспорте различных ведомств для организации технологической радиосвязи. РЛСМ-10 обеспечивают подключение каналов для передачи сигналов телеуправления и телесигнализации (ТУ-ТС), технологической информации бортовых систем, аппаратуры передачи данных, внешнего регистратора переговоров. Скорость передачи данных в режиме DMR – до 6400 бит/с, по стандартам GSM и GSM-R с поддержкой протоколов GPRS и CSD – до 9600 бит/с, в диапазоне Thuraya – до 9600 бит/с.</p>
+          <p class="pkf-hero-description">Радиостанции РЛСМ-10 предназначены для передачи речи и данных в цифровых сетях технологической радиосвязи по стандартам DMR, GSM, GSM-R, LTE, а также в сетях спутниковой связи Thuraya, Iridium. Радиостанции устанавливаются на железнодорожном транспорте и автотранспорте различных ведомств для организации технологической радиосвязи. РЛСМ-10 обеспечивают подключение каналов для передачи сигналов телеуправления и телесигнализации (ТУ-ТС), технологической информации бортовых систем, аппаратуры передачи данных, внешнего регистратора переговоров. Скорость передачи данных в режиме DMR – до 6400 бит/с, по стандартам GSM и GSM-R с поддержкой протоколов GPRS и CSD – до 9600 бит/с, в диапазоне Thuraya – до 9600 бит/с.</p>
           <div class="pkf-meta-grid">
             
               <div class="pkf-meta-item">

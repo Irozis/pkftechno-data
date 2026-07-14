@@ -90,6 +90,11 @@ const replacements = new Map([
   }]
 ]);
 
+const publicAssetBase = 'https://irozis.github.io/pkftechno-data/';
+for (const image of replacements.values()) {
+  image.image_url = image.image_url.replace(/^assets\//, publicAssetBase + 'assets/');
+}
+
 for (const [slug, image] of replacements) {
   const product = data.products.find((item) => item.slug === slug);
   if (!product) throw new Error(`Product not found: ${slug}`);

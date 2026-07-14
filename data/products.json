@@ -2126,7 +2126,7 @@
       ],
       "sort": 1000,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al1-160.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al1-160.png"
     },
     {
       "slug": "al1-160-n",
@@ -2194,7 +2194,7 @@
       ],
       "sort": 1010,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al1-160-n.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al1-160-n.png"
     },
     {
       "slug": "al2-160",
@@ -2260,7 +2260,7 @@
       ],
       "sort": 1020,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al2-160.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-160.png"
     },
     {
       "slug": "al2-160-900-2500-n",
@@ -2361,7 +2361,7 @@
       ],
       "sort": 1030,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al2-160-900-2500-n.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-160-900-2500-n.png"
     },
     {
       "slug": "al2-160-n",
@@ -2429,7 +2429,7 @@
       ],
       "sort": 1040,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al2-160-n.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-160-n.png"
     },
     {
       "slug": "al2-450-2700-mimo",
@@ -2483,7 +2483,7 @@
       ],
       "sort": 1050,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al2-450-2700-mimo.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-450-2700-mimo.png"
     },
     {
       "slug": "al2-450-2700-mimo-n",
@@ -2548,7 +2548,7 @@
       ],
       "sort": 1060,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al2-450-2700-mimo-n.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-450-2700-mimo-n.png"
     },
     {
       "slug": "al2-450-2700-n-050",
@@ -2614,7 +2614,7 @@
       ],
       "sort": 1070,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al2-450-2700-n-050.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-450-2700-n-050.png"
     },
     {
       "slug": "al2-450-2700-n-057",
@@ -2680,7 +2680,7 @@
       ],
       "sort": 1080,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al2-450-2700-n-057.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-450-2700-n-057.png"
     },
     {
       "slug": "al2-460-900",
@@ -2708,7 +2708,7 @@
       ],
       "sort": 1090,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al2-460-900.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-460-900.png"
     },
     {
       "slug": "al2-460-900-n",
@@ -2736,7 +2736,7 @@
       ],
       "sort": 1100,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al2-460-900-n.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-460-900-n.png"
     },
     {
       "slug": "al3-160-n-058",
@@ -2804,7 +2804,7 @@
       ],
       "sort": 1110,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al3-160-n-058.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-160-n-058.png"
     },
     {
       "slug": "al3-160-n-059",
@@ -2872,7 +2872,7 @@
       ],
       "sort": 1120,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al3-160-n-059.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-160-n-059.png"
     },
     {
       "slug": "al3-800-3400",
@@ -2938,7 +2938,7 @@
       ],
       "sort": 1130,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al3-800-3400.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-800-3400.png"
     },
     {
       "slug": "al3-800-3400-mimo",
@@ -2960,7 +2960,7 @@
       ],
       "sort": 1140,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al3-800-3400-mimo.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-800-3400-mimo.png"
     },
     {
       "slug": "al3-800-3400-mimo-n",
@@ -3037,7 +3037,7 @@
       ],
       "sort": 1150,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al3-800-3400-mimo-n.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-800-3400-mimo-n.png"
     },
     {
       "slug": "al3-800-3400-n",
@@ -3114,7 +3114,7 @@
       ],
       "sort": 1160,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/al3-800-3400-n.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-800-3400-n.png"
     },
     {
       "slug": "alm-2-130",
@@ -3169,7 +3169,7 @@
       ],
       "sort": 1170,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/alm-2-130.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/alm-2-130.png"
     },
     {
       "slug": "rlsm-10",
@@ -3199,7 +3199,7 @@
       ],
       "sort": 1180,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/rlsm-10.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/rlsm-10.png"
     },
     {
       "slug": "df-160-r6k",
@@ -3261,7 +3261,7 @@
       ],
       "sort": 1190,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/df-160-r6k.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/df-160-r6k.png"
     },
     {
       "slug": "df-160-r8k",
@@ -3323,7 +3323,7 @@
       ],
       "sort": 1200,
       "status": "published",
-      "image_url": "assets/products/radio-equipment/df-160-r8k.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/df-160-r8k.png"
     }
   ],
   "characteristics": [
@@ -11639,127 +11639,127 @@
     },
     {
       "product_slug": "al1-160",
-      "image_url": "assets/products/radio-equipment/al1-160.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al1-160.png",
       "alt": "Антенна локомотивная АЛ1/160",
       "sort": 10
     },
     {
       "product_slug": "al1-160-n",
-      "image_url": "assets/products/radio-equipment/al1-160-n.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al1-160-n.png",
       "alt": "Антенна локомотивная АЛ1/160/Н",
       "sort": 10
     },
     {
       "product_slug": "al2-160",
-      "image_url": "assets/products/radio-equipment/al2-160.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-160.png",
       "alt": "Антенна локомотивная АЛ2/160",
       "sort": 10
     },
     {
       "product_slug": "al2-160-900-2500-n",
-      "image_url": "assets/products/radio-equipment/al2-160-900-2500-n.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-160-900-2500-n.png",
       "alt": "Антенна локомотивная АЛ2/160/900-2500/Н",
       "sort": 10
     },
     {
       "product_slug": "al2-160-n",
-      "image_url": "assets/products/radio-equipment/al2-160-n.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-160-n.png",
       "alt": "Антенна локомотивная АЛ2/160/Н",
       "sort": 10
     },
     {
       "product_slug": "al2-450-2700-mimo",
-      "image_url": "assets/products/radio-equipment/al2-450-2700-mimo.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-450-2700-mimo.png",
       "alt": "Антенна локомотивная АЛ2/450-2700/MIMO",
       "sort": 10
     },
     {
       "product_slug": "al2-450-2700-mimo-n",
-      "image_url": "assets/products/radio-equipment/al2-450-2700-mimo-n.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-450-2700-mimo-n.png",
       "alt": "Антенна локомотивная АЛ2/450-2700/MIMO/Н",
       "sort": 10
     },
     {
       "product_slug": "al2-450-2700-n-050",
-      "image_url": "assets/products/radio-equipment/al2-450-2700-n-050.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-450-2700-n-050.png",
       "alt": "Антенна локомотивная АЛ2/450-2700/Н-050",
       "sort": 10
     },
     {
       "product_slug": "al2-450-2700-n-057",
-      "image_url": "assets/products/radio-equipment/al2-450-2700-n-057.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-450-2700-n-057.png",
       "alt": "Антенна локомотивная АЛ2/450-2700/Н-057",
       "sort": 10
     },
     {
       "product_slug": "al2-460-900",
-      "image_url": "assets/products/radio-equipment/al2-460-900.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-460-900.png",
       "alt": "Антенна локомотивная АЛ2/460/900",
       "sort": 10
     },
     {
       "product_slug": "al2-460-900-n",
-      "image_url": "assets/products/radio-equipment/al2-460-900-n.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al2-460-900-n.png",
       "alt": "Антенна локомотивная АЛ2/460/900/Н",
       "sort": 10
     },
     {
       "product_slug": "al3-160-n-058",
-      "image_url": "assets/products/radio-equipment/al3-160-n-058.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-160-n-058.png",
       "alt": "Антенна локомотивная АЛ3/160/Н-058",
       "sort": 10
     },
     {
       "product_slug": "al3-160-n-059",
-      "image_url": "assets/products/radio-equipment/al3-160-n-059.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-160-n-059.png",
       "alt": "Антенна локомотивная АЛ3/160/Н-059",
       "sort": 10
     },
     {
       "product_slug": "al3-800-3400",
-      "image_url": "assets/products/radio-equipment/al3-800-3400.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-800-3400.png",
       "alt": "Антенна локомотивная АЛ3/800-3400",
       "sort": 10
     },
     {
       "product_slug": "al3-800-3400-mimo",
-      "image_url": "assets/products/radio-equipment/al3-800-3400-mimo.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-800-3400-mimo.png",
       "alt": "Антенна локомотивная АЛ3/800-3400/MIMO",
       "sort": 10
     },
     {
       "product_slug": "al3-800-3400-mimo-n",
-      "image_url": "assets/products/radio-equipment/al3-800-3400-mimo-n.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-800-3400-mimo-n.png",
       "alt": "Антенна локомотивная АЛ3/800-3400/MIMO/Н",
       "sort": 10
     },
     {
       "product_slug": "al3-800-3400-n",
-      "image_url": "assets/products/radio-equipment/al3-800-3400-n.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/al3-800-3400-n.png",
       "alt": "Антенна локомотивная АЛ3/800-3400/Н",
       "sort": 10
     },
     {
       "product_slug": "df-160-r6k",
-      "image_url": "assets/products/radio-equipment/df-160-r6k.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/df-160-r6k.png",
       "alt": "Дуплексный фильтр ДФ-160/Р6К",
       "sort": 10
     },
     {
       "product_slug": "df-160-r8k",
-      "image_url": "assets/products/radio-equipment/df-160-r8k.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/df-160-r8k.png",
       "alt": "Дуплексный фильтр ДФ-160/Р8К",
       "sort": 10
     },
     {
       "product_slug": "alm-2-130",
-      "image_url": "assets/products/radio-equipment/alm-2-130.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/alm-2-130.png",
       "alt": "Антенна локомотивная АЛМ/2.130",
       "sort": 10
     },
     {
       "product_slug": "rlsm-10",
-      "image_url": "assets/products/radio-equipment/rlsm-10.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/radio-equipment/rlsm-10.png",
       "alt": "Радиостанция РЛСМ-10",
       "sort": 10
     }

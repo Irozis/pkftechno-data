@@ -28,12 +28,15 @@
   .js-product-short,
   .js-product-short .tn-atom {
     max-width: 620px;
-    height: auto !important;
+    max-height: calc(1.45em * 5) !important;
     min-height: 0 !important;
     margin-top: 18px;
     line-height: 1.45 !important;
     white-space: normal !important;
-    overflow: visible !important;
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
   }
 
   .pkf-product-slider {
@@ -67,10 +70,18 @@
   }
 
   .js-product-image img {
+    display: block !important;
     width: 100% !important;
     height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
     object-fit: contain !important;
     object-position: center center !important;
+  }
+
+  .js-product-image,
+  .js-product-image .tn-atom {
+    overflow: hidden !important;
   }
 
   .pkf-product-slider__footer {
