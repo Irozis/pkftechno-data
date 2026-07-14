@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Антенна локомотивная АЛ2/160/900-2500/Н | ПКФ Технология</title>
+  <meta name="description" content="Антенна АЛ2/160/900-2500/H предназначена для работы в составе локомотивных радиостанций поездной, станционной и ремонтно-оперативной радиосвязи и радиосредств систем обеспечения безопасности движения на железнодорожном транспорте в стандартах DMR/GSM-R/GSM900/GSM1800/UMTS/WLAN/WiMAX/WiFi, а также в составе систем определения местоположения стандартов ГНСС. Антенна имеет встроенный малошумящий усилитель (МШУ) для предварительного усиления принимаемых со спутников сигналов ГНСС. Антенна АЛ2/160/900-2500/H является низкопрофильной и состоит из двух четвертьволновых вибраторов, помещённых в защитный стеклопластиковый радиопрозрачный кожух. Антенна оборудована фланцевым разъёмом N-типа (розетка) и двумя разъёмами на кабелях N-типа (вилка) и TNC-типа (вилка). Для уменьшения взаимного влияния четвертьволновых вибраторов используется модуль развязки каналов МРК-160/900. Модуль оснащен четырьмя разъемами N-типа (розетка). Ко входу нижнего канала (АНТ НК) модуля через фланцевый разъем N-типа подключается четвертьволновый вибратор, предназначенный для работы в диапазоне МВ. К входу верхнего канала (АНТ ВК) модуля через разъем N-типа на кабеле и кабельную сборку АЛВР.685671.001-08 или АЛВР.685671.002-12 подключается четвертьволновый вибратор, предназначенный для работы в диапазоне ДМВ. Выходы РСТ НК и РСТ ВК подключаются к антенным разъёмам радиостанции. По степени защиты оболочки антенна соответствует требованиям кода IP66.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pkf-dark: #111517;
+      --pkf-yellow: #FFC400;
+      --pkf-bg: #F7F8F5;
+      --pkf-line: #E2E6E8;
+      --pkf-muted: #627079;
+      --pkf-white: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--pkf-dark);
+      background: var(--pkf-bg);
+      font-family: Manrope, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .pkf-container {
+      width: min(1120px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .pkf-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--pkf-white);
+      border-bottom: 1px solid var(--pkf-line);
+    }
+
+    .pkf-header-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .pkf-brand {
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .pkf-nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: var(--pkf-muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .pkf-nav a:hover,
+    .pkf-link:hover {
+      color: #9D7900;
+    }
+
+    .pkf-hero {
+      background: var(--pkf-dark);
+      color: var(--pkf-white);
+      padding: 64px 0;
+    }
+
+    .pkf-hero-grid {
+      display: grid;
+      grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1fr);
+      gap: 52px;
+      align-items: center;
+    }
+
+    .pkf-hero-media {
+      min-height: 420px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background: #FFFFFF;
+      border-radius: 8px;
+    }
+
+    .pkf-hero-media img {
+      width: 100%;
+      height: 100%;
+      max-height: 520px;
+      object-fit: contain;
+    }
+
+    .pkf-kicker,
+    .pkf-section-head span,
+    .pkf-cta-card span,
+    .pkf-index-hero span {
+      display: block;
+      margin-bottom: 14px;
+      color: var(--pkf-yellow);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .pkf-hero h1,
+    .pkf-index-hero h1 {
+      margin: 0;
+      max-width: 620px;
+      font-size: clamp(38px, 5vw, 68px);
+      font-weight: 900;
+      line-height: 1.04;
+    }
+
+    .pkf-hero p,
+    .pkf-index-hero p {
+      margin: 22px 0 0;
+      max-width: 620px;
+      color: #D2D9DD;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .pkf-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 30px 0;
+    }
+
+    .pkf-meta-item {
+      min-width: 0;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+    }
+
+    .pkf-meta-item span {
+      display: block;
+      margin-bottom: 6px;
+      color: #A7B0B6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .pkf-meta-item strong {
+      display: block;
+      overflow-wrap: anywhere;
+      color: var(--pkf-white);
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .pkf-button {
+      display: inline-flex;
+      min-height: 50px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 24px;
+      border: 2px solid var(--pkf-yellow);
+      border-radius: 8px;
+      background: var(--pkf-yellow);
+      color: var(--pkf-dark);
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .pkf-button:hover {
+      background: #FFD84A;
+      border-color: #FFD84A;
+    }
+
+    .pkf-button-dark {
+      background: var(--pkf-dark);
+      border-color: var(--pkf-dark);
+      color: var(--pkf-white);
+    }
+
+    .pkf-section {
+      padding: 64px 0;
+    }
+
+    .pkf-two-column,
+    .pkf-passport-layout {
+      display: grid;
+      grid-template-columns: 300px minmax(0, 1fr);
+      gap: 48px;
+      align-items: start;
+    }
+
+    .pkf-section-head h2,
+    .pkf-cta-card h2,
+    .pkf-request-card h2 {
+      margin: 0;
+      font-size: 34px;
+      font-weight: 900;
+      line-height: 1.12;
+    }
+
+    .pkf-section-head span {
+      color: #B88900;
+    }
+
+    .pkf-text-panel,
+    .pkf-passport-card,
+    .pkf-request-card,
+    .pkf-related-card,
+    .pkf-index-card {
+      background: var(--pkf-white);
+      border: 1px solid var(--pkf-line);
+      border-radius: 8px;
+    }
+
+    .pkf-text-panel {
+      padding: 34px 36px;
+    }
+
+    .pkf-text-panel p,
+    .pkf-cta-card p,
+    .pkf-request-card p,
+    .pkf-related-card p,
+    .pkf-index-hero p {
+      margin: 0;
+      color: var(--pkf-muted);
+      font-weight: 700;
+    }
+
+    .pkf-gallery-section {
+      background: var(--pkf-bg);
+    }
+
+    .pkf-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .pkf-gallery-item {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 4 / 3;
+      margin: 0;
+      overflow: hidden;
+      background: var(--pkf-white);
+      border: 1px solid var(--pkf-line);
+      border-radius: 8px;
+    }
+
+    .pkf-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .pkf-legacy-content {
+      display: grid;
+      gap: 12px;
+    }
+
+    .pkf-legacy-content p + p {
+      padding-top: 12px;
+      border-top: 1px solid var(--pkf-line);
+    }
+
+    .pkf-passport-section {
+      background: var(--pkf-white);
+    }
+
+    .pkf-passport-card {
+      padding: 28px 32px;
+      background: var(--pkf-bg);
+    }
+
+    .pkf-spec-group {
+      margin: 0;
+    }
+
+    .pkf-spec-group + .pkf-spec-group {
+      margin-top: 22px;
+    }
+
+    .pkf-spec-group h3 {
+      margin: 0 0 10px;
+      color: #B88900;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .pkf-spec-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(190px, 0.54fr);
+      gap: 28px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--pkf-line);
+    }
+
+    .pkf-spec-name,
+    .pkf-spec-value {
+      overflow-wrap: anywhere;
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .pkf-spec-value {
+      color: var(--pkf-muted);
+    }
+
+    .pkf-spec-toggle {
+      margin-top: 22px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--pkf-dark);
+      font: inherit;
+      font-size: 14px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .pkf-spec-toggle:hover {
+      color: #B88900;
+    }
+
+    .pkf-empty {
+      color: var(--pkf-muted);
+      font-weight: 800;
+    }
+
+    .pkf-cta {
+      background: var(--pkf-bg);
+    }
+
+    .pkf-cta-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      padding: 38px 42px;
+      background: var(--pkf-yellow);
+      border-radius: 8px;
+      color: var(--pkf-dark);
+    }
+
+    .pkf-cta-card span {
+      color: rgba(17, 21, 23, 0.72);
+    }
+
+    .pkf-cta-card p {
+      max-width: 720px;
+      margin-top: 14px;
+      color: rgba(17, 21, 23, 0.78);
+    }
+
+    .pkf-related-section {
+      background: var(--pkf-white);
+    }
+
+    .pkf-related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .pkf-related-card {
+      overflow: hidden;
+    }
+
+    .pkf-related-image,
+    .pkf-index-image {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 4 / 3;
+      background: var(--pkf-bg);
+    }
+
+    .pkf-related-image img,
+    .pkf-index-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .pkf-related-content {
+      padding: 20px;
+    }
+
+    .pkf-related-content h3,
+    .pkf-index-card h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1.25;
+    }
+
+    .pkf-related-content p {
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    .pkf-link {
+      color: #B88900;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .pkf-request {
+      background: var(--pkf-bg);
+    }
+
+    .pkf-request-card {
+      max-width: 760px;
+      padding: 38px 42px;
+    }
+
+    .pkf-request-card p {
+      margin-top: 14px;
+      font-size: 17px;
+    }
+
+    .pkf-request-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .pkf-request-modal[hidden] {
+      display: none;
+    }
+
+    .pkf-request-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(17, 21, 23, 0.72);
+    }
+
+    .pkf-request-dialog {
+      position: relative;
+      width: min(680px, 100%);
+      max-height: min(760px, calc(100vh - 48px));
+      overflow: auto;
+      padding: 38px 42px;
+      background: var(--pkf-white);
+      border-radius: 8px;
+      box-shadow: 0 24px 80px rgba(17, 21, 23, 0.28);
+    }
+
+    .pkf-request-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      width: 36px;
+      height: 36px;
+      border: 0;
+      background: transparent;
+      color: var(--pkf-muted);
+      cursor: pointer;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .pkf-request-intro {
+      margin: 14px 0 24px;
+      color: var(--pkf-muted);
+    }
+
+    .pkf-request-form,
+    .pkf-request-form-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .pkf-request-form-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pkf-request-form label {
+      display: grid;
+      gap: 7px;
+      color: var(--pkf-dark);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .pkf-request-form input,
+    .pkf-request-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--pkf-line);
+      border-radius: 6px;
+      background: var(--pkf-bg);
+      color: var(--pkf-dark);
+      font: inherit;
+      resize: vertical;
+    }
+
+    .pkf-request-form input:focus,
+    .pkf-request-form textarea:focus {
+      outline: 2px solid var(--pkf-yellow);
+      outline-offset: 1px;
+    }
+
+    .pkf-request-form .pkf-button {
+      justify-self: start;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .pkf-request-success {
+      margin: 0;
+      color: #2D7A43;
+      font-weight: 800;
+    }
+
+    .pkf-footer {
+      background: var(--pkf-dark);
+      color: var(--pkf-white);
+    }
+
+    .pkf-footer-inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      color: #C6CED3;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .pkf-footer-inner span:first-child {
+      color: var(--pkf-white);
+      font-weight: 900;
+    }
+
+    .pkf-index-hero {
+      padding: 72px 0;
+      background: var(--pkf-dark);
+      color: var(--pkf-white);
+    }
+
+    .pkf-index-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .pkf-index-card {
+      overflow: hidden;
+    }
+
+    .pkf-index-card > div {
+      padding: 20px;
+    }
+
+    .pkf-index-card p {
+      margin: 0 0 10px;
+      color: #B88900;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 960px) {
+      .pkf-hero-grid,
+      .pkf-two-column,
+      .pkf-passport-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .pkf-hero-media {
+        min-height: 360px;
+        order: -1;
+      }
+
+      .pkf-meta-grid,
+      .pkf-gallery-grid,
+      .pkf-related-grid,
+      .pkf-index-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .pkf-cta-card {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .pkf-container {
+        width: min(100% - 32px, 1120px);
+      }
+
+      .pkf-header-inner {
+        min-height: 64px;
+      }
+
+      .pkf-nav {
+        gap: 14px;
+        font-size: 12px;
+      }
+
+      .pkf-hero,
+      .pkf-section,
+      .pkf-index-hero {
+        padding: 42px 0;
+      }
+
+      .pkf-hero-grid {
+        gap: 30px;
+      }
+
+      .pkf-hero-media {
+        min-height: 280px;
+      }
+
+      .pkf-hero h1,
+      .pkf-index-hero h1 {
+        font-size: 36px;
+      }
+
+      .pkf-hero p {
+        font-size: 16px;
+      }
+
+      .pkf-meta-grid,
+      .pkf-gallery-grid,
+      .pkf-related-grid,
+      .pkf-index-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pkf-text-panel,
+      .pkf-passport-card,
+      .pkf-request-card,
+      .pkf-cta-card {
+        padding: 26px 22px;
+      }
+
+      .pkf-request-dialog {
+        padding: 32px 22px 24px;
+      }
+
+      .pkf-request-form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pkf-section-head h2,
+      .pkf-cta-card h2,
+      .pkf-request-card h2 {
+        font-size: 28px;
+      }
+
+      .pkf-spec-row {
+        display: block;
+        padding: 14px 0;
+      }
+
+      .pkf-spec-value {
+        margin-top: 6px;
+      }
+
+      .pkf-footer-inner {
+        min-height: 76px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .pkf-brand {
+        font-size: 16px;
+      }
+
+      .pkf-nav a:nth-child(2) {
+        display: none;
+      }
+
+      .pkf-hero h1,
+      .pkf-index-hero h1 {
+        font-size: 32px;
+      }
+
+      .pkf-hero-media {
+        min-height: 230px;
+      }
+
+      .pkf-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="pkf-header">
+    <div class="pkf-container pkf-header-inner">
+      <a class="pkf-brand" href="../">ПКФ Технология</a>
+      <nav class="pkf-nav" aria-label="Навигация">
+        <a href="../">Продукция</a>
+        <a href="#passport">Характеристики</a>
+        <a href="#request">Заявка</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="pkf-hero">
+      <div class="pkf-container pkf-hero-grid">
+        <div class="pkf-hero-media">
+          <img src="data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22960%22%20height%3D%22640%22%20viewBox%3D%220%200%20960%20640%22%3E%0A%20%20%3Crect%20width%3D%22960%22%20height%3D%22640%22%20fill%3D%22%23F7F8F5%22%2F%3E%0A%20%20%3Crect%20x%3D%22220%22%20y%3D%22140%22%20width%3D%22520%22%20height%3D%22360%22%20rx%3D%228%22%20fill%3D%22%23FFFFFF%22%20stroke%3D%22%23D9DEE2%22%20stroke-width%3D%222%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M335%20408h290M365%20242h230M365%20292h230M365%20342h230%22%20stroke%3D%22%23B7C0C7%22%20stroke-width%3D%2218%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22650%22%20cy%3D%22232%22%20r%3D%2234%22%20fill%3D%22%23FFC400%22%2F%3E%0A%20%20%3Ctext%20x%3D%22480%22%20y%3D%22548%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%20fill%3D%22%235F6B73%22%3E%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%83%D1%82%D0%BE%D1%87%D0%BD%D1%8F%D0%B5%D1%82%D1%81%D1%8F%3C%2Ftext%3E%0A%3C%2Fsvg%3E%0A" alt="Антенна локомотивная АЛ2/160/900-2500/Н">
+        </div>
+        <div class="pkf-hero-content">
+          <div class="pkf-kicker">Оборудование радиосвязи / АЛ2/160/900-2500/Н</div>
+          <h1>Антенна локомотивная АЛ2/160/900-2500/Н</h1>
+          <p>Антенна АЛ2/160/900-2500/H предназначена для работы в составе локомотивных радиостанций поездной, станционной и ремонтно-оперативной радиосвязи и радиосредств систем обеспечения безопасности движения на железнодорожном транспорте в стандартах DMR/GSM-R/GSM900/GSM1800/UMTS/WLAN/WiMAX/WiFi, а также в составе систем определения местоположения стандартов ГНСС. Антенна имеет встроенный малошумящий усилитель (МШУ) для предварительного усиления принимаемых со спутников сигналов ГНСС. Антенна АЛ2/160/900-2500/H является низкопрофильной и состоит из двух четвертьволновых вибраторов, помещённых в защитный стеклопластиковый радиопрозрачный кожух. Антенна оборудована фланцевым разъёмом N-типа (розетка) и двумя разъёмами на кабелях N-типа (вилка) и TNC-типа (вилка). Для уменьшения взаимного влияния четвертьволновых вибраторов используется модуль развязки каналов МРК-160/900. Модуль оснащен четырьмя разъемами N-типа (розетка). Ко входу нижнего канала (АНТ НК) модуля через фланцевый разъем N-типа подключается четвертьволновый вибратор, предназначенный для работы в диапазоне МВ. К входу верхнего канала (АНТ ВК) модуля через разъем N-типа на кабеле и кабельную сборку АЛВР.685671.001-08 или АЛВР.685671.002-12 подключается четвертьволновый вибратор, предназначенный для работы в диапазоне ДМВ. Выходы РСТ НК и РСТ ВК подключаются к антенным разъёмам радиостанции. По степени защиты оболочки антенна соответствует требованиям кода IP66.</p>
+          <div class="pkf-meta-grid">
+            
+              <div class="pkf-meta-item">
+                <span>Серия</span>
+                <strong>АЛ2/160/900-2500/Н</strong>
+              </div>
+              <div class="pkf-meta-item">
+                <span>Тип изделия</span>
+                <strong>Антенна</strong>
+              </div>
+              <div class="pkf-meta-item">
+                <span>Раздел</span>
+                <strong>Оборудование радиосвязи</strong>
+              </div>
+          </div>
+          <a class="pkf-button" href="#request">Оставить заявку</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pkf-section">
+      <div class="pkf-container pkf-two-column">
+        <div class="pkf-section-head">
+          <span>Описание</span>
+          <h2>Назначение изделия</h2>
+        </div>
+        <div class="pkf-text-panel">
+          <p>Антенна АЛ2/160/900-2500/H предназначена для работы в составе локомотивных радиостанций поездной, станционной и ремонтно-оперативной радиосвязи и радиосредств систем обеспечения безопасности движения на железнодорожном транспорте в стандартах DMR/GSM-R/GSM900/GSM1800/UMTS/WLAN/WiMAX/WiFi, а также в составе систем определения местоположения стандартов ГНСС. Антенна имеет встроенный малошумящий усилитель (МШУ) для предварительного усиления принимаемых со спутников сигналов ГНСС. Антенна АЛ2/160/900-2500/H является низкопрофильной и состоит из двух четвертьволновых вибраторов, помещённых в защитный стеклопластиковый радиопрозрачный кожух. Антенна оборудована фланцевым разъёмом N-типа (розетка) и двумя разъёмами на кабелях N-типа (вилка) и TNC-типа (вилка). Для уменьшения взаимного влияния четвертьволновых вибраторов используется модуль развязки каналов МРК-160/900. Модуль оснащен четырьмя разъемами N-типа (розетка). Ко входу нижнего канала (АНТ НК) модуля через фланцевый разъем N-типа подключается четвертьволновый вибратор, предназначенный для работы в диапазоне МВ. К входу верхнего канала (АНТ ВК) модуля через разъем N-типа на кабеле и кабельную сборку АЛВР.685671.001-08 или АЛВР.685671.002-12 подключается четвертьволновый вибратор, предназначенный для работы в диапазоне ДМВ. Выходы РСТ НК и РСТ ВК подключаются к антенным разъёмам радиостанции. По степени защиты оболочки антенна соответствует требованиям кода IP66.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <section class="pkf-section pkf-legacy-section">
+      <div class="pkf-container pkf-two-column">
+        <div class="pkf-section-head">
+          <span>Архивная страница</span>
+          <h2>Информация со старого сайта</h2>
+        </div>
+        <div class="pkf-text-panel pkf-legacy-content"><p>Антенна локомотивная АЛ2/160/900-2500/Н</p><p>Назначение</p><p>Антенна АЛ2/160/900-2500/H предназначена для работы в составе локомотивных радиостанций поездной, станционной и ремонтно-оперативной радиосвязи и радиосредств систем обеспечения безопасности движения на железнодорожном транспорте в стандартах DMR/GSM-R/GSM900/GSM1800/UMTS/WLAN/WiMAX/WiFi, а также в составе систем определения местоположения стандартов ГНСС. Антенна имеет встроенный малошумящий усилитель (МШУ) для предварительного усиления принимаемых со спутников сигналов ГНСС. Антенна АЛ2/160/900-2500/H является низкопрофильной и состоит из двух четвертьволновых вибраторов, помещённых в защитный стеклопластиковый радиопрозрачный кожух. Антенна оборудована фланцевым разъёмом N-типа (розетка) и двумя разъёмами на кабелях N-типа (вилка) и TNC-типа (вилка). Для уменьшения взаимного влияния четвертьволновых вибраторов используется модуль развязки каналов МРК-160/900. Модуль оснащен четырьмя разъемами N-типа (розетка). Ко входу нижнего канала (АНТ НК) модуля через фланцевый разъем N-типа подключается четвертьволновый вибратор, предназначенный для работы в диапазоне МВ. К входу верхнего канала (АНТ ВК) модуля через разъем N-типа на кабеле и кабельную сборку АЛВР.685671.001-08 или АЛВР.685671.002-12 подключается четвертьволновый вибратор, предназначенный для работы в диапазоне ДМВ. Выходы РСТ НК и РСТ ВК подключаются к антенным разъёмам радиостанции. По степени защиты оболочки антенна соответствует требованиям кода IP66.</p><p>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</p><p>Параметры и значения</p><p>Параметр</p><p>Значение</p><p>Рабочий диапазон частот, МГц*</p><p>от 1350 до 2500</p><p>Разъемы антенны АЛ2/160/900-2500/Н:</p><p>Допустимая скорость ветра, м/с</p><p>120</p><p>КСВ в диапазонах частот, не более:</p><p>Макс. допустимая подводимая мощность, Вт</p><p>25</p><p>Масса антенны, кг, не более</p><p>3,2</p><p>Габаритные размеры антенны, мм</p><p>253х131х255</p><p>от 151,7 до 156</p><p>от 850 до 990</p><p>850-990 МГц</p><p>1,5</p><p>151,7-156 МГц</p><p>1350-2200 МГц</p><p>2200-2500 МГц</p><p>2,0</p><p>Затухание по нижнему каналу в диапазоне частот</p><p>876-2500 МГц, дБ, не менее 50</p><p>Затухание по верхнему каналу в диапазоне частот</p><p>151,7-156 МГц, дБ, не менее 80</p><p>Разъемы МРК-160/900</p><p>Параметры МРК-160/900</p><p>Входное сопротивление, Ом</p><p>50</p><p>Диапазон рабочих температур, °C</p><p>от -50 до +60</p><p>Поляризация</p><p>вертикальная</p><p>Усиление по отношению к четвертьволновому излучателю в рабочей полосе частот, дБ:</p><p>3,8</p><p>1350-1710 МГц</p><p>3,0</p><p>2,4</p><p>Наименование</p><p>Тип разъема</p><p>Параметры встроенной активной антенны ГНСС:</p><p>Усиление МШУ, дБ</p><p>от 27 до 29</p><p>Рабочий диапазон частот, МГц</p><p>от 1571 до 1614</p><p>Выходное сопротивление, Ом</p><p>Напряжение питания, В</p><p>от +3,3 до +13,2</p><p>РСТ ВК</p><p>розетка N-типа</p><p>Диапазон частот</p><p>Наименование разъема</p><p>розетка N-типа, вилка N-типа</p><p>151,7 - 156 МГц</p><p>876 - 960 МГц, 1350 - 2500 МГц</p><p>вилка N-типа</p><p>ГЛОНАСС / GPS</p><p>вилка TNC-типа</p><p>КСВ в диапазонах частот, не более</p><p>1,2</p><p>876-2500 МГц</p><p>1,3</p><p>Габаритные размеры, мм</p><p>87х85х27</p><p>Масса, кг, не более</p><p>0,3</p><p>АНТ НК</p><p>РСТ НК</p><p>АНТ ВК</p><p>1 м</p><p>Тип</p><p>Длина</p><p>вилка N-типа, вилка N-типа</p><p>Контакты</p><p>Оставьте заявку</p></div>
+      </div>
+    </section>
+
+    <section id="passport" class="pkf-section pkf-passport-section">
+      <div class="pkf-container pkf-passport-layout">
+        <div class="pkf-section-head">
+          <span>Технические данные</span>
+          <h2>Технический паспорт</h2>
+        </div>
+        <div class="pkf-passport-card">
+          
+          <div class="pkf-specs" data-specs>
+            
+            <section class="pkf-spec-group">
+              <h3>Технические характеристики</h3>
+              
+              <div class="pkf-spec-row">
+                <div class="pkf-spec-name">Рабочий диапазон частот, МГц*</div>
+                <div class="pkf-spec-value">от 151,7 до 156</div>
+              </div>
+              <div class="pkf-spec-row">
+                <div class="pkf-spec-name">Допустимая скорость ветра, м/с</div>
+                <div class="pkf-spec-value">120</div>
+              </div>
+              <div class="pkf-spec-row">
+                <div class="pkf-spec-name">Макс. допустимая подводимая мощность, Вт</div>
+                <div class="pkf-spec-value">25</div>
+              </div>
+              <div class="pkf-spec-row">
+                <div class="pkf-spec-name">Масса антенны, кг, не более</div>
+                <div class="pkf-spec-value">3,2</div>
+              </div>
+              <div class="pkf-spec-row">
+                <div class="pkf-spec-name">Габаритные размеры антенны, мм</div>
+                <div class="pkf-spec-value">253х131х255</div>
+              </div>
+              <div class="pkf-spec-row">
+                <div class="pkf-spec-name">850-990 МГц</div>
+                <div class="pkf-spec-value">1,5</div>
+              </div>
+              <div class="pkf-spec-row">
+                <div class="pkf-spec-name">151,7-156 МГц</div>
+                <div class="pkf-spec-value">1,5</div>
+              </div>
+              <div class="pkf-spec-row">
+                <div class="pkf-spec-name">1350-2200 МГц</div>
+                <div class="pkf-spec-value">1,5</div>
+              </div>
+              <div class="pkf-spec-row">
+                <div class="pkf-spec-name">2200-2500 МГц</div>
+                <div class="pkf-spec-value">2,0</div>
+              </div>
+              <div class="pkf-spec-row">
+                <div class="pkf-spec-name">Затухание по нижнему каналу в диапазоне частот</div>
+                <div class="pkf-spec-value">876-2500 МГц, дБ, не менее 50</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Затухание по верхнему каналу в диапазоне частот</div>
+                <div class="pkf-spec-value">151,7-156 МГц, дБ, не менее 80</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Входное сопротивление, Ом</div>
+                <div class="pkf-spec-value">50</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Диапазон рабочих температур, °C</div>
+                <div class="pkf-spec-value">от -50 до +60</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Поляризация</div>
+                <div class="pkf-spec-value">вертикальная</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">850-990 МГц</div>
+                <div class="pkf-spec-value">3,8</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">1350-1710 МГц</div>
+                <div class="pkf-spec-value">3,0</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">2200-2500 МГц</div>
+                <div class="pkf-spec-value">2,4</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Наименование</div>
+                <div class="pkf-spec-value">Тип разъема</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Усиление МШУ, дБ</div>
+                <div class="pkf-spec-value">от 27 до 29</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Рабочий диапазон частот, МГц</div>
+                <div class="pkf-spec-value">от 1571 до 1614</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Выходное сопротивление, Ом</div>
+                <div class="pkf-spec-value">50</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Напряжение питания, В</div>
+                <div class="pkf-spec-value">от +3,3 до +13,2</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">РСТ ВК</div>
+                <div class="pkf-spec-value">розетка N-типа</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Диапазон частот</div>
+                <div class="pkf-spec-value">Тип разъема</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Наименование разъема</div>
+                <div class="pkf-spec-value">розетка N-типа, вилка N-типа</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">151,7 - 156 МГц</div>
+                <div class="pkf-spec-value">розетка N-типа</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">876 - 960 МГц, 1350 - 2500 МГц</div>
+                <div class="pkf-spec-value">вилка N-типа</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">ГЛОНАСС / GPS</div>
+                <div class="pkf-spec-value">вилка TNC-типа</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">151,7-156 МГц</div>
+                <div class="pkf-spec-value">1,2</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">876-2500 МГц</div>
+                <div class="pkf-spec-value">1,3</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Габаритные размеры, мм</div>
+                <div class="pkf-spec-value">87х85х27</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Масса, кг, не более</div>
+                <div class="pkf-spec-value">0,3</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">АНТ НК</div>
+                <div class="pkf-spec-value">розетка N-типа</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">РСТ НК</div>
+                <div class="pkf-spec-value">розетка N-типа</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">АНТ ВК</div>
+                <div class="pkf-spec-value">розетка N-типа</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Наименование разъема</div>
+                <div class="pkf-spec-value">Тип</div>
+              </div>
+              <div class="pkf-spec-row pkf-spec-row-extra" hidden>
+                <div class="pkf-spec-name">Наименование разъема</div>
+                <div class="pkf-spec-value">вилка N-типа, вилка N-типа</div>
+              </div>
+            </section>
+          </div>
+          <button class="pkf-spec-toggle" type="button" data-spec-toggle>Показать все характеристики ↓</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="pkf-section pkf-cta">
+      <div class="pkf-container pkf-cta-card">
+        <div>
+          <span>Приобретение</span>
+          <h2>Оставить заявку на приобретение оборудования</h2>
+          <p>Чтобы приобрести изделие, оставьте заявку — специалист уточнит требуемое исполнение, комплектацию и условия эксплуатации, после чего подготовит предложение.</p>
+        </div>
+        <a class="pkf-button pkf-button-dark" href="#request">Оставить заявку</a>
+      </div>
+    </section>
+
+    
+
+    <div id="request" class="pkf-request-modal" role="dialog" aria-modal="true" aria-labelledby="pkf-request-title" hidden>
+      <div class="pkf-request-modal-backdrop" data-request-close></div>
+      <div class="pkf-request-dialog">
+        <button class="pkf-request-close" type="button" aria-label="Закрыть" data-request-close>×</button>
+        <div class="pkf-section-head">
+          <span>Заявка</span>
+          <h2 id="pkf-request-title">Оставить заявку</h2>
+        </div>
+        <p class="pkf-request-intro">Заполните форму, и специалист свяжется с вами для уточнения деталей.</p>
+        <form class="pkf-request-form">
+          <div class="pkf-request-form-grid">
+            <label>Имя*<input name="name" type="text" autocomplete="name" required></label>
+            <label>Телефон<input name="phone" type="tel" autocomplete="tel"></label>
+            <label>Email*<input name="email" type="email" autocomplete="email" required></label>
+            <label>Наименование организации<input name="organization" type="text" autocomplete="organization"></label>
+          </div>
+          <label>Описание<textarea name="description" rows="4"></textarea></label>
+          <button class="pkf-button" type="submit">Отправить заявку</button>
+          <p class="pkf-request-success" role="status" hidden>Спасибо! Заявка отправлена.</p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pkf-footer">
+    <div class="pkf-container pkf-footer-inner">
+      <span>ПКФ Технология</span>
+      <a href="../">Все товары</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-spec-toggle]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        var expanded = button.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.pkf-spec-row-extra').forEach(function (row) {
+          row.hidden = expanded;
+        });
+        button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        button.textContent = expanded ? 'Показать все характеристики ↓' : 'Скрыть характеристики ↑';
+      });
+    });
+
+    var requestModal = document.getElementById('request');
+    var requestLastFocus = null;
+
+    function openRequestModal() {
+      if (!requestModal) return;
+      requestLastFocus = document.activeElement;
+      requestModal.hidden = false;
+      document.documentElement.style.overflow = 'hidden';
+      var firstField = requestModal.querySelector('input, textarea');
+      if (firstField) firstField.focus();
+    }
+
+    function closeRequestModal() {
+      if (!requestModal) return;
+      requestModal.hidden = true;
+      document.documentElement.style.overflow = '';
+      if (requestLastFocus && typeof requestLastFocus.focus === 'function') {
+        requestLastFocus.focus();
+      }
+    }
+
+    document.addEventListener('click', function (event) {
+      var link = event.target.closest && event.target.closest('a[href="#request"]');
+      if (link) {
+        event.preventDefault();
+        openRequestModal();
+        return;
+      }
+
+      if (event.target.closest && event.target.closest('[data-request-close]')) {
+        closeRequestModal();
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && requestModal && !requestModal.hidden) {
+        closeRequestModal();
+      }
+    });
+
+    var requestForm = requestModal && requestModal.querySelector('.pkf-request-form');
+    if (requestForm) {
+      requestForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var success = requestForm.querySelector('.pkf-request-success');
+        if (success) success.hidden = false;
+      });
+    }
+  </script>
+</body>
+</html>

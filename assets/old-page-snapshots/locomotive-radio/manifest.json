@@ -1,0 +1,194 @@
+{
+  "exported_at": "2026-07-14T07:45:46.155Z",
+  "pages": [
+    {
+      "slug": "al1-160",
+      "title": "Антенна локомотивная АЛ1/160",
+      "requested_url": "https://pkftechno.ru/al1n160",
+      "final_url": "https://pkftechno.ru/al1n160",
+      "status": 200,
+      "bytes": 254007,
+      "file": "al1-160.html"
+    },
+    {
+      "slug": "al1-160-n",
+      "title": "Антенна локомотивная АЛ1/160/Н",
+      "requested_url": "https://pkftechno.ru/al1n160h",
+      "final_url": "https://pkftechno.ru/al1n160h",
+      "status": 200,
+      "bytes": 316294,
+      "file": "al1-160-n.html"
+    },
+    {
+      "slug": "al2-160",
+      "title": "Антенна локомотивная АЛ2/160",
+      "requested_url": "https://pkftechno.ru/al2n160",
+      "final_url": "https://pkftechno.ru/al2n160",
+      "status": 200,
+      "bytes": 282154,
+      "file": "al2-160.html"
+    },
+    {
+      "slug": "al2-160-900-2500-n",
+      "title": "Антенна локомотивная АЛ2/160/900-2500/Н",
+      "requested_url": "https://pkftechno.ru/al2n160sl900-2500h",
+      "final_url": "https://pkftechno.ru/al2n160sl900-2500h",
+      "status": 200,
+      "bytes": 415677,
+      "file": "al2-160-900-2500-n.html"
+    },
+    {
+      "slug": "al2-160-n",
+      "title": "Антенна локомотивная АЛ2/160/Н",
+      "requested_url": "https://pkftechno.ru/al2n160h",
+      "final_url": "https://pkftechno.ru/al2n160h",
+      "status": 200,
+      "bytes": 289570,
+      "file": "al2-160-n.html"
+    },
+    {
+      "slug": "al2-450-2700-mimo",
+      "title": "Антенна локомотивная АЛ2/450-2700/MIMO",
+      "requested_url": "https://pkftechno.ru/al2_450-2700_mimo",
+      "final_url": "https://pkftechno.ru/al2_450-2700_mimo",
+      "status": 200,
+      "bytes": 237968,
+      "file": "al2-450-2700-mimo.html"
+    },
+    {
+      "slug": "al2-450-2700-mimo-n",
+      "title": "Антенна локомотивная АЛ2/450-2700/MIMO/Н",
+      "requested_url": "https://pkftechno.ru/al2_450-2700_mimo_h",
+      "final_url": "https://pkftechno.ru/al2_450-2700_mimo_h",
+      "status": 200,
+      "bytes": 275298,
+      "file": "al2-450-2700-mimo-n.html"
+    },
+    {
+      "slug": "al2-450-2700-n-050",
+      "title": "Антенна локомотивная АЛ2/450-2700/Н-050",
+      "requested_url": "https://pkftechno.ru/al2_450-2700_h-050",
+      "final_url": "https://pkftechno.ru/al2_450-2700_h-050",
+      "status": 200,
+      "bytes": 269532,
+      "file": "al2-450-2700-n-050.html"
+    },
+    {
+      "slug": "al2-450-2700-n-057",
+      "title": "Антенна локомотивная АЛ2/450-2700/Н-057",
+      "requested_url": "https://pkftechno.ru/al2_450-2700_h-057",
+      "final_url": "https://pkftechno.ru/al2_450-2700_h-057",
+      "status": 200,
+      "bytes": 269532,
+      "file": "al2-450-2700-n-057.html"
+    },
+    {
+      "slug": "al2-460-900",
+      "title": "Антенна локомотивная АЛ2/460/900",
+      "requested_url": "https://pkftechno.ru/al2_460_900",
+      "final_url": "https://pkftechno.ru/al2_460_900",
+      "status": 200,
+      "bytes": 167321,
+      "file": "al2-460-900.html"
+    },
+    {
+      "slug": "al2-460-900-n",
+      "title": "Антенна локомотивная АЛ2/460/900/Н",
+      "requested_url": "https://pkftechno.ru/al2_460_900h",
+      "final_url": "https://pkftechno.ru/al2_460_900h",
+      "status": 200,
+      "bytes": 168368,
+      "file": "al2-460-900-n.html"
+    },
+    {
+      "slug": "al3-160-n-058",
+      "title": "Антенна локомотивная АЛ3/160/Н-058",
+      "requested_url": "https://pkftechno.ru/al3_160_h-058",
+      "final_url": "https://pkftechno.ru/al3_160_h-058",
+      "status": 200,
+      "bytes": 284442,
+      "file": "al3-160-n-058.html"
+    },
+    {
+      "slug": "al3-160-n-059",
+      "title": "Антенна локомотивная АЛ3/160/Н-059",
+      "requested_url": "https://pkftechno.ru/al3_160_h-059",
+      "final_url": "https://pkftechno.ru/al3_160_h-059",
+      "status": 200,
+      "bytes": 284450,
+      "file": "al3-160-n-059.html"
+    },
+    {
+      "slug": "al3-800-3400",
+      "title": "Антенна локомотивная АЛ3/800-3400",
+      "requested_url": "https://pkftechno.ru/al3_800-3400",
+      "final_url": "https://pkftechno.ru/al3_800-3400",
+      "status": 200,
+      "bytes": 302539,
+      "file": "al3-800-3400.html"
+    },
+    {
+      "slug": "al3-800-3400-mimo",
+      "title": "Антенна локомотивная АЛ3/800-3400/MIMO",
+      "requested_url": "https://rclab.ru/?product=%D0%B0%D0%BB3-800-3400-mimo",
+      "final_url": "https://rclab.ru/?product=%D0%B0%D0%BB3-800-3400-mimo",
+      "status": 200,
+      "bytes": 51305,
+      "file": "al3-800-3400-mimo.html"
+    },
+    {
+      "slug": "al3-800-3400-mimo-n",
+      "title": "Антенна локомотивная АЛ3/800-3400/MIMO/Н",
+      "requested_url": "https://pkftechno.ru/al3_800-3400_mimo_h",
+      "final_url": "https://pkftechno.ru/al3_800-3400_mimo_h",
+      "status": 200,
+      "bytes": 341955,
+      "file": "al3-800-3400-mimo-n.html"
+    },
+    {
+      "slug": "al3-800-3400-n",
+      "title": "Антенна локомотивная АЛ3/800-3400/Н",
+      "requested_url": "https://pkftechno.ru/al3_800-3400_h",
+      "final_url": "https://pkftechno.ru/al3_800-3400_h",
+      "status": 200,
+      "bytes": 342209,
+      "file": "al3-800-3400-n.html"
+    },
+    {
+      "slug": "alm-2-130",
+      "title": "Антенна локомотивная АЛМ/2.130",
+      "requested_url": "https://pkftechno.ru/alm_2130",
+      "final_url": "https://pkftechno.ru/alm_2130",
+      "status": 200,
+      "bytes": 240178,
+      "file": "alm-2-130.html"
+    },
+    {
+      "slug": "rlsm-10",
+      "title": "Радиостанция РЛСМ-10",
+      "requested_url": "https://pkftechno.ru/rlsm-10",
+      "final_url": "https://pkftechno.ru/rlsm-10",
+      "status": 200,
+      "bytes": 171659,
+      "file": "rlsm-10.html"
+    },
+    {
+      "slug": "df-160-r6k",
+      "title": "Дуплексный фильтр ДФ-160/Р6К",
+      "requested_url": "https://pkftechno.ru/df-160_r6k",
+      "final_url": "https://pkftechno.ru/df-160_r6k",
+      "status": 200,
+      "bytes": 266933,
+      "file": "df-160-r6k.html"
+    },
+    {
+      "slug": "df-160-r8k",
+      "title": "Дуплексный фильтр ДФ-160/Р8К",
+      "requested_url": "https://pkftechno.ru/df-160/r8k",
+      "final_url": "https://pkftechno.ru/df-160/r8k",
+      "status": 200,
+      "bytes": 271467,
+      "file": "df-160-r8k.html"
+    }
+  ]
+}
