@@ -7348,9 +7348,15 @@
     },
     {
       "product_slug": "ibp-15-kva",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-15-kva/closed.png",
+      "alt": "Источник бесперебойного питания ИБП 15 кВА — вид спереди",
+      "sort": 10
+    },
+    {
+      "product_slug": "ibp-15-kva",
       "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/ibp-15-kva/open.png",
       "alt": "Источник бесперебойного питания ИБП 15 кВА — вид с открытой дверью",
-      "sort": 10
+      "sort": 20
     },
     {
       "product_slug": "ibp-25-kva",
