@@ -7480,19 +7480,19 @@
     },
     {
       "product_slug": "shgp",
-      "image_url": "assets/products/ups/shgp/shgp-closed.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shgp/shgp-closed.png",
       "alt": "Шкаф гарантированного питания ШГП — вид спереди",
       "sort": 10
     },
     {
       "product_slug": "shgp",
-      "image_url": "assets/products/ups/shgp/shgp-open.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shgp/shgp-open.png",
       "alt": "Шкаф гарантированного питания ШГП — вид с открытыми дверями",
       "sort": 20
     },
     {
       "product_slug": "shchit-sobstvennyh-nuzhd-shsn",
-      "image_url": "assets/products/ups/shsn/shsn-front.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/ups/shsn/shsn-front.png",
       "alt": "Щит собственных нужд ЩСН — вид спереди",
       "sort": 20
     }
