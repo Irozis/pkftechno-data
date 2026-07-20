@@ -66,22 +66,21 @@
   .js-product-image,
   .js-product-image .tn-atom,
   .js-product-image img {
-    cursor: zoom-in;
-  }
-
-  .js-product-image img {
     display: block !important;
     width: 100% !important;
     height: 100% !important;
     max-width: 100% !important;
     max-height: 100% !important;
-    object-fit: contain !important;
-    object-position: center center !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    cursor: zoom-in;
   }
 
-  .js-product-image,
-  .js-product-image .tn-atom {
-    overflow: hidden !important;
+  .js-product-image img {
+    object-fit: contain !important;
+    object-position: center center !important;
   }
 
   .pkf-product-slider__footer {
@@ -696,7 +695,7 @@
 
 <script>
   (function () {
-    var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json?v=20260713-new-products';
+    var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json?v=20260720-radio-images';
     var ASSET_BASE_URL = DATA_URL.replace(/\/data\/products\.json(?:[?#].*)?$/, '');
     var AUTOPLAY_INTERVAL_MS = 10000;
     var REQUEST_CTA_TEXT = 'Оставить заявку';

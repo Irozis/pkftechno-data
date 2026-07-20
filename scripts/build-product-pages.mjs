@@ -507,6 +507,7 @@ function renderStyles() {
       background: var(--pkf-dark);
       color: var(--pkf-white);
       padding: 64px 0;
+      overflow: hidden;
     }
 
     .pkf-hero-grid {
@@ -519,9 +520,13 @@ function renderStyles() {
     .pkf-hero-media {
       height: 420px;
       min-height: 0;
+      max-height: 420px;
+      min-width: 0;
+      max-width: 100%;
       display: grid;
       place-items: center;
       overflow: hidden;
+      box-sizing: border-box;
       background: #FFFFFF;
       border-radius: 8px;
     }
@@ -532,6 +537,8 @@ function renderStyles() {
       height: 100%;
       max-width: 100%;
       max-height: 100%;
+      min-width: 0;
+      min-height: 0;
       object-fit: contain;
     }
 
