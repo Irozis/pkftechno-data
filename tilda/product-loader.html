@@ -142,9 +142,9 @@
     display: none;
     align-items: center;
     justify-content: center;
-    padding: 28px;
+    padding: 16px;
     box-sizing: border-box;
-    background: rgba(10, 14, 16, 0.88);
+    background: rgba(10, 14, 16, 0.94);
     font-family: Manrope, "TildaSans", Arial, sans-serif;
   }
 
@@ -155,26 +155,57 @@
   .pkf-product-lightbox__backdrop {
     position: absolute;
     inset: 0;
-    background: rgba(10, 14, 16, 0.88);
+    background:
+      radial-gradient(circle at 50% 42%, rgba(255, 196, 0, 0.08), transparent 34%),
+      rgba(10, 14, 16, 0.94);
+    backdrop-filter: blur(8px);
   }
 
   .pkf-product-lightbox__dialog {
     position: relative;
     z-index: 1;
-    width: min(1120px, calc(100vw - 48px));
-    height: min(780px, calc(100vh - 48px));
+    width: min(1320px, calc(100vw - 32px));
+    height: min(860px, calc(100vh - 32px));
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 72px 92px 74px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 24px;
+    background: linear-gradient(145deg, rgba(35, 42, 45, 0.96), rgba(17, 21, 23, 0.98));
+    box-shadow: 0 28px 90px rgba(0, 0, 0, 0.45);
   }
+
+  .pkf-product-lightbox__topbar {
+    position: absolute;
+    top: 22px;
+    left: 28px;
+    right: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .pkf-product-lightbox__label { display: inline-flex; align-items: center; gap: 9px; }
+  .pkf-product-lightbox__label:before { display: block; width: 8px; height: 8px; border-radius: 50%; background: #FFC400; content: ""; }
+  .pkf-product-lightbox__hint { color: #9CA9B0; font-size: 11px; font-weight: 700; }
 
   .pkf-product-lightbox__image {
     display: block;
-    max-width: 90vw;
-    max-height: 90vh;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
-    border-radius: 18px;
+    border: 1px solid rgba(17, 21, 23, 0.12);
+    border-radius: 16px;
     background: #F1F3F4;
+    box-shadow: 0 14px 44px rgba(0, 0, 0, 0.28);
   }
 
   .pkf-product-lightbox__close,
@@ -185,9 +216,10 @@
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.28);
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
     cursor: pointer;
+    transition: border-color .2s ease, background-color .2s ease, color .2s ease, transform .2s ease;
   }
 
   .pkf-product-lightbox__close:hover,
@@ -198,19 +230,19 @@
   }
 
   .pkf-product-lightbox__close {
-    top: 22px;
-    right: 22px;
-    width: 44px;
-    height: 44px;
-    font-size: 30px;
+    top: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    font-size: 25px;
     line-height: 1;
   }
 
   .pkf-product-lightbox__arrow {
     top: 50%;
-    width: 48px;
-    height: 48px;
-    font-size: 28px;
+    width: 52px;
+    height: 52px;
+    font-size: 25px;
     line-height: 1;
     transform: translateY(-50%);
   }
@@ -223,6 +255,8 @@
     right: 24px;
   }
 
+  .pkf-product-lightbox__arrow:hover { transform: translateY(-50%) scale(1.04); }
+
   .pkf-product-lightbox.is-single .pkf-product-lightbox__arrow {
     display: none;
   }
@@ -230,12 +264,31 @@
   .pkf-product-lightbox__counter {
     position: absolute;
     left: 50%;
-    bottom: 22px;
+    bottom: 20px;
+    min-width: 58px;
+    padding: 8px 13px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 800;
     line-height: 1;
     transform: translateX(-50%);
+  }
+
+  .pkf-product-lightbox__close:focus-visible,
+  .pkf-product-lightbox__arrow:focus-visible { outline: 3px solid #FFC400; outline-offset: 3px; }
+
+  @media(max-width:639px) {
+    .pkf-product-lightbox { padding: 8px; }
+    .pkf-product-lightbox__dialog { width: calc(100vw - 16px); height: calc(100vh - 16px); padding: 66px 48px 64px; border-radius: 18px; }
+    .pkf-product-lightbox__topbar { top: 18px; left: 18px; right: 62px; }
+    .pkf-product-lightbox__hint { display: none; }
+    .pkf-product-lightbox__arrow { width: 42px; height: 42px; }
+    .pkf-product-lightbox__arrow--prev { left: 10px; }
+    .pkf-product-lightbox__arrow--next { right: 10px; }
   }
 
   .pkf-product-request-modal {
@@ -707,7 +760,7 @@
 
 <script>
   (function () {
-    var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json?v=20260720-radio-images';
+    var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json?v=20260721-hero-lightbox';
     var ASSET_BASE_URL = DATA_URL.replace(/\/data\/products\.json(?:[?#].*)?$/, '');
     var AUTOPLAY_INTERVAL_MS = 10000;
     var REQUEST_CTA_TEXT = 'Оставить заявку';
@@ -923,6 +976,7 @@
       root.innerHTML = [
         '<div class="pkf-product-lightbox__backdrop"></div>',
         '<div class="pkf-product-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Product image preview">',
+        '<div class="pkf-product-lightbox__topbar"><span class="pkf-product-lightbox__label">Просмотр изображения</span><span class="pkf-product-lightbox__hint">Esc — закрыть · ← → — переключить</span></div>',
         '<button class="pkf-product-lightbox__close" type="button" aria-label="Р—Р°РєСЂС‹С‚СЊ">×</button>',
         '<button class="pkf-product-lightbox__arrow pkf-product-lightbox__arrow--prev" type="button" aria-label="РџСЂРµРґС‹РґСѓС‰РµРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ">←</button>',
         '<img class="pkf-product-lightbox__image" src="" alt="">',
