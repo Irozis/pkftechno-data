@@ -3342,7 +3342,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1210,
       "status": "published",
-      "image_url": "assets/products/new-images/complex-2-konlok/konlok-1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/new-images/complex-2-konlok/konlok-1.png",
       "legacy_text": [
         "Источник содержания и характеристик: https://pkftechno.ru/konlok"
       ]
@@ -3363,7 +3363,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1220,
       "status": "published",
-      "image_url": "assets/products/new-images/sms-ab/sms-ab-1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/new-images/sms-ab/sms-ab-1.png",
       "legacy_text": [
         "Источник содержания и характеристик: https://pkftechno.ru/sms-ab"
       ]
@@ -3384,7 +3384,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1230,
       "status": "published",
-      "image_url": "assets/products/new-images/skrt/noimages.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/new-images/skrt/noimages.png"
     },
     {
       "slug": "shkaf-upravleniya-shu-nkue-3s",
@@ -3401,7 +3401,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1300,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shu-nkue-3s/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shu-nkue-3s/01.jpg"
     },
     {
       "slug": "shkaf-shav-nkue-3s",
@@ -3418,7 +3418,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1310,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shav-nkue-3s/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shav-nkue-3s/01.jpg"
     },
     {
       "slug": "shkaf-shpgp-nkue-3s",
@@ -3435,7 +3435,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1320,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shpgp-nkue-3s/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shpgp-nkue-3s/01.jpg"
     },
     {
       "slug": "pult-mashinista-pm-nkue-3s",
@@ -3452,7 +3452,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1330,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/pm-nkue-3s/01.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/pm-nkue-3s/01.png"
     },
     {
       "slug": "shkaf-upravleniya-shu-nkue-3",
@@ -3469,7 +3469,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1340,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shu-nkue-3/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shu-nkue-3/01.jpg"
     },
     {
       "slug": "pult-naladchika-pn-nkue-3",
@@ -3486,7 +3486,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1350,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/pn-nkue-3/01.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/pn-nkue-3/01.png"
     },
     {
       "slug": "pult-mashinista-pm-nkue-3",
@@ -3503,7 +3503,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1360,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/pm-nkue-3/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/pm-nkue-3/01.jpg"
     },
     {
       "slug": "shkaf-upravleniya-glavnymi-privodami-shgp-nkue-10mk",
@@ -3520,7 +3520,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1370,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shgp-nkue-10mk/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shgp-nkue-10mk/01.jpg"
     },
     {
       "slug": "shkaf-vspomogatelnyh-privodov-shvp-nkue-10mk",
@@ -3537,7 +3537,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1380,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shvp-nkue-10mk/01.png"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shvp-nkue-10mk/01.png"
     },
     {
       "slug": "shkaf-osveshcheniya-sho-nkue-10mk",
@@ -3554,7 +3554,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1390,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/sho-nkue-10mk/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/sho-nkue-10mk/01.jpg"
     },
     {
       "slug": "shkaf-vypryamitelej-i-razgona-shvr-nkue-10mk",
@@ -3571,7 +3571,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1400,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shvr-nkue-10mk/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shvr-nkue-10mk/01.jpg"
     },
     {
       "slug": "shkaf-kontrolya-izolyacii-shki-nkue-10mk",
@@ -3588,7 +3588,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1410,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shki-nkue-10mk/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shki-nkue-10mk/01.jpg"
     },
     {
       "slug": "shkaf-kommutacii-shk-nkue-10mk",
@@ -3605,7 +3605,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1420,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shk-nkue-10mk/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shk-nkue-10mk/01.jpg"
     },
     {
       "slug": "shun-sibur",
@@ -3622,7 +3622,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1440,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shun-sibur/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shun-sibur/01.jpg"
     },
     {
       "slug": "kreslo-mashinista-km-nkue-3",
@@ -3783,7 +3783,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1470,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shav-nkue-3s/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shav-nkue-3s/01.jpg"
     },
     {
       "slug": "shkaf-preobrazovateley-glavnyh-privodov-nkue-3s",
@@ -3800,7 +3800,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1480,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shpgp-nkue-3s/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shpgp-nkue-3s/01.jpg"
     },
     {
       "slug": "shkaf-upravleniya-nkue-3s",
@@ -3817,7 +3817,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1490,
       "status": "published",
-      "image_url": "assets/old-site-photos/nkue-products/shu-nkue-3s/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shu-nkue-3s/01.jpg"
     },
     {
       "slug": "stojki-tormoznyh-soprotivlenij-nkue-3s",
@@ -12933,511 +12933,511 @@
     },
     {
       "product_slug": "kompleks-2-konlok",
-      "image_url": "assets/products/new-images/complex-2-konlok/konlok-1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/new-images/complex-2-konlok/konlok-1.png",
       "alt": "Комплекс-2 КОНЛОК — датчик на рельсе",
       "sort": 10
     },
     {
       "product_slug": "kompleks-2-konlok",
-      "image_url": "assets/products/new-images/complex-2-konlok/konlok-2.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/new-images/complex-2-konlok/konlok-2.png",
       "alt": "Комплекс-2 КОНЛОК — измерительный модуль",
       "sort": 20
     },
     {
       "product_slug": "sms-ab",
-      "image_url": "assets/products/new-images/sms-ab/sms-ab-1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/new-images/sms-ab/sms-ab-1.png",
       "alt": "СМС-АБ — контроллер",
       "sort": 10
     },
     {
       "product_slug": "sms-ab",
-      "image_url": "assets/products/new-images/sms-ab/sms-ab-2.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/new-images/sms-ab/sms-ab-2.png",
       "alt": "СМС-АБ — аккумуляторная батарея с датчиками",
       "sort": 20
     },
     {
       "product_slug": "skrt",
-      "image_url": "assets/products/new-images/skrt/noimages.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/products/new-images/skrt/noimages.png",
       "alt": "СКРТ — изображение уточняется",
       "sort": 10
     },
     {
       "product_slug": "shkaf-upravleniya-shu-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/shu-nkue-3/01.jpg",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shu-nkue-3/01.jpg",
       "alt": "Шкаф управления ШУ НКУЭ-3 — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-upravleniya-shu-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/shu-nkue-3/02.jpg",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shu-nkue-3/02.jpg",
       "alt": "Шкаф управления ШУ НКУЭ-3 — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-upravleniya-shu-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/shu-nkue-3/03.jpg",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shu-nkue-3/03.jpg",
       "alt": "Шкаф управления ШУ НКУЭ-3 — изображение 3",
       "sort": 30
     },
     {
       "product_slug": "shkaf-upravleniya-shu-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/shu-nkue-3/04.jpg",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shu-nkue-3/04.jpg",
       "alt": "Шкаф управления ШУ НКУЭ-3 — изображение 4",
       "sort": 40
     },
     {
       "product_slug": "pult-naladchika-pn-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/pn-nkue-3/01.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/pn-nkue-3/01.png",
       "alt": "Пульт наладчика ПН НКУЭ-3 — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
-      "image_url": "assets/old-site-photos/nkue-products/ekru-6/01.jpg",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/ekru-6/01.jpg",
       "alt": "Распределительное устройство ЭКРУ-6 — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
-      "image_url": "assets/old-site-photos/nkue-products/ekru-6/02.jpg",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/ekru-6/02.jpg",
       "alt": "Распределительное устройство ЭКРУ-6 — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
-      "image_url": "assets/old-site-photos/nkue-products/ekru-6/03.jpg",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/ekru-6/03.jpg",
       "alt": "Распределительное устройство ЭКРУ-6 — изображение 3",
       "sort": 30
     },
     {
       "product_slug": "shun-sibur",
-      "image_url": "assets/old-site-photos/nkue-products/shun-sibur/01.jpg",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shun-sibur/01.jpg",
       "alt": "Шкаф управления насосом ШУН СИБУР — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shun-sibur",
-      "image_url": "assets/old-site-photos/nkue-products/shun-sibur/02.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shun-sibur/02.png",
       "alt": "Шкаф управления насосом ШУН СИБУР — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "paneli-p1-p2-p3-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3p1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3p1.png",
       "alt": "Панели П1-3 НКУЭ-3 — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "paneli-p1-p2-p3-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3p2.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3p2.png",
       "alt": "Панели П1-3 НКУЭ-3 — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "paneli-p1-p2-p3-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3p3.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3p3.png",
       "alt": "Панели П1-3 НКУЭ-3 — изображение 3",
       "sort": 30
     },
     {
       "product_slug": "shkaf-vspomogatelnyh-privodov-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3shvp1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3shvp1.png",
       "alt": "Шкаф вспомогательных приводов НКУЭ-3 — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-vspomogatelnyh-privodov-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3shvp11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3shvp11.png",
       "alt": "Шкаф вспомогательных приводов НКУЭ-3 — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-razgona-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3shr.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3shr.png",
       "alt": "Шкаф разгона НКУЭ-3 — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-razgona-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3shr1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3shr1.png",
       "alt": "Шкаф разгона НКУЭ-3 — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-glavnyh-privodov-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3shgp1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3shgp1.png",
       "alt": "Шкаф главных приводов НКУЭ-3 — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-glavnyh-privodov-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3shgp11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3shgp11.png",
       "alt": "Шкаф главных приводов НКУЭ-3 — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-dinamicheskogo-tormozheniya-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3shdt1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3shdt1.png",
       "alt": "Шкаф динамического торможения НКУЭ-3 — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-dinamicheskogo-tormozheniya-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3shdt11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3shdt11.png",
       "alt": "Шкаф динамического торможения НКУЭ-3 — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "pult-upravleniya-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3pu1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3pu1.png",
       "alt": "Пульт управления НКУЭ-3 — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "pult-upravleniya-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3pu11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3pu11.png",
       "alt": "Пульт управления НКУЭ-3 — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "pult-upravleniya-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3pu111.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3pu111.png",
       "alt": "Пульт управления НКУЭ-3 — изображение 3",
       "sort": 30
     },
     {
       "product_slug": "pult-mashinista-pm-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3pm1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3pm1.png",
       "alt": "Пульт машиниста ПМ НКУЭ-3 — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "pult-mashinista-pm-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3pm11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3pm11.png",
       "alt": "Пульт машиниста ПМ НКУЭ-3 — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "kreslo-mashinista-km-nkue-3",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3/nkue3km1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3/nkue3km1.png",
       "alt": "Кресло машиниста КМ НКУЭ-3 — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "pult-mashinista-pm-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3spm1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3spm1.png",
       "alt": "Пульт машиниста ПМ НКУЭ-3С — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "pult-mashinista-pm-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3spm11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3spm11.png",
       "alt": "Пульт машиниста ПМ НКУЭ-3С — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "kreslo-mashinista-km-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3skm1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3skm1.png",
       "alt": "Кресло машиниста КМ НКУЭ-3С — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-vvodnoy-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshv1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshv1.png",
       "alt": "Шкаф вводной НКУЭ-3С — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-vvodnoy-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshv11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshv11.png",
       "alt": "Шкаф вводной НКУЭ-3С — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-vvodnoy-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshv111.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshv111.png",
       "alt": "Шкаф вводной НКУЭ-3С — изображение 3",
       "sort": 30
     },
     {
       "product_slug": "shkaf-aktivnyh-vypryamiteley-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav1.png",
       "alt": "Шкаф активных выпрямителей ШАВ НКУЭ-3С — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-aktivnyh-vypryamiteley-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav11.png",
       "alt": "Шкаф активных выпрямителей ШАВ НКУЭ-3С — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-aktivnyh-vypryamiteley-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav111.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav111.png",
       "alt": "Шкаф активных выпрямителей ШАВ НКУЭ-3С — изображение 3",
       "sort": 30
     },
     {
       "product_slug": "shkaf-shav-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav1.png",
       "alt": "Шкаф ШАВ НКУЭ-3С — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-shav-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav11.png",
       "alt": "Шкаф ШАВ НКУЭ-3С — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-shav-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav111.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshav111.png",
       "alt": "Шкаф ШАВ НКУЭ-3С — изображение 3",
       "sort": 30
     },
     {
       "product_slug": "shkaf-preobrazovateley-glavnyh-privodov-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshpgp1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshpgp1.png",
       "alt": "Шкаф преобразователей главных приводов ШПГП НКУЭ-3С — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-preobrazovateley-glavnyh-privodov-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshpgp11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshpgp11.png",
       "alt": "Шкаф преобразователей главных приводов ШПГП НКУЭ-3С — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-shpgp-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshpgp1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshpgp1.png",
       "alt": "Шкаф ШПГП НКУЭ-3С — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-shpgp-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshpgp11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshpgp11.png",
       "alt": "Шкаф ШПГП НКУЭ-3С — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-upravleniya-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshu1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshu1.png",
       "alt": "Шкаф управления НКУЭ-3С — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-upravleniya-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkuesshu11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkuesshu11.png",
       "alt": "Шкаф управления НКУЭ-3С — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-upravleniya-shu-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3sshu1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3sshu1.png",
       "alt": "Шкаф управления ШУ НКУЭ-3С — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-upravleniya-shu-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkuesshu11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkuesshu11.png",
       "alt": "Шкаф управления ШУ НКУЭ-3С — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "stojki-tormoznyh-soprotivlenij-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3ssts1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3ssts1.png",
       "alt": "Стойки тормозных сопротивлений НКУЭ-3С — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "stojki-tormoznyh-soprotivlenij-nkue-3s",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-3s/nkue3ssts11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-3s/nkue3ssts11.png",
       "alt": "Стойки тормозных сопротивлений НКУЭ-3С — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
-      "image_url": "assets/old-site-photos/nkue-products/ekru-6/ekrui6-1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/ekru-6/ekrui6-1.png",
       "alt": "Распределительное устройство ЭКРУ-6 — изображение 1",
       "sort": 5
     },
     {
       "product_slug": "shun-sibur",
-      "image_url": "assets/old-site-photos/nkue-products/shun-sibur/shun1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shun-sibur/shun1.png",
       "alt": "Шкаф управления насосом ШУН СИБУР — изображение 1",
       "sort": 5
     },
     {
       "product_slug": "pult-mashinista-pm-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10pm1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10pm1.png",
       "alt": "Пульт машиниста ПМ НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "kreslo-mashinista-km-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10km1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10km1.png",
       "alt": "Кресло машиниста КМ НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "kreslo-pult-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10kp1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10kp1.png",
       "alt": "Кресло-пульт НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-osveshcheniya-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10sho1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10sho1.png",
       "alt": "Шкаф освещения ШО НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-osveshcheniya-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10sho11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10sho11.png",
       "alt": "Шкаф освещения ШО НКУЭ-10МК — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-osveshcheniya-sho-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10sho1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10sho1.png",
       "alt": "Шкаф освещения ШО НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-osveshcheniya-sho-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10sho11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10sho11.png",
       "alt": "Шкаф освещения ШО НКУЭ-10МК — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-kontaktorov-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk1.png",
       "alt": "Шкаф контакторов ШК НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-kontaktorov-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk11.png",
       "alt": "Шкаф контакторов ШК НКУЭ-10МК — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-kontaktorov-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk111.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk111.png",
       "alt": "Шкаф контакторов ШК НКУЭ-10МК — изображение 3",
       "sort": 30
     },
     {
       "product_slug": "shkaf-kommutacii-shk-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk1.png",
       "alt": "Шкаф коммутации ШК НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-kommutacii-shk-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk11.png",
       "alt": "Шкаф коммутации ШК НКУЭ-10МК — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-kommutacii-shk-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk111.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shk111.png",
       "alt": "Шкаф коммутации ШК НКУЭ-10МК — изображение 3",
       "sort": 30
     },
     {
       "product_slug": "shkaf-kontrolya-izolyacii-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shki1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shki1.png",
       "alt": "Шкаф контроля изоляции ШКИ НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-kontrolya-izolyacii-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shki11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shki11.png",
       "alt": "Шкаф контроля изоляции ШКИ НКУЭ-10МК — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-kontrolya-izolyacii-shki-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shki1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shki1.png",
       "alt": "Шкаф контроля изоляции ШКИ НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-kontrolya-izolyacii-shki-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shki11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shki11.png",
       "alt": "Шкаф контроля изоляции ШКИ НКУЭ-10МК — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-vypryamitelej-i-razgona-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shvr1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shvr1.png",
       "alt": "Шкаф выпрямителей и разгона ШВР НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-vypryamitelej-i-razgona-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shvr11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shvr11.png",
       "alt": "Шкаф выпрямителей и разгона ШВР НКУЭ-10МК — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-vypryamitelej-i-razgona-shvr-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shvr1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shvr1.png",
       "alt": "Шкаф выпрямителей и разгона ШВР НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-vypryamitelej-i-razgona-shvr-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shvr11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shvr11.png",
       "alt": "Шкаф выпрямителей и разгона ШВР НКУЭ-10МК — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-vspomogatelnyh-privodov-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10svp1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10svp1.png",
       "alt": "Шкаф вспомогательных приводов ШВП НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-vspomogatelnyh-privodov-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10svp11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10svp11.png",
       "alt": "Шкаф вспомогательных приводов ШВП НКУЭ-10МК — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-vspomogatelnyh-privodov-shvp-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10svp1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10svp1.png",
       "alt": "Шкаф вспомогательных приводов ШВП НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-vspomogatelnyh-privodov-shvp-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10svp11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10svp11.png",
       "alt": "Шкаф вспомогательных приводов ШВП НКУЭ-10МК — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-glavnyh-privodov-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shgp1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shgp1.png",
       "alt": "Шкаф главных приводов ШГП НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-glavnyh-privodov-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shgp11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shgp11.png",
       "alt": "Шкаф главных приводов ШГП НКУЭ-10МК — изображение 2",
       "sort": 20
     },
     {
       "product_slug": "shkaf-upravleniya-glavnymi-privodami-shgp-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shgp1.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shgp1.png",
       "alt": "Шкаф управления главными приводами ШГП НКУЭ-10МК — изображение 1",
       "sort": 10
     },
     {
       "product_slug": "shkaf-upravleniya-glavnymi-privodami-shgp-nkue-10mk",
-      "image_url": "assets/old-site-photos/nkue-products/nkue-10mk/nkue10shgp11.png",
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/nkue-10mk/nkue10shgp11.png",
       "alt": "Шкаф управления главными приводами ШГП НКУЭ-10МК — изображение 2",
       "sort": 20
     }
