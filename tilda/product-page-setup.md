@@ -106,6 +106,21 @@ tilda/product-loader.html
 - создаёт `window.pkfProductContext`;
 - вызывает событие `pkfProductLoaded`.
 
+### SEO динамических карточек
+
+Product Loader автоматически обновляет SEO после загрузки товара:
+
+- `<title>` и `meta description`;
+- индивидуальный `rel="canonical"` вида `/product?slug=<slug>`;
+- Open Graph и Twitter Card;
+- `robots=index, follow` для существующего товара;
+- `robots=noindex, follow` для отсутствующего или неправильного `slug`;
+- JSON-LD `Product` и `BreadcrumbList`.
+
+По умолчанию Title и Description формируются из `title`, `description`, `hero_description`, `short_description` и `purpose`. Для отдельного товара их можно переопределить необязательными полями `seo_title` и `seo_description` в `data/products.json`.
+
+После замены кода Product Loader необходимо перепубликовать страницу `/product`. Сначала проверьте несколько карточек и неправильный `slug`; старые страницы и 301-редиректы следует менять только после успешной проверки опубликованной страницы.
+
 ## Описание
 
 Ниже Product Loader добавьте отдельный T123 и вставьте:

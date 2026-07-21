@@ -468,7 +468,11 @@
 
   @media(prefers-reduced-motion:reduce) {
     .pkf-product-slider__image,
-    .pkf-product-lightbox__image,
+    .pkf-product-lightbox__image {
+      transform: none !important;
+      transition: opacity 1500ms ease !important;
+    }
+
     .pkf-product-slider__arrow,
     .pkf-product-slider__zoom,
     .pkf-product-lightbox__arrow,
@@ -841,6 +845,11 @@
     color: #627079;
     font-size: 14px;
     line-height: 1.45;
+    max-height: calc(1.45em * 5) !important;
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
   }
 
   @media (max-width: 520px) {
@@ -946,6 +955,9 @@
   (function () {
     var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json?v=20260721-hero-lightbox';
     var ASSET_BASE_URL = DATA_URL.replace(/\/data\/products\.json(?:[?#].*)?$/, '');
+    var SITE_ORIGIN = 'https://pkftechno.ru';
+    var SITE_NAME = 'ПКФ «Технология»';
+    var PRODUCT_PATH = '/product';
     var AUTOPLAY_INTERVAL_MS = 8500;
     var IMAGE_TRANSITION_DELAY_MS = 750;
     var REQUEST_CTA_TEXT = 'Оставить заявку';
@@ -964,7 +976,7 @@
     );
 
     function getSlug() {
-      return new URLSearchParams(window.location.search).get('slug');
+      return (new URLSearchParams(window.location.search).get('slug') || '').trim();
     }
 
     function escapeHtml(value) {
@@ -974,6 +986,270 @@
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#039;');
+    }
+
+    function normalizeSeoText(value) {
+      return String(value == null ? '' : value)
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function limitSeoText(value, maxLength) {
+      var text = normalizeSeoText(value);
+      if (text.length <= maxLength) {
+        return text;
+      }
+
+      var shortened = text.slice(0, maxLength + 1);
+      var lastSpace = shortened.lastIndexOf(' ');
+      if (lastSpace > Math.floor(maxLength * 0.7)) {
+        shortened = shortened.slice(0, lastSpace);
+      } else {
+        shortened = shortened.slice(0, maxLength);
+      }
+
+      return shortened.replace(/[\s,;:–—-]+$/, '') + '…';
+    }
+
+    function getCanonicalUrl(slug) {
+      return SITE_ORIGIN + PRODUCT_PATH + '?slug=' + encodeURIComponent(slug);
+    }
+
+    function upsertMeta(selector, attributeName, attributeValue, content) {
+      var node = document.head.querySelector(selector);
+      if (!node) {
+        node = document.createElement('meta');
+        node.setAttribute(attributeName, attributeValue);
+        document.head.appendChild(node);
+      }
+      node.setAttribute('content', content);
+      return node;
+    }
+
+    function upsertNamedMeta(name, content) {
+      return upsertMeta('meta[name="' + name + '"]', 'name', name, content);
+    }
+
+    function upsertPropertyMeta(property, content) {
+      return upsertMeta('meta[property="' + property + '"]', 'property', property, content);
+    }
+
+    function removeMeta(selector) {
+      document.head.querySelectorAll(selector).forEach(function (node) {
+        node.remove();
+      });
+    }
+
+    function setCanonicalUrl(url) {
+      var canonicalLinks = document.head.querySelectorAll('link[rel="canonical"]');
+      var canonical = canonicalLinks[0];
+
+      if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.setAttribute('rel', 'canonical');
+        document.head.appendChild(canonical);
+      }
+
+      canonical.setAttribute('href', url);
+      for (var index = 1; index < canonicalLinks.length; index += 1) {
+        canonicalLinks[index].remove();
+      }
+    }
+
+    function upsertJsonLd(id, value) {
+      var node = document.getElementById(id);
+      if (!node) {
+        node = document.createElement('script');
+        node.id = id;
+        node.type = 'application/ld+json';
+        document.head.appendChild(node);
+      }
+      node.textContent = JSON.stringify(value);
+    }
+
+    function removeProductJsonLd() {
+      ['pkf-seo-product', 'pkf-seo-breadcrumbs'].forEach(function (id) {
+        var node = document.getElementById(id);
+        if (node) {
+          node.remove();
+        }
+      });
+    }
+
+    function getSeoTitle(product) {
+      var title = normalizeSeoText(product.seo_title || product.title || product.slug);
+      if (product.seo_title) {
+        return title;
+      }
+      var brandedTitle = title + ' | ' + SITE_NAME;
+      return brandedTitle.length <= 75 ? brandedTitle : title;
+    }
+
+    function getSeoDescription(product) {
+      var description = product.seo_description || product.description || product.hero_description || product.short_description || product.purpose || '';
+      description = normalizeSeoText(description);
+
+      if (!description) {
+        description = normalizeSeoText(product.title) + ': назначение, технические характеристики и варианты исполнения. Производство ' + SITE_NAME + '.';
+      }
+
+      return limitSeoText(description, 180);
+    }
+
+    function applyProductSeo(product, images) {
+      var title = getSeoTitle(product);
+      var description = getSeoDescription(product);
+      var canonicalUrl = getCanonicalUrl(product.slug);
+      var imageUrls = (Array.isArray(images) ? images : [])
+        .map(function (image) {
+          return image && image.image_url;
+        })
+        .filter(function (imageUrl) {
+          return imageUrl && imageUrl !== PLACEHOLDER && imageUrl.indexOf('data:') !== 0;
+        });
+      var primaryImage = imageUrls[0] || '';
+
+      document.title = title;
+      setCanonicalUrl(canonicalUrl);
+      upsertNamedMeta('description', description);
+      upsertNamedMeta('robots', 'index, follow, max-image-preview:large');
+      upsertPropertyMeta('og:type', 'product');
+      upsertPropertyMeta('og:locale', 'ru_RU');
+      upsertPropertyMeta('og:site_name', SITE_NAME);
+      upsertPropertyMeta('og:title', title);
+      upsertPropertyMeta('og:description', description);
+      upsertPropertyMeta('og:url', canonicalUrl);
+      upsertNamedMeta('twitter:card', primaryImage ? 'summary_large_image' : 'summary');
+      upsertNamedMeta('twitter:title', title);
+      upsertNamedMeta('twitter:description', description);
+
+      if (primaryImage) {
+        upsertPropertyMeta('og:image', primaryImage);
+        upsertPropertyMeta('og:image:alt', normalizeSeoText((images[0] && images[0].alt) || product.title));
+        upsertNamedMeta('twitter:image', primaryImage);
+      } else {
+        removeMeta('meta[property="og:image"], meta[property="og:image:alt"], meta[name="twitter:image"]');
+      }
+
+      var productSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: normalizeSeoText(product.title || product.slug),
+        description: description,
+        url: canonicalUrl,
+        sku: product.slug,
+        brand: {
+          '@type': 'Brand',
+          name: SITE_NAME
+        },
+        manufacturer: {
+          '@type': 'Organization',
+          name: SITE_NAME,
+          url: SITE_ORIGIN + '/'
+        }
+      };
+
+      if (imageUrls.length > 0) {
+        productSchema.image = imageUrls;
+      }
+      if (product.series) {
+        productSchema.model = normalizeSeoText(product.series);
+      }
+      if (product.type) {
+        productSchema.category = normalizeSeoText(product.type);
+      }
+
+      upsertJsonLd('pkf-seo-product', productSchema);
+      upsertJsonLd('pkf-seo-breadcrumbs', {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Главная',
+            item: SITE_ORIGIN + '/'
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Продукция',
+            item: SITE_ORIGIN + '/products'
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: normalizeSeoText(product.title || product.slug),
+            item: canonicalUrl
+          }
+        ]
+      });
+    }
+
+    function applyNotFoundSeo() {
+      var title = 'Товар не найден | ' + SITE_NAME;
+      var url = SITE_ORIGIN + PRODUCT_PATH;
+
+      document.title = title;
+      setCanonicalUrl(url);
+      upsertNamedMeta('description', 'Запрошенная карточка продукции не найдена. Перейдите в каталог продукции ' + SITE_NAME + '.');
+      upsertNamedMeta('robots', 'noindex, follow');
+      upsertPropertyMeta('og:type', 'website');
+      upsertPropertyMeta('og:title', title);
+      upsertPropertyMeta('og:description', 'Запрошенная карточка продукции не найдена.');
+      upsertPropertyMeta('og:url', url);
+      removeMeta('meta[property="og:image"], meta[property="og:image:alt"], meta[name="twitter:image"]');
+      removeProductJsonLd();
+    }
+
+    function animateImageCrossfade(currentLayer, nextLayer, onComplete) {
+      var duration = 1500;
+      var startedAt = null;
+
+      currentLayer.style.setProperty('transition', 'none', 'important');
+      nextLayer.style.setProperty('transition', 'none', 'important');
+      currentLayer.style.opacity = '1';
+      nextLayer.style.opacity = '0';
+      currentLayer.style.transform = 'none';
+      nextLayer.style.transform = 'none';
+      nextLayer.classList.add('is-active');
+      nextLayer.setAttribute('aria-hidden', 'false');
+
+      function drawFrame(timestamp) {
+        if (startedAt === null) {
+          startedAt = timestamp;
+        }
+
+        var progress = Math.min(1, (timestamp - startedAt) / duration);
+        var eased = progress * progress * (3 - 2 * progress);
+        currentLayer.style.opacity = String(1 - eased);
+        nextLayer.style.opacity = String(eased);
+
+        if (progress < 1) {
+          window.requestAnimationFrame(drawFrame);
+          return;
+        }
+
+        currentLayer.classList.remove('is-active');
+        currentLayer.setAttribute('aria-hidden', 'true');
+        currentLayer.style.opacity = '0';
+        nextLayer.style.opacity = '1';
+
+        window.requestAnimationFrame(function () {
+          currentLayer.style.removeProperty('transition');
+          nextLayer.style.removeProperty('transition');
+          currentLayer.style.removeProperty('opacity');
+          nextLayer.style.removeProperty('opacity');
+          currentLayer.style.removeProperty('transform');
+          nextLayer.style.removeProperty('transform');
+        });
+
+        if (typeof onComplete === 'function') {
+          onComplete();
+        }
+      }
+
+      window.requestAnimationFrame(drawFrame);
     }
 
     function getSortValue(item) {
@@ -1253,6 +1529,7 @@
       imageLayers: [],
       activeImageLayer: 0,
       transitionRevision: 0,
+      transitionInProgress: false,
       counter: null,
       prev: null,
       next: null,
@@ -1362,11 +1639,12 @@
         currentLayer.setAttribute('alt', image.alt || '');
         currentLayer.setAttribute('aria-hidden', 'false');
         currentLayer.classList.add('is-active');
-      } else if (currentLayer.getAttribute('src') !== image.image_url) {
+      } else if (currentLayer.getAttribute('src') !== image.image_url && !lightbox.transitionInProgress) {
         var nextLayerIndex = lightbox.activeImageLayer === 0 ? 1 : 0;
         var nextLayer = lightbox.imageLayers[nextLayerIndex];
         var revision = lightbox.transitionRevision + 1;
         lightbox.transitionRevision = revision;
+        lightbox.transitionInProgress = true;
         nextLayer.classList.remove('is-active');
         nextLayer.setAttribute('aria-hidden', 'true');
         nextLayer.setAttribute('src', image.image_url);
@@ -1374,18 +1652,13 @@
 
         var revealLayer = function () {
           if (revision !== lightbox.transitionRevision) {
+            lightbox.transitionInProgress = false;
             return;
           }
-          window.requestAnimationFrame(function () {
-            if (revision !== lightbox.transitionRevision) {
-              return;
-            }
-            nextLayer.classList.add('is-active');
-            nextLayer.setAttribute('aria-hidden', 'false');
-            currentLayer.classList.remove('is-active');
-            currentLayer.setAttribute('aria-hidden', 'true');
+          animateImageCrossfade(currentLayer, nextLayer, function () {
             lightbox.activeImageLayer = nextLayerIndex;
             lightbox.image = nextLayer;
+            lightbox.transitionInProgress = false;
           });
         };
 
@@ -1450,6 +1723,7 @@
       lightbox.root.classList.remove('is-open');
       stopLightboxAutoplay();
       lightbox.transitionRevision += 1;
+      lightbox.transitionInProgress = false;
       document.documentElement.style.overflow = '';
       document.body.style.overflow = '';
 
@@ -1462,7 +1736,7 @@
     }
 
     function shiftLightbox(step) {
-      if (lightbox.images.length < 2) {
+      if (lightbox.images.length < 2 || lightbox.transitionInProgress) {
         return;
       }
 
@@ -1548,25 +1822,23 @@
 
     function bindRequestCta() {
       document.querySelectorAll('[data-pkf-request-cta]').forEach(function (cta) {
+        var popupHref = '#popup:request';
+        var nativePopupCta = document.querySelector('a[href="' + popupHref + '"]:not([data-pkf-request-cta])');
+        cta.setAttribute('href', nativePopupCta ? nativePopupCta.getAttribute('href') : popupHref);
+
         if (cta.dataset.pkfRequestBound === 'true') {
           return;
         }
 
         cta.dataset.pkfRequestBound = 'true';
         cta.addEventListener('click', function (event) {
-          var requestTarget = document.getElementById('request') || document.querySelector('form.pkf-native-request-form, form');
-          if (!requestTarget) {
+          var popupTrigger = document.querySelector('a[href="' + popupHref + '"]:not([data-pkf-request-cta])');
+          if (!popupTrigger) {
             return;
           }
 
           event.preventDefault();
-          requestTarget.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          window.setTimeout(function () {
-            var field = requestTarget.querySelector('input:not([type="hidden"]), textarea, select');
-            if (field && typeof field.focus === 'function') {
-              field.focus({ preventScroll: true });
-            }
-          }, 500);
+          popupTrigger.click();
         });
       });
     }
@@ -1612,6 +1884,7 @@
         var counterEl = element.querySelector('.pkf-product-slider__counter');
         var activeImageLayer = 0;
         var transitionRevision = 0;
+        var transitionInProgress = false;
         var pointerStartX = null;
 
         images.forEach(function (image) {
@@ -1719,6 +1992,10 @@
         }
 
         function update(nextIndex) {
+          if (transitionInProgress) {
+            return;
+          }
+
           currentIndex = (nextIndex + images.length) % images.length;
 
           if (imageEls.length > 1) {
@@ -1728,6 +2005,7 @@
             var nextLayer = imageEls[nextLayerIndex];
             var revision = transitionRevision + 1;
             transitionRevision = revision;
+            transitionInProgress = true;
 
             nextLayer.classList.remove('is-active');
             nextLayer.setAttribute('aria-hidden', 'true');
@@ -1736,17 +2014,12 @@
 
             var revealLayer = function () {
               if (revision !== transitionRevision) {
+                transitionInProgress = false;
                 return;
               }
-              window.requestAnimationFrame(function () {
-                if (revision !== transitionRevision) {
-                  return;
-                }
-                nextLayer.classList.add('is-active');
-                nextLayer.setAttribute('aria-hidden', 'false');
-                currentLayer.classList.remove('is-active');
-                currentLayer.setAttribute('aria-hidden', 'true');
+              animateImageCrossfade(currentLayer, nextLayer, function () {
                 activeImageLayer = nextLayerIndex;
+                transitionInProgress = false;
               });
             };
 
@@ -1801,6 +2074,7 @@
         element.pkfGalleryDestroy = function () {
           stopAutoplay();
           transitionRevision += 1;
+          transitionInProgress = false;
         };
 
         renderDots();
@@ -1834,6 +2108,8 @@
       var relatedProducts = Array.isArray(data.related_products) ? data.related_products : [];
       var shortText = product.hero_description || product.short_description || product.description || '';
       var backLink = product.series ? '/product-category?series=' + encodeURIComponent(product.series) : '/pss2ptest';
+
+      applyProductSeo(product, images);
 
       setText('js-product-section', [product.section, product.series].filter(Boolean).join(' / '));
       setText('js-product-title', product.hero_title || product.title || '');
@@ -1963,6 +2239,7 @@
       var slug = getSlug();
 
       if (!slug) {
+        applyNotFoundSeo();
         showMessage('Товар не найден');
         return;
       }
@@ -1975,6 +2252,7 @@
         });
 
         if (!product) {
+          applyNotFoundSeo();
           showMessage('Товар не найден');
           return;
         }
@@ -1986,12 +2264,14 @@
           characteristics: Array.isArray(data.characteristics) ? data.characteristics : [],
           relatedProducts: Array.isArray(data.related_products) ? data.related_products : []
         };
+        applyProductSeo(product, context.images);
         startRenderGuard(context);
         if (productUiNeedsRepair(context)) {
           renderProduct(product, data);
         }
       } catch (error) {
         console.error('PKF product loader error:', error);
+        applyNotFoundSeo();
         showMessage('Товар не найден');
       }
     }
