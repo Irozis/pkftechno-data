@@ -204,7 +204,7 @@
     object-fit: contain;
     border: 1px solid rgba(17, 21, 23, 0.12);
     border-radius: 16px;
-    background: #F1F3F4;
+    background: #101416;
     box-shadow: 0 14px 44px rgba(0, 0, 0, 0.28);
   }
 
@@ -234,7 +234,7 @@
     right: 16px;
     width: 48px;
     height: 48px;
-    font-size: 25px;
+    font-size: 0;
     line-height: 1;
   }
 
@@ -254,6 +254,10 @@
   .pkf-product-lightbox__arrow--next {
     right: 24px;
   }
+
+  .pkf-product-lightbox__arrow:before { width: 13px; height: 13px; border-top: 3px solid currentColor; border-right: 3px solid currentColor; content: ""; }
+  .pkf-product-lightbox__arrow--prev:before { transform: rotate(-135deg); margin-left: 5px; }
+  .pkf-product-lightbox__arrow--next:before { transform: rotate(45deg); margin-right: 5px; }
 
   .pkf-product-lightbox__arrow:hover { transform: translateY(-50%) scale(1.04); }
 
