@@ -82,6 +82,7 @@
   }
 
   .pkf-product-slider__image.is-changing,
+  .pkf-product-image-shell img.is-changing,
   .pkf-product-lightbox__image.is-changing {
     opacity: 0;
     transform: scale(0.985);
@@ -168,6 +169,41 @@
     object-position: center center !important;
   }
 
+  .pkf-product-image-shell {
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 22px !important;
+    background: #101416 !important;
+    isolation: isolate;
+  }
+
+  .pkf-product-image-shell .tn-atom,
+  .pkf-product-image-shell img {
+    border-radius: inherit !important;
+  }
+
+  .pkf-product-image-shell .pkf-product-slider__zoom {
+    display: flex !important;
+  }
+
+  .pkf-product-image-shell__counter {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 14px;
+    min-width: 58px;
+    padding: 8px 13px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    background: rgba(24, 30, 33, 0.82);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+
   .pkf-product-slider__footer {
     position: absolute;
     z-index: 3;
@@ -219,6 +255,10 @@
   .pkf-product-slider.is-single .pkf-product-slider__footer,
   .pkf-product-slider.is-single .pkf-product-slider__arrow {
     display: none;
+  }
+
+  .pkf-product-slider.is-single .pkf-product-slider__zoom {
+    display: flex !important;
   }
 
   .pkf-product-lightbox {
@@ -984,11 +1024,15 @@
       document.querySelectorAll('.' + selector).forEach(function (element) {
         var target = element.matches && element.matches('img') ? element : element.querySelector('img');
         var clickable = target || findAtom(element);
+        var host = element.matches && element.matches('img') ? element.parentElement : element;
 
-        if (!clickable || !clickable.setAttribute) {
+        if (!clickable || !clickable.setAttribute || !host) {
           return;
         }
 
+        host.classList.add('pkf-product-image-shell');
+        host.pkfLightboxImages = images;
+        host.pkfLightboxIndex = startIndex || 0;
         clickable.pkfLightboxImages = images;
         clickable.pkfLightboxIndex = startIndex || 0;
         clickable.style.cursor = 'zoom-in';
@@ -1001,22 +1045,124 @@
           clickable.setAttribute('aria-label', 'Open product image');
         }
 
-        if (clickable.dataset.pkfLightboxBound === 'true') {
-          return;
+        function openLegacyLightbox() {
+          openLightbox(host.pkfLightboxImages || [], host.pkfLightboxIndex || 0, stopLegacyAutoplay, startLegacyAutoplay, function (index) {
+            showLegacyImage(index);
+          });
         }
 
-        clickable.dataset.pkfLightboxBound = 'true';
-        clickable.addEventListener('click', function () {
-          openLightbox(clickable.pkfLightboxImages || [], clickable.pkfLightboxIndex || 0);
-        });
-        clickable.addEventListener('keydown', function (event) {
-          if (event.key !== 'Enter' && event.key !== ' ') {
+        function stopLegacyAutoplay() {
+          if (host.pkfAutoplayTimer) {
+            window.clearInterval(host.pkfAutoplayTimer);
+            host.pkfAutoplayTimer = null;
+          }
+        }
+
+        function startLegacyAutoplay() {
+          stopLegacyAutoplay();
+          if (!host.pkfLightboxImages || host.pkfLightboxImages.length < 2) {
+            return;
+          }
+          host.pkfAutoplayTimer = window.setInterval(function () {
+            showLegacyImage(host.pkfLightboxIndex + 1);
+          }, AUTOPLAY_INTERVAL_MS);
+        }
+
+        function showLegacyImage(nextIndex) {
+          var currentImages = host.pkfLightboxImages || [];
+          if (currentImages.length === 0) {
             return;
           }
 
-          event.preventDefault();
-          openLightbox(clickable.pkfLightboxImages || [], clickable.pkfLightboxIndex || 0);
+          host.pkfLightboxIndex = (nextIndex + currentImages.length) % currentImages.length;
+          clickable.pkfLightboxIndex = host.pkfLightboxIndex;
+          var image = currentImages[host.pkfLightboxIndex];
+
+          if (target) {
+            target.classList.add('is-changing');
+            window.setTimeout(function () {
+              target.setAttribute('src', image.image_url);
+              target.setAttribute('data-original', image.image_url);
+              target.setAttribute('alt', image.alt || '');
+              target.classList.remove('is-changing');
+            }, 120);
+          } else {
+            clickable.style.backgroundImage = 'url("' + image.image_url.replace(/"/g, '%22') + '")';
+          }
+
+          var counter = host.querySelector('.pkf-product-image-shell__counter');
+          if (counter) {
+            counter.textContent = (host.pkfLightboxIndex + 1) + ' / ' + currentImages.length;
+          }
+        }
+
+        if (clickable.dataset.pkfLightboxBound !== 'true') {
+          clickable.dataset.pkfLightboxBound = 'true';
+          clickable.addEventListener('click', openLegacyLightbox);
+          clickable.addEventListener('keydown', function (event) {
+            if (event.key !== 'Enter' && event.key !== ' ') {
+              return;
+            }
+
+            event.preventDefault();
+            openLegacyLightbox();
+          });
+        }
+
+        var zoom = host.querySelector('.pkf-product-slider__zoom');
+        if (!zoom) {
+          zoom = document.createElement('button');
+          zoom.className = 'pkf-product-slider__zoom';
+          zoom.type = 'button';
+          zoom.setAttribute('aria-label', 'Увеличить изображение');
+          zoom.textContent = 'Увеличить';
+          host.appendChild(zoom);
+          zoom.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            openLegacyLightbox();
+          });
+        }
+
+        host.querySelectorAll('.pkf-product-slider__arrow, .pkf-product-image-shell__counter').forEach(function (control) {
+          control.remove();
         });
+
+        if (images.length > 1) {
+          var previous = document.createElement('button');
+          previous.className = 'pkf-product-slider__arrow pkf-product-slider__arrow--prev';
+          previous.type = 'button';
+          previous.setAttribute('aria-label', 'Предыдущее изображение');
+          previous.textContent = 'Назад';
+          previous.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            showLegacyImage(host.pkfLightboxIndex - 1);
+            startLegacyAutoplay();
+          });
+
+          var next = document.createElement('button');
+          next.className = 'pkf-product-slider__arrow pkf-product-slider__arrow--next';
+          next.type = 'button';
+          next.setAttribute('aria-label', 'Следующее изображение');
+          next.textContent = 'Вперёд';
+          next.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            showLegacyImage(host.pkfLightboxIndex + 1);
+            startLegacyAutoplay();
+          });
+
+          var counter = document.createElement('div');
+          counter.className = 'pkf-product-image-shell__counter';
+          counter.setAttribute('aria-live', 'polite');
+          counter.textContent = (host.pkfLightboxIndex + 1) + ' / ' + images.length;
+          host.appendChild(previous);
+          host.appendChild(next);
+          host.appendChild(counter);
+        }
+
+        startLegacyAutoplay();
       });
     }
 
@@ -1533,13 +1679,16 @@
       setText('js-product-meta-type', product.type || '');
       setLink('js-product-back-link', backLink);
 
-      if (!renderGallery(images)) {
-        if (document.querySelectorAll('.js-product-image').length > 0) {
-          setImage('js-product-image', mainImage.image_url, mainImage.alt || product.title || '');
-          bindImageLightbox('js-product-image', images, 0);
-        } else {
-          console.warn('PKF product loader: neither .js-product-gallery nor .js-product-image was found.');
-        }
+      var hasGallery = renderGallery(images);
+      var hasLegacyImages = document.querySelectorAll('.js-product-image').length > 0;
+
+      if (hasLegacyImages) {
+        setImage('js-product-image', mainImage.image_url, mainImage.alt || product.title || '');
+        bindImageLightbox('js-product-image', images, 0);
+      }
+
+      if (!hasGallery && !hasLegacyImages) {
+        console.warn('PKF product loader: neither .js-product-gallery nor .js-product-image was found.');
       }
 
       window.pkfProductContext = {
