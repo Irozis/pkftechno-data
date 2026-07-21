@@ -58,7 +58,9 @@
     overflow: hidden;
     border: 1px solid rgba(17, 21, 23, 0.08);
     border-radius: 22px;
-    background: #F1F3F4;
+    background: #101416;
+    isolation: isolate;
+    touch-action: pan-y;
   }
 
   .pkf-product-slider__image {
@@ -72,8 +74,79 @@
     box-sizing: border-box;
     object-fit: contain;
     object-position: center;
+    border-radius: inherit;
     cursor: zoom-in;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 240ms ease, transform 240ms ease;
   }
+
+  .pkf-product-slider__image.is-changing,
+  .pkf-product-lightbox__image.is-changing {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+
+  .pkf-product-slider__arrow,
+  .pkf-product-slider__zoom {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 999px;
+    background: rgba(24, 30, 33, 0.82);
+    color: #FFFFFF;
+    font-size: 0;
+    line-height: 1;
+    text-indent: -9999px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
+  }
+
+  .pkf-product-slider__arrow {
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    transform: translateY(-50%);
+  }
+
+  .pkf-product-slider__arrow--prev { left: 14px; }
+  .pkf-product-slider__arrow--next { right: 14px; }
+  .pkf-product-slider__zoom { top: 14px; right: 14px; width: 44px; height: 44px; }
+
+  .pkf-product-slider__arrow:before {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid currentColor;
+    border-right: 3px solid currentColor;
+    content: "";
+    text-indent: 0;
+  }
+
+  .pkf-product-slider__arrow--prev:before { margin-left: 5px; transform: rotate(-135deg); }
+  .pkf-product-slider__arrow--next:before { margin-right: 5px; transform: rotate(45deg); }
+  .pkf-product-slider__zoom:before { width: 13px; height: 13px; border: 3px solid currentColor; border-radius: 50%; content: ""; }
+  .pkf-product-slider__zoom:after { position: absolute; width: 10px; height: 3px; border-radius: 3px; background: currentColor; content: ""; transform: translate(9px, 9px) rotate(45deg); }
+
+  .pkf-product-slider__arrow:hover,
+  .pkf-product-slider__zoom:hover {
+    border-color: #FFC400;
+    background: #FFC400;
+    color: #111517;
+  }
+
+  .pkf-product-slider__arrow:hover { transform: translateY(-50%) scale(1.04); }
+  .pkf-product-slider__zoom:hover { transform: scale(1.04); }
+  .pkf-product-slider__arrow:focus-visible,
+  .pkf-product-slider__zoom:focus-visible { outline: 3px solid #FFC400; outline-offset: 3px; }
 
   .js-product-image,
   .js-product-image .tn-atom,
@@ -96,11 +169,23 @@
   }
 
   .pkf-product-slider__footer {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 14px;
     display: flex;
     gap: 16px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 12px;
+    min-height: 34px;
+    margin: 0;
+    padding: 7px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    background: rgba(24, 30, 33, 0.82);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    transform: translateX(-50%);
   }
 
   .pkf-product-slider__dots {
@@ -115,7 +200,7 @@
     padding: 0;
     border: none;
     border-radius: 999px;
-    background: rgba(17, 21, 23, 0.24);
+    background: rgba(255, 255, 255, 0.42);
     cursor: pointer;
   }
 
@@ -125,13 +210,14 @@
   }
 
   .pkf-product-slider__counter {
-    color: #5F6B73;
+    color: #FFFFFF;
     font-size: 13px;
     font-weight: 700;
     line-height: 1;
   }
 
-  .pkf-product-slider.is-single .pkf-product-slider__footer {
+  .pkf-product-slider.is-single .pkf-product-slider__footer,
+  .pkf-product-slider.is-single .pkf-product-slider__arrow {
     display: none;
   }
 
@@ -175,16 +261,17 @@
     border-radius: 24px;
     background: linear-gradient(145deg, rgba(35, 42, 45, 0.96), rgba(17, 21, 23, 0.98));
     box-shadow: 0 28px 90px rgba(0, 0, 0, 0.45);
+    touch-action: pan-y;
   }
 
   .pkf-product-lightbox__topbar {
     position: absolute;
     top: 22px;
     left: 28px;
-    right: 28px;
+    right: 88px !important;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 16px;
     color: #FFFFFF;
     font-size: 13px;
@@ -193,7 +280,7 @@
 
   .pkf-product-lightbox__label { display: inline-flex; align-items: center; gap: 9px; }
   .pkf-product-lightbox__label:before { display: block; width: 8px; height: 8px; border-radius: 50%; background: #FFC400; content: ""; }
-  .pkf-product-lightbox__hint { color: #9CA9B0; font-size: 11px; font-weight: 700; }
+  .pkf-product-lightbox__hint { position: absolute; right: 28px; bottom: 25px; color: #9CA9B0; font-size: 11px; font-weight: 700; white-space: nowrap; }
 
   .pkf-product-lightbox__image {
     display: block;
@@ -203,9 +290,12 @@
     max-height: 100%;
     object-fit: contain;
     border: 1px solid rgba(17, 21, 23, 0.12);
-    border-radius: 16px;
+    border-radius: 16px !important;
     background: #101416;
     box-shadow: 0 14px 44px rgba(0, 0, 0, 0.28);
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 240ms ease, transform 240ms ease;
   }
 
   .pkf-product-lightbox__close,
@@ -218,6 +308,9 @@
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
+    font-size: 0 !important;
+    text-indent: -9999px;
+    overflow: hidden;
     cursor: pointer;
     transition: border-color .2s ease, background-color .2s ease, color .2s ease, transform .2s ease;
   }
@@ -234,15 +327,20 @@
     right: 16px;
     width: 48px;
     height: 48px;
-    font-size: 0;
     line-height: 1;
   }
+
+  .pkf-product-lightbox__close:before,
+  .pkf-product-lightbox__close:after { position: absolute; width: 22px; height: 3px; border-radius: 3px; background: #FFFFFF; content: ""; }
+  .pkf-product-lightbox__close:before { transform: rotate(45deg); }
+  .pkf-product-lightbox__close:after { transform: rotate(-45deg); }
+  .pkf-product-lightbox__close:hover:before,
+  .pkf-product-lightbox__close:hover:after { background: #111517; }
 
   .pkf-product-lightbox__arrow {
     top: 50%;
     width: 52px;
     height: 52px;
-    font-size: 25px;
     line-height: 1;
     transform: translateY(-50%);
   }
@@ -255,7 +353,7 @@
     right: 24px;
   }
 
-  .pkf-product-lightbox__arrow:before { width: 13px; height: 13px; border-top: 3px solid currentColor; border-right: 3px solid currentColor; content: ""; }
+  .pkf-product-lightbox__arrow:before { display: block; width: 13px; height: 13px; border-top: 3px solid currentColor; border-right: 3px solid currentColor; content: ""; text-indent: 0; }
   .pkf-product-lightbox__arrow--prev:before { transform: rotate(-135deg); margin-left: 5px; }
   .pkf-product-lightbox__arrow--next:before { transform: rotate(45deg); margin-right: 5px; }
 
@@ -288,11 +386,20 @@
   @media(max-width:639px) {
     .pkf-product-lightbox { padding: 8px; }
     .pkf-product-lightbox__dialog { width: calc(100vw - 16px); height: calc(100vh - 16px); padding: 66px 48px 64px; border-radius: 18px; }
-    .pkf-product-lightbox__topbar { top: 18px; left: 18px; right: 62px; }
+    .pkf-product-lightbox__topbar { top: 18px; left: 18px; right: 76px !important; }
     .pkf-product-lightbox__hint { display: none; }
     .pkf-product-lightbox__arrow { width: 42px; height: 42px; }
     .pkf-product-lightbox__arrow--prev { left: 10px; }
     .pkf-product-lightbox__arrow--next { right: 10px; }
+  }
+
+  @media(prefers-reduced-motion:reduce) {
+    .pkf-product-slider__image,
+    .pkf-product-lightbox__image,
+    .pkf-product-slider__arrow,
+    .pkf-product-slider__zoom,
+    .pkf-product-lightbox__arrow,
+    .pkf-product-lightbox__close { transition: none !important; }
   }
 
   .pkf-product-request-modal {
@@ -727,7 +834,7 @@
     .pkf-product-lightbox__arrow {
       width: 42px;
       height: 42px;
-      font-size: 24px;
+      font-size: 0 !important;
     }
 
     .pkf-product-lightbox__arrow--prev {
@@ -766,7 +873,7 @@
   (function () {
     var DATA_URL = 'https://irozis.github.io/pkftechno-data/data/products.json?v=20260721-hero-lightbox';
     var ASSET_BASE_URL = DATA_URL.replace(/\/data\/products\.json(?:[?#].*)?$/, '');
-    var AUTOPLAY_INTERVAL_MS = 10000;
+    var AUTOPLAY_INTERVAL_MS = 7000;
     var REQUEST_CTA_TEXT = 'Оставить заявку';
     var PLACEHOLDER = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(
       '<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">' +
@@ -965,7 +1072,9 @@
       images: [],
       index: 0,
       resumeAutoplay: null,
-      onChange: null
+      onChange: null,
+      transitionTimer: null,
+      pointerStartX: null
     };
 
     function ensureLightbox() {
@@ -980,12 +1089,13 @@
       root.innerHTML = [
         '<div class="pkf-product-lightbox__backdrop"></div>',
         '<div class="pkf-product-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Product image preview">',
-        '<div class="pkf-product-lightbox__topbar"><span class="pkf-product-lightbox__label">Просмотр изображения</span><span class="pkf-product-lightbox__hint">Esc — закрыть · ← → — переключить</span></div>',
-        '<button class="pkf-product-lightbox__close" type="button" aria-label="Р—Р°РєСЂС‹С‚СЊ">×</button>',
-        '<button class="pkf-product-lightbox__arrow pkf-product-lightbox__arrow--prev" type="button" aria-label="РџСЂРµРґС‹РґСѓС‰РµРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ">←</button>',
-        '<img class="pkf-product-lightbox__image" src="" alt="">',
-        '<button class="pkf-product-lightbox__arrow pkf-product-lightbox__arrow--next" type="button" aria-label="РЎР»РµРґСѓСЋС‰РµРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ">→</button>',
+        '<div class="pkf-product-lightbox__topbar"><span class="pkf-product-lightbox__label">Просмотр изображения</span></div>',
+        '<button class="pkf-product-lightbox__close" type="button" aria-label="Закрыть">×</button>',
+        '<button class="pkf-product-lightbox__arrow pkf-product-lightbox__arrow--prev" type="button" aria-label="Предыдущее изображение">←</button>',
+        '<img class="pkf-product-lightbox__image" src="" alt="" draggable="false">',
+        '<button class="pkf-product-lightbox__arrow pkf-product-lightbox__arrow--next" type="button" aria-label="Следующее изображение">→</button>',
         '<div class="pkf-product-lightbox__counter">1 / 1</div>',
+        '<div class="pkf-product-lightbox__hint">Esc — закрыть · ← → — листать</div>',
         '</div>'
       ].join('');
       document.body.appendChild(root);
@@ -996,6 +1106,13 @@
       lightbox.prev = root.querySelector('.pkf-product-lightbox__arrow--prev');
       lightbox.next = root.querySelector('.pkf-product-lightbox__arrow--next');
 
+      lightbox.image.addEventListener('error', function () {
+        lightbox.image.classList.remove('is-changing');
+        if (lightbox.image.getAttribute('src') !== PLACEHOLDER) {
+          lightbox.image.setAttribute('src', PLACEHOLDER);
+        }
+      });
+
       root.querySelector('.pkf-product-lightbox__close').addEventListener('click', closeLightbox);
       root.querySelector('.pkf-product-lightbox__backdrop').addEventListener('click', closeLightbox);
       lightbox.prev.addEventListener('click', function () {
@@ -1003,6 +1120,25 @@
       });
       lightbox.next.addEventListener('click', function () {
         shiftLightbox(1);
+      });
+      root.querySelector('.pkf-product-lightbox__dialog').addEventListener('pointerdown', function (event) {
+        if (event.pointerType === 'mouse') {
+          return;
+        }
+        lightbox.pointerStartX = event.clientX;
+      });
+      root.querySelector('.pkf-product-lightbox__dialog').addEventListener('pointerup', function (event) {
+        if (lightbox.pointerStartX === null) {
+          return;
+        }
+        var distance = event.clientX - lightbox.pointerStartX;
+        lightbox.pointerStartX = null;
+        if (Math.abs(distance) >= 55) {
+          shiftLightbox(distance < 0 ? 1 : -1);
+        }
+      });
+      root.querySelector('.pkf-product-lightbox__dialog').addEventListener('pointercancel', function () {
+        lightbox.pointerStartX = null;
       });
       document.addEventListener('keydown', function (event) {
         if (!lightbox.root || !lightbox.root.classList.contains('is-open')) {
@@ -1027,8 +1163,16 @@
       }
 
       var image = lightbox.images[lightbox.index];
-      lightbox.image.setAttribute('src', image.image_url);
-      lightbox.image.setAttribute('alt', image.alt || '');
+      lightbox.image.classList.add('is-changing');
+      window.clearTimeout(lightbox.transitionTimer);
+      lightbox.transitionTimer = window.setTimeout(function () {
+        if (!lightbox.image) {
+          return;
+        }
+        lightbox.image.setAttribute('src', image.image_url);
+        lightbox.image.setAttribute('alt', image.alt || '');
+        lightbox.image.classList.remove('is-changing');
+      }, 120);
       lightbox.root.classList.toggle('is-single', lightbox.images.length < 2);
 
       if (lightbox.counter) {
@@ -1066,6 +1210,10 @@
       }
 
       lightbox.root.classList.remove('is-open');
+      window.clearTimeout(lightbox.transitionTimer);
+      if (lightbox.image) {
+        lightbox.image.classList.remove('is-changing');
+      }
       document.documentElement.style.overflow = '';
       document.body.style.overflow = '';
 
@@ -1156,20 +1304,37 @@
 
         element.innerHTML = [
           '<section class="pkf-product-slider' + (hasMultipleImages ? '' : ' is-single') + '" aria-label="Галерея товара">',
-          '<div class="pkf-product-slider__viewport">',
-          '<img class="pkf-product-slider__image" src="' + escapeHtml(images[0].image_url) + '" alt="' + escapeHtml(images[0].alt || '') + '" loading="eager" decoding="async">',
-          '</div>',
+          '<div class="pkf-product-slider__viewport" tabindex="0" aria-label="Галерея товара. Используйте стрелки для перелистывания">',
+          '<button class="pkf-product-slider__arrow pkf-product-slider__arrow--prev" type="button" aria-label="Предыдущее изображение">←</button>',
+          '<img class="pkf-product-slider__image" src="' + escapeHtml(images[0].image_url) + '" alt="' + escapeHtml(images[0].alt || '') + '" loading="eager" decoding="async" draggable="false">',
+          '<button class="pkf-product-slider__arrow pkf-product-slider__arrow--next" type="button" aria-label="Следующее изображение">→</button>',
+          '<button class="pkf-product-slider__zoom" type="button" aria-label="Увеличить изображение">Увеличить</button>',
           '<div class="pkf-product-slider__footer">',
           '<div class="pkf-product-slider__dots"></div>',
-          '<div class="pkf-product-slider__counter">1 / ' + images.length + '</div>',
+          '<div class="pkf-product-slider__counter" aria-live="polite">1 / ' + images.length + '</div>',
+          '</div>',
           '</div>',
           '</section>'
         ].join('');
 
         var slider = element.querySelector('.pkf-product-slider');
+        var viewportEl = element.querySelector('.pkf-product-slider__viewport');
         var imageEl = element.querySelector('.pkf-product-slider__image');
+        var prevEl = element.querySelector('.pkf-product-slider__arrow--prev');
+        var nextEl = element.querySelector('.pkf-product-slider__arrow--next');
+        var zoomEl = element.querySelector('.pkf-product-slider__zoom');
         var dotsEl = element.querySelector('.pkf-product-slider__dots');
         var counterEl = element.querySelector('.pkf-product-slider__counter');
+        var transitionTimer = null;
+        var pointerStartX = null;
+
+        images.slice(1).forEach(function (image) {
+          if (!image || !image.image_url) {
+            return;
+          }
+          var preload = new Image();
+          preload.src = image.image_url;
+        });
 
         if (imageEl) {
           imageEl.addEventListener('error', function () {
@@ -1192,11 +1357,71 @@
           });
         }
         var autoplayTimer = null;
-        var isHovering = false;
+
+        function openCurrentImage() {
+          openLightbox(images, currentIndex, stopAutoplay, resumeAutoplayAfterLightbox, update);
+        }
 
         if (imageEl) {
-          imageEl.addEventListener('click', function () {
-            openLightbox(images, currentIndex, stopAutoplay, resumeAutoplayAfterLightbox, update);
+          imageEl.addEventListener('click', openCurrentImage);
+        }
+
+        if (zoomEl) {
+          zoomEl.addEventListener('click', openCurrentImage);
+        }
+
+        if (prevEl) {
+          prevEl.addEventListener('click', function () {
+            update(currentIndex - 1);
+            restartAutoplay();
+          });
+        }
+
+        if (nextEl) {
+          nextEl.addEventListener('click', function () {
+            update(currentIndex + 1);
+            restartAutoplay();
+          });
+        }
+
+        if (viewportEl) {
+          viewportEl.addEventListener('keydown', function (event) {
+            if (event.key === 'ArrowLeft') {
+              event.preventDefault();
+              update(currentIndex - 1);
+              restartAutoplay();
+            } else if (event.key === 'ArrowRight') {
+              event.preventDefault();
+              update(currentIndex + 1);
+              restartAutoplay();
+            } else if (event.key === 'Enter') {
+              event.preventDefault();
+              openCurrentImage();
+            }
+          });
+
+          viewportEl.addEventListener('pointerdown', function (event) {
+            if (event.pointerType === 'mouse') {
+              return;
+            }
+            pointerStartX = event.clientX;
+          });
+
+          viewportEl.addEventListener('pointerup', function (event) {
+            if (pointerStartX === null) {
+              return;
+            }
+            var distance = event.clientX - pointerStartX;
+            pointerStartX = null;
+            if (Math.abs(distance) < 45) {
+              return;
+            }
+            update(currentIndex + (distance < 0 ? 1 : -1));
+            restartAutoplay();
+          });
+
+          viewportEl.addEventListener('pointercancel', function () {
+            pointerStartX = null;
           });
         }
 
@@ -1221,8 +1446,14 @@
           currentIndex = (nextIndex + images.length) % images.length;
 
           if (imageEl) {
-            imageEl.setAttribute('src', images[currentIndex].image_url);
-            imageEl.setAttribute('alt', images[currentIndex].alt || '');
+            var nextImage = images[currentIndex];
+            imageEl.classList.add('is-changing');
+            window.clearTimeout(transitionTimer);
+            transitionTimer = window.setTimeout(function () {
+              imageEl.setAttribute('src', nextImage.image_url);
+              imageEl.setAttribute('alt', nextImage.alt || '');
+              imageEl.classList.remove('is-changing');
+            }, 120);
           }
 
           if (counterEl) {
@@ -1248,7 +1479,7 @@
         function startAutoplay() {
           stopAutoplay();
 
-          if (!hasMultipleImages || isHovering) {
+          if (!hasMultipleImages) {
             return;
           }
 
@@ -1263,7 +1494,6 @@
         }
 
         function resumeAutoplayAfterLightbox() {
-          isHovering = false;
           startAutoplay();
         }
 
@@ -1272,18 +1502,6 @@
         if (!hasMultipleImages && slider) {
           slider.classList.add('is-single');
           return;
-        }
-
-        if (slider) {
-          slider.addEventListener('mouseenter', function () {
-            isHovering = true;
-            stopAutoplay();
-          });
-
-          slider.addEventListener('mouseleave', function () {
-            isHovering = false;
-            startAutoplay();
-          });
         }
 
         startAutoplay();
