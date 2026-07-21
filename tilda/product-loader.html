@@ -41,12 +41,19 @@
 
   .pkf-product-slider {
     width: 100%;
+    min-width: 0;
+    min-height: 0;
+    box-sizing: border-box;
     font-family: Manrope, "TildaSans", Arial, sans-serif;
   }
 
   .pkf-product-slider__viewport {
     position: relative;
     width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    box-sizing: border-box;
     aspect-ratio: 4 / 3;
     overflow: hidden;
     border: 1px solid rgba(17, 21, 23, 0.08);
@@ -58,6 +65,11 @@
     display: block;
     width: 100%;
     height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 0;
+    min-height: 0;
+    box-sizing: border-box;
     object-fit: contain;
     object-position: center;
     cursor: zoom-in;
@@ -1081,12 +1093,13 @@
 
       galleryElements.forEach(function (element) {
         var currentIndex = 0;
+        var failedImages = {};
         var hasMultipleImages = images.length > 1;
 
         element.innerHTML = [
           '<section class="pkf-product-slider' + (hasMultipleImages ? '' : ' is-single') + '" aria-label="Галерея товара">',
           '<div class="pkf-product-slider__viewport">',
-          '<img class="pkf-product-slider__image" src="' + escapeHtml(images[0].image_url) + '" alt="' + escapeHtml(images[0].alt || '') + '">',
+          '<img class="pkf-product-slider__image" src="' + escapeHtml(images[0].image_url) + '" alt="' + escapeHtml(images[0].alt || '') + '" loading="eager" decoding="async">',
           '</div>',
           '<div class="pkf-product-slider__footer">',
           '<div class="pkf-product-slider__dots"></div>',
@@ -1099,6 +1112,27 @@
         var imageEl = element.querySelector('.pkf-product-slider__image');
         var dotsEl = element.querySelector('.pkf-product-slider__dots');
         var counterEl = element.querySelector('.pkf-product-slider__counter');
+
+        if (imageEl) {
+          imageEl.addEventListener('error', function () {
+            var failedIndex = currentIndex;
+            failedImages[failedIndex] = true;
+            var nextImage = images.find(function (image, index) {
+              return !failedImages[index] && image && image.image_url;
+            });
+
+            if (nextImage) {
+              var nextIndex = images.indexOf(nextImage);
+              imageEl.setAttribute('src', nextImage.image_url);
+              imageEl.setAttribute('alt', nextImage.alt || '');
+              currentIndex = nextIndex;
+              if (counterEl) counterEl.textContent = (currentIndex + 1) + ' / ' + images.length;
+              return;
+            }
+
+            imageEl.setAttribute('src', PLACEHOLDER);
+          });
+        }
         var autoplayTimer = null;
         var isHovering = false;
 
