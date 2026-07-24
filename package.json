@@ -10,7 +10,8 @@
     "sync:pss2p-images": "node scripts/sync-pss2p-images-from-tilda.mjs",
     "build:pages": "node scripts/build-product-pages.mjs",
     "check:pss2p-images": "node scripts/check-pss2p-images.mjs",
-    "audit:seo": "node scripts/audit-product-seo.mjs"
+    "audit:seo": "node scripts/audit-product-seo.mjs",
+    "build:redirect-map": "node scripts/build-seo-redirect-map.mjs"
   },
   "dependencies": {
     "xlsx": "^0.18.5"

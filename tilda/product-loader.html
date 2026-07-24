@@ -900,7 +900,7 @@
     }
 
     .pkf-product-slider__viewport {
-      aspect-ratio: 1 / 1;
+      aspect-ratio: 4 / 3;
       border-radius: 18px;
     }
 
@@ -947,6 +947,14 @@
 
     .pkf-product-request-form__row {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .js-product-title,
+    .js-product-title .tn-atom {
+      font-size: 30px !important;
+      line-height: 1.08 !important;
     }
   }
 </style>

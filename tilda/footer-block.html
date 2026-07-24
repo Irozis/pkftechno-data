@@ -1,0 +1,308 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<footer class="pkf-footer" aria-label="Подвал сайта">
+  <div class="pkf-footer__container">
+    <div class="pkf-footer__top">
+      <div class="pkf-footer__brand">
+        <a class="pkf-footer__logo" href="/" aria-label="ПКФ Технология — главная">
+          <img src="https://static.tildacdn.com/tild6337-3736-4439-a630-346130393862/Logo.svg" width="220" height="58" alt="ПКФ Технология">
+        </a>
+        <p>Разработка и производство электротехнического оборудования для промышленности и железнодорожной техники.</p>
+      </div>
+
+      <nav class="pkf-footer__nav" aria-label="Навигация в подвале">
+        <h2>Навигация</h2>
+        <div class="pkf-footer__nav-grid">
+          <a href="/productpage">Продукция</a>
+          <a href="/rasprodazha">Распродажа</a>
+          <a href="/aboutcompany">О компании</a>
+          <a href="/#contacts">Контакты</a>
+          <a href="/surveylist">Опрос удовлетворенности</a>
+        </div>
+      </nav>
+
+      <div class="pkf-footer__contacts">
+        <h2>Контакты</h2>
+        <a class="pkf-footer__phone" href="tel:+73432728235">+7 (343) 272-82-35</a>
+        <a class="pkf-footer__email" href="mailto:pkf@pkftechno.ru">pkf@pkftechno.ru</a>
+        <address>620142, г. Екатеринбург,<br>ул. Щорса, строение 7</address>
+      </div>
+    </div>
+
+    <div class="pkf-footer__bottom">
+      <p>© <span class="js-pkf-footer-year">2026</span> ООО «ПКФ «Технология». Все права защищены.</p>
+      <div class="pkf-footer__legal">
+        <a href="/svodnaya">Результаты СОУТ</a>
+        <span>Публичная оферта</span>
+        <a href="https://project7883988.tilda.ws/policy" target="_blank" rel="noopener noreferrer">Политика обработки данных</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  :root {
+    --pkf-footer-bg: #111619;
+    --pkf-footer-text: #ffffff;
+    --pkf-footer-muted: rgba(255, 255, 255, .62);
+    --pkf-footer-soft: rgba(255, 255, 255, .48);
+    --pkf-footer-line: rgba(255, 255, 255, .10);
+    --pkf-footer-yellow: #ffc400;
+  }
+
+  /* Скрывает прежний Zero Block футера на страницах, где он ещё подключён. */
+  #rec645638110 { display: none !important; }
+
+  .pkf-footer,
+  .pkf-footer * { box-sizing: border-box; }
+
+  .pkf-footer {
+    width: 100%;
+    background: var(--pkf-footer-bg);
+    color: var(--pkf-footer-text);
+    font-family: "Manrope", Arial, sans-serif;
+  }
+
+  .pkf-footer__container {
+    width: min(1120px, calc(100% - 80px));
+    margin: 0 auto;
+  }
+
+  .pkf-footer__top {
+    min-height: 300px;
+    padding: 62px 0 54px;
+    display: grid;
+    grid-template-columns: minmax(280px, 1.15fr) minmax(260px, 1fr) minmax(220px, .72fr);
+    gap: 72px;
+    align-items: start;
+  }
+
+  .pkf-footer__logo {
+    width: 190px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .pkf-footer__logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .pkf-footer__brand p {
+    max-width: 340px;
+    margin: 26px 0 0;
+    color: var(--pkf-footer-muted);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  .pkf-footer h2 {
+    margin: 6px 0 28px;
+    color: var(--pkf-footer-yellow);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+
+  .pkf-footer__nav-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 34px;
+    row-gap: 14px;
+  }
+
+  .pkf-footer__nav a,
+  .pkf-footer__legal a,
+  .pkf-footer__legal span {
+    color: var(--pkf-footer-muted);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color .2s ease;
+  }
+
+  .pkf-footer__nav a:hover,
+  .pkf-footer__legal a:hover { color: var(--pkf-footer-text); }
+
+  .pkf-footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pkf-footer__phone {
+    color: var(--pkf-footer-text) !important;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  .pkf-footer__email {
+    margin-top: 12px;
+    color: var(--pkf-footer-muted) !important;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  .pkf-footer__phone:hover,
+  .pkf-footer__email:hover { color: var(--pkf-footer-yellow) !important; }
+
+  .pkf-footer address {
+    margin-top: 24px;
+    color: var(--pkf-footer-soft);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.6;
+  }
+
+  .pkf-footer__bottom {
+    min-height: 100px;
+    padding: 28px 0 30px;
+    border-top: 1px solid var(--pkf-footer-line);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .pkf-footer__bottom > p {
+    max-width: 390px;
+    margin: 0;
+    color: var(--pkf-footer-soft);
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .pkf-footer__legal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px 28px;
+  }
+
+  .pkf-footer__legal a,
+  .pkf-footer__legal span {
+    color: var(--pkf-footer-soft);
+    font-size: 12px;
+  }
+
+  @media (max-width: 1199px) {
+    .pkf-footer__container { width: calc(100% - 64px); }
+
+    .pkf-footer__top {
+      padding-top: 56px;
+      grid-template-columns: minmax(220px, .9fr) minmax(260px, 1fr) minmax(210px, .78fr);
+      gap: 42px;
+    }
+
+    .pkf-footer__brand p { max-width: 270px; }
+    .pkf-footer__nav-grid { column-gap: 24px; }
+  }
+
+  @media (max-width: 959px) {
+    .pkf-footer__top {
+      min-height: 0;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 46px 38px;
+    }
+
+    .pkf-footer__brand { grid-column: 1; }
+    .pkf-footer__contacts { grid-column: 2; }
+
+    .pkf-footer__nav {
+      grid-column: 1 / -1;
+      padding-top: 36px;
+      border-top: 1px solid var(--pkf-footer-line);
+    }
+
+    .pkf-footer__nav-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      max-width: 540px;
+    }
+
+    .pkf-footer__bottom {
+      min-height: 120px;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .pkf-footer__legal { justify-content: flex-start; }
+  }
+
+  @media (max-width: 639px) {
+    .pkf-footer__container { width: calc(100% - 48px); }
+
+    .pkf-footer__top {
+      padding: 48px 0 42px;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .pkf-footer__brand,
+    .pkf-footer__contacts,
+    .pkf-footer__nav { grid-column: 1; }
+
+    .pkf-footer__brand p { max-width: 430px; }
+
+    .pkf-footer__nav,
+    .pkf-footer__contacts {
+      margin-top: 36px;
+      padding-top: 36px;
+      border-top: 1px solid var(--pkf-footer-line);
+    }
+
+    .pkf-footer__nav { order: 2; }
+    .pkf-footer__contacts { order: 3; }
+
+    .pkf-footer__nav-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      max-width: none;
+      column-gap: 28px;
+    }
+
+    .pkf-footer__bottom { padding-bottom: 34px; }
+    .pkf-footer__legal { gap: 10px 20px; }
+  }
+
+  @media (max-width: 479px) {
+    .pkf-footer__container { width: calc(100% - 32px); }
+    .pkf-footer__top { padding-top: 42px; }
+    .pkf-footer__logo { width: 170px; }
+    .pkf-footer__brand p { margin-top: 22px; font-size: 13px; }
+    .pkf-footer h2 { margin-bottom: 22px; }
+
+    .pkf-footer__nav-grid {
+      grid-template-columns: 1fr;
+      row-gap: 13px;
+    }
+
+    .pkf-footer__bottom { gap: 20px; }
+
+    .pkf-footer__legal {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pkf-footer__nav a,
+    .pkf-footer__legal a { transition: none; }
+  }
+</style>
+
+<script>
+  (function () {
+    var year = document.querySelector('.js-pkf-footer-year');
+    if (year) year.textContent = new Date().getFullYear();
+  })();
+</script>

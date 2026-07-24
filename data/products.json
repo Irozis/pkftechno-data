@@ -3622,7 +3622,7 @@
       "cta_text": "Получить консультацию",
       "sort": 1440,
       "status": "published",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shun-sibur/01.jpg"
+      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shun-sibur/shun1.png"
     },
     {
       "slug": "kreslo-mashinista-km-nkue-3",
@@ -12990,36 +12990,6 @@
       "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/pn-nkue-3/01.png",
       "alt": "Пульт наладчика ПН НКУЭ-3 — изображение 1",
       "sort": 10
-    },
-    {
-      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/ekru-6/01.jpg",
-      "alt": "Распределительное устройство ЭКРУ-6 — изображение 1",
-      "sort": 10
-    },
-    {
-      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/ekru-6/02.jpg",
-      "alt": "Распределительное устройство ЭКРУ-6 — изображение 2",
-      "sort": 20
-    },
-    {
-      "product_slug": "raspredelitelnoe-ustrojstvo-ekru-6",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/ekru-6/03.jpg",
-      "alt": "Распределительное устройство ЭКРУ-6 — изображение 3",
-      "sort": 30
-    },
-    {
-      "product_slug": "shun-sibur",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shun-sibur/01.jpg",
-      "alt": "Шкаф управления насосом ШУН СИБУР — изображение 1",
-      "sort": 10
-    },
-    {
-      "product_slug": "shun-sibur",
-      "image_url": "https://irozis.github.io/pkftechno-data/assets/old-site-photos/nkue-products/shun-sibur/02.png",
-      "alt": "Шкаф управления насосом ШУН СИБУР — изображение 2",
-      "sort": 20
     },
     {
       "product_slug": "paneli-p1-p2-p3-nkue-3",
